@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "id": "YYYYMMDD-HHMMSS-subject",
+    "created_at": "YYYY-MM-DDTHH:MM:SSZ",
+    "updated_at": "YYYY-MM-DDTHH:MM:SSZ",
+    "status": "in_progress",
+    "repository_revision": null
+  },
+  "request": {
+    "raw": "",
+    "subject": "",
+    "task_type": "unspecified",
+    "as_of_date": null,
+    "start_date": null,
+    "end_date": null,
+    "audience": "informed generalist",
+    "language": "en",
+    "output_formats": ["markdown"],
+    "depth": "standard",
+    "source_constraints": ["primary sources first"],
+    "clarifications": [],
+    "assumptions": []
+  },
+  "plan": {
+    "selected_skills": [],
+    "steps": [],
+    "status": "draft"
+  },
+  "sources": [],
+  "evidence": [],
+  "facts": [],
+  "calculations": [],
+  "artifacts": [
+    {
+      "path": "report.md",
+      "format": "markdown",
+      "language": "en",
+      "status": "draft",
+      "fact_ids": []
+    }
+  ],
+  "validation": {
+    "status": "NOT_RUN",
+    "validated_at": null,
+    "validator_version": null,
+    "issues": []
+  }
+}
+

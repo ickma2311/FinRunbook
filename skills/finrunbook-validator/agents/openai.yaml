@@ -1,0 +1,3 @@
+interface:
+  display_name: "FinRunbook Validator"
+  short_description: "Validate evidence, calculations, and citations"

@@ -1,0 +1,12 @@
+[submodule "vendor/anthropic-financial-services"]
+	path = vendor/anthropic-financial-services
+	url = https://github.com/anthropics/financial-services.git
+[submodule "vendor/finance-skills"]
+	path = vendor/finance-skills
+	url = https://github.com/himself65/finance-skills.git
+[submodule "vendor/octagon-skills"]
+	path = vendor/octagon-skills
+	url = https://github.com/OctagonAI/skills.git
+[submodule "vendor/finance-accounting-skills"]
+	path = vendor/finance-accounting-skills
+	url = https://github.com/GAJETOso/financeskills.git
