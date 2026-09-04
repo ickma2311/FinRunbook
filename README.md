@@ -13,6 +13,18 @@ Use FinRunbook with **Codex, Claude Code, or OpenCode** from the project
 directory. `AGENTS.md` defines the shared workflow; `CLAUDE.md` points Claude
 Code to those same instructions.
 
+## Live examples
+
+Explore two completed English reports in your browser. No agent, installation,
+or financial API key is needed to view them.
+
+- [Apple: business quality, FY2021–FY2025](https://ickma2311.github.io/FinRunbook/apple-business-quality/report/)
+- [Cloud computing: AWS, Azure, and Google Cloud, 2021–2025](https://ickma2311.github.io/FinRunbook/cloud-computing/report/)
+
+[Browse all examples](https://ickma2311.github.io/FinRunbook/) or inspect the
+[example packages and limitations](examples/README.md). These are historical
+reports with a September 3, 2026 research cutoff, not live market dashboards.
+
 ## Repository layout
 
 ```text

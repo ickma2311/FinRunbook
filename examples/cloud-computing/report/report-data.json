@@ -1,0 +1,2750 @@
+{
+  "meta": {
+    "title": "Cloud computing",
+    "subtitle": "AWS vs. Azure vs. Google Cloud",
+    "coverage_universe": "Three hyperscalers; not the entire cloud market",
+    "period_label": "2021–2025 · calendar and fiscal bases labeled",
+    "kind": "cloud",
+    "language": "en",
+    "as_of_date": "2026-09-03",
+    "decision_use": "Historical business and industry analysis; not a stock-price valuation",
+    "status": "complete"
+  },
+  "executive_view": {
+    "headline": "AWS leads on disclosed scale. Google Cloud grows faster. Azure needs a separate lens.",
+    "summary": "The comparison supports three distinct observations: AWS remains the larger of the two directly reported cloud segments, Google Cloud expanded faster and became profitable, and Azure’s growth is visible without a complete standalone profit history. None of those observations establishes market share or AI-specific returns.",
+    "fact_ids": [
+      "FACT-059",
+      "FACT-065",
+      "FACT-076",
+      "FACT-074",
+      "FACT-066",
+      "FACT-078"
+    ]
+  },
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "series": {
+    "2021": {
+      "aws_revenue": "FACT-001",
+      "aws_operating_income": "FACT-002",
+      "aws_parent_capex_signed": "FACT-003",
+      "aws_margin": "FACT-004",
+      "aws_parent_capex": "FACT-005",
+      "google_revenue": "FACT-006",
+      "google_operating_income": "FACT-007",
+      "google_parent_capex_signed": "FACT-008",
+      "google_margin": "FACT-009",
+      "google_parent_capex": "FACT-010",
+      "microsoft_capex_signed": "FACT-011",
+      "microsoft_parent_capex": "FACT-012",
+      "azure_growth": "FACT-013"
+    },
+    "2022": {
+      "aws_revenue": "FACT-014",
+      "aws_operating_income": "FACT-015",
+      "aws_parent_capex_signed": "FACT-016",
+      "aws_margin": "FACT-017",
+      "aws_parent_capex": "FACT-018",
+      "aws_growth": "FACT-019",
+      "google_revenue": "FACT-020",
+      "google_operating_income": "FACT-021",
+      "google_parent_capex_signed": "FACT-022",
+      "google_margin": "FACT-023",
+      "google_parent_capex": "FACT-024",
+      "google_growth": "FACT-025",
+      "microsoft_capex_signed": "FACT-026",
+      "microsoft_parent_capex": "FACT-027",
+      "azure_growth": "FACT-028"
+    },
+    "2023": {
+      "aws_revenue": "FACT-029",
+      "aws_operating_income": "FACT-030",
+      "aws_parent_capex_signed": "FACT-031",
+      "aws_margin": "FACT-032",
+      "aws_parent_capex": "FACT-033",
+      "aws_growth": "FACT-034",
+      "google_revenue": "FACT-035",
+      "google_operating_income": "FACT-036",
+      "google_parent_capex_signed": "FACT-037",
+      "google_margin": "FACT-038",
+      "google_parent_capex": "FACT-039",
+      "google_growth": "FACT-040",
+      "microsoft_capex_signed": "FACT-041",
+      "microsoft_parent_capex": "FACT-042",
+      "azure_growth": "FACT-043"
+    },
+    "2024": {
+      "aws_revenue": "FACT-044",
+      "aws_operating_income": "FACT-045",
+      "aws_parent_capex_signed": "FACT-046",
+      "aws_margin": "FACT-047",
+      "aws_parent_capex": "FACT-048",
+      "aws_growth": "FACT-049",
+      "google_revenue": "FACT-050",
+      "google_operating_income": "FACT-051",
+      "google_parent_capex_signed": "FACT-052",
+      "google_margin": "FACT-053",
+      "google_parent_capex": "FACT-054",
+      "google_growth": "FACT-055",
+      "microsoft_capex_signed": "FACT-056",
+      "microsoft_parent_capex": "FACT-057",
+      "azure_growth": "FACT-058"
+    },
+    "2025": {
+      "aws_revenue": "FACT-059",
+      "aws_operating_income": "FACT-060",
+      "aws_parent_capex_signed": "FACT-061",
+      "aws_margin": "FACT-062",
+      "aws_parent_capex": "FACT-063",
+      "aws_growth": "FACT-064",
+      "google_revenue": "FACT-065",
+      "google_operating_income": "FACT-066",
+      "google_parent_capex_signed": "FACT-067",
+      "google_margin": "FACT-068",
+      "google_parent_capex": "FACT-069",
+      "google_growth": "FACT-070",
+      "microsoft_capex_signed": "FACT-071",
+      "microsoft_parent_capex": "FACT-072",
+      "azure_growth": "FACT-073"
+    }
+  },
+  "stats": {
+    "aws_cagr": "FACT-074",
+    "aws_increment": "FACT-075",
+    "google_cagr": "FACT-076",
+    "google_increment": "FACT-077",
+    "azure_bound": "FACT-078"
+  },
+  "panels": [
+    {
+      "title": "AWS: scale plus substantial segment profit",
+      "text": "AWS generated more revenue and operating profit than Google Cloud throughout this comparison. Revenue growth accelerated after 2023, while the operating margin fell in 2025 from its 2024 level. Scale did not eliminate investment or depreciation pressure.",
+      "fact_ids": [
+        "FACT-059",
+        "FACT-060",
+        "FACT-064",
+        "FACT-034",
+        "FACT-062",
+        "FACT-047",
+        "FACT-085"
+      ],
+      "tag": "Assessment"
+    },
+    {
+      "title": "Google Cloud: faster growth, from a smaller base",
+      "text": "Google Cloud grew faster over the full period and moved from a reported operating loss to a substantial profit. Its business includes Workspace, and some shared AI research expense remains outside the segment; the margin is not a pure GCP or AI return measure.",
+      "fact_ids": [
+        "FACT-076",
+        "FACT-074",
+        "FACT-007",
+        "FACT-066",
+        "FACT-080",
+        "FACT-083"
+      ],
+      "tag": "Assessment"
+    },
+    {
+      "title": "Azure: strong growth, incomplete segment economics",
+      "text": "Microsoft disclosed a revenue threshold for Azure in FY2025 and annual growth metrics. The reviewed reports do not provide a complete, exact five-year Azure revenue and operating-profit series. Intelligent Cloud and Microsoft Cloud would answer different questions.",
+      "fact_ids": [
+        "FACT-078",
+        "FACT-073",
+        "FACT-081"
+      ],
+      "tag": "Assessment"
+    }
+  ],
+  "map_cards": [
+    {
+      "title": "AWS | breadth and existing workload base",
+      "text": "Consumption-led infrastructure and platform services. Its demonstrated revenue and profit scale gives it resources to invest. The vulnerability is sustaining growth while capacity and depreciation costs rise; the accounts do not isolate AI profitability.",
+      "fact_ids": [
+        "FACT-079",
+        "FACT-059",
+        "FACT-060",
+        "FACT-085"
+      ],
+      "tag": "Positioning assessment"
+    },
+    {
+      "title": "Azure | enterprise software adjacency",
+      "text": "Cloud services sit alongside Microsoft’s enterprise software and developer offerings. That distribution is a plausible competitive advantage, not proof of customer conversion or market-share gains. Segment changes and limited standalone disclosure constrain margin comparisons.",
+      "fact_ids": [
+        "FACT-081",
+        "FACT-078"
+      ],
+      "tag": "Positioning assessment"
+    },
+    {
+      "title": "Google Cloud | GCP and Workspace",
+      "text": "GCP infrastructure and platform services combine with Workspace subscriptions. Faster reported growth and the move to profit are visible; how much came from share gains, market expansion, pricing or AI cannot be decomposed from these annual disclosures.",
+      "fact_ids": [
+        "FACT-080",
+        "FACT-084",
+        "FACT-076",
+        "FACT-068"
+      ],
+      "tag": "Positioning assessment"
+    }
+  ],
+  "watches": [
+    {
+      "title": "Growth quality",
+      "text": "Track consumption growth, contract conversion and disclosed AI contributions separately. Aggregate revenue growth is an observed result; calling all of it AI demand would be an unsupported attribution.",
+      "fact_ids": [
+        "FACT-084",
+        "FACT-064",
+        "FACT-073"
+      ],
+      "tag": "Monitor"
+    },
+    {
+      "title": "Capacity economics",
+      "text": "Read cash capex, finance leases, depreciation policies and margins together. Parent capex includes non-cloud uses and is not a denominator for an Azure, AWS or GCP return-on-investment calculation.",
+      "fact_ids": [
+        "FACT-063",
+        "FACT-069",
+        "FACT-072",
+        "FACT-085",
+        "FACT-086"
+      ],
+      "tag": "Monitor"
+    },
+    {
+      "title": "Comparable disclosure",
+      "text": "Watch changes in Azure scope and Alphabet cost allocation. Obtain a consistent external market definition before calculating market share; growth relative to a peer does not identify where its customers came from.",
+      "fact_ids": [
+        "FACT-081",
+        "FACT-082",
+        "FACT-080"
+      ],
+      "tag": "Monitor"
+    }
+  ],
+  "sections": [
+    {
+      "id": "performance",
+      "title": "Comparable financial panels"
+    },
+    {
+      "id": "azure",
+      "title": "Azure disclosure boundary"
+    },
+    {
+      "id": "capital",
+      "title": "Investment context"
+    },
+    {
+      "id": "map",
+      "title": "Competitive positioning"
+    },
+    {
+      "id": "monitor",
+      "title": "What to monitor"
+    }
+  ],
+  "methods": [
+    {
+      "title": "Two time bases, not one",
+      "text": "AWS and Google Cloud use years ending December 31. Microsoft uses fiscal years ending June 30. A Microsoft FY2025 figure covers July 2024–June 2025, not calendar 2025. No calendarization or time-shifted ranking is implied.",
+      "fact_ids": [
+        "FACT-059",
+        "FACT-065",
+        "FACT-073"
+      ]
+    },
+    {
+      "title": "Revenue is not market share",
+      "text": "AWS and Google Cloud have different product scopes; Google Cloud includes Workspace. Azure and other cloud services is neither Intelligent Cloud nor Microsoft Cloud. There is no complete market denominator here; no market-share percentage is calculated.",
+      "fact_ids": [
+        "FACT-079",
+        "FACT-080",
+        "FACT-081"
+      ]
+    },
+    {
+      "title": "Historical cost comparability",
+      "text": "Google Cloud CY2021–CY2022 operating results use the recast values in the 2023 annual filing; the overlapping 2023 values match the 2025 filing. Segment profit excludes some group costs. AWS useful-life changes also affect reported operating margins.",
+      "fact_ids": [
+        "FACT-082",
+        "FACT-083",
+        "FACT-085"
+      ]
+    },
+    {
+      "title": "Observed results versus explanations",
+      "text": "Revenue, cash expenditure and reported profit are historical actuals. Management’s explanations are labeled as such; competitive advantages are analytical assessments. No management capacity plan is counted as realized revenue, and no forecast is presented.",
+      "fact_ids": [
+        "FACT-084",
+        "FACT-086"
+      ]
+    },
+    {
+      "title": "Azure threshold and growth series",
+      "text": "The FY2025 Azure disclosure is greater than $75 billion, not exactly $75 billion. Growth rates are preserved as reported in each annual report; definitions and segment presentation evolved. No missing historical revenue or Azure margin is back-solved.",
+      "fact_ids": [
+        "FACT-078",
+        "FACT-081",
+        "FACT-073"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0",
+  "fact_ids": [
+    "FACT-001",
+    "FACT-002",
+    "FACT-003",
+    "FACT-004",
+    "FACT-005",
+    "FACT-006",
+    "FACT-007",
+    "FACT-008",
+    "FACT-009",
+    "FACT-010",
+    "FACT-011",
+    "FACT-012",
+    "FACT-013",
+    "FACT-014",
+    "FACT-015",
+    "FACT-016",
+    "FACT-017",
+    "FACT-018",
+    "FACT-019",
+    "FACT-020",
+    "FACT-021",
+    "FACT-022",
+    "FACT-023",
+    "FACT-024",
+    "FACT-025",
+    "FACT-026",
+    "FACT-027",
+    "FACT-028",
+    "FACT-029",
+    "FACT-030",
+    "FACT-031",
+    "FACT-032",
+    "FACT-033",
+    "FACT-034",
+    "FACT-035",
+    "FACT-036",
+    "FACT-037",
+    "FACT-038",
+    "FACT-039",
+    "FACT-040",
+    "FACT-041",
+    "FACT-042",
+    "FACT-043",
+    "FACT-044",
+    "FACT-045",
+    "FACT-046",
+    "FACT-047",
+    "FACT-048",
+    "FACT-049",
+    "FACT-050",
+    "FACT-051",
+    "FACT-052",
+    "FACT-053",
+    "FACT-054",
+    "FACT-055",
+    "FACT-056",
+    "FACT-057",
+    "FACT-058",
+    "FACT-059",
+    "FACT-060",
+    "FACT-061",
+    "FACT-062",
+    "FACT-063",
+    "FACT-064",
+    "FACT-065",
+    "FACT-066",
+    "FACT-067",
+    "FACT-068",
+    "FACT-069",
+    "FACT-070",
+    "FACT-071",
+    "FACT-072",
+    "FACT-073",
+    "FACT-074",
+    "FACT-075",
+    "FACT-076",
+    "FACT-077",
+    "FACT-078",
+    "FACT-079",
+    "FACT-080",
+    "FACT-081",
+    "FACT-082",
+    "FACT-083",
+    "FACT-084",
+    "FACT-085",
+    "FACT-086"
+  ],
+  "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003",
+    "SRC-004",
+    "SRC-005",
+    "SRC-006",
+    "SRC-007",
+    "SRC-008",
+    "SRC-009"
+  ],
+  "facts": [
+    {
+      "id": "FACT-001",
+      "statement": "AWS revenue",
+      "units": "USD millions",
+      "period": "CY2021, ended 2021-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-001"
+      ],
+      "value": 62202.0
+    },
+    {
+      "id": "FACT-002",
+      "statement": "AWS operating income",
+      "units": "USD millions",
+      "period": "CY2021, ended 2021-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-002"
+      ],
+      "value": 18532.0
+    },
+    {
+      "id": "FACT-003",
+      "statement": "Amazon consolidated parent capex signed",
+      "units": "USD millions",
+      "period": "CY2021, ended 2021-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-003"
+      ],
+      "value": -61053.0
+    },
+    {
+      "id": "FACT-004",
+      "statement": "Amazon cloud segment operating margin",
+      "value": 29.79325423619819,
+      "units": "percent",
+      "period": "CY2021, ended 2021-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "calculation_id": "CALC-001"
+    },
+    {
+      "id": "FACT-005",
+      "statement": "Amazon parent cash capital expenditure",
+      "value": 61053.0,
+      "units": "USD millions",
+      "period": "CY2021, ended 2021-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-003"
+      ],
+      "calculation_id": "CALC-002"
+    },
+    {
+      "id": "FACT-006",
+      "statement": "Google Cloud revenue",
+      "units": "USD millions",
+      "period": "CY2021, ended 2021-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-004"
+      ],
+      "value": 19206.0
+    },
+    {
+      "id": "FACT-007",
+      "statement": "Google Cloud operating income",
+      "units": "USD millions",
+      "period": "CY2021, ended 2021-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-005"
+      ],
+      "value": -2282.0
+    },
+    {
+      "id": "FACT-008",
+      "statement": "Alphabet consolidated parent capex signed",
+      "units": "USD millions",
+      "period": "CY2021, ended 2021-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-006"
+      ],
+      "value": -24640.0
+    },
+    {
+      "id": "FACT-009",
+      "statement": "Alphabet cloud segment operating margin",
+      "value": -11.881703634280955,
+      "units": "percent",
+      "period": "CY2021, ended 2021-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-004",
+        "EVD-005"
+      ],
+      "calculation_id": "CALC-003"
+    },
+    {
+      "id": "FACT-010",
+      "statement": "Alphabet parent cash capital expenditure",
+      "value": 24640.0,
+      "units": "USD millions",
+      "period": "CY2021, ended 2021-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-006"
+      ],
+      "calculation_id": "CALC-004"
+    },
+    {
+      "id": "FACT-011",
+      "statement": "Microsoft consolidated cash additions to property and equipment",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-06-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-005"
+      ],
+      "evidence_ids": [
+        "EVD-007"
+      ],
+      "value": -20622.0
+    },
+    {
+      "id": "FACT-012",
+      "statement": "Microsoft parent cash capital expenditure",
+      "value": 20622.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-06-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-005"
+      ],
+      "evidence_ids": [
+        "EVD-007"
+      ],
+      "calculation_id": "CALC-005"
+    },
+    {
+      "id": "FACT-013",
+      "statement": "Azure and other cloud services revenue growth, as reported",
+      "units": "percent",
+      "period": "FY2021, ended 2021-06-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-005"
+      ],
+      "evidence_ids": [
+        "EVD-008"
+      ],
+      "value": 50
+    },
+    {
+      "id": "FACT-014",
+      "statement": "AWS revenue",
+      "units": "USD millions",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-009"
+      ],
+      "value": 80096.0
+    },
+    {
+      "id": "FACT-015",
+      "statement": "AWS operating income",
+      "units": "USD millions",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-010"
+      ],
+      "value": 22841.0
+    },
+    {
+      "id": "FACT-016",
+      "statement": "Amazon consolidated parent capex signed",
+      "units": "USD millions",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-011"
+      ],
+      "value": -63645.0
+    },
+    {
+      "id": "FACT-017",
+      "statement": "Amazon cloud segment operating margin",
+      "value": 28.517029564522574,
+      "units": "percent",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-009",
+        "EVD-010"
+      ],
+      "calculation_id": "CALC-006"
+    },
+    {
+      "id": "FACT-018",
+      "statement": "Amazon parent cash capital expenditure",
+      "value": 63645.0,
+      "units": "USD millions",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-011"
+      ],
+      "calculation_id": "CALC-007"
+    },
+    {
+      "id": "FACT-019",
+      "statement": "AWS revenue growth",
+      "value": 28.767563743931056,
+      "units": "percent",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-009"
+      ],
+      "calculation_id": "CALC-008"
+    },
+    {
+      "id": "FACT-020",
+      "statement": "Google Cloud revenue",
+      "units": "USD millions",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-012"
+      ],
+      "value": 26280.0
+    },
+    {
+      "id": "FACT-021",
+      "statement": "Google Cloud operating income",
+      "units": "USD millions",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-013"
+      ],
+      "value": -1922.0
+    },
+    {
+      "id": "FACT-022",
+      "statement": "Alphabet consolidated parent capex signed",
+      "units": "USD millions",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-014"
+      ],
+      "value": -31485.0
+    },
+    {
+      "id": "FACT-023",
+      "statement": "Alphabet cloud segment operating margin",
+      "value": -7.313546423135464,
+      "units": "percent",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-012",
+        "EVD-013"
+      ],
+      "calculation_id": "CALC-009"
+    },
+    {
+      "id": "FACT-024",
+      "statement": "Alphabet parent cash capital expenditure",
+      "value": 31485.0,
+      "units": "USD millions",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-014"
+      ],
+      "calculation_id": "CALC-010"
+    },
+    {
+      "id": "FACT-025",
+      "statement": "Google Cloud revenue growth",
+      "value": 36.83223992502342,
+      "units": "percent",
+      "period": "CY2022, ended 2022-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-004",
+        "EVD-012"
+      ],
+      "calculation_id": "CALC-011"
+    },
+    {
+      "id": "FACT-026",
+      "statement": "Microsoft consolidated cash additions to property and equipment",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-06-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-006"
+      ],
+      "evidence_ids": [
+        "EVD-015"
+      ],
+      "value": -23886.0
+    },
+    {
+      "id": "FACT-027",
+      "statement": "Microsoft parent cash capital expenditure",
+      "value": 23886.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-06-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-006"
+      ],
+      "evidence_ids": [
+        "EVD-015"
+      ],
+      "calculation_id": "CALC-012"
+    },
+    {
+      "id": "FACT-028",
+      "statement": "Azure and other cloud services revenue growth, as reported",
+      "units": "percent",
+      "period": "FY2022, ended 2022-06-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-006"
+      ],
+      "evidence_ids": [
+        "EVD-016"
+      ],
+      "value": 45
+    },
+    {
+      "id": "FACT-029",
+      "statement": "AWS revenue",
+      "units": "USD millions",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-017"
+      ],
+      "value": 90757.0
+    },
+    {
+      "id": "FACT-030",
+      "statement": "AWS operating income",
+      "units": "USD millions",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-018"
+      ],
+      "value": 24631.0
+    },
+    {
+      "id": "FACT-031",
+      "statement": "Amazon consolidated parent capex signed",
+      "units": "USD millions",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-019"
+      ],
+      "value": -52729.0
+    },
+    {
+      "id": "FACT-032",
+      "statement": "Amazon cloud segment operating margin",
+      "value": 27.139504390845886,
+      "units": "percent",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-017",
+        "EVD-018"
+      ],
+      "calculation_id": "CALC-013"
+    },
+    {
+      "id": "FACT-033",
+      "statement": "Amazon parent cash capital expenditure",
+      "value": 52729.0,
+      "units": "USD millions",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-019"
+      ],
+      "calculation_id": "CALC-014"
+    },
+    {
+      "id": "FACT-034",
+      "statement": "AWS revenue growth",
+      "value": 13.310277666799841,
+      "units": "percent",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-009",
+        "EVD-017"
+      ],
+      "calculation_id": "CALC-015"
+    },
+    {
+      "id": "FACT-035",
+      "statement": "Google Cloud revenue",
+      "units": "USD millions",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-020"
+      ],
+      "value": 33088.0
+    },
+    {
+      "id": "FACT-036",
+      "statement": "Google Cloud operating income",
+      "units": "USD millions",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-021"
+      ],
+      "value": 1716.0
+    },
+    {
+      "id": "FACT-037",
+      "statement": "Alphabet consolidated parent capex signed",
+      "units": "USD millions",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-022"
+      ],
+      "value": -32251.0
+    },
+    {
+      "id": "FACT-038",
+      "statement": "Alphabet cloud segment operating margin",
+      "value": 5.1861702127659575,
+      "units": "percent",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-020",
+        "EVD-021"
+      ],
+      "calculation_id": "CALC-016"
+    },
+    {
+      "id": "FACT-039",
+      "statement": "Alphabet parent cash capital expenditure",
+      "value": 32251.0,
+      "units": "USD millions",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-022"
+      ],
+      "calculation_id": "CALC-017"
+    },
+    {
+      "id": "FACT-040",
+      "statement": "Google Cloud revenue growth",
+      "value": 25.905631659056326,
+      "units": "percent",
+      "period": "CY2023, ended 2023-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-012",
+        "EVD-020"
+      ],
+      "calculation_id": "CALC-018"
+    },
+    {
+      "id": "FACT-041",
+      "statement": "Microsoft consolidated cash additions to property and equipment",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-06-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-007"
+      ],
+      "evidence_ids": [
+        "EVD-023"
+      ],
+      "value": -28107.0
+    },
+    {
+      "id": "FACT-042",
+      "statement": "Microsoft parent cash capital expenditure",
+      "value": 28107.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-06-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-007"
+      ],
+      "evidence_ids": [
+        "EVD-023"
+      ],
+      "calculation_id": "CALC-019"
+    },
+    {
+      "id": "FACT-043",
+      "statement": "Azure and other cloud services revenue growth, as reported",
+      "units": "percent",
+      "period": "FY2023, ended 2023-06-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-007"
+      ],
+      "evidence_ids": [
+        "EVD-024"
+      ],
+      "value": 29
+    },
+    {
+      "id": "FACT-044",
+      "statement": "AWS revenue",
+      "units": "USD millions",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-025"
+      ],
+      "value": 107556.0
+    },
+    {
+      "id": "FACT-045",
+      "statement": "AWS operating income",
+      "units": "USD millions",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-026"
+      ],
+      "value": 39834.0
+    },
+    {
+      "id": "FACT-046",
+      "statement": "Amazon consolidated parent capex signed",
+      "units": "USD millions",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-027"
+      ],
+      "value": -82999.0
+    },
+    {
+      "id": "FACT-047",
+      "statement": "Amazon cloud segment operating margin",
+      "value": 37.03559076202164,
+      "units": "percent",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-025",
+        "EVD-026"
+      ],
+      "calculation_id": "CALC-020"
+    },
+    {
+      "id": "FACT-048",
+      "statement": "Amazon parent cash capital expenditure",
+      "value": 82999.0,
+      "units": "USD millions",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-027"
+      ],
+      "calculation_id": "CALC-021"
+    },
+    {
+      "id": "FACT-049",
+      "statement": "AWS revenue growth",
+      "value": 18.509867007503544,
+      "units": "percent",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-017",
+        "EVD-025"
+      ],
+      "calculation_id": "CALC-022"
+    },
+    {
+      "id": "FACT-050",
+      "statement": "Google Cloud revenue",
+      "units": "USD millions",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-028"
+      ],
+      "value": 43229.0
+    },
+    {
+      "id": "FACT-051",
+      "statement": "Google Cloud operating income",
+      "units": "USD millions",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-029"
+      ],
+      "value": 6112.0
+    },
+    {
+      "id": "FACT-052",
+      "statement": "Alphabet consolidated parent capex signed",
+      "units": "USD millions",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-030"
+      ],
+      "value": -52535.0
+    },
+    {
+      "id": "FACT-053",
+      "statement": "Alphabet cloud segment operating margin",
+      "value": 14.138656920123067,
+      "units": "percent",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-028",
+        "EVD-029"
+      ],
+      "calculation_id": "CALC-023"
+    },
+    {
+      "id": "FACT-054",
+      "statement": "Alphabet parent cash capital expenditure",
+      "value": 52535.0,
+      "units": "USD millions",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-030"
+      ],
+      "calculation_id": "CALC-024"
+    },
+    {
+      "id": "FACT-055",
+      "statement": "Google Cloud revenue growth",
+      "value": 30.648573500967125,
+      "units": "percent",
+      "period": "CY2024, ended 2024-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-020",
+        "EVD-028"
+      ],
+      "calculation_id": "CALC-025"
+    },
+    {
+      "id": "FACT-056",
+      "statement": "Microsoft consolidated cash additions to property and equipment",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-06-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-008"
+      ],
+      "evidence_ids": [
+        "EVD-031"
+      ],
+      "value": -44477.0
+    },
+    {
+      "id": "FACT-057",
+      "statement": "Microsoft parent cash capital expenditure",
+      "value": 44477.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-06-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-008"
+      ],
+      "evidence_ids": [
+        "EVD-031"
+      ],
+      "calculation_id": "CALC-026"
+    },
+    {
+      "id": "FACT-058",
+      "statement": "Azure and other cloud services revenue growth, as reported",
+      "units": "percent",
+      "period": "FY2024, ended 2024-06-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-008"
+      ],
+      "evidence_ids": [
+        "EVD-032"
+      ],
+      "value": 30
+    },
+    {
+      "id": "FACT-059",
+      "statement": "AWS revenue",
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-033"
+      ],
+      "value": 128725.0
+    },
+    {
+      "id": "FACT-060",
+      "statement": "AWS operating income",
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-034"
+      ],
+      "value": 45606.0
+    },
+    {
+      "id": "FACT-061",
+      "statement": "Amazon consolidated parent capex signed",
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-035"
+      ],
+      "value": -131819.0
+    },
+    {
+      "id": "FACT-062",
+      "statement": "Amazon cloud segment operating margin",
+      "value": 35.42901534278501,
+      "units": "percent",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-033",
+        "EVD-034"
+      ],
+      "calculation_id": "CALC-027"
+    },
+    {
+      "id": "FACT-063",
+      "statement": "Amazon parent cash capital expenditure",
+      "value": 131819.0,
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-035"
+      ],
+      "calculation_id": "CALC-028"
+    },
+    {
+      "id": "FACT-064",
+      "statement": "AWS revenue growth",
+      "value": 19.681840157685304,
+      "units": "percent",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-025",
+        "EVD-033"
+      ],
+      "calculation_id": "CALC-029"
+    },
+    {
+      "id": "FACT-065",
+      "statement": "Google Cloud revenue",
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-036"
+      ],
+      "value": 58705.0
+    },
+    {
+      "id": "FACT-066",
+      "statement": "Google Cloud operating income",
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-037"
+      ],
+      "value": 13910.0
+    },
+    {
+      "id": "FACT-067",
+      "statement": "Alphabet consolidated parent capex signed",
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-038"
+      ],
+      "value": -91447.0
+    },
+    {
+      "id": "FACT-068",
+      "statement": "Alphabet cloud segment operating margin",
+      "value": 23.69474491099566,
+      "units": "percent",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-036",
+        "EVD-037"
+      ],
+      "calculation_id": "CALC-030"
+    },
+    {
+      "id": "FACT-069",
+      "statement": "Alphabet parent cash capital expenditure",
+      "value": 91447.0,
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-038"
+      ],
+      "calculation_id": "CALC-031"
+    },
+    {
+      "id": "FACT-070",
+      "statement": "Google Cloud revenue growth",
+      "value": 35.80004163871475,
+      "units": "percent",
+      "period": "CY2025, ended 2025-12-31",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-028",
+        "EVD-036"
+      ],
+      "calculation_id": "CALC-032"
+    },
+    {
+      "id": "FACT-071",
+      "statement": "Microsoft consolidated cash additions to property and equipment",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-06-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-009"
+      ],
+      "evidence_ids": [
+        "EVD-039"
+      ],
+      "value": -64551.0
+    },
+    {
+      "id": "FACT-072",
+      "statement": "Microsoft parent cash capital expenditure",
+      "value": 64551.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-06-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-009"
+      ],
+      "evidence_ids": [
+        "EVD-039"
+      ],
+      "calculation_id": "CALC-033"
+    },
+    {
+      "id": "FACT-073",
+      "statement": "Azure and other cloud services revenue growth, as reported",
+      "units": "percent",
+      "period": "FY2025, ended 2025-06-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-009"
+      ],
+      "evidence_ids": [
+        "EVD-040"
+      ],
+      "value": 34
+    },
+    {
+      "id": "FACT-074",
+      "statement": "AWS revenue CAGR",
+      "value": 19.940163878754213,
+      "units": "percent",
+      "period": "CY2021–CY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-033"
+      ],
+      "calculation_id": "CALC-034"
+    },
+    {
+      "id": "FACT-075",
+      "statement": "AWS incremental annual revenue",
+      "value": 66523.0,
+      "units": "USD millions",
+      "period": "CY2021–CY2025",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-033"
+      ],
+      "calculation_id": "CALC-035"
+    },
+    {
+      "id": "FACT-076",
+      "statement": "Google Cloud revenue CAGR",
+      "value": 32.223771900253205,
+      "units": "percent",
+      "period": "CY2021–CY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-004",
+        "EVD-036"
+      ],
+      "calculation_id": "CALC-036"
+    },
+    {
+      "id": "FACT-077",
+      "statement": "Google Cloud incremental annual revenue",
+      "value": 39499.0,
+      "units": "USD millions",
+      "period": "CY2021–CY2025",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-004",
+        "EVD-036"
+      ],
+      "calculation_id": "CALC-037"
+    },
+    {
+      "id": "FACT-078",
+      "statement": "Azure annual revenue exceeded this disclosed threshold",
+      "units": "USD millions, strictly greater than",
+      "period": "FY2025, ended 2025-06-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-009"
+      ],
+      "evidence_ids": [
+        "EVD-041"
+      ],
+      "value": 75000
+    },
+    {
+      "id": "FACT-079",
+      "statement": "AWS business model and competition",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-042"
+      ]
+    },
+    {
+      "id": "FACT-080",
+      "statement": "Google Cloud scope",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-043"
+      ]
+    },
+    {
+      "id": "FACT-081",
+      "statement": "Azure scope and Microsoft distribution",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-009"
+      ],
+      "evidence_ids": [
+        "EVD-044"
+      ]
+    },
+    {
+      "id": "FACT-082",
+      "statement": "Cloud cost allocation and historical restatement",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-045"
+      ]
+    },
+    {
+      "id": "FACT-083",
+      "statement": "AI costs are not wholly in Google Cloud",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-046"
+      ]
+    },
+    {
+      "id": "FACT-084",
+      "statement": "Management explanation of Google Cloud growth",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-047"
+      ]
+    },
+    {
+      "id": "FACT-085",
+      "statement": "AWS depreciation policy changed",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "evidence_ids": [
+        "EVD-048"
+      ]
+    },
+    {
+      "id": "FACT-086",
+      "statement": "Microsoft describes an AI infrastructure investment cycle",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-009"
+      ],
+      "evidence_ids": [
+        "EVD-049"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "key": "g25",
+      "type": "annual-report",
+      "title": "Alphabet FY2025 Form 10-K",
+      "publisher": "Alphabet",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+      "retrieved_at": "2026-09-03T19:45:45.483632+00:00",
+      "as_of_date": "2026-09-03",
+      "primary": true,
+      "sha256": "c2f6301004f35411a20611c14ff01d80a85c0bcbab6053c80d8cc7f6fc747161",
+      "license_or_terms": "Public issuer disclosure; example contains attributed factual extracts, not full source documents. No issuer endorsement.",
+      "notes": "Reused integrity-checked local primary filing, re-extracted for this run"
+    },
+    {
+      "id": "SRC-002",
+      "key": "g23",
+      "type": "annual-report",
+      "title": "Alphabet FY2023 Form 10-K",
+      "publisher": "Alphabet",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/goog-20231231.htm",
+      "retrieved_at": "2026-09-03T19:45:47.884212+00:00",
+      "as_of_date": "2026-09-03",
+      "primary": true,
+      "sha256": "787dd59d770312b204d144b4c78b8de23db1e1d53aae4bf37a52d6d874e903b2",
+      "license_or_terms": "Public issuer disclosure; example contains attributed factual extracts, not full source documents. No issuer endorsement.",
+      "notes": "Reused integrity-checked local primary filing, re-extracted for this run"
+    },
+    {
+      "id": "SRC-003",
+      "key": "am25",
+      "type": "annual-report",
+      "title": "Amazon FY2025 Form 10-K",
+      "publisher": "Amazon",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+      "retrieved_at": "2026-09-03T19:45:57.330168+00:00",
+      "as_of_date": "2026-09-03",
+      "primary": true,
+      "sha256": "beb1bfc28558135e76882db0cf36ba72a1ab44e2144fe37534f4da1e120ddb57",
+      "license_or_terms": "Public issuer disclosure; example contains attributed factual extracts, not full source documents. No issuer endorsement.",
+      "notes": "Reused integrity-checked local primary filing, re-extracted for this run"
+    },
+    {
+      "id": "SRC-004",
+      "key": "am23",
+      "type": "annual-report",
+      "title": "Amazon FY2023 Form 10-K",
+      "publisher": "Amazon",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+      "retrieved_at": "2026-09-03T19:45:56.194601+00:00",
+      "as_of_date": "2026-09-03",
+      "primary": true,
+      "sha256": "a469a0feca6dd5728b10c73076c2c120db58116938614c5b1b864fe13674266d",
+      "license_or_terms": "Public issuer disclosure; example contains attributed factual extracts, not full source documents. No issuer endorsement.",
+      "notes": "Reused integrity-checked local primary filing, re-extracted for this run"
+    },
+    {
+      "id": "SRC-005",
+      "key": "m21",
+      "type": "annual-report",
+      "title": "Microsoft FY2021 annual report",
+      "publisher": "Microsoft",
+      "url": "https://www.microsoft.com/investor/reports/ar21/index.html",
+      "retrieved_at": "2026-09-04T02:41:27.557942+00:00",
+      "as_of_date": "2026-09-03",
+      "primary": true,
+      "sha256": "1b6db1bd35aa5c5f6fb5867fb525a951d04844fa49f726af354b70e02b026e2a",
+      "license_or_terms": "Public issuer disclosure; example contains attributed factual extracts, not full source documents. No issuer endorsement.",
+      "notes": "Fetched official issuer annual report"
+    },
+    {
+      "id": "SRC-006",
+      "key": "m22",
+      "type": "annual-report",
+      "title": "Microsoft FY2022 annual report",
+      "publisher": "Microsoft",
+      "url": "https://www.microsoft.com/investor/reports/ar22/index.html",
+      "retrieved_at": "2026-09-04T02:41:28.002561+00:00",
+      "as_of_date": "2026-09-03",
+      "primary": true,
+      "sha256": "929b24a9bf4faaa417610223e13b1e72ac28976faec016f7f307425e829491f2",
+      "license_or_terms": "Public issuer disclosure; example contains attributed factual extracts, not full source documents. No issuer endorsement.",
+      "notes": "Fetched official issuer annual report"
+    },
+    {
+      "id": "SRC-007",
+      "key": "m23",
+      "type": "annual-report",
+      "title": "Microsoft FY2023 annual report",
+      "publisher": "Microsoft",
+      "url": "https://www.microsoft.com/investor/reports/ar23/index.html",
+      "retrieved_at": "2026-09-04T02:41:28.607519+00:00",
+      "as_of_date": "2026-09-03",
+      "primary": true,
+      "sha256": "5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f",
+      "license_or_terms": "Public issuer disclosure; example contains attributed factual extracts, not full source documents. No issuer endorsement.",
+      "notes": "Fetched official issuer annual report"
+    },
+    {
+      "id": "SRC-008",
+      "key": "m24",
+      "type": "annual-report",
+      "title": "Microsoft FY2024 annual report",
+      "publisher": "Microsoft",
+      "url": "https://www.microsoft.com/investor/reports/ar24/index.html",
+      "retrieved_at": "2026-09-04T02:41:29.092247+00:00",
+      "as_of_date": "2026-09-03",
+      "primary": true,
+      "sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+      "license_or_terms": "Public issuer disclosure; example contains attributed factual extracts, not full source documents. No issuer endorsement.",
+      "notes": "Fetched official issuer annual report"
+    },
+    {
+      "id": "SRC-009",
+      "key": "m25",
+      "type": "annual-report",
+      "title": "Microsoft FY2025 annual report",
+      "publisher": "Microsoft",
+      "url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "retrieved_at": "2026-09-04T02:41:29.507899+00:00",
+      "as_of_date": "2026-09-03",
+      "primary": true,
+      "sha256": "564154a15ac28c0f7f72f304ae26b74c29cfca9f3eafe8d59595776769d621ca",
+      "license_or_terms": "Public issuer disclosure; example contains attributed factual extracts, not full source documents. No issuer endorsement.",
+      "notes": "Fetched official issuer annual report"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EVD-001",
+      "source_id": "SRC-004",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 600, numeric column 0; CY2021, ended 2021-12-31",
+      "content": "AWS revenue: 62202.0 USD millions; CY2021, ended 2021-12-31.",
+      "table_row_index": 600,
+      "numeric_column_index": 0,
+      "source_key": "am23"
+    },
+    {
+      "id": "EVD-002",
+      "source_id": "SRC-004",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 602, numeric column 0; CY2021, ended 2021-12-31",
+      "content": "AWS operating income: 18532.0 USD millions; CY2021, ended 2021-12-31.",
+      "table_row_index": 602,
+      "numeric_column_index": 0,
+      "source_key": "am23"
+    },
+    {
+      "id": "EVD-003",
+      "source_id": "SRC-004",
+      "locator": "Consolidated cash flows, cash purchases of property and equipment; extracted HTML table row 223, numeric column 0; CY2021, ended 2021-12-31",
+      "content": "Amazon consolidated parent capex signed: -61053.0 USD millions; CY2021, ended 2021-12-31.",
+      "table_row_index": 223,
+      "numeric_column_index": 0,
+      "source_key": "am23"
+    },
+    {
+      "id": "EVD-004",
+      "source_id": "SRC-002",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 378, numeric column 0; CY2021, ended 2021-12-31",
+      "content": "Google Cloud revenue: 19206.0 USD millions; CY2021, ended 2021-12-31.",
+      "table_row_index": 378,
+      "numeric_column_index": 0,
+      "source_key": "g23"
+    },
+    {
+      "id": "EVD-005",
+      "source_id": "SRC-002",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 813, numeric column 0; CY2021, ended 2021-12-31",
+      "content": "Google Cloud operating income: -2282.0 USD millions; CY2021, ended 2021-12-31.",
+      "table_row_index": 813,
+      "numeric_column_index": 0,
+      "source_key": "g23"
+    },
+    {
+      "id": "EVD-006",
+      "source_id": "SRC-002",
+      "locator": "Consolidated cash flows, cash purchases of property and equipment; extracted HTML table row 341, numeric column 0; CY2021, ended 2021-12-31",
+      "content": "Alphabet consolidated parent capex signed: -24640.0 USD millions; CY2021, ended 2021-12-31.",
+      "table_row_index": 341,
+      "numeric_column_index": 0,
+      "source_key": "g23"
+    },
+    {
+      "id": "EVD-007",
+      "source_id": "SRC-005",
+      "locator": "Consolidated statements of cash flows; extracted HTML table row 214, numeric column 0; FY2021, ended 2021-06-30",
+      "content": "Microsoft consolidated cash additions to property and equipment: -20622.0 USD millions; FY2021, ended 2021-06-30.",
+      "table_row_index": 214,
+      "numeric_column_index": 0,
+      "source_key": "m21"
+    },
+    {
+      "id": "EVD-008",
+      "source_id": "SRC-005",
+      "locator": "MD&A, Intelligent Cloud results",
+      "content": "Annual report states 50% revenue growth for Azure (FY2021) / Azure and other cloud services (subsequent reports); as-reported metric, not a restated fixed-scope series."
+    },
+    {
+      "id": "EVD-009",
+      "source_id": "SRC-004",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 600, numeric column 1; CY2022, ended 2022-12-31",
+      "content": "AWS revenue: 80096.0 USD millions; CY2022, ended 2022-12-31.",
+      "table_row_index": 600,
+      "numeric_column_index": 1,
+      "source_key": "am23"
+    },
+    {
+      "id": "EVD-010",
+      "source_id": "SRC-004",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 602, numeric column 1; CY2022, ended 2022-12-31",
+      "content": "AWS operating income: 22841.0 USD millions; CY2022, ended 2022-12-31.",
+      "table_row_index": 602,
+      "numeric_column_index": 1,
+      "source_key": "am23"
+    },
+    {
+      "id": "EVD-011",
+      "source_id": "SRC-004",
+      "locator": "Consolidated cash flows, cash purchases of property and equipment; extracted HTML table row 223, numeric column 1; CY2022, ended 2022-12-31",
+      "content": "Amazon consolidated parent capex signed: -63645.0 USD millions; CY2022, ended 2022-12-31.",
+      "table_row_index": 223,
+      "numeric_column_index": 1,
+      "source_key": "am23"
+    },
+    {
+      "id": "EVD-012",
+      "source_id": "SRC-002",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 378, numeric column 1; CY2022, ended 2022-12-31",
+      "content": "Google Cloud revenue: 26280.0 USD millions; CY2022, ended 2022-12-31.",
+      "table_row_index": 378,
+      "numeric_column_index": 1,
+      "source_key": "g23"
+    },
+    {
+      "id": "EVD-013",
+      "source_id": "SRC-002",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 813, numeric column 1; CY2022, ended 2022-12-31",
+      "content": "Google Cloud operating income: -1922.0 USD millions; CY2022, ended 2022-12-31.",
+      "table_row_index": 813,
+      "numeric_column_index": 1,
+      "source_key": "g23"
+    },
+    {
+      "id": "EVD-014",
+      "source_id": "SRC-002",
+      "locator": "Consolidated cash flows, cash purchases of property and equipment; extracted HTML table row 341, numeric column 1; CY2022, ended 2022-12-31",
+      "content": "Alphabet consolidated parent capex signed: -31485.0 USD millions; CY2022, ended 2022-12-31.",
+      "table_row_index": 341,
+      "numeric_column_index": 1,
+      "source_key": "g23"
+    },
+    {
+      "id": "EVD-015",
+      "source_id": "SRC-006",
+      "locator": "Consolidated statements of cash flows; extracted HTML table row 212, numeric column 0; FY2022, ended 2022-06-30",
+      "content": "Microsoft consolidated cash additions to property and equipment: -23886.0 USD millions; FY2022, ended 2022-06-30.",
+      "table_row_index": 212,
+      "numeric_column_index": 0,
+      "source_key": "m22"
+    },
+    {
+      "id": "EVD-016",
+      "source_id": "SRC-006",
+      "locator": "MD&A, Intelligent Cloud results",
+      "content": "Annual report states 45% revenue growth for Azure (FY2021) / Azure and other cloud services (subsequent reports); as-reported metric, not a restated fixed-scope series."
+    },
+    {
+      "id": "EVD-017",
+      "source_id": "SRC-003",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 603, numeric column 0; CY2023, ended 2023-12-31",
+      "content": "AWS revenue: 90757.0 USD millions; CY2023, ended 2023-12-31.",
+      "table_row_index": 603,
+      "numeric_column_index": 0,
+      "source_key": "am25"
+    },
+    {
+      "id": "EVD-018",
+      "source_id": "SRC-003",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 605, numeric column 0; CY2023, ended 2023-12-31",
+      "content": "AWS operating income: 24631.0 USD millions; CY2023, ended 2023-12-31.",
+      "table_row_index": 605,
+      "numeric_column_index": 0,
+      "source_key": "am25"
+    },
+    {
+      "id": "EVD-019",
+      "source_id": "SRC-003",
+      "locator": "Consolidated cash flows, cash purchases of property and equipment; extracted HTML table row 200, numeric column 0; CY2023, ended 2023-12-31",
+      "content": "Amazon consolidated parent capex signed: -52729.0 USD millions; CY2023, ended 2023-12-31.",
+      "table_row_index": 200,
+      "numeric_column_index": 0,
+      "source_key": "am25"
+    },
+    {
+      "id": "EVD-020",
+      "source_id": "SRC-001",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 375, numeric column 0; CY2023, ended 2023-12-31",
+      "content": "Google Cloud revenue: 33088.0 USD millions; CY2023, ended 2023-12-31.",
+      "table_row_index": 375,
+      "numeric_column_index": 0,
+      "source_key": "g25"
+    },
+    {
+      "id": "EVD-021",
+      "source_id": "SRC-001",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 873, numeric column 0; CY2023, ended 2023-12-31",
+      "content": "Google Cloud operating income: 1716.0 USD millions; CY2023, ended 2023-12-31.",
+      "table_row_index": 873,
+      "numeric_column_index": 0,
+      "source_key": "g25"
+    },
+    {
+      "id": "EVD-022",
+      "source_id": "SRC-001",
+      "locator": "Consolidated cash flows, cash purchases of property and equipment; extracted HTML table row 337, numeric column 0; CY2023, ended 2023-12-31",
+      "content": "Alphabet consolidated parent capex signed: -32251.0 USD millions; CY2023, ended 2023-12-31.",
+      "table_row_index": 337,
+      "numeric_column_index": 0,
+      "source_key": "g25"
+    },
+    {
+      "id": "EVD-023",
+      "source_id": "SRC-007",
+      "locator": "Consolidated statements of cash flows; extracted HTML table row 220, numeric column 0; FY2023, ended 2023-06-30",
+      "content": "Microsoft consolidated cash additions to property and equipment: -28107.0 USD millions; FY2023, ended 2023-06-30.",
+      "table_row_index": 220,
+      "numeric_column_index": 0,
+      "source_key": "m23"
+    },
+    {
+      "id": "EVD-024",
+      "source_id": "SRC-007",
+      "locator": "MD&A, Intelligent Cloud results",
+      "content": "Annual report states 29% revenue growth for Azure (FY2021) / Azure and other cloud services (subsequent reports); as-reported metric, not a restated fixed-scope series."
+    },
+    {
+      "id": "EVD-025",
+      "source_id": "SRC-003",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 603, numeric column 1; CY2024, ended 2024-12-31",
+      "content": "AWS revenue: 107556.0 USD millions; CY2024, ended 2024-12-31.",
+      "table_row_index": 603,
+      "numeric_column_index": 1,
+      "source_key": "am25"
+    },
+    {
+      "id": "EVD-026",
+      "source_id": "SRC-003",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 605, numeric column 1; CY2024, ended 2024-12-31",
+      "content": "AWS operating income: 39834.0 USD millions; CY2024, ended 2024-12-31.",
+      "table_row_index": 605,
+      "numeric_column_index": 1,
+      "source_key": "am25"
+    },
+    {
+      "id": "EVD-027",
+      "source_id": "SRC-003",
+      "locator": "Consolidated cash flows, cash purchases of property and equipment; extracted HTML table row 200, numeric column 1; CY2024, ended 2024-12-31",
+      "content": "Amazon consolidated parent capex signed: -82999.0 USD millions; CY2024, ended 2024-12-31.",
+      "table_row_index": 200,
+      "numeric_column_index": 1,
+      "source_key": "am25"
+    },
+    {
+      "id": "EVD-028",
+      "source_id": "SRC-001",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 375, numeric column 1; CY2024, ended 2024-12-31",
+      "content": "Google Cloud revenue: 43229.0 USD millions; CY2024, ended 2024-12-31.",
+      "table_row_index": 375,
+      "numeric_column_index": 1,
+      "source_key": "g25"
+    },
+    {
+      "id": "EVD-029",
+      "source_id": "SRC-001",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 873, numeric column 1; CY2024, ended 2024-12-31",
+      "content": "Google Cloud operating income: 6112.0 USD millions; CY2024, ended 2024-12-31.",
+      "table_row_index": 873,
+      "numeric_column_index": 1,
+      "source_key": "g25"
+    },
+    {
+      "id": "EVD-030",
+      "source_id": "SRC-001",
+      "locator": "Consolidated cash flows, cash purchases of property and equipment; extracted HTML table row 337, numeric column 1; CY2024, ended 2024-12-31",
+      "content": "Alphabet consolidated parent capex signed: -52535.0 USD millions; CY2024, ended 2024-12-31.",
+      "table_row_index": 337,
+      "numeric_column_index": 1,
+      "source_key": "g25"
+    },
+    {
+      "id": "EVD-031",
+      "source_id": "SRC-008",
+      "locator": "Consolidated statements of cash flows; extracted HTML table row 220, numeric column 0; FY2024, ended 2024-06-30",
+      "content": "Microsoft consolidated cash additions to property and equipment: -44477.0 USD millions; FY2024, ended 2024-06-30.",
+      "table_row_index": 220,
+      "numeric_column_index": 0,
+      "source_key": "m24"
+    },
+    {
+      "id": "EVD-032",
+      "source_id": "SRC-008",
+      "locator": "MD&A, Intelligent Cloud results",
+      "content": "Annual report states 30% revenue growth for Azure (FY2021) / Azure and other cloud services (subsequent reports); as-reported metric, not a restated fixed-scope series."
+    },
+    {
+      "id": "EVD-033",
+      "source_id": "SRC-003",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 603, numeric column 2; CY2025, ended 2025-12-31",
+      "content": "AWS revenue: 128725.0 USD millions; CY2025, ended 2025-12-31.",
+      "table_row_index": 603,
+      "numeric_column_index": 2,
+      "source_key": "am25"
+    },
+    {
+      "id": "EVD-034",
+      "source_id": "SRC-003",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 605, numeric column 2; CY2025, ended 2025-12-31",
+      "content": "AWS operating income: 45606.0 USD millions; CY2025, ended 2025-12-31.",
+      "table_row_index": 605,
+      "numeric_column_index": 2,
+      "source_key": "am25"
+    },
+    {
+      "id": "EVD-035",
+      "source_id": "SRC-003",
+      "locator": "Consolidated cash flows, cash purchases of property and equipment; extracted HTML table row 200, numeric column 2; CY2025, ended 2025-12-31",
+      "content": "Amazon consolidated parent capex signed: -131819.0 USD millions; CY2025, ended 2025-12-31.",
+      "table_row_index": 200,
+      "numeric_column_index": 2,
+      "source_key": "am25"
+    },
+    {
+      "id": "EVD-036",
+      "source_id": "SRC-001",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 375, numeric column 2; CY2025, ended 2025-12-31",
+      "content": "Google Cloud revenue: 58705.0 USD millions; CY2025, ended 2025-12-31.",
+      "table_row_index": 375,
+      "numeric_column_index": 2,
+      "source_key": "g25"
+    },
+    {
+      "id": "EVD-037",
+      "source_id": "SRC-001",
+      "locator": "Segment information, revenue and operating income; extracted HTML table row 873, numeric column 2; CY2025, ended 2025-12-31",
+      "content": "Google Cloud operating income: 13910.0 USD millions; CY2025, ended 2025-12-31.",
+      "table_row_index": 873,
+      "numeric_column_index": 2,
+      "source_key": "g25"
+    },
+    {
+      "id": "EVD-038",
+      "source_id": "SRC-001",
+      "locator": "Consolidated cash flows, cash purchases of property and equipment; extracted HTML table row 337, numeric column 2; CY2025, ended 2025-12-31",
+      "content": "Alphabet consolidated parent capex signed: -91447.0 USD millions; CY2025, ended 2025-12-31.",
+      "table_row_index": 337,
+      "numeric_column_index": 2,
+      "source_key": "g25"
+    },
+    {
+      "id": "EVD-039",
+      "source_id": "SRC-009",
+      "locator": "Consolidated statements of cash flows; extracted HTML table row 211, numeric column 0; FY2025, ended 2025-06-30",
+      "content": "Microsoft consolidated cash additions to property and equipment: -64551.0 USD millions; FY2025, ended 2025-06-30.",
+      "table_row_index": 211,
+      "numeric_column_index": 0,
+      "source_key": "m25"
+    },
+    {
+      "id": "EVD-040",
+      "source_id": "SRC-009",
+      "locator": "MD&A, Intelligent Cloud results",
+      "content": "Annual report states 34% revenue growth for Azure (FY2021) / Azure and other cloud services (subsequent reports); as-reported metric, not a restated fixed-scope series."
+    },
+    {
+      "id": "EVD-041",
+      "source_id": "SRC-009",
+      "locator": "CEO letter, financial performance",
+      "content": "Microsoft says Azure annual revenue surpassed $75 billion. This is a lower bound, not an exact amount."
+    },
+    {
+      "id": "EVD-042",
+      "source_id": "SRC-003",
+      "locator": "Item 1, Business, AWS segment; Competition",
+      "content": "AWS sells technology services including compute, storage, databases and analytics to enterprises, governments, start-ups and other customers. Competition includes infrastructure and cloud service providers."
+    },
+    {
+      "id": "EVD-043",
+      "source_id": "SRC-001",
+      "locator": "Note 15, segment information",
+      "content": "Google Cloud includes Google Cloud Platform, Google Workspace and other enterprise services; revenue includes consumption and subscriptions."
+    },
+    {
+      "id": "EVD-044",
+      "source_id": "SRC-009",
+      "locator": "Business, Intelligent Cloud and Productivity and Business Processes; Metrics",
+      "content": "Azure and other cloud services includes cloud and AI consumption services, GitHub cloud, Nuance Healthcare cloud and other services. Microsoft 365 is reported separately; Microsoft changed segment presentation for FY2025."
+    },
+    {
+      "id": "EVD-045",
+      "source_id": "SRC-002",
+      "locator": "Note 15, segment information",
+      "content": "Alphabet simplified cost allocation in Q1 2023 and recast prior periods. Certain group-level costs are not assigned to operating segments."
+    },
+    {
+      "id": "EVD-046",
+      "source_id": "SRC-001",
+      "locator": "Item 7, segment results; Note 15",
+      "content": "Alphabet-level activities primarily include shared AI research and development expenses. Google Cloud is therefore not a fully loaded standalone AI profit and loss statement."
+    },
+    {
+      "id": "EVD-047",
+      "source_id": "SRC-001",
+      "locator": "Item 7, revenues, Google Cloud",
+      "content": "Management attributes the CY2025 revenue increase mainly to GCP growth in infrastructure and platform services, not exclusively to AI."
+    },
+    {
+      "id": "EVD-048",
+      "source_id": "SRC-003",
+      "locator": "Note 1, Property and Equipment",
+      "content": "Server useful life increased from five to six years in 2024; a subset of servers and network equipment changed from six to five years in 2025. Reported margins therefore reflect accounting estimates as well as operations."
+    },
+    {
+      "id": "EVD-049",
+      "source_id": "SRC-009",
+      "locator": "MD&A, industry trends and opportunities; cash flows; Note 14, leases",
+      "content": "Management describes increased investment in AI infrastructure. Cash property additions exclude non-cash finance-lease additions and are not Azure-only expenditure."
+    }
+  ],
+  "calculations": [
+    {
+      "id": "CALC-001",
+      "description": "Amazon cloud segment operating margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-002",
+        "FACT-001"
+      ],
+      "result": 29.79325423619819,
+      "units": "percent",
+      "period": "CY2021, ended 2021-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-002",
+      "description": "Amazon parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-003"
+      ],
+      "result": 61053.0,
+      "units": "USD millions",
+      "period": "CY2021, ended 2021-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-003",
+      "description": "Alphabet cloud segment operating margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-007",
+        "FACT-006"
+      ],
+      "result": -11.881703634280955,
+      "units": "percent",
+      "period": "CY2021, ended 2021-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-004",
+      "description": "Alphabet parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-008"
+      ],
+      "result": 24640.0,
+      "units": "USD millions",
+      "period": "CY2021, ended 2021-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-005",
+      "description": "Microsoft parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-011"
+      ],
+      "result": 20622.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-06-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-006",
+      "description": "Amazon cloud segment operating margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-015",
+        "FACT-014"
+      ],
+      "result": 28.517029564522574,
+      "units": "percent",
+      "period": "CY2022, ended 2022-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-007",
+      "description": "Amazon parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-016"
+      ],
+      "result": 63645.0,
+      "units": "USD millions",
+      "period": "CY2022, ended 2022-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-008",
+      "description": "AWS revenue growth",
+      "expression": "(v[1]/v[0]-1)*100",
+      "input_fact_ids": [
+        "FACT-001",
+        "FACT-014"
+      ],
+      "result": 28.767563743931056,
+      "units": "percent",
+      "period": "CY2022, ended 2022-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-009",
+      "description": "Alphabet cloud segment operating margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-021",
+        "FACT-020"
+      ],
+      "result": -7.313546423135464,
+      "units": "percent",
+      "period": "CY2022, ended 2022-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-010",
+      "description": "Alphabet parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-022"
+      ],
+      "result": 31485.0,
+      "units": "USD millions",
+      "period": "CY2022, ended 2022-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-011",
+      "description": "Google Cloud revenue growth",
+      "expression": "(v[1]/v[0]-1)*100",
+      "input_fact_ids": [
+        "FACT-006",
+        "FACT-020"
+      ],
+      "result": 36.83223992502342,
+      "units": "percent",
+      "period": "CY2022, ended 2022-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-012",
+      "description": "Microsoft parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-026"
+      ],
+      "result": 23886.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-06-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-013",
+      "description": "Amazon cloud segment operating margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-030",
+        "FACT-029"
+      ],
+      "result": 27.139504390845886,
+      "units": "percent",
+      "period": "CY2023, ended 2023-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-014",
+      "description": "Amazon parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-031"
+      ],
+      "result": 52729.0,
+      "units": "USD millions",
+      "period": "CY2023, ended 2023-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-015",
+      "description": "AWS revenue growth",
+      "expression": "(v[1]/v[0]-1)*100",
+      "input_fact_ids": [
+        "FACT-014",
+        "FACT-029"
+      ],
+      "result": 13.310277666799841,
+      "units": "percent",
+      "period": "CY2023, ended 2023-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-016",
+      "description": "Alphabet cloud segment operating margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-036",
+        "FACT-035"
+      ],
+      "result": 5.1861702127659575,
+      "units": "percent",
+      "period": "CY2023, ended 2023-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-017",
+      "description": "Alphabet parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-037"
+      ],
+      "result": 32251.0,
+      "units": "USD millions",
+      "period": "CY2023, ended 2023-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-018",
+      "description": "Google Cloud revenue growth",
+      "expression": "(v[1]/v[0]-1)*100",
+      "input_fact_ids": [
+        "FACT-020",
+        "FACT-035"
+      ],
+      "result": 25.905631659056326,
+      "units": "percent",
+      "period": "CY2023, ended 2023-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-019",
+      "description": "Microsoft parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-041"
+      ],
+      "result": 28107.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-06-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-020",
+      "description": "Amazon cloud segment operating margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-045",
+        "FACT-044"
+      ],
+      "result": 37.03559076202164,
+      "units": "percent",
+      "period": "CY2024, ended 2024-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-021",
+      "description": "Amazon parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-046"
+      ],
+      "result": 82999.0,
+      "units": "USD millions",
+      "period": "CY2024, ended 2024-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-022",
+      "description": "AWS revenue growth",
+      "expression": "(v[1]/v[0]-1)*100",
+      "input_fact_ids": [
+        "FACT-029",
+        "FACT-044"
+      ],
+      "result": 18.509867007503544,
+      "units": "percent",
+      "period": "CY2024, ended 2024-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-023",
+      "description": "Alphabet cloud segment operating margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-051",
+        "FACT-050"
+      ],
+      "result": 14.138656920123067,
+      "units": "percent",
+      "period": "CY2024, ended 2024-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-024",
+      "description": "Alphabet parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-052"
+      ],
+      "result": 52535.0,
+      "units": "USD millions",
+      "period": "CY2024, ended 2024-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-025",
+      "description": "Google Cloud revenue growth",
+      "expression": "(v[1]/v[0]-1)*100",
+      "input_fact_ids": [
+        "FACT-035",
+        "FACT-050"
+      ],
+      "result": 30.648573500967125,
+      "units": "percent",
+      "period": "CY2024, ended 2024-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-026",
+      "description": "Microsoft parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-056"
+      ],
+      "result": 44477.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-06-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-027",
+      "description": "Amazon cloud segment operating margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-060",
+        "FACT-059"
+      ],
+      "result": 35.42901534278501,
+      "units": "percent",
+      "period": "CY2025, ended 2025-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-028",
+      "description": "Amazon parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-061"
+      ],
+      "result": 131819.0,
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-029",
+      "description": "AWS revenue growth",
+      "expression": "(v[1]/v[0]-1)*100",
+      "input_fact_ids": [
+        "FACT-044",
+        "FACT-059"
+      ],
+      "result": 19.681840157685304,
+      "units": "percent",
+      "period": "CY2025, ended 2025-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-030",
+      "description": "Alphabet cloud segment operating margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-066",
+        "FACT-065"
+      ],
+      "result": 23.69474491099566,
+      "units": "percent",
+      "period": "CY2025, ended 2025-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-031",
+      "description": "Alphabet parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-067"
+      ],
+      "result": 91447.0,
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-032",
+      "description": "Google Cloud revenue growth",
+      "expression": "(v[1]/v[0]-1)*100",
+      "input_fact_ids": [
+        "FACT-050",
+        "FACT-065"
+      ],
+      "result": 35.80004163871475,
+      "units": "percent",
+      "period": "CY2025, ended 2025-12-31",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-033",
+      "description": "Microsoft parent cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-071"
+      ],
+      "result": 64551.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-06-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-034",
+      "description": "AWS revenue CAGR",
+      "expression": "((v[1]/v[0])**0.25-1)*100",
+      "input_fact_ids": [
+        "FACT-001",
+        "FACT-059"
+      ],
+      "result": 19.940163878754213,
+      "units": "percent",
+      "period": "CY2021–CY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-035",
+      "description": "AWS incremental annual revenue",
+      "expression": "v[1]-v[0]",
+      "input_fact_ids": [
+        "FACT-001",
+        "FACT-059"
+      ],
+      "result": 66523.0,
+      "units": "USD millions",
+      "period": "CY2021–CY2025",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-036",
+      "description": "Google Cloud revenue CAGR",
+      "expression": "((v[1]/v[0])**0.25-1)*100",
+      "input_fact_ids": [
+        "FACT-006",
+        "FACT-065"
+      ],
+      "result": 32.223771900253205,
+      "units": "percent",
+      "period": "CY2021–CY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-037",
+      "description": "Google Cloud incremental annual revenue",
+      "expression": "v[1]-v[0]",
+      "input_fact_ids": [
+        "FACT-006",
+        "FACT-065"
+      ],
+      "result": 39499.0,
+      "units": "USD millions",
+      "period": "CY2021–CY2025",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    }
+  ],
+  "validation": {
+    "status": "PASS",
+    "validated_at": "2026-09-04T03:15:55Z",
+    "errors": 0,
+    "warnings": 0
+  }
+}

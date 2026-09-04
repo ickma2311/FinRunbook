@@ -1,0 +1,29 @@
+{
+  "result": "edited",
+  "completed_at": "2026-09-04T03:15:55.196781+00:00",
+  "reviewer": "Report-author English editorial pass; not an independent reviewer",
+  "languages": [
+    "en"
+  ],
+  "changes": [
+    {
+      "field": "executive_view.headline",
+      "before": "AWS leads on disclosed scale. Google Cloud closes part of the gap. Azure needs a separate lens.",
+      "after": "AWS leads on disclosed scale. Google Cloud grows faster. Azure needs a separate lens.",
+      "reason": "Faster percentage growth did not narrow the absolute revenue gap; avoid an ambiguous gap-closing claim."
+    },
+    {
+      "field": "methods[2].text",
+      "before": "Google Cloud FY2021–FY2022 operating results use the recast values in the 2023 annual filing; the overlapping 2023 values match the 2025 filing. Segment profit excludes some group costs. AWS useful-life changes also affect reported operating margins.",
+      "after": "Google Cloud CY2021–CY2022 operating results use the recast values in the 2023 annual filing; the overlapping 2023 values match the 2025 filing. Segment profit excludes some group costs. AWS useful-life changes also affect reported operating margins.",
+      "reason": "Use the explicit calendar-year label consistently."
+    }
+  ],
+  "protected_items_preserved": true,
+  "checks": [
+    "English throughout the report UI and prose",
+    "Facts, units, fiscal periods, formulas and provenance retained",
+    "Facts versus management explanations versus assessments distinguished",
+    "No promotional language, fabricated market shares or personalized price recommendation"
+  ]
+}

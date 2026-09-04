@@ -1,0 +1,23 @@
+{
+  "result": "edited",
+  "completed_at": "2026-09-04T03:15:55.133729+00:00",
+  "reviewer": "Report-author English editorial pass; not an independent reviewer",
+  "languages": [
+    "en"
+  ],
+  "changes": [
+    {
+      "field": "panels[2].text",
+      "before": "Free cash flow remained substantial, but did not compound at the pace of EPS. Five-year cash distributions exceeded cumulative free cash flow; that difference should be read alongside the balance sheet, not treated as proof of distress.",
+      "after": "Free cash flow remained substantial, but did not compound at the pace of EPS. Five-year cash distributions roughly matched cumulative free cash flow. The balance sheet provides context for the small excess of distributions over that measure.",
+      "reason": "Keep magnitude proportional: distributions exceeded FCF by only about 0.4%, not a large financing gap."
+    }
+  ],
+  "protected_items_preserved": true,
+  "checks": [
+    "English throughout the report UI and prose",
+    "Facts, units, fiscal periods, formulas and provenance retained",
+    "Facts versus management explanations versus assessments distinguished",
+    "No promotional language, fabricated market shares or personalized price recommendation"
+  ]
+}

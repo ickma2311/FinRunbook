@@ -1,0 +1,6264 @@
+{
+  "meta": {
+    "title": "Apple",
+    "subtitle": "How strong is the business behind the stock?",
+    "coverage_universe": "Apple Inc.; consolidated US GAAP financials",
+    "period_label": "FY2021–FY2025",
+    "kind": "apple",
+    "language": "en",
+    "as_of_date": "2026-09-03",
+    "decision_use": "Historical business and industry analysis; not a stock-price valuation",
+    "status": "complete"
+  },
+  "executive_view": {
+    "headline": "A stronger mix, a smaller share base — but modest top-line growth.",
+    "summary": "Apple’s historical strength is the combination of product scale, higher-margin Services and substantial cash generation. The numbers support business durability more clearly than rapid organic growth. They do not establish whether the stock is attractively priced.",
+    "fact_ids": [
+      "FACT-186",
+      "FACT-023",
+      "FACT-167",
+      "FACT-193",
+      "FACT-169"
+    ]
+  },
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "series": {
+    "2021": {
+      "revenue": "FACT-001",
+      "products": "FACT-002",
+      "services": "FACT-003",
+      "cogs": "FACT-004",
+      "services_cogs": "FACT-005",
+      "gross_profit": "FACT-006",
+      "operating_income": "FACT-007",
+      "net_income": "FACT-008",
+      "eps": "FACT-009",
+      "shares": "FACT-010",
+      "cfo": "FACT-011",
+      "capex_signed": "FACT-012",
+      "dividends_signed": "FACT-013",
+      "buybacks_signed": "FACT-014",
+      "rd": "FACT-015",
+      "sbc": "FACT-016",
+      "capex": "FACT-017",
+      "dividends": "FACT-018",
+      "buybacks": "FACT-019",
+      "operating_margin": "FACT-020",
+      "gross_margin": "FACT-021",
+      "net_margin": "FACT-022",
+      "services_mix": "FACT-023",
+      "services_margin": "FACT-024",
+      "fcf": "FACT-025",
+      "returns": "FACT-026",
+      "fcf_margin": "FACT-027",
+      "iPhone": "FACT-028",
+      "Mac": "FACT-029",
+      "iPad": "FACT-030",
+      "Wearables, Home and Accessories": "FACT-031",
+      "Americas": "FACT-032",
+      "Europe": "FACT-033",
+      "Greater China": "FACT-034",
+      "Japan": "FACT-035",
+      "Rest of Asia Pacific": "FACT-036"
+    },
+    "2022": {
+      "revenue": "FACT-037",
+      "products": "FACT-038",
+      "services": "FACT-039",
+      "cogs": "FACT-040",
+      "services_cogs": "FACT-041",
+      "gross_profit": "FACT-042",
+      "operating_income": "FACT-043",
+      "net_income": "FACT-044",
+      "eps": "FACT-045",
+      "shares": "FACT-046",
+      "cfo": "FACT-047",
+      "capex_signed": "FACT-048",
+      "dividends_signed": "FACT-049",
+      "buybacks_signed": "FACT-050",
+      "rd": "FACT-051",
+      "sbc": "FACT-052",
+      "capex": "FACT-053",
+      "dividends": "FACT-054",
+      "buybacks": "FACT-055",
+      "operating_margin": "FACT-056",
+      "gross_margin": "FACT-057",
+      "net_margin": "FACT-058",
+      "services_mix": "FACT-059",
+      "services_margin": "FACT-060",
+      "fcf": "FACT-061",
+      "returns": "FACT-062",
+      "fcf_margin": "FACT-063",
+      "iPhone": "FACT-064",
+      "Mac": "FACT-065",
+      "iPad": "FACT-066",
+      "Wearables, Home and Accessories": "FACT-067",
+      "Americas": "FACT-068",
+      "Europe": "FACT-069",
+      "Greater China": "FACT-070",
+      "Japan": "FACT-071",
+      "Rest of Asia Pacific": "FACT-072"
+    },
+    "2023": {
+      "revenue": "FACT-073",
+      "products": "FACT-074",
+      "services": "FACT-075",
+      "cogs": "FACT-076",
+      "services_cogs": "FACT-077",
+      "gross_profit": "FACT-078",
+      "operating_income": "FACT-079",
+      "net_income": "FACT-080",
+      "eps": "FACT-081",
+      "shares": "FACT-082",
+      "cfo": "FACT-083",
+      "capex_signed": "FACT-084",
+      "dividends_signed": "FACT-085",
+      "buybacks_signed": "FACT-086",
+      "rd": "FACT-087",
+      "sbc": "FACT-088",
+      "capex": "FACT-089",
+      "dividends": "FACT-090",
+      "buybacks": "FACT-091",
+      "operating_margin": "FACT-092",
+      "gross_margin": "FACT-093",
+      "net_margin": "FACT-094",
+      "services_mix": "FACT-095",
+      "services_margin": "FACT-096",
+      "fcf": "FACT-097",
+      "returns": "FACT-098",
+      "fcf_margin": "FACT-099",
+      "iPhone": "FACT-100",
+      "Mac": "FACT-101",
+      "iPad": "FACT-102",
+      "Wearables, Home and Accessories": "FACT-103",
+      "Americas": "FACT-104",
+      "Europe": "FACT-105",
+      "Greater China": "FACT-106",
+      "Japan": "FACT-107",
+      "Rest of Asia Pacific": "FACT-108"
+    },
+    "2024": {
+      "revenue": "FACT-109",
+      "products": "FACT-110",
+      "services": "FACT-111",
+      "cogs": "FACT-112",
+      "services_cogs": "FACT-113",
+      "gross_profit": "FACT-114",
+      "operating_income": "FACT-115",
+      "net_income": "FACT-116",
+      "eps": "FACT-117",
+      "shares": "FACT-118",
+      "cfo": "FACT-119",
+      "capex_signed": "FACT-120",
+      "dividends_signed": "FACT-121",
+      "buybacks_signed": "FACT-122",
+      "rd": "FACT-123",
+      "sbc": "FACT-124",
+      "capex": "FACT-125",
+      "dividends": "FACT-126",
+      "buybacks": "FACT-127",
+      "operating_margin": "FACT-128",
+      "gross_margin": "FACT-129",
+      "net_margin": "FACT-130",
+      "services_mix": "FACT-131",
+      "services_margin": "FACT-132",
+      "fcf": "FACT-133",
+      "returns": "FACT-134",
+      "fcf_margin": "FACT-135",
+      "iPhone": "FACT-136",
+      "Mac": "FACT-137",
+      "iPad": "FACT-138",
+      "Wearables, Home and Accessories": "FACT-139",
+      "Americas": "FACT-140",
+      "Europe": "FACT-141",
+      "Greater China": "FACT-142",
+      "Japan": "FACT-143",
+      "Rest of Asia Pacific": "FACT-144"
+    },
+    "2025": {
+      "revenue": "FACT-145",
+      "products": "FACT-146",
+      "services": "FACT-147",
+      "cogs": "FACT-148",
+      "services_cogs": "FACT-149",
+      "gross_profit": "FACT-150",
+      "operating_income": "FACT-151",
+      "net_income": "FACT-152",
+      "eps": "FACT-153",
+      "shares": "FACT-154",
+      "cfo": "FACT-155",
+      "capex_signed": "FACT-156",
+      "dividends_signed": "FACT-157",
+      "buybacks_signed": "FACT-158",
+      "rd": "FACT-159",
+      "sbc": "FACT-160",
+      "capex": "FACT-161",
+      "dividends": "FACT-162",
+      "buybacks": "FACT-163",
+      "operating_margin": "FACT-164",
+      "gross_margin": "FACT-165",
+      "net_margin": "FACT-166",
+      "services_mix": "FACT-167",
+      "services_margin": "FACT-168",
+      "fcf": "FACT-169",
+      "returns": "FACT-170",
+      "fcf_margin": "FACT-171",
+      "iPhone": "FACT-172",
+      "Mac": "FACT-173",
+      "iPad": "FACT-174",
+      "Wearables, Home and Accessories": "FACT-175",
+      "Americas": "FACT-176",
+      "Europe": "FACT-177",
+      "Greater China": "FACT-178",
+      "Japan": "FACT-179",
+      "Rest of Asia Pacific": "FACT-180"
+    }
+  },
+  "stats": {
+    "revenue_cagr": "FACT-186",
+    "services_cagr": "FACT-187",
+    "operating_income_cagr": "FACT-188",
+    "net_income_cagr": "FACT-189",
+    "fcf_cagr": "FACT-190",
+    "eps_cagr": "FACT-191",
+    "net_income_growth": "FACT-192",
+    "shares_change": "FACT-193",
+    "eps_growth": "FACT-194",
+    "services_increment": "FACT-195",
+    "returns_total": "FACT-196",
+    "fcf_total": "FACT-197"
+  },
+  "bridge": {
+    "start": "FACT-181",
+    "income": "FACT-182",
+    "shares": "FACT-183",
+    "end": "FACT-184",
+    "residual": "FACT-185"
+  },
+  "liquidity": {
+    "cash": "FACT-198",
+    "current_securities": "FACT-199",
+    "noncurrent_securities": "FACT-200",
+    "current_assets": "FACT-201",
+    "inventory": "FACT-202",
+    "current_liabilities": "FACT-203",
+    "commercial_paper": "FACT-204",
+    "current_term_debt": "FACT-205",
+    "long_term_debt": "FACT-206",
+    "liquid_assets": "FACT-207",
+    "funded_debt": "FACT-208",
+    "net_cash": "FACT-209",
+    "current_ratio": "FACT-210"
+  },
+  "panels": [
+    {
+      "title": "Services did most of the incremental work",
+      "text": "Revenue growth was modest, but the mix improved. Services supplied most of the net revenue increase and earned a substantially higher gross margin than the company overall.",
+      "fact_ids": [
+        "FACT-186",
+        "FACT-195",
+        "FACT-023",
+        "FACT-167",
+        "FACT-168",
+        "FACT-165",
+        "FACT-212"
+      ],
+      "tag": "Assessment"
+    },
+    {
+      "title": "EPS grew faster than the business",
+      "text": "Higher net income and fewer diluted shares both contributed. The bridge separates the two mathematically; the share-count effect is not a measure of buyback effectiveness, because employee equity issuance also affects the denominator.",
+      "fact_ids": [
+        "FACT-192",
+        "FACT-193",
+        "FACT-194",
+        "FACT-182",
+        "FACT-183"
+      ],
+      "tag": "Assessment"
+    },
+    {
+      "title": "Cash generation is strong, not steadily rising",
+      "text": "Free cash flow remained substantial, but did not compound at the pace of EPS. Five-year cash distributions roughly matched cumulative free cash flow. The balance sheet provides context for the small excess of distributions over that measure.",
+      "fact_ids": [
+        "FACT-190",
+        "FACT-196",
+        "FACT-197",
+        "FACT-209"
+      ],
+      "tag": "Assessment"
+    }
+  ],
+  "watches": [
+    {
+      "title": "Services growth and gross margin",
+      "text": "Monitor whether Services continues to outgrow total revenue without deterioration in its gross margin. A slowdown would weaken the principal historical source of mix improvement.",
+      "fact_ids": [
+        "FACT-147",
+        "FACT-167",
+        "FACT-168",
+        "FACT-212",
+        "FACT-213"
+      ],
+      "tag": "Monitor"
+    },
+    {
+      "title": "iPhone demand and Greater China",
+      "text": "Track iPhone revenue alongside Greater China revenue. Neither geography nor product revenue discloses unit volume, so changes cannot automatically be attributed to device demand or market-share losses.",
+      "fact_ids": [
+        "FACT-172",
+        "FACT-028",
+        "FACT-178",
+        "FACT-070"
+      ],
+      "tag": "Monitor"
+    },
+    {
+      "title": "Cash returns versus cash generation",
+      "text": "Compare cash buybacks plus dividends with free cash flow, net liquid assets and diluted shares. Repurchase authorizations are not cash expenditure, and fewer shares do not by themselves establish attractive repurchase prices.",
+      "fact_ids": [
+        "FACT-170",
+        "FACT-169",
+        "FACT-209",
+        "FACT-193"
+      ],
+      "tag": "Monitor"
+    }
+  ],
+  "sections": [
+    {
+      "id": "performance",
+      "title": "Five-year financial record"
+    },
+    {
+      "id": "mix",
+      "title": "Where growth came from"
+    },
+    {
+      "id": "eps",
+      "title": "An explicit EPS bridge"
+    },
+    {
+      "id": "capital",
+      "title": "Cash allocation"
+    },
+    {
+      "id": "monitor",
+      "title": "What to monitor"
+    }
+  ],
+  "methods": [
+    {
+      "title": "Periods and units",
+      "text": "Fiscal years end in September, not December. FY2023 contains 53 weeks; the other years shown contain 52. Dollar charts use billions; underlying facts use millions. All figures are historical nominal US dollars.",
+      "fact_ids": [
+        "FACT-214"
+      ]
+    },
+    {
+      "title": "What free cash flow means here",
+      "text": "Operating cash flow less cash payments for property, plant and equipment. This is an analyst-defined non-GAAP measure, not cash available after every obligation. Cash-flow-statement buybacks include settlement timing and can differ from the repurchase note.",
+      "fact_ids": [
+        "FACT-155",
+        "FACT-161",
+        "FACT-163"
+      ]
+    },
+    {
+      "title": "EPS bridge and tax distortion",
+      "text": "The sequential bridge applies net-income growth first at the FY2021 share count, then the share-count change at FY2025 net income. Order matters; the reported-EPS residual is shown rather than hidden. FY2024 included a one-time net tax charge, so FY2025 EPS growth is not a clean run-rate comparison.",
+      "fact_ids": [
+        "FACT-185",
+        "FACT-211"
+      ]
+    },
+    {
+      "title": "Scope of the conclusion",
+      "text": "No current stock price, valuation multiple, total shareholder return or forecast is used. Net cash excludes leases and other obligations; marketable securities are not all immediately available cash. Business quality is not the same as an attractive entry price.",
+      "fact_ids": [
+        "FACT-209"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0",
+  "fact_ids": [
+    "FACT-001",
+    "FACT-002",
+    "FACT-003",
+    "FACT-004",
+    "FACT-005",
+    "FACT-006",
+    "FACT-007",
+    "FACT-008",
+    "FACT-009",
+    "FACT-010",
+    "FACT-011",
+    "FACT-012",
+    "FACT-013",
+    "FACT-014",
+    "FACT-015",
+    "FACT-016",
+    "FACT-017",
+    "FACT-018",
+    "FACT-019",
+    "FACT-020",
+    "FACT-021",
+    "FACT-022",
+    "FACT-023",
+    "FACT-024",
+    "FACT-025",
+    "FACT-026",
+    "FACT-027",
+    "FACT-028",
+    "FACT-029",
+    "FACT-030",
+    "FACT-031",
+    "FACT-032",
+    "FACT-033",
+    "FACT-034",
+    "FACT-035",
+    "FACT-036",
+    "FACT-037",
+    "FACT-038",
+    "FACT-039",
+    "FACT-040",
+    "FACT-041",
+    "FACT-042",
+    "FACT-043",
+    "FACT-044",
+    "FACT-045",
+    "FACT-046",
+    "FACT-047",
+    "FACT-048",
+    "FACT-049",
+    "FACT-050",
+    "FACT-051",
+    "FACT-052",
+    "FACT-053",
+    "FACT-054",
+    "FACT-055",
+    "FACT-056",
+    "FACT-057",
+    "FACT-058",
+    "FACT-059",
+    "FACT-060",
+    "FACT-061",
+    "FACT-062",
+    "FACT-063",
+    "FACT-064",
+    "FACT-065",
+    "FACT-066",
+    "FACT-067",
+    "FACT-068",
+    "FACT-069",
+    "FACT-070",
+    "FACT-071",
+    "FACT-072",
+    "FACT-073",
+    "FACT-074",
+    "FACT-075",
+    "FACT-076",
+    "FACT-077",
+    "FACT-078",
+    "FACT-079",
+    "FACT-080",
+    "FACT-081",
+    "FACT-082",
+    "FACT-083",
+    "FACT-084",
+    "FACT-085",
+    "FACT-086",
+    "FACT-087",
+    "FACT-088",
+    "FACT-089",
+    "FACT-090",
+    "FACT-091",
+    "FACT-092",
+    "FACT-093",
+    "FACT-094",
+    "FACT-095",
+    "FACT-096",
+    "FACT-097",
+    "FACT-098",
+    "FACT-099",
+    "FACT-100",
+    "FACT-101",
+    "FACT-102",
+    "FACT-103",
+    "FACT-104",
+    "FACT-105",
+    "FACT-106",
+    "FACT-107",
+    "FACT-108",
+    "FACT-109",
+    "FACT-110",
+    "FACT-111",
+    "FACT-112",
+    "FACT-113",
+    "FACT-114",
+    "FACT-115",
+    "FACT-116",
+    "FACT-117",
+    "FACT-118",
+    "FACT-119",
+    "FACT-120",
+    "FACT-121",
+    "FACT-122",
+    "FACT-123",
+    "FACT-124",
+    "FACT-125",
+    "FACT-126",
+    "FACT-127",
+    "FACT-128",
+    "FACT-129",
+    "FACT-130",
+    "FACT-131",
+    "FACT-132",
+    "FACT-133",
+    "FACT-134",
+    "FACT-135",
+    "FACT-136",
+    "FACT-137",
+    "FACT-138",
+    "FACT-139",
+    "FACT-140",
+    "FACT-141",
+    "FACT-142",
+    "FACT-143",
+    "FACT-144",
+    "FACT-145",
+    "FACT-146",
+    "FACT-147",
+    "FACT-148",
+    "FACT-149",
+    "FACT-150",
+    "FACT-151",
+    "FACT-152",
+    "FACT-153",
+    "FACT-154",
+    "FACT-155",
+    "FACT-156",
+    "FACT-157",
+    "FACT-158",
+    "FACT-159",
+    "FACT-160",
+    "FACT-161",
+    "FACT-162",
+    "FACT-163",
+    "FACT-164",
+    "FACT-165",
+    "FACT-166",
+    "FACT-167",
+    "FACT-168",
+    "FACT-169",
+    "FACT-170",
+    "FACT-171",
+    "FACT-172",
+    "FACT-173",
+    "FACT-174",
+    "FACT-175",
+    "FACT-176",
+    "FACT-177",
+    "FACT-178",
+    "FACT-179",
+    "FACT-180",
+    "FACT-181",
+    "FACT-182",
+    "FACT-183",
+    "FACT-184",
+    "FACT-185",
+    "FACT-186",
+    "FACT-187",
+    "FACT-188",
+    "FACT-189",
+    "FACT-190",
+    "FACT-191",
+    "FACT-192",
+    "FACT-193",
+    "FACT-194",
+    "FACT-195",
+    "FACT-196",
+    "FACT-197",
+    "FACT-198",
+    "FACT-199",
+    "FACT-200",
+    "FACT-201",
+    "FACT-202",
+    "FACT-203",
+    "FACT-204",
+    "FACT-205",
+    "FACT-206",
+    "FACT-207",
+    "FACT-208",
+    "FACT-209",
+    "FACT-210",
+    "FACT-211",
+    "FACT-212",
+    "FACT-213",
+    "FACT-214"
+  ],
+  "source_ids": [
+    "SRC-001",
+    "SRC-002"
+  ],
+  "facts": [
+    {
+      "id": "FACT-001",
+      "statement": "Revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-001"
+      ],
+      "value": 365817.0
+    },
+    {
+      "id": "FACT-002",
+      "statement": "Products revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-002"
+      ],
+      "value": 297392.0
+    },
+    {
+      "id": "FACT-003",
+      "statement": "Services revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-003"
+      ],
+      "value": 68425.0
+    },
+    {
+      "id": "FACT-004",
+      "statement": "Cost of sales",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-004"
+      ],
+      "value": 212981.0
+    },
+    {
+      "id": "FACT-005",
+      "statement": "Services cost of sales",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-005"
+      ],
+      "value": 20715.0
+    },
+    {
+      "id": "FACT-006",
+      "statement": "Gross profit",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-006"
+      ],
+      "value": 152836.0
+    },
+    {
+      "id": "FACT-007",
+      "statement": "Operating income",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-007"
+      ],
+      "value": 108949.0
+    },
+    {
+      "id": "FACT-008",
+      "statement": "Net income",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-008"
+      ],
+      "value": 94680.0
+    },
+    {
+      "id": "FACT-009",
+      "statement": "Reported diluted EPS",
+      "units": "USD per share",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-009"
+      ],
+      "value": 5.61
+    },
+    {
+      "id": "FACT-010",
+      "statement": "Weighted-average diluted shares",
+      "units": "shares, thousands",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-010"
+      ],
+      "value": 16864919.0
+    },
+    {
+      "id": "FACT-011",
+      "statement": "Operating cash flow",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-011"
+      ],
+      "value": 104038.0
+    },
+    {
+      "id": "FACT-012",
+      "statement": "Cash payments for property, plant and equipment (outflow)",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-012"
+      ],
+      "value": -11085.0
+    },
+    {
+      "id": "FACT-013",
+      "statement": "Cash dividends and equivalents (outflow)",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-013"
+      ],
+      "value": -14467.0
+    },
+    {
+      "id": "FACT-014",
+      "statement": "Cash share repurchases (outflow)",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-014"
+      ],
+      "value": -85971.0
+    },
+    {
+      "id": "FACT-015",
+      "statement": "Research and development expense",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-015"
+      ],
+      "value": 21914.0
+    },
+    {
+      "id": "FACT-016",
+      "statement": "Share-based compensation",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-016"
+      ],
+      "value": 7906.0
+    },
+    {
+      "id": "FACT-017",
+      "statement": "Cash capital expenditure",
+      "value": 11085.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-012"
+      ],
+      "calculation_id": "CALC-001"
+    },
+    {
+      "id": "FACT-018",
+      "statement": "Cash dividends and equivalents",
+      "value": 14467.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-013"
+      ],
+      "calculation_id": "CALC-002"
+    },
+    {
+      "id": "FACT-019",
+      "statement": "Cash share repurchases",
+      "value": 85971.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-014"
+      ],
+      "calculation_id": "CALC-003"
+    },
+    {
+      "id": "FACT-020",
+      "statement": "Operating Margin",
+      "value": 29.782377527561593,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-007"
+      ],
+      "calculation_id": "CALC-004"
+    },
+    {
+      "id": "FACT-021",
+      "statement": "Gross Margin",
+      "value": 41.77935962516778,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-006"
+      ],
+      "calculation_id": "CALC-005"
+    },
+    {
+      "id": "FACT-022",
+      "statement": "Net Margin",
+      "value": 25.88179335569424,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-008"
+      ],
+      "calculation_id": "CALC-006"
+    },
+    {
+      "id": "FACT-023",
+      "statement": "Services Mix",
+      "value": 18.704707545029343,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-003"
+      ],
+      "calculation_id": "CALC-007"
+    },
+    {
+      "id": "FACT-024",
+      "statement": "Services gross margin",
+      "value": 69.72597734746073,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-003",
+        "EVD-005"
+      ],
+      "calculation_id": "CALC-008"
+    },
+    {
+      "id": "FACT-025",
+      "statement": "Free cash flow (operating cash flow less cash capex)",
+      "value": 92953.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-011",
+        "EVD-012"
+      ],
+      "calculation_id": "CALC-009"
+    },
+    {
+      "id": "FACT-026",
+      "statement": "Cash returned to shareholders",
+      "value": 100438.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-013",
+        "EVD-014"
+      ],
+      "calculation_id": "CALC-010"
+    },
+    {
+      "id": "FACT-027",
+      "statement": "Free cash flow margin",
+      "value": 25.40969938521173,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-011",
+        "EVD-012"
+      ],
+      "calculation_id": "CALC-011"
+    },
+    {
+      "id": "FACT-028",
+      "statement": "iPhone revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-017"
+      ],
+      "value": 191973.0
+    },
+    {
+      "id": "FACT-029",
+      "statement": "Mac revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-018"
+      ],
+      "value": 35190.0
+    },
+    {
+      "id": "FACT-030",
+      "statement": "iPad revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-019"
+      ],
+      "value": 31862.0
+    },
+    {
+      "id": "FACT-031",
+      "statement": "Wearables, Home and Accessories revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-020"
+      ],
+      "value": 38367.0
+    },
+    {
+      "id": "FACT-032",
+      "statement": "Americas revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-021"
+      ],
+      "value": 153306.0
+    },
+    {
+      "id": "FACT-033",
+      "statement": "Europe revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-022"
+      ],
+      "value": 89307.0
+    },
+    {
+      "id": "FACT-034",
+      "statement": "Greater China revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-023"
+      ],
+      "value": 68366.0
+    },
+    {
+      "id": "FACT-035",
+      "statement": "Japan revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-024"
+      ],
+      "value": 28482.0
+    },
+    {
+      "id": "FACT-036",
+      "statement": "Rest of Asia Pacific revenue",
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-025"
+      ],
+      "value": 26356.0
+    },
+    {
+      "id": "FACT-037",
+      "statement": "Revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-026"
+      ],
+      "value": 394328.0
+    },
+    {
+      "id": "FACT-038",
+      "statement": "Products revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-027"
+      ],
+      "value": 316199.0
+    },
+    {
+      "id": "FACT-039",
+      "statement": "Services revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-028"
+      ],
+      "value": 78129.0
+    },
+    {
+      "id": "FACT-040",
+      "statement": "Cost of sales",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-029"
+      ],
+      "value": 223546.0
+    },
+    {
+      "id": "FACT-041",
+      "statement": "Services cost of sales",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-030"
+      ],
+      "value": 22075.0
+    },
+    {
+      "id": "FACT-042",
+      "statement": "Gross profit",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-031"
+      ],
+      "value": 170782.0
+    },
+    {
+      "id": "FACT-043",
+      "statement": "Operating income",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-032"
+      ],
+      "value": 119437.0
+    },
+    {
+      "id": "FACT-044",
+      "statement": "Net income",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-033"
+      ],
+      "value": 99803.0
+    },
+    {
+      "id": "FACT-045",
+      "statement": "Reported diluted EPS",
+      "units": "USD per share",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-034"
+      ],
+      "value": 6.11
+    },
+    {
+      "id": "FACT-046",
+      "statement": "Weighted-average diluted shares",
+      "units": "shares, thousands",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-035"
+      ],
+      "value": 16325819.0
+    },
+    {
+      "id": "FACT-047",
+      "statement": "Operating cash flow",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-036"
+      ],
+      "value": 122151.0
+    },
+    {
+      "id": "FACT-048",
+      "statement": "Cash payments for property, plant and equipment (outflow)",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-037"
+      ],
+      "value": -10708.0
+    },
+    {
+      "id": "FACT-049",
+      "statement": "Cash dividends and equivalents (outflow)",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-038"
+      ],
+      "value": -14841.0
+    },
+    {
+      "id": "FACT-050",
+      "statement": "Cash share repurchases (outflow)",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-039"
+      ],
+      "value": -89402.0
+    },
+    {
+      "id": "FACT-051",
+      "statement": "Research and development expense",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-040"
+      ],
+      "value": 26251.0
+    },
+    {
+      "id": "FACT-052",
+      "statement": "Share-based compensation",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-041"
+      ],
+      "value": 9038.0
+    },
+    {
+      "id": "FACT-053",
+      "statement": "Cash capital expenditure",
+      "value": 10708.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-037"
+      ],
+      "calculation_id": "CALC-012"
+    },
+    {
+      "id": "FACT-054",
+      "statement": "Cash dividends and equivalents",
+      "value": 14841.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-038"
+      ],
+      "calculation_id": "CALC-013"
+    },
+    {
+      "id": "FACT-055",
+      "statement": "Cash share repurchases",
+      "value": 89402.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-039"
+      ],
+      "calculation_id": "CALC-014"
+    },
+    {
+      "id": "FACT-056",
+      "statement": "Operating Margin",
+      "value": 30.288744395528592,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-026",
+        "EVD-032"
+      ],
+      "calculation_id": "CALC-015"
+    },
+    {
+      "id": "FACT-057",
+      "statement": "Gross Margin",
+      "value": 43.30963056136009,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-026",
+        "EVD-031"
+      ],
+      "calculation_id": "CALC-016"
+    },
+    {
+      "id": "FACT-058",
+      "statement": "Net Margin",
+      "value": 25.309640705199733,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-026",
+        "EVD-033"
+      ],
+      "calculation_id": "CALC-017"
+    },
+    {
+      "id": "FACT-059",
+      "statement": "Services Mix",
+      "value": 19.813201192915542,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-026",
+        "EVD-028"
+      ],
+      "calculation_id": "CALC-018"
+    },
+    {
+      "id": "FACT-060",
+      "statement": "Services gross margin",
+      "value": 71.74544663313239,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-028",
+        "EVD-030"
+      ],
+      "calculation_id": "CALC-019"
+    },
+    {
+      "id": "FACT-061",
+      "statement": "Free cash flow (operating cash flow less cash capex)",
+      "value": 111443.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-036",
+        "EVD-037"
+      ],
+      "calculation_id": "CALC-020"
+    },
+    {
+      "id": "FACT-062",
+      "statement": "Cash returned to shareholders",
+      "value": 104243.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-038",
+        "EVD-039"
+      ],
+      "calculation_id": "CALC-021"
+    },
+    {
+      "id": "FACT-063",
+      "statement": "Free cash flow margin",
+      "value": 28.261498042238948,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-026",
+        "EVD-036",
+        "EVD-037"
+      ],
+      "calculation_id": "CALC-022"
+    },
+    {
+      "id": "FACT-064",
+      "statement": "iPhone revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-042"
+      ],
+      "value": 205489.0
+    },
+    {
+      "id": "FACT-065",
+      "statement": "Mac revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-043"
+      ],
+      "value": 40177.0
+    },
+    {
+      "id": "FACT-066",
+      "statement": "iPad revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-044"
+      ],
+      "value": 29292.0
+    },
+    {
+      "id": "FACT-067",
+      "statement": "Wearables, Home and Accessories revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-045"
+      ],
+      "value": 41241.0
+    },
+    {
+      "id": "FACT-068",
+      "statement": "Americas revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-046"
+      ],
+      "value": 169658.0
+    },
+    {
+      "id": "FACT-069",
+      "statement": "Europe revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-047"
+      ],
+      "value": 95118.0
+    },
+    {
+      "id": "FACT-070",
+      "statement": "Greater China revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-048"
+      ],
+      "value": 74200.0
+    },
+    {
+      "id": "FACT-071",
+      "statement": "Japan revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-049"
+      ],
+      "value": 25977.0
+    },
+    {
+      "id": "FACT-072",
+      "statement": "Rest of Asia Pacific revenue",
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-050"
+      ],
+      "value": 29375.0
+    },
+    {
+      "id": "FACT-073",
+      "statement": "Revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-051"
+      ],
+      "value": 383285.0
+    },
+    {
+      "id": "FACT-074",
+      "statement": "Products revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-052"
+      ],
+      "value": 298085.0
+    },
+    {
+      "id": "FACT-075",
+      "statement": "Services revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-053"
+      ],
+      "value": 85200.0
+    },
+    {
+      "id": "FACT-076",
+      "statement": "Cost of sales",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-054"
+      ],
+      "value": 214137.0
+    },
+    {
+      "id": "FACT-077",
+      "statement": "Services cost of sales",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-055"
+      ],
+      "value": 24855.0
+    },
+    {
+      "id": "FACT-078",
+      "statement": "Gross profit",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-056"
+      ],
+      "value": 169148.0
+    },
+    {
+      "id": "FACT-079",
+      "statement": "Operating income",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-057"
+      ],
+      "value": 114301.0
+    },
+    {
+      "id": "FACT-080",
+      "statement": "Net income",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-058"
+      ],
+      "value": 96995.0
+    },
+    {
+      "id": "FACT-081",
+      "statement": "Reported diluted EPS",
+      "units": "USD per share",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-059"
+      ],
+      "value": 6.13
+    },
+    {
+      "id": "FACT-082",
+      "statement": "Weighted-average diluted shares",
+      "units": "shares, thousands",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-060"
+      ],
+      "value": 15812547.0
+    },
+    {
+      "id": "FACT-083",
+      "statement": "Operating cash flow",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-061"
+      ],
+      "value": 110543.0
+    },
+    {
+      "id": "FACT-084",
+      "statement": "Cash payments for property, plant and equipment (outflow)",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-062"
+      ],
+      "value": -10959.0
+    },
+    {
+      "id": "FACT-085",
+      "statement": "Cash dividends and equivalents (outflow)",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-063"
+      ],
+      "value": -15025.0
+    },
+    {
+      "id": "FACT-086",
+      "statement": "Cash share repurchases (outflow)",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-064"
+      ],
+      "value": -77550.0
+    },
+    {
+      "id": "FACT-087",
+      "statement": "Research and development expense",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-065"
+      ],
+      "value": 29915.0
+    },
+    {
+      "id": "FACT-088",
+      "statement": "Share-based compensation",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-066"
+      ],
+      "value": 10833.0
+    },
+    {
+      "id": "FACT-089",
+      "statement": "Cash capital expenditure",
+      "value": 10959.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-062"
+      ],
+      "calculation_id": "CALC-023"
+    },
+    {
+      "id": "FACT-090",
+      "statement": "Cash dividends and equivalents",
+      "value": 15025.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-063"
+      ],
+      "calculation_id": "CALC-024"
+    },
+    {
+      "id": "FACT-091",
+      "statement": "Cash share repurchases",
+      "value": 77550.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-064"
+      ],
+      "calculation_id": "CALC-025"
+    },
+    {
+      "id": "FACT-092",
+      "statement": "Operating Margin",
+      "value": 29.821412265024723,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-051",
+        "EVD-057"
+      ],
+      "calculation_id": "CALC-026"
+    },
+    {
+      "id": "FACT-093",
+      "statement": "Gross Margin",
+      "value": 44.13112957720756,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-051",
+        "EVD-056"
+      ],
+      "calculation_id": "CALC-027"
+    },
+    {
+      "id": "FACT-094",
+      "statement": "Net Margin",
+      "value": 25.30623426432028,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-051",
+        "EVD-058"
+      ],
+      "calculation_id": "CALC-028"
+    },
+    {
+      "id": "FACT-095",
+      "statement": "Services Mix",
+      "value": 22.2288897295746,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-051",
+        "EVD-053"
+      ],
+      "calculation_id": "CALC-029"
+    },
+    {
+      "id": "FACT-096",
+      "statement": "Services gross margin",
+      "value": 70.8274647887324,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-053",
+        "EVD-055"
+      ],
+      "calculation_id": "CALC-030"
+    },
+    {
+      "id": "FACT-097",
+      "statement": "Free cash flow (operating cash flow less cash capex)",
+      "value": 99584.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-061",
+        "EVD-062"
+      ],
+      "calculation_id": "CALC-031"
+    },
+    {
+      "id": "FACT-098",
+      "statement": "Cash returned to shareholders",
+      "value": 92575.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-063",
+        "EVD-064"
+      ],
+      "calculation_id": "CALC-032"
+    },
+    {
+      "id": "FACT-099",
+      "statement": "Free cash flow margin",
+      "value": 25.981710737440807,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-051",
+        "EVD-061",
+        "EVD-062"
+      ],
+      "calculation_id": "CALC-033"
+    },
+    {
+      "id": "FACT-100",
+      "statement": "iPhone revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-067"
+      ],
+      "value": 200583.0
+    },
+    {
+      "id": "FACT-101",
+      "statement": "Mac revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-068"
+      ],
+      "value": 29357.0
+    },
+    {
+      "id": "FACT-102",
+      "statement": "iPad revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-069"
+      ],
+      "value": 28300.0
+    },
+    {
+      "id": "FACT-103",
+      "statement": "Wearables, Home and Accessories revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-070"
+      ],
+      "value": 39845.0
+    },
+    {
+      "id": "FACT-104",
+      "statement": "Americas revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-071"
+      ],
+      "value": 162560.0
+    },
+    {
+      "id": "FACT-105",
+      "statement": "Europe revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-072"
+      ],
+      "value": 94294.0
+    },
+    {
+      "id": "FACT-106",
+      "statement": "Greater China revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-073"
+      ],
+      "value": 72559.0
+    },
+    {
+      "id": "FACT-107",
+      "statement": "Japan revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-074"
+      ],
+      "value": 24257.0
+    },
+    {
+      "id": "FACT-108",
+      "statement": "Rest of Asia Pacific revenue",
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-075"
+      ],
+      "value": 29615.0
+    },
+    {
+      "id": "FACT-109",
+      "statement": "Revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-076"
+      ],
+      "value": 391035.0
+    },
+    {
+      "id": "FACT-110",
+      "statement": "Products revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-077"
+      ],
+      "value": 294866.0
+    },
+    {
+      "id": "FACT-111",
+      "statement": "Services revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-078"
+      ],
+      "value": 96169.0
+    },
+    {
+      "id": "FACT-112",
+      "statement": "Cost of sales",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-079"
+      ],
+      "value": 210352.0
+    },
+    {
+      "id": "FACT-113",
+      "statement": "Services cost of sales",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-080"
+      ],
+      "value": 25119.0
+    },
+    {
+      "id": "FACT-114",
+      "statement": "Gross profit",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-081"
+      ],
+      "value": 180683.0
+    },
+    {
+      "id": "FACT-115",
+      "statement": "Operating income",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-082"
+      ],
+      "value": 123216.0
+    },
+    {
+      "id": "FACT-116",
+      "statement": "Net income",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-083"
+      ],
+      "value": 93736.0
+    },
+    {
+      "id": "FACT-117",
+      "statement": "Reported diluted EPS",
+      "units": "USD per share",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-084"
+      ],
+      "value": 6.08
+    },
+    {
+      "id": "FACT-118",
+      "statement": "Weighted-average diluted shares",
+      "units": "shares, thousands",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-085"
+      ],
+      "value": 15408095.0
+    },
+    {
+      "id": "FACT-119",
+      "statement": "Operating cash flow",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-086"
+      ],
+      "value": 118254.0
+    },
+    {
+      "id": "FACT-120",
+      "statement": "Cash payments for property, plant and equipment (outflow)",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-087"
+      ],
+      "value": -9447.0
+    },
+    {
+      "id": "FACT-121",
+      "statement": "Cash dividends and equivalents (outflow)",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-088"
+      ],
+      "value": -15234.0
+    },
+    {
+      "id": "FACT-122",
+      "statement": "Cash share repurchases (outflow)",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-089"
+      ],
+      "value": -94949.0
+    },
+    {
+      "id": "FACT-123",
+      "statement": "Research and development expense",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-090"
+      ],
+      "value": 31370.0
+    },
+    {
+      "id": "FACT-124",
+      "statement": "Share-based compensation",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-091"
+      ],
+      "value": 11688.0
+    },
+    {
+      "id": "FACT-125",
+      "statement": "Cash capital expenditure",
+      "value": 9447.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-087"
+      ],
+      "calculation_id": "CALC-034"
+    },
+    {
+      "id": "FACT-126",
+      "statement": "Cash dividends and equivalents",
+      "value": 15234.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-088"
+      ],
+      "calculation_id": "CALC-035"
+    },
+    {
+      "id": "FACT-127",
+      "statement": "Cash share repurchases",
+      "value": 94949.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-089"
+      ],
+      "calculation_id": "CALC-036"
+    },
+    {
+      "id": "FACT-128",
+      "statement": "Operating Margin",
+      "value": 31.510222870075566,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-076",
+        "EVD-082"
+      ],
+      "calculation_id": "CALC-037"
+    },
+    {
+      "id": "FACT-129",
+      "statement": "Gross Margin",
+      "value": 46.206349815233935,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-076",
+        "EVD-081"
+      ],
+      "calculation_id": "CALC-038"
+    },
+    {
+      "id": "FACT-130",
+      "statement": "Net Margin",
+      "value": 23.971255769943866,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-076",
+        "EVD-083"
+      ],
+      "calculation_id": "CALC-039"
+    },
+    {
+      "id": "FACT-131",
+      "statement": "Services Mix",
+      "value": 24.593450714130448,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-076",
+        "EVD-078"
+      ],
+      "calculation_id": "CALC-040"
+    },
+    {
+      "id": "FACT-132",
+      "statement": "Services gross margin",
+      "value": 73.88035645582256,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-078",
+        "EVD-080"
+      ],
+      "calculation_id": "CALC-041"
+    },
+    {
+      "id": "FACT-133",
+      "statement": "Free cash flow (operating cash flow less cash capex)",
+      "value": 108807.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-086",
+        "EVD-087"
+      ],
+      "calculation_id": "CALC-042"
+    },
+    {
+      "id": "FACT-134",
+      "statement": "Cash returned to shareholders",
+      "value": 110183.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-088",
+        "EVD-089"
+      ],
+      "calculation_id": "CALC-043"
+    },
+    {
+      "id": "FACT-135",
+      "statement": "Free cash flow margin",
+      "value": 27.825386474356517,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-076",
+        "EVD-086",
+        "EVD-087"
+      ],
+      "calculation_id": "CALC-044"
+    },
+    {
+      "id": "FACT-136",
+      "statement": "iPhone revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-092"
+      ],
+      "value": 201183.0
+    },
+    {
+      "id": "FACT-137",
+      "statement": "Mac revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-093"
+      ],
+      "value": 29984.0
+    },
+    {
+      "id": "FACT-138",
+      "statement": "iPad revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-094"
+      ],
+      "value": 26694.0
+    },
+    {
+      "id": "FACT-139",
+      "statement": "Wearables, Home and Accessories revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-095"
+      ],
+      "value": 37005.0
+    },
+    {
+      "id": "FACT-140",
+      "statement": "Americas revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-096"
+      ],
+      "value": 167045.0
+    },
+    {
+      "id": "FACT-141",
+      "statement": "Europe revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-097"
+      ],
+      "value": 101328.0
+    },
+    {
+      "id": "FACT-142",
+      "statement": "Greater China revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-098"
+      ],
+      "value": 66952.0
+    },
+    {
+      "id": "FACT-143",
+      "statement": "Japan revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-099"
+      ],
+      "value": 25052.0
+    },
+    {
+      "id": "FACT-144",
+      "statement": "Rest of Asia Pacific revenue",
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-100"
+      ],
+      "value": 30658.0
+    },
+    {
+      "id": "FACT-145",
+      "statement": "Revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-101"
+      ],
+      "value": 416161.0
+    },
+    {
+      "id": "FACT-146",
+      "statement": "Products revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-102"
+      ],
+      "value": 307003.0
+    },
+    {
+      "id": "FACT-147",
+      "statement": "Services revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-103"
+      ],
+      "value": 109158.0
+    },
+    {
+      "id": "FACT-148",
+      "statement": "Cost of sales",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-104"
+      ],
+      "value": 220960.0
+    },
+    {
+      "id": "FACT-149",
+      "statement": "Services cost of sales",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-105"
+      ],
+      "value": 26844.0
+    },
+    {
+      "id": "FACT-150",
+      "statement": "Gross profit",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-106"
+      ],
+      "value": 195201.0
+    },
+    {
+      "id": "FACT-151",
+      "statement": "Operating income",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-107"
+      ],
+      "value": 133050.0
+    },
+    {
+      "id": "FACT-152",
+      "statement": "Net income",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-108"
+      ],
+      "value": 112010.0
+    },
+    {
+      "id": "FACT-153",
+      "statement": "Reported diluted EPS",
+      "units": "USD per share",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-109"
+      ],
+      "value": 7.46
+    },
+    {
+      "id": "FACT-154",
+      "statement": "Weighted-average diluted shares",
+      "units": "shares, thousands",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-110"
+      ],
+      "value": 15004697.0
+    },
+    {
+      "id": "FACT-155",
+      "statement": "Operating cash flow",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-111"
+      ],
+      "value": 111482.0
+    },
+    {
+      "id": "FACT-156",
+      "statement": "Cash payments for property, plant and equipment (outflow)",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-112"
+      ],
+      "value": -12715.0
+    },
+    {
+      "id": "FACT-157",
+      "statement": "Cash dividends and equivalents (outflow)",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-113"
+      ],
+      "value": -15421.0
+    },
+    {
+      "id": "FACT-158",
+      "statement": "Cash share repurchases (outflow)",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-114"
+      ],
+      "value": -90711.0
+    },
+    {
+      "id": "FACT-159",
+      "statement": "Research and development expense",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-115"
+      ],
+      "value": 34550.0
+    },
+    {
+      "id": "FACT-160",
+      "statement": "Share-based compensation",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-116"
+      ],
+      "value": 12863.0
+    },
+    {
+      "id": "FACT-161",
+      "statement": "Cash capital expenditure",
+      "value": 12715.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-112"
+      ],
+      "calculation_id": "CALC-045"
+    },
+    {
+      "id": "FACT-162",
+      "statement": "Cash dividends and equivalents",
+      "value": 15421.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-113"
+      ],
+      "calculation_id": "CALC-046"
+    },
+    {
+      "id": "FACT-163",
+      "statement": "Cash share repurchases",
+      "value": 90711.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-114"
+      ],
+      "calculation_id": "CALC-047"
+    },
+    {
+      "id": "FACT-164",
+      "statement": "Operating Margin",
+      "value": 31.970799762591884,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-101",
+        "EVD-107"
+      ],
+      "calculation_id": "CALC-048"
+    },
+    {
+      "id": "FACT-165",
+      "statement": "Gross Margin",
+      "value": 46.90516410716045,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-101",
+        "EVD-106"
+      ],
+      "calculation_id": "CALC-049"
+    },
+    {
+      "id": "FACT-166",
+      "statement": "Net Margin",
+      "value": 26.91506412181824,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-101",
+        "EVD-108"
+      ],
+      "calculation_id": "CALC-050"
+    },
+    {
+      "id": "FACT-167",
+      "statement": "Services Mix",
+      "value": 26.22975242754607,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-101",
+        "EVD-103"
+      ],
+      "calculation_id": "CALC-051"
+    },
+    {
+      "id": "FACT-168",
+      "statement": "Services gross margin",
+      "value": 75.4081240037377,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-103",
+        "EVD-105"
+      ],
+      "calculation_id": "CALC-052"
+    },
+    {
+      "id": "FACT-169",
+      "statement": "Free cash flow (operating cash flow less cash capex)",
+      "value": 98767.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-111",
+        "EVD-112"
+      ],
+      "calculation_id": "CALC-053"
+    },
+    {
+      "id": "FACT-170",
+      "statement": "Cash returned to shareholders",
+      "value": 106132.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-113",
+        "EVD-114"
+      ],
+      "calculation_id": "CALC-054"
+    },
+    {
+      "id": "FACT-171",
+      "statement": "Free cash flow margin",
+      "value": 23.732882225869314,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-101",
+        "EVD-111",
+        "EVD-112"
+      ],
+      "calculation_id": "CALC-055"
+    },
+    {
+      "id": "FACT-172",
+      "statement": "iPhone revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-117"
+      ],
+      "value": 209586.0
+    },
+    {
+      "id": "FACT-173",
+      "statement": "Mac revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-118"
+      ],
+      "value": 33708.0
+    },
+    {
+      "id": "FACT-174",
+      "statement": "iPad revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-119"
+      ],
+      "value": 28023.0
+    },
+    {
+      "id": "FACT-175",
+      "statement": "Wearables, Home and Accessories revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-120"
+      ],
+      "value": 35686.0
+    },
+    {
+      "id": "FACT-176",
+      "statement": "Americas revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-121"
+      ],
+      "value": 178353.0
+    },
+    {
+      "id": "FACT-177",
+      "statement": "Europe revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-122"
+      ],
+      "value": 111032.0
+    },
+    {
+      "id": "FACT-178",
+      "statement": "Greater China revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-123"
+      ],
+      "value": 64377.0
+    },
+    {
+      "id": "FACT-179",
+      "statement": "Japan revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-124"
+      ],
+      "value": 28703.0
+    },
+    {
+      "id": "FACT-180",
+      "statement": "Rest of Asia Pacific revenue",
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-125"
+      ],
+      "value": 33696.0
+    },
+    {
+      "id": "FACT-181",
+      "statement": "FY2021 calculated EPS",
+      "value": 5.61402044089272,
+      "units": "USD per share",
+      "period": "FY2021",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-008",
+        "EVD-010"
+      ],
+      "calculation_id": "CALC-056"
+    },
+    {
+      "id": "FACT-182",
+      "statement": "EPS change from net income at FY2021 share count",
+      "value": 1.027576829749375,
+      "units": "USD per share",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-008",
+        "EVD-010",
+        "EVD-108"
+      ],
+      "calculation_id": "CALC-057"
+    },
+    {
+      "id": "FACT-183",
+      "statement": "EPS change from lower diluted share count at FY2025 net income",
+      "value": 0.8233985236748449,
+      "units": "USD per share",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-010",
+        "EVD-108",
+        "EVD-110"
+      ],
+      "calculation_id": "CALC-058"
+    },
+    {
+      "id": "FACT-184",
+      "statement": "FY2025 calculated EPS",
+      "value": 7.464995794316939,
+      "units": "USD per share",
+      "period": "FY2025",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-108",
+        "EVD-110"
+      ],
+      "calculation_id": "CALC-059"
+    },
+    {
+      "id": "FACT-185",
+      "statement": "Reported EPS bridge residual",
+      "value": -0.0009753534242200601,
+      "units": "USD per share",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-008",
+        "EVD-009",
+        "EVD-010",
+        "EVD-108",
+        "EVD-109",
+        "EVD-110"
+      ],
+      "calculation_id": "CALC-060"
+    },
+    {
+      "id": "FACT-186",
+      "statement": "Revenue CAGR",
+      "value": 3.275991627577457,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-101"
+      ],
+      "calculation_id": "CALC-061"
+    },
+    {
+      "id": "FACT-187",
+      "statement": "Services CAGR",
+      "value": 12.385476417353836,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-003",
+        "EVD-103"
+      ],
+      "calculation_id": "CALC-062"
+    },
+    {
+      "id": "FACT-188",
+      "statement": "Operating Income CAGR",
+      "value": 5.1230390527384095,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-007",
+        "EVD-107"
+      ],
+      "calculation_id": "CALC-063"
+    },
+    {
+      "id": "FACT-189",
+      "statement": "Net Income CAGR",
+      "value": 4.291673654076011,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-008",
+        "EVD-108"
+      ],
+      "calculation_id": "CALC-064"
+    },
+    {
+      "id": "FACT-190",
+      "statement": "Fcf CAGR",
+      "value": 1.5282996532510085,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-011",
+        "EVD-012",
+        "EVD-111",
+        "EVD-112"
+      ],
+      "calculation_id": "CALC-065"
+    },
+    {
+      "id": "FACT-191",
+      "statement": "Eps CAGR",
+      "value": 7.385091507318342,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-009",
+        "EVD-109"
+      ],
+      "calculation_id": "CALC-066"
+    },
+    {
+      "id": "FACT-192",
+      "statement": "Cumulative net income growth",
+      "value": 18.303760033798056,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-008",
+        "EVD-108"
+      ],
+      "calculation_id": "CALC-067"
+    },
+    {
+      "id": "FACT-193",
+      "statement": "Diluted share count change",
+      "value": -11.030127093999088,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-010",
+        "EVD-110"
+      ],
+      "calculation_id": "CALC-068"
+    },
+    {
+      "id": "FACT-194",
+      "statement": "Reported diluted EPS growth",
+      "value": 32.97682709447414,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-009",
+        "EVD-109"
+      ],
+      "calculation_id": "CALC-069"
+    },
+    {
+      "id": "FACT-195",
+      "statement": "Services contribution to net revenue increase",
+      "value": 80.90934371523916,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-003",
+        "EVD-101",
+        "EVD-103"
+      ],
+      "calculation_id": "CALC-070"
+    },
+    {
+      "id": "FACT-196",
+      "statement": "Five-year cash returned to shareholders",
+      "value": 513571.0,
+      "units": "USD millions",
+      "period": "FY2021–FY2025 cumulative",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-013",
+        "EVD-014",
+        "EVD-038",
+        "EVD-039",
+        "EVD-063",
+        "EVD-064",
+        "EVD-088",
+        "EVD-089",
+        "EVD-113",
+        "EVD-114"
+      ],
+      "calculation_id": "CALC-071"
+    },
+    {
+      "id": "FACT-197",
+      "statement": "Five-year free cash flow",
+      "value": 511554.0,
+      "units": "USD millions",
+      "period": "FY2021–FY2025 cumulative",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "evidence_ids": [
+        "EVD-011",
+        "EVD-012",
+        "EVD-036",
+        "EVD-037",
+        "EVD-061",
+        "EVD-062",
+        "EVD-086",
+        "EVD-087",
+        "EVD-111",
+        "EVD-112"
+      ],
+      "calculation_id": "CALC-072"
+    },
+    {
+      "id": "FACT-198",
+      "statement": "Cash",
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-126"
+      ],
+      "value": 35934.0
+    },
+    {
+      "id": "FACT-199",
+      "statement": "Current Securities",
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-127"
+      ],
+      "value": 18763.0
+    },
+    {
+      "id": "FACT-200",
+      "statement": "Noncurrent Securities",
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-128"
+      ],
+      "value": 77723.0
+    },
+    {
+      "id": "FACT-201",
+      "statement": "Current Assets",
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-129"
+      ],
+      "value": 147957.0
+    },
+    {
+      "id": "FACT-202",
+      "statement": "Inventory",
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-130"
+      ],
+      "value": 5718.0
+    },
+    {
+      "id": "FACT-203",
+      "statement": "Current Liabilities",
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-131"
+      ],
+      "value": 165631.0
+    },
+    {
+      "id": "FACT-204",
+      "statement": "Commercial Paper",
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-132"
+      ],
+      "value": 7979.0
+    },
+    {
+      "id": "FACT-205",
+      "statement": "Current Term Debt",
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-133"
+      ],
+      "value": 12350.0
+    },
+    {
+      "id": "FACT-206",
+      "statement": "Long Term Debt",
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-134"
+      ],
+      "value": 78328.0
+    },
+    {
+      "id": "FACT-207",
+      "statement": "Cash and marketable securities",
+      "value": 132420.0,
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-126",
+        "EVD-127",
+        "EVD-128"
+      ],
+      "calculation_id": "CALC-073"
+    },
+    {
+      "id": "FACT-208",
+      "statement": "Funded debt, excluding leases",
+      "value": 98657.0,
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-132",
+        "EVD-133",
+        "EVD-134"
+      ],
+      "calculation_id": "CALC-074"
+    },
+    {
+      "id": "FACT-209",
+      "statement": "Cash and marketable securities less funded debt",
+      "value": 33763.0,
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-126",
+        "EVD-127",
+        "EVD-128",
+        "EVD-132",
+        "EVD-133",
+        "EVD-134"
+      ],
+      "calculation_id": "CALC-075"
+    },
+    {
+      "id": "FACT-210",
+      "statement": "Current ratio",
+      "value": 0.8932929222186667,
+      "units": "times",
+      "period": "At 2025-09-27",
+      "status": "calculated",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-129",
+        "EVD-131"
+      ],
+      "calculation_id": "CALC-076"
+    },
+    {
+      "id": "FACT-211",
+      "statement": "FY2024 included a one-time net income tax charge",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-135"
+      ]
+    },
+    {
+      "id": "FACT-212",
+      "statement": "Company explanation of FY2025 Services growth",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-136"
+      ]
+    },
+    {
+      "id": "FACT-213",
+      "statement": "Reported product, regulatory and trade risks",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-137"
+      ]
+    },
+    {
+      "id": "FACT-214",
+      "statement": "Fiscal-year comparability",
+      "units": "text",
+      "period": "FY2021–FY2025 review",
+      "status": "company-reported",
+      "material": true,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "evidence_ids": [
+        "EVD-138"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "key": "a25",
+      "type": "annual-report",
+      "title": "Apple FY2025 Form 10-K",
+      "publisher": "Apple",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "retrieved_at": "2026-09-03T19:45:56.465156+00:00",
+      "as_of_date": "2026-09-03",
+      "primary": true,
+      "sha256": "548ae59778cf08ee0f2ee088e7ece20d947076c3c01f74d2d65db4c2777e436a",
+      "license_or_terms": "Public issuer disclosure; example contains attributed factual extracts, not full source documents. No issuer endorsement.",
+      "notes": "Reused integrity-checked local primary filing, re-extracted for this run"
+    },
+    {
+      "id": "SRC-002",
+      "key": "a23",
+      "type": "annual-report",
+      "title": "Apple FY2023 Form 10-K",
+      "publisher": "Apple",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+      "retrieved_at": "2026-09-03T19:45:56.822595+00:00",
+      "as_of_date": "2026-09-03",
+      "primary": true,
+      "sha256": "bda1f34435199672c16ecdf2034c650872d2cac8399ed0d179fc25450b080b90",
+      "license_or_terms": "Public issuer disclosure; example contains attributed factual extracts, not full source documents. No issuer endorsement.",
+      "notes": "Reused integrity-checked local primary filing, re-extracted for this run"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EVD-001",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 112, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Revenue: 365817.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 112,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-002",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 110, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Products revenue: 297392.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 110,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-003",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 111, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Services revenue: 68425.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 111,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-004",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 116, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Cost of sales: 212981.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 116,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-005",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 115, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Services cost of sales: 20715.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 115,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-006",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 117, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Gross profit: 152836.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 117,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-007",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 122, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Operating income: 108949.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 122,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-008",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 126, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Net income: 94680.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 126,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-009",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 129, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Reported diluted EPS: 5.61 USD per share; FY2021, ended 2021-09-25.",
+      "table_row_index": 129,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-010",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 132, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Weighted-average diluted shares: 16864919.0 shares, thousands; FY2021, ended 2021-09-25.",
+      "table_row_index": 132,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-011",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 222, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Operating cash flow: 104038.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 222,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-012",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 227, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Cash payments for property, plant and equipment (outflow): -11085.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 227,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-013",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 232, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Cash dividends and equivalents (outflow): -14467.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 232,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-014",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 233, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Cash share repurchases (outflow): -85971.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 233,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-015",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 119, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Research and development expense: 21914.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 119,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-016",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 213, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Share-based compensation: 7906.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 213,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-017",
+      "source_id": "SRC-002",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 245, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "iPhone revenue: 191973.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 245,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-018",
+      "source_id": "SRC-002",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 246, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Mac revenue: 35190.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 246,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-019",
+      "source_id": "SRC-002",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 247, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "iPad revenue: 31862.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 247,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-020",
+      "source_id": "SRC-002",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 248, numeric column 2; FY2021, ended 2021-09-25",
+      "content": "Wearables, Home and Accessories revenue: 38367.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 248,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-021",
+      "source_id": "SRC-002",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 62, numeric column 4; FY2021, ended 2021-09-25",
+      "content": "Americas revenue: 153306.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 62,
+      "numeric_column_index": 4,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-022",
+      "source_id": "SRC-002",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 63, numeric column 4; FY2021, ended 2021-09-25",
+      "content": "Europe revenue: 89307.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 63,
+      "numeric_column_index": 4,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-023",
+      "source_id": "SRC-002",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 64, numeric column 4; FY2021, ended 2021-09-25",
+      "content": "Greater China revenue: 68366.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 64,
+      "numeric_column_index": 4,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-024",
+      "source_id": "SRC-002",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 65, numeric column 4; FY2021, ended 2021-09-25",
+      "content": "Japan revenue: 28482.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 65,
+      "numeric_column_index": 4,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-025",
+      "source_id": "SRC-002",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 66, numeric column 4; FY2021, ended 2021-09-25",
+      "content": "Rest of Asia Pacific revenue: 26356.0 USD millions; FY2021, ended 2021-09-25.",
+      "table_row_index": 66,
+      "numeric_column_index": 4,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-026",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 112, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Revenue: 394328.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 112,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-027",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 110, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Products revenue: 316199.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 110,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-028",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 111, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Services revenue: 78129.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 111,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-029",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 116, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Cost of sales: 223546.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 116,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-030",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 115, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Services cost of sales: 22075.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 115,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-031",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 117, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Gross profit: 170782.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 117,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-032",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 122, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Operating income: 119437.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 122,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-033",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 126, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Net income: 99803.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 126,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-034",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 129, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Reported diluted EPS: 6.11 USD per share; FY2022, ended 2022-09-24.",
+      "table_row_index": 129,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-035",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 132, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Weighted-average diluted shares: 16325819.0 shares, thousands; FY2022, ended 2022-09-24.",
+      "table_row_index": 132,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-036",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 222, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Operating cash flow: 122151.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 222,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-037",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 227, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Cash payments for property, plant and equipment (outflow): -10708.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 227,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-038",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 232, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Cash dividends and equivalents (outflow): -14841.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 232,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-039",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 233, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Cash share repurchases (outflow): -89402.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 233,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-040",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 119, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Research and development expense: 26251.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 119,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-041",
+      "source_id": "SRC-002",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 213, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Share-based compensation: 9038.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 213,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-042",
+      "source_id": "SRC-002",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 245, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "iPhone revenue: 205489.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 245,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-043",
+      "source_id": "SRC-002",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 246, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Mac revenue: 40177.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 246,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-044",
+      "source_id": "SRC-002",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 247, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "iPad revenue: 29292.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 247,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-045",
+      "source_id": "SRC-002",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 248, numeric column 1; FY2022, ended 2022-09-24",
+      "content": "Wearables, Home and Accessories revenue: 41241.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 248,
+      "numeric_column_index": 1,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-046",
+      "source_id": "SRC-002",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 62, numeric column 2; FY2022, ended 2022-09-24",
+      "content": "Americas revenue: 169658.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 62,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-047",
+      "source_id": "SRC-002",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 63, numeric column 2; FY2022, ended 2022-09-24",
+      "content": "Europe revenue: 95118.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 63,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-048",
+      "source_id": "SRC-002",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 64, numeric column 2; FY2022, ended 2022-09-24",
+      "content": "Greater China revenue: 74200.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 64,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-049",
+      "source_id": "SRC-002",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 65, numeric column 2; FY2022, ended 2022-09-24",
+      "content": "Japan revenue: 25977.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 65,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-050",
+      "source_id": "SRC-002",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 66, numeric column 2; FY2022, ended 2022-09-24",
+      "content": "Rest of Asia Pacific revenue: 29375.0 USD millions; FY2022, ended 2022-09-24.",
+      "table_row_index": 66,
+      "numeric_column_index": 2,
+      "source_key": "a23"
+    },
+    {
+      "id": "EVD-051",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 107, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Revenue: 383285.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 107,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-052",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 105, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Products revenue: 298085.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 105,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-053",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 106, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Services revenue: 85200.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 106,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-054",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 111, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Cost of sales: 214137.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 111,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-055",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 110, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Services cost of sales: 24855.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 110,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-056",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 112, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Gross profit: 169148.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 112,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-057",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 117, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Operating income: 114301.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 117,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-058",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 121, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Net income: 96995.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 121,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-059",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 124, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Reported diluted EPS: 6.13 USD per share; FY2023, ended 2023-09-30.",
+      "table_row_index": 124,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-060",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 127, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Weighted-average diluted shares: 15812547.0 shares, thousands; FY2023, ended 2023-09-30.",
+      "table_row_index": 127,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-061",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 217, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Operating cash flow: 110543.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 217,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-062",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 222, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Cash payments for property, plant and equipment (outflow): -10959.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 222,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-063",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 227, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Cash dividends and equivalents (outflow): -15025.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 227,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-064",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 228, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Cash share repurchases (outflow): -77550.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 228,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-065",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 114, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Research and development expense: 29915.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 114,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-066",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 208, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Share-based compensation: 10833.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 208,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-067",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 239, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "iPhone revenue: 200583.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 239,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-068",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 240, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Mac revenue: 29357.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 240,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-069",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 241, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "iPad revenue: 28300.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 241,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-070",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 242, numeric column 2; FY2023, ended 2023-09-30",
+      "content": "Wearables, Home and Accessories revenue: 39845.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 242,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-071",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 58, numeric column 4; FY2023, ended 2023-09-30",
+      "content": "Americas revenue: 162560.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 58,
+      "numeric_column_index": 4,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-072",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 59, numeric column 4; FY2023, ended 2023-09-30",
+      "content": "Europe revenue: 94294.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 59,
+      "numeric_column_index": 4,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-073",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 60, numeric column 4; FY2023, ended 2023-09-30",
+      "content": "Greater China revenue: 72559.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 60,
+      "numeric_column_index": 4,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-074",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 61, numeric column 4; FY2023, ended 2023-09-30",
+      "content": "Japan revenue: 24257.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 61,
+      "numeric_column_index": 4,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-075",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 62, numeric column 4; FY2023, ended 2023-09-30",
+      "content": "Rest of Asia Pacific revenue: 29615.0 USD millions; FY2023, ended 2023-09-30.",
+      "table_row_index": 62,
+      "numeric_column_index": 4,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-076",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 107, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Revenue: 391035.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 107,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-077",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 105, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Products revenue: 294866.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 105,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-078",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 106, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Services revenue: 96169.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 106,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-079",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 111, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Cost of sales: 210352.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 111,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-080",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 110, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Services cost of sales: 25119.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 110,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-081",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 112, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Gross profit: 180683.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 112,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-082",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 117, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Operating income: 123216.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 117,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-083",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 121, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Net income: 93736.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 121,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-084",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 124, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Reported diluted EPS: 6.08 USD per share; FY2024, ended 2024-09-28.",
+      "table_row_index": 124,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-085",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 127, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Weighted-average diluted shares: 15408095.0 shares, thousands; FY2024, ended 2024-09-28.",
+      "table_row_index": 127,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-086",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 217, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Operating cash flow: 118254.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 217,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-087",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 222, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Cash payments for property, plant and equipment (outflow): -9447.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 222,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-088",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 227, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Cash dividends and equivalents (outflow): -15234.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 227,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-089",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 228, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Cash share repurchases (outflow): -94949.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 228,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-090",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 114, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Research and development expense: 31370.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 114,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-091",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 208, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Share-based compensation: 11688.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 208,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-092",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 239, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "iPhone revenue: 201183.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 239,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-093",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 240, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Mac revenue: 29984.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 240,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-094",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 241, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "iPad revenue: 26694.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 241,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-095",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 242, numeric column 1; FY2024, ended 2024-09-28",
+      "content": "Wearables, Home and Accessories revenue: 37005.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 242,
+      "numeric_column_index": 1,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-096",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 58, numeric column 2; FY2024, ended 2024-09-28",
+      "content": "Americas revenue: 167045.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 58,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-097",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 59, numeric column 2; FY2024, ended 2024-09-28",
+      "content": "Europe revenue: 101328.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 59,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-098",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 60, numeric column 2; FY2024, ended 2024-09-28",
+      "content": "Greater China revenue: 66952.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 60,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-099",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 61, numeric column 2; FY2024, ended 2024-09-28",
+      "content": "Japan revenue: 25052.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 61,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-100",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 62, numeric column 2; FY2024, ended 2024-09-28",
+      "content": "Rest of Asia Pacific revenue: 30658.0 USD millions; FY2024, ended 2024-09-28.",
+      "table_row_index": 62,
+      "numeric_column_index": 2,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-101",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 107, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Revenue: 416161.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 107,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-102",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 105, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Products revenue: 307003.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 105,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-103",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 106, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Services revenue: 109158.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 106,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-104",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 111, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Cost of sales: 220960.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 111,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-105",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 110, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Services cost of sales: 26844.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 110,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-106",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 112, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Gross profit: 195201.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 112,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-107",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 117, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Operating income: 133050.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 117,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-108",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 121, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Net income: 112010.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 121,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-109",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 124, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Reported diluted EPS: 7.46 USD per share; FY2025, ended 2025-09-27.",
+      "table_row_index": 124,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-110",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 127, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Weighted-average diluted shares: 15004697.0 shares, thousands; FY2025, ended 2025-09-27.",
+      "table_row_index": 127,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-111",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 217, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Operating cash flow: 111482.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 217,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-112",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 222, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Cash payments for property, plant and equipment (outflow): -12715.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 222,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-113",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 227, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Cash dividends and equivalents (outflow): -15421.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 227,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-114",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 228, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Cash share repurchases (outflow): -90711.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 228,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-115",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of operations; extracted HTML table row 114, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Research and development expense: 34550.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 114,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-116",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated statements of cash flows; extracted HTML table row 208, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Share-based compensation: 12863.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 208,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-117",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 239, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "iPhone revenue: 209586.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 239,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-118",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 240, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Mac revenue: 33708.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 240,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-119",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 241, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "iPad revenue: 28023.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 241,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-120",
+      "source_id": "SRC-001",
+      "locator": "Note 2, net sales by product and service; extracted HTML table row 242, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Wearables, Home and Accessories revenue: 35686.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 242,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-121",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 58, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Americas revenue: 178353.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 58,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-122",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 59, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Europe revenue: 111032.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 59,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-123",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 60, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Greater China revenue: 64377.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 60,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-124",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 61, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Japan revenue: 28703.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 61,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-125",
+      "source_id": "SRC-001",
+      "locator": "Item 7, net sales by reportable segment; extracted HTML table row 62, numeric column 0; FY2025, ended 2025-09-27",
+      "content": "Rest of Asia Pacific revenue: 33696.0 USD millions; FY2025, ended 2025-09-27.",
+      "table_row_index": 62,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-126",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated balance sheets; extracted HTML table row 146, numeric column 0; At 2025-09-27",
+      "content": "Cash: 35934.0 USD millions; At 2025-09-27.",
+      "table_row_index": 146,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-127",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated balance sheets; extracted HTML table row 147, numeric column 0; At 2025-09-27",
+      "content": "Current Securities: 18763.0 USD millions; At 2025-09-27.",
+      "table_row_index": 147,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-128",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated balance sheets; extracted HTML table row 154, numeric column 0; At 2025-09-27",
+      "content": "Noncurrent Securities: 77723.0 USD millions; At 2025-09-27.",
+      "table_row_index": 154,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-129",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated balance sheets; extracted HTML table row 152, numeric column 0; At 2025-09-27",
+      "content": "Current Assets: 147957.0 USD millions; At 2025-09-27.",
+      "table_row_index": 152,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-130",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated balance sheets; extracted HTML table row 150, numeric column 0; At 2025-09-27",
+      "content": "Inventory: 5718.0 USD millions; At 2025-09-27.",
+      "table_row_index": 150,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-131",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated balance sheets; extracted HTML table row 166, numeric column 0; At 2025-09-27",
+      "content": "Current Liabilities: 165631.0 USD millions; At 2025-09-27.",
+      "table_row_index": 166,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-132",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated balance sheets; extracted HTML table row 164, numeric column 0; At 2025-09-27",
+      "content": "Commercial Paper: 7979.0 USD millions; At 2025-09-27.",
+      "table_row_index": 164,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-133",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated balance sheets; extracted HTML table row 165, numeric column 0; At 2025-09-27",
+      "content": "Current Term Debt: 12350.0 USD millions; At 2025-09-27.",
+      "table_row_index": 165,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-134",
+      "source_id": "SRC-001",
+      "locator": "Item 8, consolidated balance sheets; extracted HTML table row 168, numeric column 0; At 2025-09-27",
+      "content": "Long Term Debt: 78328.0 USD millions; At 2025-09-27.",
+      "table_row_index": 168,
+      "numeric_column_index": 0,
+      "source_key": "a25"
+    },
+    {
+      "id": "EVD-135",
+      "source_id": "SRC-001",
+      "locator": "Note 7, European Commission State Aid Decision",
+      "content": "The FY2024 net charge was $10.2 billion; it depresses the comparison base for FY2025 net income."
+    },
+    {
+      "id": "EVD-136",
+      "source_id": "SRC-001",
+      "locator": "Item 7, Products and Services Performance, Services",
+      "content": "Management attributes growth mainly to advertising, the App Store and cloud services."
+    },
+    {
+      "id": "EVD-137",
+      "source_id": "SRC-001",
+      "locator": "Item 1A, Risk Factors; Item 7, gross margin discussion",
+      "content": "Apple describes exposure to trade restrictions, tariffs and changes to App Store rules. FY2025 product gross margin percentage fell partly due to tariff costs and mix."
+    },
+    {
+      "id": "EVD-138",
+      "source_id": "SRC-001",
+      "locator": "Item 7, fiscal year discussion",
+      "content": "FY2023 had 53 weeks; FY2024 and FY2025 had 52 weeks. Fiscal years end on the last Saturday of September."
+    }
+  ],
+  "calculations": [
+    {
+      "id": "CALC-001",
+      "description": "Cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-012"
+      ],
+      "result": 11085.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-002",
+      "description": "Cash dividends and equivalents",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-013"
+      ],
+      "result": 14467.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-003",
+      "description": "Cash share repurchases",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-014"
+      ],
+      "result": 85971.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-004",
+      "description": "Operating Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-007",
+        "FACT-001"
+      ],
+      "result": 29.782377527561593,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-005",
+      "description": "Gross Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-006",
+        "FACT-001"
+      ],
+      "result": 41.77935962516778,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-006",
+      "description": "Net Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-008",
+        "FACT-001"
+      ],
+      "result": 25.88179335569424,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-007",
+      "description": "Services Mix",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-003",
+        "FACT-001"
+      ],
+      "result": 18.704707545029343,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-008",
+      "description": "Services gross margin",
+      "expression": "safe_div(v[0]-v[1],v[0])*100",
+      "input_fact_ids": [
+        "FACT-003",
+        "FACT-005"
+      ],
+      "result": 69.72597734746073,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-009",
+      "description": "Free cash flow (operating cash flow less cash capex)",
+      "expression": "v[0]-v[1]",
+      "input_fact_ids": [
+        "FACT-011",
+        "FACT-017"
+      ],
+      "result": 92953.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-010",
+      "description": "Cash returned to shareholders",
+      "expression": "v[0]+v[1]",
+      "input_fact_ids": [
+        "FACT-018",
+        "FACT-019"
+      ],
+      "result": 100438.0,
+      "units": "USD millions",
+      "period": "FY2021, ended 2021-09-25",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-011",
+      "description": "Free cash flow margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-025",
+        "FACT-001"
+      ],
+      "result": 25.40969938521173,
+      "units": "percent",
+      "period": "FY2021, ended 2021-09-25",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-012",
+      "description": "Cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-048"
+      ],
+      "result": 10708.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-013",
+      "description": "Cash dividends and equivalents",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-049"
+      ],
+      "result": 14841.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-014",
+      "description": "Cash share repurchases",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-050"
+      ],
+      "result": 89402.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-015",
+      "description": "Operating Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-043",
+        "FACT-037"
+      ],
+      "result": 30.288744395528592,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-016",
+      "description": "Gross Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-042",
+        "FACT-037"
+      ],
+      "result": 43.30963056136009,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-017",
+      "description": "Net Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-044",
+        "FACT-037"
+      ],
+      "result": 25.309640705199733,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-018",
+      "description": "Services Mix",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-039",
+        "FACT-037"
+      ],
+      "result": 19.813201192915542,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-019",
+      "description": "Services gross margin",
+      "expression": "safe_div(v[0]-v[1],v[0])*100",
+      "input_fact_ids": [
+        "FACT-039",
+        "FACT-041"
+      ],
+      "result": 71.74544663313239,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-020",
+      "description": "Free cash flow (operating cash flow less cash capex)",
+      "expression": "v[0]-v[1]",
+      "input_fact_ids": [
+        "FACT-047",
+        "FACT-053"
+      ],
+      "result": 111443.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-021",
+      "description": "Cash returned to shareholders",
+      "expression": "v[0]+v[1]",
+      "input_fact_ids": [
+        "FACT-054",
+        "FACT-055"
+      ],
+      "result": 104243.0,
+      "units": "USD millions",
+      "period": "FY2022, ended 2022-09-24",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-022",
+      "description": "Free cash flow margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-061",
+        "FACT-037"
+      ],
+      "result": 28.261498042238948,
+      "units": "percent",
+      "period": "FY2022, ended 2022-09-24",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-023",
+      "description": "Cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-084"
+      ],
+      "result": 10959.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-024",
+      "description": "Cash dividends and equivalents",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-085"
+      ],
+      "result": 15025.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-025",
+      "description": "Cash share repurchases",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-086"
+      ],
+      "result": 77550.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-026",
+      "description": "Operating Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-079",
+        "FACT-073"
+      ],
+      "result": 29.821412265024723,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-027",
+      "description": "Gross Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-078",
+        "FACT-073"
+      ],
+      "result": 44.13112957720756,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-028",
+      "description": "Net Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-080",
+        "FACT-073"
+      ],
+      "result": 25.30623426432028,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-029",
+      "description": "Services Mix",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-075",
+        "FACT-073"
+      ],
+      "result": 22.2288897295746,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-030",
+      "description": "Services gross margin",
+      "expression": "safe_div(v[0]-v[1],v[0])*100",
+      "input_fact_ids": [
+        "FACT-075",
+        "FACT-077"
+      ],
+      "result": 70.8274647887324,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-031",
+      "description": "Free cash flow (operating cash flow less cash capex)",
+      "expression": "v[0]-v[1]",
+      "input_fact_ids": [
+        "FACT-083",
+        "FACT-089"
+      ],
+      "result": 99584.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-032",
+      "description": "Cash returned to shareholders",
+      "expression": "v[0]+v[1]",
+      "input_fact_ids": [
+        "FACT-090",
+        "FACT-091"
+      ],
+      "result": 92575.0,
+      "units": "USD millions",
+      "period": "FY2023, ended 2023-09-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-033",
+      "description": "Free cash flow margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-097",
+        "FACT-073"
+      ],
+      "result": 25.981710737440807,
+      "units": "percent",
+      "period": "FY2023, ended 2023-09-30",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-034",
+      "description": "Cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-120"
+      ],
+      "result": 9447.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-035",
+      "description": "Cash dividends and equivalents",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-121"
+      ],
+      "result": 15234.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-036",
+      "description": "Cash share repurchases",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-122"
+      ],
+      "result": 94949.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-037",
+      "description": "Operating Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-115",
+        "FACT-109"
+      ],
+      "result": 31.510222870075566,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-038",
+      "description": "Gross Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-114",
+        "FACT-109"
+      ],
+      "result": 46.206349815233935,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-039",
+      "description": "Net Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-116",
+        "FACT-109"
+      ],
+      "result": 23.971255769943866,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-040",
+      "description": "Services Mix",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-111",
+        "FACT-109"
+      ],
+      "result": 24.593450714130448,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-041",
+      "description": "Services gross margin",
+      "expression": "safe_div(v[0]-v[1],v[0])*100",
+      "input_fact_ids": [
+        "FACT-111",
+        "FACT-113"
+      ],
+      "result": 73.88035645582256,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-042",
+      "description": "Free cash flow (operating cash flow less cash capex)",
+      "expression": "v[0]-v[1]",
+      "input_fact_ids": [
+        "FACT-119",
+        "FACT-125"
+      ],
+      "result": 108807.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-043",
+      "description": "Cash returned to shareholders",
+      "expression": "v[0]+v[1]",
+      "input_fact_ids": [
+        "FACT-126",
+        "FACT-127"
+      ],
+      "result": 110183.0,
+      "units": "USD millions",
+      "period": "FY2024, ended 2024-09-28",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-044",
+      "description": "Free cash flow margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-133",
+        "FACT-109"
+      ],
+      "result": 27.825386474356517,
+      "units": "percent",
+      "period": "FY2024, ended 2024-09-28",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-045",
+      "description": "Cash capital expenditure",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-156"
+      ],
+      "result": 12715.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-046",
+      "description": "Cash dividends and equivalents",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-157"
+      ],
+      "result": 15421.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-047",
+      "description": "Cash share repurchases",
+      "expression": "-v[0]",
+      "input_fact_ids": [
+        "FACT-158"
+      ],
+      "result": 90711.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-048",
+      "description": "Operating Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-151",
+        "FACT-145"
+      ],
+      "result": 31.970799762591884,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-049",
+      "description": "Gross Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-150",
+        "FACT-145"
+      ],
+      "result": 46.90516410716045,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-050",
+      "description": "Net Margin",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-152",
+        "FACT-145"
+      ],
+      "result": 26.91506412181824,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-051",
+      "description": "Services Mix",
+      "expression": "safe_div(v[0],v[1])*100",
+      "input_fact_ids": [
+        "FACT-147",
+        "FACT-145"
+      ],
+      "result": 26.22975242754607,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-052",
+      "description": "Services gross margin",
+      "expression": "safe_div(v[0]-v[1],v[0])*100",
+      "input_fact_ids": [
+        "FACT-147",
+        "FACT-149"
+      ],
+      "result": 75.4081240037377,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-053",
+      "description": "Free cash flow (operating cash flow less cash capex)",
+      "expression": "v[0]-v[1]",
+      "input_fact_ids": [
+        "FACT-155",
+        "FACT-161"
+      ],
+      "result": 98767.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-054",
+      "description": "Cash returned to shareholders",
+      "expression": "v[0]+v[1]",
+      "input_fact_ids": [
+        "FACT-162",
+        "FACT-163"
+      ],
+      "result": 106132.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-055",
+      "description": "Free cash flow margin",
+      "expression": "v[0]/v[1]*100",
+      "input_fact_ids": [
+        "FACT-169",
+        "FACT-145"
+      ],
+      "result": 23.732882225869314,
+      "units": "percent",
+      "period": "FY2025, ended 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-056",
+      "description": "FY2021 calculated EPS",
+      "expression": "v[0]*1000/v[1]",
+      "input_fact_ids": [
+        "FACT-008",
+        "FACT-010"
+      ],
+      "result": 5.61402044089272,
+      "units": "USD per share",
+      "period": "FY2021",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-057",
+      "description": "EPS change from net income at FY2021 share count",
+      "expression": "(v[0]-v[1])*1000/v[2]",
+      "input_fact_ids": [
+        "FACT-152",
+        "FACT-008",
+        "FACT-010"
+      ],
+      "result": 1.027576829749375,
+      "units": "USD per share",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-058",
+      "description": "EPS change from lower diluted share count at FY2025 net income",
+      "expression": "v[0]*1000/v[1]-v[0]*1000/v[2]",
+      "input_fact_ids": [
+        "FACT-152",
+        "FACT-154",
+        "FACT-010"
+      ],
+      "result": 0.8233985236748449,
+      "units": "USD per share",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-059",
+      "description": "FY2025 calculated EPS",
+      "expression": "v[0]*1000/v[1]",
+      "input_fact_ids": [
+        "FACT-152",
+        "FACT-154"
+      ],
+      "result": 7.464995794316939,
+      "units": "USD per share",
+      "period": "FY2025",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-060",
+      "description": "Reported EPS bridge residual",
+      "expression": "(v[0]-v[1])-(v[2]-v[3])",
+      "input_fact_ids": [
+        "FACT-153",
+        "FACT-009",
+        "FACT-184",
+        "FACT-181"
+      ],
+      "result": -0.0009753534242200601,
+      "units": "USD per share",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-061",
+      "description": "Revenue CAGR",
+      "expression": "((v[1]/v[0])**0.25-1)*100",
+      "input_fact_ids": [
+        "FACT-001",
+        "FACT-145"
+      ],
+      "result": 3.275991627577457,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-062",
+      "description": "Services CAGR",
+      "expression": "((v[1]/v[0])**0.25-1)*100",
+      "input_fact_ids": [
+        "FACT-003",
+        "FACT-147"
+      ],
+      "result": 12.385476417353836,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-063",
+      "description": "Operating Income CAGR",
+      "expression": "((v[1]/v[0])**0.25-1)*100",
+      "input_fact_ids": [
+        "FACT-007",
+        "FACT-151"
+      ],
+      "result": 5.1230390527384095,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-064",
+      "description": "Net Income CAGR",
+      "expression": "((v[1]/v[0])**0.25-1)*100",
+      "input_fact_ids": [
+        "FACT-008",
+        "FACT-152"
+      ],
+      "result": 4.291673654076011,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-065",
+      "description": "Fcf CAGR",
+      "expression": "((v[1]/v[0])**0.25-1)*100",
+      "input_fact_ids": [
+        "FACT-025",
+        "FACT-169"
+      ],
+      "result": 1.5282996532510085,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-066",
+      "description": "Eps CAGR",
+      "expression": "((v[1]/v[0])**0.25-1)*100",
+      "input_fact_ids": [
+        "FACT-009",
+        "FACT-153"
+      ],
+      "result": 7.385091507318342,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-067",
+      "description": "Cumulative net income growth",
+      "expression": "(v[1]/v[0]-1)*100",
+      "input_fact_ids": [
+        "FACT-008",
+        "FACT-152"
+      ],
+      "result": 18.303760033798056,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-068",
+      "description": "Diluted share count change",
+      "expression": "(v[1]/v[0]-1)*100",
+      "input_fact_ids": [
+        "FACT-010",
+        "FACT-154"
+      ],
+      "result": -11.030127093999088,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-069",
+      "description": "Reported diluted EPS growth",
+      "expression": "(v[1]/v[0]-1)*100",
+      "input_fact_ids": [
+        "FACT-009",
+        "FACT-153"
+      ],
+      "result": 32.97682709447414,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-070",
+      "description": "Services contribution to net revenue increase",
+      "expression": "(v[1]-v[0])/(v[3]-v[2])*100",
+      "input_fact_ids": [
+        "FACT-003",
+        "FACT-147",
+        "FACT-001",
+        "FACT-145"
+      ],
+      "result": 80.90934371523916,
+      "units": "percent",
+      "period": "FY2021–FY2025, four annual intervals",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-071",
+      "description": "Five-year cash returned to shareholders",
+      "expression": "sum(v)",
+      "input_fact_ids": [
+        "FACT-026",
+        "FACT-062",
+        "FACT-098",
+        "FACT-134",
+        "FACT-170"
+      ],
+      "result": 513571.0,
+      "units": "USD millions",
+      "period": "FY2021–FY2025 cumulative",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-072",
+      "description": "Five-year free cash flow",
+      "expression": "sum(v)",
+      "input_fact_ids": [
+        "FACT-025",
+        "FACT-061",
+        "FACT-097",
+        "FACT-133",
+        "FACT-169"
+      ],
+      "result": 511554.0,
+      "units": "USD millions",
+      "period": "FY2021–FY2025 cumulative",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-073",
+      "description": "Cash and marketable securities",
+      "expression": "sum(v)",
+      "input_fact_ids": [
+        "FACT-198",
+        "FACT-199",
+        "FACT-200"
+      ],
+      "result": 132420.0,
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-074",
+      "description": "Funded debt, excluding leases",
+      "expression": "sum(v)",
+      "input_fact_ids": [
+        "FACT-204",
+        "FACT-205",
+        "FACT-206"
+      ],
+      "result": 98657.0,
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-075",
+      "description": "Cash and marketable securities less funded debt",
+      "expression": "v[0]-v[1]",
+      "input_fact_ids": [
+        "FACT-207",
+        "FACT-208"
+      ],
+      "result": 33763.0,
+      "units": "USD millions",
+      "period": "At 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    },
+    {
+      "id": "CALC-076",
+      "description": "Current ratio",
+      "expression": "safe_div(v[0],v[1])",
+      "input_fact_ids": [
+        "FACT-201",
+        "FACT-203"
+      ],
+      "result": 0.8932929222186667,
+      "units": "times",
+      "period": "At 2025-09-27",
+      "method": "v contains input facts in listed order; safe_div imported from financial-analysis"
+    }
+  ],
+  "validation": {
+    "status": "PASS",
+    "validated_at": "2026-09-04T03:15:55Z",
+    "errors": 0,
+    "warnings": 0
+  }
+}

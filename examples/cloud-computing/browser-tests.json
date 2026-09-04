@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-04T03:15:01.191Z",
+  "browser": "Chromium (local Chrome)",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1050
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": [
+    {
+      "name": "All five years and three chart modes; metric IDs and chart geometry recomputed",
+      "passed": true,
+      "bar_checks": 375
+    },
+    {
+      "name": "Metric evidence, assessment evidence, calculation drill-down and keyboard dismissal",
+      "passed": true
+    },
+    {
+      "name": "Source search and empty state",
+      "passed": true
+    },
+    {
+      "name": "All local report, ledger, prompt, audit and navigation links return 200",
+      "passed": true
+    },
+    {
+      "name": "390px mobile: no page overflow, readable horizontally scrollable charts, year selection and evidence modal",
+      "passed": true
+    },
+    {
+      "name": "English output, nonempty print presentation, no JavaScript errors or missing requested assets",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failed_responses": [],
+  "limitations": "External issuer availability not guaranteed; tested local data and links without requiring financial API calls."
+}

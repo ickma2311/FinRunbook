@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-04T03:15:55.197037+00:00",
+  "checks": [
+    {
+      "name": "Primary-statement figures compared with separately transcribed fixtures",
+      "passed": true,
+      "count": 40
+    },
+    {
+      "name": "Direct numeric facts match recorded source table cells",
+      "passed": true,
+      "count": 35
+    },
+    {
+      "name": "All primary source snapshots match recorded SHA-256",
+      "passed": true,
+      "count": 9
+    },
+    {
+      "name": "All stored calculations recomputed using ledger inputs",
+      "passed": true,
+      "count": 37
+    },
+    {
+      "name": "CY2023 filing overlaps, all segment margins, Microsoft June period labels and Azure non-imputation",
+      "passed": true
+    }
+  ],
+  "semantic_review": {
+    "reviewer": "Report author; not independent",
+    "completed": true,
+    "scope": [
+      "Compared selected numeric cells, units and fiscal columns against primary statements",
+      "Reviewed source support for narrative conclusions and management explanations",
+      "Verified no claimed equity valuation, market-share calculation or Azure margin",
+      "Cost-allocation changes, 53-week Apple year and capital-expenditure scope disclosed"
+    ],
+    "limits": "No third-party audit. Source filings and management statements are taken as reported, not independently audited by FinRunbook."
+  }
+}
