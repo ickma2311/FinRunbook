@@ -14,3 +14,6 @@ __pycache__/
 # Private provider responses/caches; do not publish without reviewing data rights.
 runs/**/artifacts/market-data/
 **/.market-data.lock
+
+# Local example previews pending source-data redistribution review.
+/examples/local/

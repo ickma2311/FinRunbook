@@ -1,0 +1,43 @@
+{
+  "status": "completed",
+  "result": "edited",
+  "completed_at": "2026-09-04T14:49:21.471456+00:00",
+  "reviewer": "same authoring agent",
+  "language": "zh-CN",
+  "mode": "polish-only",
+  "changes": [
+    {
+      "field": "meta.title",
+      "before": "长期年化，不是每年的承诺",
+      "after": "美股大盘：长期收益与持有风险",
+      "reason": "用具体研究对象和决策问题替代修辞性标题。"
+    },
+    {
+      "field": "executive_view.conclusion",
+      "before": "美股大盘可以承担长期资产中的增长角色，但不适合承担本金保障的角色。过去20年的回报可观，获得这份回报却需要承受深度回撤、数年等待，以及买入时点的不确定性。",
+      "after": "美股大盘可以作为长期增长资产，但不能提供本金保障。过去20年的回报可观，投资者也需要承受深度回撤、数年等待和买入时点的不确定性。",
+      "reason": "删除重复的“承担角色”，保留研究观点、时间范围及风险限定。"
+    },
+    {
+      "field": "sections.drawdowns.title",
+      "before": "长期持有，仍可能在水下等数年",
+      "after": "长期持有，仍可能需要数年才能回本",
+      "reason": "用回本时间解释术语，避免让“水下”隐喻增加阅读负担。"
+    }
+  ],
+  "protected_items_preserved": true,
+  "reviewed_artifacts": [
+    "report/index.html",
+    "report/report-data.json",
+    "report/app.js",
+    "report/style.css"
+  ],
+  "checks": [
+    "标题与段落结论先行，保留投资研究判断而非个性化配置建议",
+    "所有数值、单位、时间跨度、原始证据、公式和模型对象保持不变",
+    "来源和推断分开，历史频率不称为未来概率，情景不称为预测",
+    "中文正文、交互标签、解释、工具提示和来源面板已审阅",
+    "真实回报、基金代理与价格指数的口径不混用；缺失CPI不补值"
+  ],
+  "unresolved_issues": []
+}

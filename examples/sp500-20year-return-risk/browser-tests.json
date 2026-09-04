@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-04T14:49:45.998Z",
+  "browser": "Chromium / local Chrome",
+  "checks": [
+    "Chinese report, all nine rendered sections, correct CAGR/real return/drawdown/recovery KPIs",
+    "Every plotted wealth value and SVG coordinate matches the model; missing CPI creates a real gap; basis switch works",
+    "KPI evidence opens exact source/formula inputs; Escape works; calendar-year values and numeric sorting verified",
+    "All sample/basis/horizon controls update dependent ranges/table/chart; worst 10-year return and single main 20-year window verified",
+    "Withdrawal slider recalculates both paths; zero withdrawal produces equal final wealth; reset restores 4%",
+    "Searchable nine-source drawer preserves official-vs-secondary labels and links",
+    "1440px and 390px layouts have no page overflow; mobile evidence controls and print styles work; IDs unique",
+    "No JavaScript or HTTP errors"
+  ],
+  "errors": []
+}

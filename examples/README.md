@@ -1,6 +1,6 @@
 # FinRunbook examples
 
-Six completed interactive financial reports generated with FinRunbook: **four English and two Chinese**. The research cutoff is September 3, 2026. Reporting periods vary by example; these are saved snapshots, not live dashboards.
+Seven completed interactive financial reports generated with FinRunbook: **four English and three Chinese**. Research cutoffs are September 3–4, 2026. Reporting periods vary by example; these are saved snapshots, not live dashboards.
 
 ## View online
 
@@ -21,6 +21,21 @@ python3 -m http.server 8771 --bind 127.0.0.1 --directory examples
 
 Open <http://127.0.0.1:8771/>. Serve the directory over HTTP: the report renderer fetches its adjacent JSON file, so opening an HTML file directly with `file://` is not supported.
 
+### Local-only previews
+
+`examples/local/` holds previews whose source-data redistribution review is still
+pending. It is ignored by Git and excluded from the public catalog. When that
+directory exists locally, open `/local/` on the same preview server.
+
+The earlier local S&P 500 / SPY preview remains separate from the curated public
+package below. The public package contains analytical output and a ledger excerpt,
+not the full daily-price ledger. It retains its original `PASS_WITH_WARNINGS`
+status and all three warnings. Publication does not establish a data license.
+
+The packaging test rejects tracked files under `examples/local/`, including files
+added with `git add -f`. To publish a local preview, first resolve its data-use
+boundary, then curate it as a regular package and add it to the public catalog.
+
 | Example | Report | Main analytical feature |
 | --- | --- | --- |
 | Apple | [Open report](apple-business-quality/report/) | Product and geography mix, cash allocation and an EPS bridge separating income and share-count effects |
@@ -29,16 +44,17 @@ Open <http://127.0.0.1:8771/>. Serve the directory over HTTP: the report rendere
 | AI infrastructure — English | [Open report](ai-infrastructure-capex-supply-chain/report/) | Four hyperscalers, eight suppliers, capital-spending filters and named relationship evidence |
 | 六家科技公司的资本配置 — 中文 | [打开报告](big-tech-investment-allocation/report/) | 五年趋势、实际财年日期、支出口径和现金桥接 |
 | AI 产业链 — 中文 | [打开报告](ai-industry-value-chain/report/) | 模型、硬件、云和应用；财务筛选、增长桥接、推理成本情景 |
+| 美股大盘长期收益与风险 — 中文 | [打开报告](sp500-20year-return-risk/report/) | 复合收益与购买力、回撤与回本、滚动持有窗口及提款顺序；保留 3 项验证警告 |
 
 ## Why these examples?
 
-The three additions demonstrate cross-company capital allocation, an industry value
-chain, and buyer–supplier relationships. Selection considered existing validation and
+The examples cover company quality, capital allocation, industry value chains,
+buyer–supplier relationships and long-term market risk. Selection considered existing validation and
 editorial records, first-party sources, interactive controls, comparison limits and
 suitability for a static public package. Selection is not a new independent audit or
 a guarantee of financial accuracy.
 
-The two Chinese reports retain their original Chinese text and controls. The English
+The three Chinese reports retain their original Chinese text and controls. The English
 supply-chain example now opens actual evidence and calculation details from its
 existing ledger instead of displaying IDs alone; its financial data and conclusions
 are unchanged.
@@ -47,7 +63,7 @@ are unchanged.
 
 - `prompt.txt`: the original instruction, in its original language.
 - `report/`: portable HTML, CSS, JavaScript and presentation JSON. No third-party browser library or financial API call is needed to view it.
-- `research-record.json`: structured facts, precise evidence locators, source URLs and hashes, calculation inputs, and pinned skill revisions.
+- `research-record.json`: structured facts, precise evidence locators, source URLs and hashes, calculation inputs, and pinned skill revisions. The market-history package contains an explicitly labeled report-evidence excerpt, not the complete original run ledger.
 - `validation.json`: FinRunbook schema, reference-integrity and provenance checks.
 - `model-audit.json` or `model-tests.json`, where available: original numeric-recomputation receipts. The English supply-chain report has no separate model-audit receipt; none is implied.
 - `semantic-validation.json`, where available: original same-agent review and disclosed limitations.
@@ -66,6 +82,15 @@ Original raw-file names and hashes may remain in evidence locators for traceabil
 those source archives are not included. Use the publisher URLs to consult documents.
 
 ## Sources and limitations
+
+The S&P 500 / SPY example covers 2006–2025, with a separate 1993–2026 rolling-window
+sample and a September 4, 2026 research cutoff. It uses Yahoo adjusted prices as a
+return proxy, not an independently reconstructed total-return index. Its public
+ledger has 20 facts, 16 evidence entries, 9 sources and 8 calculations. Original
+receipts remain scoped to the full local run; a separate publication review checks
+the packaged report. Raw snapshots, caches and the bulk daily-price ledger are
+excluded. Source-use limitations remain visible. See its
+[package notes](sp500-20year-return-risk/README.md).
 
 The pandemic-growth report uses 14 SEC annual filings and Shopify's FY2022 IR
 release, whose annual financial tables are unaudited. It covers annual fiscal

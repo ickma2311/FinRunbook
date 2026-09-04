@@ -1,0 +1,29 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "reviewed_at": "2026-09-04T14:49:21.471456+00:00",
+  "reviewer": "same authoring agent; deterministic numeric cross-check uses a separate implementation",
+  "coverage": {
+    "primary_narrative_facts": 13,
+    "explicit_inferences": 4,
+    "market_input_cells": "all receipt-mapped inputs; checked in model-audit.json",
+    "calculations": "all 8 report model calculations; market-data helper calculations checked by validator"
+  },
+  "checks": [
+    "SPY identity matches the issuer NYSE Arca/USD/ISIN and Yahoo ETF metadata; ^GSPC is the price index.",
+    "SSGA fund expenses, official close, FY1 P/E, top security weights, sector weight and July YTD reopened at exact table locators.",
+    "Top-ten security sum is not mislabeled as ten independent companies; sector and constituent weights overlap.",
+    "CPI unit and seasonality match FRED/BLS; every downloaded cell matched to the normalized data and missing values retained.",
+    "20 complete calendar years and trailing approximately 20 years shown separately; YTD not annualized.",
+    "Real auxiliary drawdown uses monthly sampling; daily nominal drawdowns are not conflated with that basis.",
+    "Annual returns, full wealth path, all rolling windows, drawdown recovery dates and default cash-flow scenario recomputed separately.",
+    "Historical long US equity window is not a future return forecast or an independent set of probability trials.",
+    "Author judgments are recorded as inferred facts with reasoning and calculation/source references.",
+    "Chinese tone changes preserve model, evidence, numerical text, citations and uncertainty."
+  ],
+  "limitations": [
+    "Yahoo adjustments and historical data accuracy were not independently reconstructed.",
+    "SSGA July midpoint-return versus Yahoo closing-price proxy differs by approximately 0.05 percentage points; not silently reconciled.",
+    "No full exchange-calendar audit; no personal tax, FX or brokerage-cost model.",
+    "Only local personal research; no commercial market-data redistribution permission."
+  ]
+}

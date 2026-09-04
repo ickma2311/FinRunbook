@@ -23,11 +23,14 @@ or financial API key is needed to view them.
 - [AI infrastructure capex and supplier exposure — English](https://ickma2311.github.io/FinRunbook/ai-infrastructure-capex-supply-chain/report/)
 - [六家科技公司的资本配置 — 中文](https://ickma2311.github.io/FinRunbook/big-tech-investment-allocation/report/)
 - [AI 产业链：增长、利润与资本回收 — 中文](https://ickma2311.github.io/FinRunbook/ai-industry-value-chain/report/)
+- [美股大盘：20年收益与长期持有风险 — 中文](https://ickma2311.github.io/FinRunbook/sp500-20year-return-risk/report/)
 
 [Browse all examples](https://ickma2311.github.io/FinRunbook/) or inspect the
 [example packages and limitations](examples/README.md). These are historical
-snapshots with a September 3, 2026 research cutoff. Each report labels its own
-reporting periods; these are not live market dashboards.
+snapshots with September 3–4, 2026 research cutoffs. Each report labels its own
+reporting periods; these are not live market dashboards. The S&P 500 / SPY
+example retains three market-data validation warnings and excludes raw provider
+snapshots. Publishing the analysis does not grant a third-party data license.
 
 ## Repository layout
 

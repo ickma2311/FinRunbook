@@ -1,0 +1,51 @@
+{
+  "validator_version": "0.4.0",
+  "status": "PASS_WITH_WARNINGS",
+  "validated_at": "2026-09-04T14:50:36Z",
+  "summary": {
+    "errors": 0,
+    "warnings": 3,
+    "sources": 9,
+    "evidence": 16970,
+    "facts": 16980,
+    "calculations": 14,
+    "artifacts": 2
+  },
+  "checks": [
+    "record structure",
+    "stable IDs and reference integrity",
+    "source metadata",
+    "evidence locators",
+    "fact support and status",
+    "calculation provenance",
+    "artifact files, fact references, citations, and placeholders",
+    "finance-report output contract",
+    "interactive report and presentation-data provenance",
+    "editorial completion receipt and language coverage (when required)",
+    "market-data snapshots, input mappings and recomputed metrics (when declared)"
+  ],
+  "semantic_review_required": true,
+  "issues": [
+    {
+      "id": "ISSUE-001",
+      "severity": "warning",
+      "code": "market_data.corporate_actions",
+      "message": "Corporate actions present; check adjustment basis before interpreting moves",
+      "path": "artifacts/market-data/MD-7cc518b28ffb413e.json"
+    },
+    {
+      "id": "ISSUE-002",
+      "severity": "warning",
+      "code": "source.secondary",
+      "message": "secondary source; confirm whether primary evidence exists",
+      "path": "sources[SRC-001]"
+    },
+    {
+      "id": "ISSUE-003",
+      "severity": "warning",
+      "code": "source.secondary",
+      "message": "secondary source; confirm whether primary evidence exists",
+      "path": "sources[SRC-008]"
+    }
+  ]
+}

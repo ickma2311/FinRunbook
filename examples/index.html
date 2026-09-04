@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Six FinRunbook financial research examples: four English and two Chinese reports with primary sources, calculations and interactive charts.">
+<meta name="description" content="Seven FinRunbook financial research examples: four English and three Chinese reports with attributed sources, calculations and interactive charts.">
 <title>FinRunbook | Examples</title>
 <style>
 *{box-sizing:border-box}body{background:#f2f5f7;color:#192b3a;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;margin:0}
@@ -16,8 +16,8 @@ a{color:#155c91}a.open{align-self:flex-start;display:inline-block;padding:9px 17
 <body><main>
 <small>FINRUNBOOK / RUNNABLE EXAMPLES</small>
 <h1>Financial analysis,<br>with the work attached.</h1>
-<p>Six completed examples: four English reports and two Chinese reports. Explore company performance, capital allocation, industry economics and supplier relationships. Each report keeps its original language, research cutoff and evidence boundaries.</p>
-<nav aria-label="Gallery navigation"><a href="#english">English reports · 4</a><a href="#chinese" lang="zh-CN">中文报告 · 2</a><a href="https://github.com/ickma2311/FinRunbook">Use FinRunbook on GitHub ↗</a></nav>
+<p>Seven completed examples: four English reports and three Chinese reports. Explore company performance, capital allocation, industry economics, supplier relationships and long-term market risk. Each report keeps its original language, research cutoff and evidence boundaries.</p>
+<nav aria-label="Gallery navigation"><a href="#english">English reports · 4</a><a href="#chinese" lang="zh-CN">中文报告 · 3</a><a href="https://github.com/ickma2311/FinRunbook">Use FinRunbook on GitHub ↗</a></nav>
 <h2 id="english">English reports</h2>
 <section class="grid" aria-labelledby="english">
 <article lang="en" data-example="apple-business-quality"><small>Company analysis</small><h3>Apple</h3><p>Business quality, the Services shift, an EPS bridge and five years of cash allocation.</p><p class="meta">FY2021–FY2025 · English · 2 primary sources</p><a class="open" href="apple-business-quality/report/">Explore report →</a><div class="audit-links"><a href="apple-business-quality/prompt.txt">View prompt</a><a href="apple-business-quality/validation.json">Validation</a></div></article>
@@ -26,10 +26,11 @@ a{color:#155c91}a.open{align-self:flex-start;display:inline-block;padding:9px 17
 <article lang="en" data-example="pandemic-growth-retention"><small>Cross-company historical comparison</small><h3>Pandemic growth retention</h3><p>Zoom, Docusign, Shopify, Etsy and Peloton: retained revenue, operating margins, cash conversion and scope changes.</p><p class="meta">Fiscal periods ending 2019–2025 · English · 15 primary sources</p><a class="open" href="pandemic-growth-retention/report/">Explore report →</a><div class="audit-links"><a href="pandemic-growth-retention/prompt.txt">View prompt</a><a href="pandemic-growth-retention/validation.json">Validation</a></div></article>
 </section>
 <h2 id="chinese" lang="zh-CN">中文报告</h2>
-<p lang="zh-CN">保留中文正文、图表口径和证据说明；两份报告均可切换比较维度并查看原始披露。</p>
+<p lang="zh-CN">保留中文正文、交互图表、计算口径和来源说明；市场回报示例明确标注二级行情来源及验证警告。</p>
 <section class="grid chinese" aria-labelledby="chinese">
 <article lang="zh-CN" data-example="big-tech-investment-allocation"><small>跨公司比较 · 中文</small><h3>六家科技公司的资本配置</h3><p>比较资本开支、研发、并购及股东回报；保留真实财年日期，不把不同支出口径简单相加。</p><p class="meta">各自最近五个完整财年 · 中文 · 12 份一手资料</p><a class="open" href="big-tech-investment-allocation/report/">阅读报告 →</a><div class="audit-links"><a href="big-tech-investment-allocation/prompt.txt">原始提问</a><a href="big-tech-investment-allocation/validation.json">验证记录</a></div></article>
 <article lang="zh-CN" data-example="ai-industry-value-chain"><small>行业全景 · 中文</small><h3>AI 产业链：增长、利润与资本回收</h3><p>连接模型、硬件、云、应用与分发；比较财务结果、现金回收、增长桥接及推理成本情景。</p><p class="meta">最近完整年度与已核实季度 · 中文 · 39 份一手资料</p><a class="open" href="ai-industry-value-chain/report/">阅读报告 →</a><div class="audit-links"><a href="ai-industry-value-chain/prompt.txt">原始提问</a><a href="ai-industry-value-chain/validation.json">验证记录</a></div></article>
+<article lang="zh-CN" data-example="sp500-20year-return-risk"><small>历史收益与风险 · 中文</small><h3>美股大盘：长期收益与持有风险</h3><p>20年复合收益、购买力、历史回撤、滚动持有窗口与提款顺序；区分历史实绩和未来风险。</p><p class="meta">2006–2025；1993–2026辅助样本 · 9项来源（含Yahoo）<br>PASS_WITH_WARNINGS · 3项警告</p><a class="open" href="sp500-20year-return-risk/report/">阅读报告 →</a><div class="audit-links"><a href="sp500-20year-return-risk/prompt.txt">原始提问</a><a href="sp500-20year-return-risk/validation.json">验证记录</a></div></article>
 </section>
-<footer><p>Research cutoff: September 3, 2026. Reporting periods vary by example; these are saved research snapshots, not live dashboards. Validation is not an independent audit. No financial API is called when viewing these pages. Raw source archives and private working runs are not published.</p><a href="README.md">Packages, selection criteria & limitations</a><a href="catalog.json">Example catalog</a></footer>
+<footer><p>Research cutoffs: September 3–4, 2026; see each report for its dates. These are saved research snapshots, not live dashboards. Validation is not an independent audit. The market-history example uses secondary Yahoo observations and retains three validation warnings. No financial API is called when viewing these pages. Raw source archives and private working runs are not published; no third-party data license is supplied.</p><a href="README.md">Packages, selection criteria & limitations</a><a href="catalog.json">Example catalog</a></footer>
 </main></body></html>

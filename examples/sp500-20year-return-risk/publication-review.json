@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-04T15:23:13.860850+00:00",
+  "scope": "Public-package consistency and browser regression only; not a new financial audit or provider redistribution permission",
+  "source_rights": "Third-party rights remain with their respective owners; no commercial data license granted or verified by this check",
+  "original_validation": "PASS_WITH_WARNINGS",
+  "unchanged_model_sha256": "50d56510eafb4c1eb2d85ed48feb75cee847c3f4aaeda8301a6149e8db3eb79a",
+  "original_record_sha256": "e5f3a318a5d9df0f23af88326af3a0ad3b95e44e58cee27afc4b56a27869b074",
+  "unchanged_original_receipts": {
+    "validation.json": "c07eaa45c6fc1a5cae4eef65e05eee9dab6d983cea1565418aa6694a4a7ef344",
+    "model-audit.json": "b5a8ec775377997ed55e60780bd314989042e28646eb38e7e40a82355c6e508b",
+    "semantic-validation.json": "8bd0ff8e058f75a2bbe1ce48372a24115934e9b1871286adff4d8236161eb28d",
+    "editorial-review.json": "7ef7a69fa87e05f59c13a92172cb974285a592a63593ff9527a86db19a5b003e",
+    "browser-tests.json": "d97e1716d871eb4a4a7548078caed8548d3924cba3f009eefb3aa691c719bcad"
+  },
+  "checks": [
+    "All model outputs, chart points, conclusions, facts, evidence, calculations and source records exactly match the completed run",
+    "Public ledger contains only report-used evidence, with original-run scope explicitly retained",
+    "All three original validation warnings retained; raw snapshots, caches and bulk daily-price facts excluded",
+    "Only publication wording, metadata and gallery navigation changed"
+  ],
+  "browser_regression": {
+    "status": "PASS",
+    "checked_at": "2026-09-04T15:22:56.711Z",
+    "browser": "Chromium / local Chrome",
+    "checks": [
+      "Chinese report, all nine rendered sections, correct CAGR/real return/drawdown/recovery KPIs",
+      "Every plotted wealth value and SVG coordinate matches the model; missing CPI creates a real gap; basis switch works",
+      "KPI evidence opens exact source/formula inputs; Escape works; calendar-year values and numeric sorting verified",
+      "All sample/basis/horizon controls update dependent ranges/table/chart; worst 10-year return and single main 20-year window verified",
+      "Withdrawal slider recalculates both paths; zero withdrawal produces equal final wealth; reset restores 4%",
+      "Searchable nine-source drawer preserves official-vs-secondary labels and links",
+      "1440px and 390px layouts have no page overflow; mobile evidence controls and print styles work; IDs unique",
+      "No JavaScript or HTTP errors"
+    ],
+    "errors": []
+  },
+  "published_files_sha256": {
+    "editorial-review.json": "7ef7a69fa87e05f59c13a92172cb974285a592a63593ff9527a86db19a5b003e",
+    "browser-tests.json": "d97e1716d871eb4a4a7548078caed8548d3924cba3f009eefb3aa691c719bcad",
+    "semantic-validation.json": "8bd0ff8e058f75a2bbe1ce48372a24115934e9b1871286adff4d8236161eb28d",
+    "prompt.txt": "870a98671bd9ee0e854beeba0141791870c135f6b0c2561adcb042c6b90562d0",
+    "README.md": "e4c191177c17c91b9532e99ee98b7b64932d772995f18773da280a88031c1777",
+    "model-audit.json": "b5a8ec775377997ed55e60780bd314989042e28646eb38e7e40a82355c6e508b",
+    "validation.json": "c07eaa45c6fc1a5cae4eef65e05eee9dab6d983cea1565418aa6694a4a7ef344",
+    "research-record.json": "9924623271288946e1bff48a82b2704d5a7fa5b5998e1348e373beb985a296b1",
+    "report/index.html": "a0dc10a756700fb5d9e16a0e828c8f48b5149f7f5d7670e8cae53ba896ec5f1a",
+    "report/style.css": "5b56e0416ae94928aad6ee8433e4a40ed501908bc232b6bc9ae8bdd4e24d7be0",
+    "report/report-data.json": "f95c31e97037672265f8042ce8755468cb6e74b79dd079ca5e102a5b060ac291",
+    "report/app.js": "6f291527e2db56c0fbf53119edc560f13e81e61fcd7a62204271765b557ae432"
+  }
+}

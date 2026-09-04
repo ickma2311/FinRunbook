@@ -1,7 +1,9 @@
 """Offline packaging checks, not a financial or independent source audit."""
 
 import json
+import hashlib
 import re
+import subprocess
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
@@ -23,6 +25,14 @@ class Links(HTMLParser):
 
 
 class ExamplesSiteTest(unittest.TestCase):
+    def test_local_previews_cannot_be_committed(self):
+        result = subprocess.run(
+            ["git", "ls-files", "--", "examples/local/"],
+            cwd=SITE.parent, text=True, capture_output=True, check=True,
+        )
+        self.assertEqual(result.stdout.strip(), "",
+                         "Local previews need a data-use review before publication")
+
     def assert_local_url(self, source, url):
         parts = urlsplit(url)
         if parts.scheme or parts.netloc or not parts.path:
@@ -72,7 +82,9 @@ class ExamplesSiteTest(unittest.TestCase):
                 self.assertTrue((root / "report" / name).is_file())
             data = json.loads((root / "report/report-data.json").read_text())
             record = json.loads((root / "research-record.json").read_text())
-            self.assertEqual(data["validation"]["status"], "PASS")
+            expected_status = item.get("validation_status", "PASS")
+            self.assertIn(expected_status, ("PASS", "PASS_WITH_WARNINGS"))
+            self.assertEqual(data["validation"]["status"], expected_status)
             self.assertEqual(data["meta"]["language"], item["language"])
             self.assertEqual(record["request"]["language"], item["language"])
             self.assertEqual(record["editorial_review"]["status"], "completed")
@@ -88,9 +100,54 @@ class ExamplesSiteTest(unittest.TestCase):
             if item["model_receipt"]:
                 receipts.append(item["model_receipt"])
             for name in receipts:
-                self.assertEqual(json.loads((root / name).read_text())["status"], "PASS")
+                receipt = json.loads((root / name).read_text())
+                self.assertEqual(receipt["status"], expected_status if name == "validation.json" else "PASS")
+                if name == "validation.json" and expected_status == "PASS_WITH_WARNINGS":
+                    self.assertEqual(receipt["summary"]["errors"], 0)
+                    warnings = [issue["code"] for issue in receipt["issues"]
+                                if issue["severity"] == "warning"]
+                    self.assertTrue(warnings)
+                    self.assertEqual(sorted(warnings), sorted(item["expected_warning_codes"]))
+                    self.assertEqual(receipt["summary"]["warnings"], len(warnings))
+                    self.assertEqual(data["validation"]["warnings"], len(warnings))
+                    self.assertIn("PASS_WITH_WARNINGS", (root / "README.md").read_text())
             self.assertTrue((root / "editorial-review.json").is_file())
             self.assertTrue((root / "prompt.txt").is_file())
+
+    def test_market_history_excerpt_preserves_references_and_model(self):
+        root = SITE / "sp500-20year-return-risk"
+        data = json.loads((root / "report/report-data.json").read_text())
+        record = json.loads((root / "research-record.json").read_text())
+        receipt = json.loads((root / "publication-review.json").read_text())
+        self.assertEqual(receipt["status"], "PASS")
+        self.assertEqual(record["package_type"], "report-evidence-excerpt")
+        self.assertNotIn("market_data", record)
+        self.assertTrue(data["meta"]["public_distribution"])
+        self.assertFalse((root / "artifacts").exists())
+        for key, count in {"facts": 20, "evidence": 16, "sources": 9, "calculations": 8}.items():
+            self.assertEqual(len(record[key]), count)
+            self.assertEqual(record["publication"]["excerpt_counts"][key], count)
+        digest = hashlib.sha256(json.dumps(data["model"], sort_keys=True).encode()).hexdigest()
+        self.assertEqual(digest, receipt["unchanged_model_sha256"])
+        ids = {key: {row["id"] for row in data[key]}
+               for key in ("facts", "evidence", "sources", "calculations")}
+        reference_fields = {"fact_ids": "facts", "input_fact_ids": "facts",
+                            "source_ids": "sources", "evidence_ids": "evidence",
+                            "calculation_ids": "calculations"}
+
+        def visit(value):
+            if isinstance(value, dict):
+                for key, child in value.items():
+                    if key in reference_fields:
+                        self.assertTrue(set(child) <= ids[reference_fields[key]],
+                                        f"Unresolved {key}: {child}")
+                    elif key == "source_id":
+                        self.assertIn(child, ids["sources"])
+                    visit(child)
+            elif isinstance(value, list):
+                for child in value:
+                    visit(child)
+        visit(data)
 
     def test_no_private_files_or_machine_paths(self):
         allowed_suffixes = {".html", ".css", ".js", ".json", ".txt", ".md"}

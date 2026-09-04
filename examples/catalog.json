@@ -64,5 +64,19 @@
     "sources": 15,
     "profile": "historical",
     "model_receipt": "model-audit.json"
+  },
+  {
+    "slug": "sp500-20year-return-risk",
+    "language": "zh-CN",
+    "title": "美股大盘：长期收益与持有风险",
+    "category": "历史收益与风险 · 中文",
+    "description": "20年复合收益、购买力、历史回撤、滚动持有窗口与提款顺序；区分历史实绩和未来风险。",
+    "period": "2006–2025；1993–2026辅助样本",
+    "sources": 9,
+    "profile": "market-history-excerpt",
+    "model_receipt": "model-audit.json",
+    "validation_status": "PASS_WITH_WARNINGS",
+    "expected_warning_codes": ["market_data.corporate_actions", "source.secondary", "source.secondary"],
+    "research_cutoff": "2026-09-04"
   }
 ]

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-04T14:44:20.544357+00:00",
+  "reviewer": "same authoring agent; separate deterministic numeric implementation, not independent financial assurance",
+  "numeric_assertions": 28540,
+  "checks": [
+    "Every market-data input fact and exact evidence cell checked against both immutable snapshots",
+    "All official CPI cells reconciled to downloaded CSV; missing month and publication cutoff retained",
+    "20 complete calendar years, both CAGR conventions, real wealth, annual compounding and separate unannualized 2026 YTD reconciled",
+    "Every monthly wealth point checked, including null October 2025 real wealth",
+    "Every daily drawdown, selected peak/trough/recovery, real monthly recovery, volatility and both VaRs independently recomputed",
+    "Every rolling-window endpoint, return, inclusion set and summary recomputed for both samples and both bases",
+    "Default withdrawal scenario reconciled with independent terminal-value formula; no-withdrawal order invariance verified",
+    "Issuer closing-price corroboration, preserved July return-method gap, security-weight sum and hypothetical shock verified"
+  ],
+  "source_hashes": {
+    "artifacts/market-data/MD-7cc518b28ffb413e.json": "3638375103700b689f3fb30860899a7fb16df78a2e5d83544870cd93eee542a5",
+    "artifacts/market-data/MD-07997c2ce65348b1.json": "0c540012d517c33e091c1600f83edd3dbda941c844d1af851b4ab6ea96d527bd"
+  },
+  "model_sha256": "0064acbeb2ce46cf246a2ff7f3d6bfe03e69c9c33b132820a8d31997dc25d681",
+  "limitations": [
+    "Yahoo accuracy, point-in-time vintage and full exchange-calendar completeness are not independently established.",
+    "Primary narrative locators and issuer observations reviewed by the same agent.",
+    "Past US-market windows overlap and are not future probabilities.",
+    "CPI missing-month handling and Yahoo adjustment warnings remain visible."
+  ]
+}
