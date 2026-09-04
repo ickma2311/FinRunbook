@@ -42,6 +42,21 @@ log are complete, protected content is declared preserved, and no unresolved
 editorial issue remains. This receipt is not proof of semantic equivalence:
 compare material edits against the evidence during semantic validation.
 
+## Check rendered HTML before delivery
+
+For interactive reports, follow the
+[color and readability checks](../finrunbook/references/interactive-report-profile.md#color-and-readability-checks).
+Use the actual browser render and inspect the recorded measurements, including
+non-hover controls and applicable focus/selected states. Fix failed contrast
+checks and rerun affected states after the final style changes.
+
+`validate_run.py` checks data and provenance; it does not launch a browser or
+measure CSS contrast. Its `PASS` must not be presented as a visual-accessibility
+pass. Keep browser results separate from the financial validation status. If
+browser measurement is unavailable, explicitly mark the presentation unverified
+and disclose that limitation rather than inventing a pass. Do not present an
+interactive report with known contrast failures as final.
+
 ## Perform semantic validation
 
 Deterministic checks cannot establish that a sentence accurately represents a

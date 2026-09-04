@@ -72,6 +72,31 @@ hidden caveats, or interactions that obscure the denominator. Use accessible
 type sizes, sufficient contrast, keyboard operation, and reduced-motion
 preferences.
 
+## Color and readability checks
+
+- For custom buttons, badges, tabs and similar controls, specify both text and
+  background colors. An explicitly transparent background is fine when checked
+  against the surface behind it. Do not combine custom text colors with an
+  unintended browser-default control background. Shared color tokens are useful;
+  no particular palette or light/dark theme is required.
+- Text must be readable before interaction. Check default, hover, keyboard
+  focus and selected/pressed states where present, in each supported theme.
+  An idle but clickable control is not a disabled-control exception.
+- Apply [WCAG 2.2 AA text contrast](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html):
+  at least 4.5:1 for normal text, or 3:1 for large text (24 CSS px, or
+  18.67 CSS px and bold). Small source IDs and secondary labels still count.
+  Do not round a failing ratio up to the threshold.
+- Before final HTML delivery, use the available browser tools to measure
+  rendered contrast, covering each distinct text/control color pairing and its
+  applicable states. Resolve computed colors and the effective background,
+  including transparency and opacity; inspect the actual backdrop for gradients
+  or images. Screenshots and CSS declarations alone are not a measured pass.
+- Record the browser, theme, selector/component, state, measured ratio,
+  threshold and result in the run's browser-check receipt (for example,
+  `browser-tests.json`). Keep unmeasurable cases explicitly unresolved until
+  reviewed with a suitable method. Fix failures and repeat affected checks after
+  style changes; do not imply a full accessibility audit from contrast checks.
+
 ## Portability rule
 
 Conversation-specific rendering skills may inform visual design but cannot be
