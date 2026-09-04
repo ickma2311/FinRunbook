@@ -9,8 +9,9 @@ three things that a loose collection of prompts does not:
 3. runs a fail-closed validation pass that updates the report with source
    citations and leaves unsupported claims visibly unresolved.
 
-The project is agent-neutral. `AGENTS.md` and `CLAUDE.md` point Codex and Claude
-Code at the same workflow.
+Use FinRunbook with **Codex, Claude Code, or OpenCode** from the project
+directory. `AGENTS.md` defines the shared workflow; `CLAUDE.md` points Claude
+Code to those same instructions.
 
 ## Repository layout
 
@@ -52,13 +53,59 @@ For an existing clone:
 git submodule update --init --recursive
 ```
 
-## Use with an agent
+## Use with Codex, Claude Code, or OpenCode
 
-Ask the agent a normal question, for example:
+**Open your agent in the FinRunbook project directory, then ask your research
+question.** You do not need to run the Python initialization script yourself.
 
-> Compare the durable growth drivers and principal risks of Datadog and
-> Cloudflare over FY2021-FY2025. Produce an interactive financial report for an
-> investor and use primary filings wherever possible.
+Have your chosen agent installed and signed in (or configured with a model
+provider), with Python 3 available for the workflow helpers. The agent needs
+permission to read and write project files, run commands, and retrieve sources.
+FinRunbook does not provide model credentials or paid data access.
+
+### 1. Open the FinRunbook project directory
+
+After cloning, stay in the `FinRunbook` folder. If you are opening a new terminal,
+change to your clone's location:
+
+```bash
+cd /path/to/FinRunbook
+```
+
+Replace `/path/to/FinRunbook` with your local path. This is the folder containing
+`AGENTS.md`, `CLAUDE.md`, and `skills/`.
+
+### 2. Start your agent in that directory
+
+Run **one** of these commands:
+
+| Agent | Command |
+| --- | --- |
+| [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) | `codex` |
+| [Claude Code](https://code.claude.com/docs/en/quickstart) | `claude` |
+| [OpenCode](https://opencode.ai/docs/cli/) | `opencode` |
+
+For a desktop or IDE-based agent, open the **FinRunbook folder as the project**
+and start a task there instead.
+
+### 3. Ask your research question
+
+Type your question into the agent, not the shell. For example:
+
+> Use FinRunbook to compare the durable growth drivers and principal risks of
+> Datadog and Cloudflare over FY2021-FY2025. Produce an interactive financial
+> report for an investor and use primary filings wherever possible.
+
+If your agent has not picked up the project instructions, prepend:
+
+> Read `skills/finrunbook/SKILL.md` and follow its workflow for this request.
+
+The agent handles run initialization, research, report generation, tone review,
+and final validation. Generated files stay under `runs/<run-id>/`; the default
+interactive report is `runs/<run-id>/report/index.html`. Ask the agent to serve
+the report locally and open it in your browser when it is ready.
+
+### What happens next
 
 The orchestrator asks only questions whose answers materially change the work,
 such as the as-of date, time span, audience, or output format. If the user does
@@ -74,6 +121,11 @@ pinned `writing-clearly-and-concisely` skill; Chinese prose uses
 financial editorial rules without being translated. The review preserves figures, citations, uncertainty,
 rankings, and the finance-report structure, and records an internal
 `editorial-review.json` change log.
+
+### Optional: manual initialization and validation
+
+These commands are for direct control or debugging. In normal use, the agent
+handles these steps as part of the workflow.
 
 To initialize a run manually:
 
