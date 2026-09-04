@@ -18,7 +18,50 @@ append-friendly and designed to survive handoffs between agents.
 | `artifacts` | Generated outputs and their status |
 | `validation` | Latest validation status and issue summary |
 
+New runs also declare `editorial_review.required: true`. The final language pass
+records completion, languages, reviewer, upstream skills and their revisions, reviewed
+artifacts, a relative `change_log_path`, protected-content preservation, and
+unresolved issues. The change log is an internal JSON audit artifact, not a
+replacement for the report. Older records without this field remain readable.
+`upstream_skills` is a list of `{name, path, commit, languages}` objects for
+editors actually applied: English uses `writing-clearly-and-concisely`, Chinese
+uses `readable-human-writing`, and other languages may use local rules only.
+The JSON change log contains `result` (`edited` or `no-change`) and `changes`
+(objects with `field`, `before`, `after`, and `reason`; empty for `no-change`).
+The completion receipt records an agent's review, not an automated guarantee
+of factual equivalence or professional tone.
+
+For new runs, `request` should also contain `report_archetype` (`finance-report`
+or `research-memo`) and `decision_use`. For `finance-report`, record its output
+contract under `plan.output_contract`, including the coverage universe rule,
+comparison periods, common metrics, sector KPIs, required bridge or ranking,
+valuation requirement, and planned artifacts. These fields are additive and do
+not change schema version `1.0.0`.
+
+The default `finance-report` output formats are `interactive-html` and `json`,
+represented by `report/index.html` and `report/report-data.json`. The JSON is
+the presentation contract and must carry fact, calculation, and source IDs for
+every material block. Markdown is reserved for an explicitly selected
+`research-memo`; PDF, XLSX, and PPTX are optional finance-report exports.
+
 Start from `assets/research-record.template.json` or use `scripts/new_run.py`.
+
+## Report language
+
+Resolve `request.language` before research: explicit output-language choice →
+main language of the current request → English if undetermined. Preserve that
+choice in artifact languages, presentation metadata and rendered text.
+`request.language_resolution` records `source`, `request_language` (when
+supplied by the router), and `fallback`. The source is
+`explicit-output-language`, `request-language`, `request-script-heuristic`, or
+`english-fallback`. These additive fields do not invalidate older runs.
+
+With `new_run.py`, the router uses `--language` for an explicit output choice
+and `--request-language` for its inference of the main instruction language.
+The helper does not parse arbitrary natural-language output preferences. Its
+unflagged fallback recognizes predominantly Chinese prose, then falls back to
+English; for other languages or ambiguous mixed/quoted text, pass the router's
+semantic choice. A template's null language is unresolved, not an English default.
 
 ## Identifier conventions
 
@@ -54,6 +97,8 @@ Required: `id`, `statement`, `status`, `material`, `source_ids`, and
 Allowed statuses:
 
 - `company-reported`: accurately transcribed but not independently confirmed;
+- `provider-reported`: transcribed third-party market observation, not an
+  independently verified exchange feed or a company-reported financial fact;
 - `verified`: checked against the cited evidence and applicable calculation;
 - `calculated`: derived from recorded inputs;
 - `inferred`: an analytical interpretation, not a reported fact;
@@ -81,3 +126,13 @@ before artifacts. Update `run.updated_at` after each research batch. Store a
 source body locally only if its terms allow it; otherwise store metadata,
 locators, and short compliant excerpts.
 
+## Optional market-data receipts
+
+Price-based runs may add `market_data` with `schema_version: 1.0.0` and a
+`batches` array. Each receipt identifies an immutable run-relative snapshot,
+its SHA-256, whether it is required, and mappings to sources, input facts,
+evidence and calculations. The validator checks these mappings and recomputes
+the supported metrics. See
+`skills/finrunbook-market-data/references/data-contract.md` from the repository
+root. These fields and the `provider-reported` status are additive; runs without
+market-data receipts keep their previous behavior.

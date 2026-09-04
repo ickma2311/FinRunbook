@@ -1,0 +1,4 @@
+interface:
+  display_name: "FinRunbook Market Data"
+  short_description: "Collect traceable prices, volume and market comparisons"
+  default_prompt: "Use $finrunbook-market-data to add price and volume evidence to this FinRunbook report."

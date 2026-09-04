@@ -1,6 +1,6 @@
 ---
 name: finrunbook-validator
-description: Validate a FinRunbook research run before delivery. Use at the end of every FinRunbook workflow, or when asked to audit an existing run, to check source and evidence integrity, period and unit consistency, calculations, citation coverage, and artifact provenance; then update the structured record and Markdown report with validation status and a formatted source list. Fail closed rather than inventing citations.
+description: Validate a FinRunbook research run before delivery. Use at the end of every FinRunbook workflow, or when asked to audit an existing run, to check the finance-report output contract, source and evidence integrity, period and unit consistency, calculations, citation coverage, and artifact provenance; then update the structured record and Markdown report with validation status and a formatted source list. Fail closed rather than inventing citations.
 ---
 
 # FinRunbook Validator
@@ -18,6 +18,29 @@ report is not evidence.
 The script validates structure and provenance links, refreshes generated
 validation and source blocks in `report.md`, updates `research-record.json`,
 and returns a non-zero exit code for `FAIL`.
+
+For runs declared as `finance-report`, it also fails when the plan has not set
+the coverage rule, comparison periods, common metrics, core bridge or ranking,
+valuation decision, planned artifacts, and sector KPIs where applicable. This
+checks that the analytical model was planned; semantic review must still judge
+whether the populated report is decision-useful.
+
+For the default interactive output, it also checks that the HTML consumes
+`report-data.json`, that the initialization scaffold has been replaced, and
+that presentation blocks map back to recorded facts, calculations, and sources.
+
+When a run contains `market_data` receipts, it also verifies snapshot hashes,
+recomputes returns/drawdowns/volume and benchmark comparisons, and checks the
+input and calculation mappings against the run ledger. A required failed batch
+or a mismatched value blocks delivery. Warnings include incomplete bars and
+coverage gaps. Review the security identity, currency, adjustment basis and
+actual observed dates semantically; a valid receipt does not independently
+verify the provider or show the identity or motivation of traders.
+
+For runs that require editorial review, verify that the tone pass and its change
+log are complete, protected content is declared preserved, and no unresolved
+editorial issue remains. This receipt is not proof of semantic equivalence:
+compare material edits against the evidence during semantic validation.
 
 ## Perform semantic validation
 

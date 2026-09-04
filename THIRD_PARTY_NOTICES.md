@@ -10,8 +10,9 @@ license text for each dependency are available at the path below.
 | Finance Skills | https://github.com/himself65/finance-skills | `vendor/finance-skills/LICENSE` (MIT) |
 | Octagon Skills | https://github.com/OctagonAI/skills | `vendor/octagon-skills/LICENSE` (MIT) |
 | Finance & Accounting Skills | https://github.com/GAJETOso/financeskills | `vendor/finance-accounting-skills/LICENSE` (MIT) |
+| Readable Human Writing | https://github.com/KG3KAI/readable-human-writing | `vendor/readable-human-writing/LICENSE` (MIT); retain upstream `NOTICE` |
+| Agent Toolkit — Writing Clearly and Concisely | https://github.com/softaworks/agent-toolkit | `vendor/agent-toolkit/LICENSE` (MIT); retain the skill's upstream attribution in its README |
 
 Repository licenses cover code and skill text, not necessarily the external
 data, trademarks, model access, or APIs used by a skill. Users are responsible
 for satisfying those separate terms.
-

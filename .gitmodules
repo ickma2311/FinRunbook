@@ -10,3 +10,9 @@
 [submodule "vendor/finance-accounting-skills"]
 	path = vendor/finance-accounting-skills
 	url = https://github.com/GAJETOso/financeskills.git
+[submodule "vendor/readable-human-writing"]
+	path = vendor/readable-human-writing
+	url = https://github.com/KG3KAI/readable-human-writing.git
+[submodule "vendor/agent-toolkit"]
+	path = vendor/agent-toolkit
+	url = https://github.com/softaworks/agent-toolkit.git

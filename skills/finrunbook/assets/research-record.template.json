@@ -11,12 +11,15 @@
     "raw": "",
     "subject": "",
     "task_type": "unspecified",
+    "report_archetype": "finance-report",
+    "decision_use": "investment research",
     "as_of_date": null,
     "start_date": null,
     "end_date": null,
-    "audience": "informed generalist",
-    "language": "en",
-    "output_formats": ["markdown"],
+    "audience": "finance professional",
+    "language": null,
+    "language_resolution": {"source": null, "request_language": null, "fallback": "en"},
+    "output_formats": ["interactive-html", "json"],
     "depth": "standard",
     "source_constraints": ["primary sources first"],
     "clarifications": [],
@@ -25,6 +28,15 @@
   "plan": {
     "selected_skills": [],
     "steps": [],
+    "output_contract": {
+      "coverage_universe_rule": null,
+      "comparison_periods": [],
+      "common_metrics": [],
+      "sector_kpis": [],
+      "required_bridge_or_ranking": null,
+      "valuation_required": null,
+      "planned_artifacts": ["report/index.html", "report/report-data.json"]
+    },
     "status": "draft"
   },
   "sources": [],
@@ -33,13 +45,32 @@
   "calculations": [],
   "artifacts": [
     {
-      "path": "report.md",
-      "format": "markdown",
-      "language": "en",
+      "path": "report/index.html",
+      "format": "interactive-html",
+      "language": null,
+      "status": "draft",
+      "fact_ids": []
+    },
+    {
+      "path": "report/report-data.json",
+      "format": "json",
+      "language": null,
       "status": "draft",
       "fact_ids": []
     }
   ],
+  "editorial_review": {
+    "required": true,
+    "status": "pending",
+    "completed_at": null,
+    "reviewer": null,
+    "languages": [],
+    "upstream_skills": [],
+    "reviewed_artifacts": [],
+    "change_log_path": "editorial-review.json",
+    "protected_items_preserved": null,
+    "unresolved_issues": []
+  },
   "validation": {
     "status": "NOT_RUN",
     "validated_at": null,
@@ -47,4 +78,3 @@
     "issues": []
   }
 }
-

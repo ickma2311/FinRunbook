@@ -7,3 +7,10 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 
+# Generated research runs stay local; retain the directory documentation.
+/runs/*
+!/runs/README.md
+
+# Private provider responses/caches; do not publish without reviewing data rights.
+runs/**/artifacts/market-data/
+**/.market-data.lock

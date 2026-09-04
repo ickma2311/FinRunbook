@@ -2,6 +2,8 @@
 
 ## Blocking errors
 
+- a required editorial review is incomplete, lacks its change log, reports
+  changed protected content, or has unresolved issues;
 - missing or invalid required top-level fields;
 - duplicate or malformed stable IDs;
 - a source without a title, publisher, retrieval time, or retrievable location;
@@ -14,6 +16,22 @@
 - a Markdown citation referring to an unknown source;
 - unresolved placeholders or `[SOURCE NEEDED]` in a final artifact;
 - guidance, estimate, and actual periods conflated in a material comparison.
+- a `finance-report` run without a completed output contract: coverage rule,
+  comparison periods, common metrics, bridge or ranking, explicit valuation
+  decision, planned artifacts, and sector KPIs for sector work.
+- a `finance-report` that lists Markdown as a final format or lacks a web, PDF,
+  or PowerPoint presentation surface;
+- an interactive report that does not load `report-data.json`, remains an
+  initialization scaffold, or lacks its root element;
+- incomplete presentation metadata or executive view, no analytical sections,
+  or presentation-data references to unknown facts, calculations, or sources;
+- a material fact or source listed on the report artifact but absent from its
+  structured presentation data.
+- a required market-data batch with failed/empty/invalid series, a missing or
+  altered snapshot, mismatched source/evidence/fact/calculation mappings, or
+  results that differ from the supported metric recomputation;
+- an excluded market-data batch without an explanation or still supporting
+  material claims.
 
 ## Warnings
 
@@ -25,6 +43,9 @@
 - the report does not cite all source IDs attached to its material facts;
 - a source's data-use terms are unknown;
 - a selected skill's repository revision is not recorded.
+- market-data coverage gaps, unfinished bars excluded from calculations,
+  insufficient observations, corporate actions needing basis review, or an
+  unavailable comparable benchmark.
 
 Warnings do not block delivery, but the user must be told about them.
 
@@ -63,4 +84,3 @@ The validator manages two idempotent blocks in `report.md`:
 It formats one footnote definition per source. The analytical author must place
 the corresponding `[^SRC-001]` marker next to the claim; the validator must not
 guess that association.
-
