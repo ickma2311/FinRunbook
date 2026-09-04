@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-04T03:58:09.889Z",
+  "browser": "Local Chrome / Playwright",
+  "checks": [
+    {
+      "name": "All eight historical metrics: source fact IDs, fiscal date x coordinates and numeric y coordinates",
+      "passed": true,
+      "point_checks": 275
+    },
+    {
+      "name": "All seven snapshot years: table sorting in six financial columns and matrix geometry",
+      "passed": true
+    },
+    {
+      "name": "Five company details: annual tables, all margin-bridge bars and scope notes",
+      "passed": true
+    },
+    {
+      "name": "Company filters update all dependent panels and preserve at least one company; reset restores defaults",
+      "passed": true
+    },
+    {
+      "name": "Keyboard chart activation, exact-period evidence, nested calculation inputs and searchable source library",
+      "passed": true
+    },
+    {
+      "name": "CSV export includes selected-year values, source fact IDs and exact period dates",
+      "passed": true
+    },
+    {
+      "name": "Local package links return 200; English UI, mobile 390px no page overflow, scrollable financial panels and readable print view",
+      "passed": true
+    },
+    {
+      "name": "No JavaScript errors, missing assets or external runtime/data requests",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failed_responses": [],
+  "limitations": "Automated geometry and interaction checks; source disclosures and external issuer availability are not independently audited."
+}

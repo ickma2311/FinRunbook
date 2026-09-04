@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-09-04T03:58:42.940Z",
+  "source_run_id": "20260903-ai-industry-value-chain",
+  "scope": "Static-example packaging and browser interaction checks; not a new financial or independent source audit.",
+  "original_validation_preserved": true,
+  "source_archives_included": false,
+  "language": "zh-CN",
+  "changes": [
+    "Added gallery, prompt, ledger and validation navigation."
+  ],
+  "browser_checks": [
+    "Chinese report, eight sections, thirteen financial objects render",
+    "Layer, company and fiscal-period controls update financial table, chart and provenance; AMD product KPI uses data-center 6.718bn",
+    "Metric drawer exposes formula, inputs, source links; numerical sorting puts highest growth first",
+    "Three bridge tabs show correct totals and interpretation boundaries",
+    "Scenario: default 140 - 60 = 80; higher task token consumption changes contribution to 20; reset works",
+    "Source search, external links, native Escape close",
+    "Missing prior-year comparison remains unavailable rather than fabricated zero",
+    "Desktop and 390px mobile layouts have no page-level horizontal overflow; wide financial table scrolls internally",
+    "Unique DOM IDs and no browser JavaScript errors"
+  ],
+  "errors": [],
+  "limitations": [
+    "Research cutoff is 2026-09-03; not live data.",
+    "Original source-file paths in evidence locators refer to local archives not included in this package; consult publisher URLs.",
+    "Original validation receipts retain their original timestamps and scope. Same-agent review does not imply independent assurance."
+  ]
+}

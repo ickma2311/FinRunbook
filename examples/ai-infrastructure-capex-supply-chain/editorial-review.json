@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "20260903-ai-infrastructure-capex-supply-chain",
+  "reviewed_at": "2026-09-04T03:36:00Z",
+  "reviewer": "same-agent",
+  "language": "en",
+  "result": "edited",
+  "changes": [
+    {"field":"report-data.json executive_view.analyst_conclusion and index.html analyst view","before":"cleanest disclosed customer exposure","after":"clearest disclosed customer exposure","reason":"Use the precise comparative adjective."},
+    {"field":"report-data.json executive_view.analyst_conclusion","before":"powerful operating leverage","after":"strong operating leverage","reason":"Remove promotional wording while preserving the financial concept."},
+    {"field":"report-data.json latest section title","before":"powerful, but not a common-period ranking","after":"strong, but not a common-period ranking","reason":"Use measured language."},
+    {"field":"index.html analyst-view panel labels","before":"What is working / What can break","after":"Evidence supporting the view / Conditions that would weaken the view","reason":"State the analytical function directly."}
+  ],
+  "protected_items_preserved": true,
+  "unresolved_issues": []
+}

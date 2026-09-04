@@ -15,15 +15,19 @@ Code to those same instructions.
 
 ## Live examples
 
-Explore two completed English reports in your browser. No agent, installation,
+Explore completed reports in English and Chinese. No agent, installation,
 or financial API key is needed to view them.
 
 - [Apple: business quality, FY2021–FY2025](https://ickma2311.github.io/FinRunbook/apple-business-quality/report/)
 - [Cloud computing: AWS, Azure, and Google Cloud, 2021–2025](https://ickma2311.github.io/FinRunbook/cloud-computing/report/)
+- [AI infrastructure capex and supplier exposure — English](https://ickma2311.github.io/FinRunbook/ai-infrastructure-capex-supply-chain/report/)
+- [六家科技公司的资本配置 — 中文](https://ickma2311.github.io/FinRunbook/big-tech-investment-allocation/report/)
+- [AI 产业链：增长、利润与资本回收 — 中文](https://ickma2311.github.io/FinRunbook/ai-industry-value-chain/report/)
 
 [Browse all examples](https://ickma2311.github.io/FinRunbook/) or inspect the
 [example packages and limitations](examples/README.md). These are historical
-reports with a September 3, 2026 research cutoff, not live market dashboards.
+snapshots with a September 3, 2026 research cutoff. Each report labels its own
+reporting periods; these are not live market dashboards.
 
 ## Repository layout
 

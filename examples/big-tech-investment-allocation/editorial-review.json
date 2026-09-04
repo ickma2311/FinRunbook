@@ -1,0 +1,31 @@
+{
+  "result": "edited",
+  "changes": [
+    {
+      "field": "executive_view.summary",
+      "before": "谷歌、微软、Meta 与 Amazon 的现金资本开支占收入比例均高于五年前。英伟达的外部技术与股权安排需要单独观察；Apple 则仍将较多现金用于股东回报。投入规模不能直接说明项目回报。",
+      "after": "谷歌、微软、Meta 与 Amazon 的现金资本开支占收入比例均高于五年窗口的首年。英伟达的外部技术与股权安排需要单独观察；Apple 则仍将较多现金用于股东回报。投入规模不能直接说明项目回报。",
+      "reason": "Five fiscal-year observations span four growth intervals; avoid suggesting an unavailable sixth-year baseline."
+    },
+    {
+      "field": "sections.4.watch",
+      "before": "若经营现金流追上资本开支增长，现金余额压力可能缓解；目前不能用全部资本开支推算 AI 收入或 ROI。",
+      "after": "若经营现金流追上资本开支增长，资本支出对内部现金的占用可能减轻；目前不能用全部资本开支推算 AI 收入或 ROI。",
+      "reason": "Discuss the observed cash-flow constraint without implying that the report models cash-balance funding needs."
+    }
+  ],
+  "reviewer": "Same research agent; Chinese polish-only and finance tone pass, not independent review",
+  "reviewed_at": "2026-09-03T20:01:59.411141+00:00",
+  "protected_items_preserved": true,
+  "protected_data_sha256": "266cc5e7f79b78dae464344656190baaa20434bc42cfd8a807e5736db9b07d5c",
+  "presentation_checks": [
+    "Chinese labels, units and dates",
+    "Opinion vs company disclosure attribution",
+    "Non-comparable R&D and acquisition scope visible",
+    "Source drawer and desktop/mobile screenshots"
+  ],
+  "analysis_corrections_before_review": [
+    "Google capital-expenditure caption no longer describes the entire amount as infrastructure-only spending.",
+    "Fiscal period scope corrected to five annual observations, not a comparison with an unobserved sixth fiscal year."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-04T03:52:18.478249+00:00",
+  "checks": [
+    {
+      "name": "Primary annual totals checked against a separate transcription, same report author",
+      "count": 210,
+      "passed": true
+    },
+    {
+      "name": "Source extract hashes verified; invalid retrieval attempts excluded from source evidence",
+      "passed": true,
+      "count": 55
+    },
+    {
+      "name": "All direct financial facts re-read from their recorded primary-source cells",
+      "passed": true,
+      "count": 220
+    },
+    {
+      "name": "Every calculation recomputed from its own input fact IDs",
+      "passed": true,
+      "count": 581
+    },
+    {
+      "name": "All margins, FCF definitions, two baseline indices, five bridges, peak years and fiscal end-date labels reconcile",
+      "passed": true
+    },
+    {
+      "name": "Decisive narrative direction checks: retained revenue, Peloton cash versus GAAP loss, Etsy FCF deterioration",
+      "passed": true
+    }
+  ],
+  "semantic_review": {
+    "reviewer": "Report author; not independent",
+    "scope": [
+      "Checked numerical columns and annual versus quarterly PDF headers",
+      "Checked management explanations and acquisitions against original filings",
+      "Reviewed non-comparable fiscal calendars, SBC, capex and impairment effects"
+    ],
+    "limits": "Source disclosures are taken as reported; no independent issuer audit, constant-scope restatement or causal study."
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "apple-business-quality",
+    "language": "en",
+    "title": "Apple",
+    "category": "Company analysis",
+    "description": "Business quality, the Services shift, an EPS bridge and five years of cash allocation.",
+    "period": "FY2021–FY2025",
+    "sources": 2,
+    "profile": "classic",
+    "model_receipt": "model-audit.json"
+  },
+  {
+    "slug": "cloud-computing",
+    "language": "en",
+    "title": "Cloud computing",
+    "category": "Sector comparison",
+    "description": "AWS, Azure and Google Cloud: growth, segment economics and the limits of comparability.",
+    "period": "2021–2025",
+    "sources": 9,
+    "profile": "classic",
+    "model_receipt": "model-audit.json"
+  },
+  {
+    "slug": "ai-infrastructure-capex-supply-chain",
+    "language": "en",
+    "title": "AI infrastructure & suppliers",
+    "category": "Supply-chain analysis",
+    "description": "Four hyperscalers, eight suppliers: trace capital spending through compute, memory, networking, power and cooling.",
+    "period": "2023–September 2026",
+    "sources": 37,
+    "profile": "inline",
+    "model_receipt": null
+  },
+  {
+    "slug": "big-tech-investment-allocation",
+    "language": "zh-CN",
+    "title": "六家科技公司的资本配置",
+    "category": "跨公司比较 · 中文",
+    "description": "比较资本开支、研发、并购及股东回报；保留真实财年日期，不把不同支出口径简单相加。",
+    "period": "各自最近五个完整财年",
+    "sources": 12,
+    "profile": "ledger",
+    "model_receipt": "model-tests.json"
+  },
+  {
+    "slug": "ai-industry-value-chain",
+    "language": "zh-CN",
+    "title": "AI 产业链：增长、利润与资本回收",
+    "category": "行业全景 · 中文",
+    "description": "连接模型、硬件、云、应用与分发；比较财务结果、现金回收、增长桥接及推理成本情景。",
+    "period": "最近完整年度与已核实季度",
+    "sources": 39,
+    "profile": "ledger",
+    "model_receipt": "model-tests.json"
+  },
+  {
+    "slug": "pandemic-growth-retention",
+    "language": "en",
+    "title": "Pandemic growth retention",
+    "category": "Cross-company historical comparison",
+    "description": "Zoom, Docusign, Shopify, Etsy and Peloton: retained revenue, operating margins, cash conversion and scope changes.",
+    "period": "Fiscal periods ending 2019–2025",
+    "sources": 15,
+    "profile": "historical",
+    "model_receipt": "model-audit.json"
+  }
+]

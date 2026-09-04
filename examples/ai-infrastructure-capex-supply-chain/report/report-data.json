@@ -1,0 +1,1386 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "run_id": "20260903-ai-infrastructure-capex-supply-chain",
+    "title": "AI infrastructure capex and the supplier transmission chain",
+    "subtitle": "Microsoft, Alphabet, Amazon and Meta | 2023 through 3 September 2026",
+    "decision_use": "Investment research and sector monitoring",
+    "as_of_date": "2026-09-03",
+    "language": "en",
+    "status": "validated",
+    "coverage_universe": "Buyers: Microsoft, Alphabet, Amazon and Meta. Suppliers: NVIDIA, TSMC, SK hynix, Micron, Broadcom, Arista Networks, Eaton and Vertiv.",
+    "available_periods": [
+      "2023",
+      "2024",
+      "2025",
+      "latest reported through 2026-09-03"
+    ]
+  },
+  "executive_view": {
+    "headline": "Capex broadened from accelerators into the full datacenter stack",
+    "summary": "The eight-supplier panel shows accelerating revenue, orders or profitability across compute, foundry, memory, networking, power and cooling. Relationship evidence is strongest where suppliers name customers or counterparties; upstream revenue remains non-additive.",
+    "analyst_conclusion": "The spend cycle broadened from accelerators into memory, networking and physical infrastructure, but the clearest disclosed customer exposure remains concentrated in NVIDIA, Arista and selected custom-silicon programs. Upstream foundry, HBM and cooling vendors show strong operating leverage, yet their revenue cannot be added to downstream supplier revenue because the same deployed system passes through multiple layers.",
+    "decisive_metrics": [
+      {
+        "label": "Largest 2025 cash-capex base",
+        "display": "Amazon $128.3bn",
+        "raw": 128.32,
+        "format": "USD billions, one decimal",
+        "fact_ids": [
+          "FACT-003"
+        ],
+        "calculation_ids": [],
+        "source_ids": [
+          "SRC-006"
+        ]
+      },
+      {
+        "label": "Fastest 2023-25 capex growth",
+        "display": "Alphabet +183.5%",
+        "raw": 1.8355,
+        "format": "percent, one decimal",
+        "fact_ids": [
+          "FACT-002"
+        ],
+        "calculation_ids": [
+          "CALC-002"
+        ],
+        "source_ids": [
+          "SRC-003"
+        ]
+      },
+      {
+        "label": "Strongest named customer disclosure",
+        "display": "Arista: Microsoft 20%, Meta 15% of 2024 revenue",
+        "raw": null,
+        "format": "percent of supplier revenue",
+        "fact_ids": [
+          "FACT-018",
+          "FACT-019"
+        ],
+        "calculation_ids": [],
+        "source_ids": [
+          "SRC-030"
+        ]
+      },
+      {
+        "label": "Largest disclosed 2025 backlog",
+        "display": "Vertiv $15.0bn",
+        "raw": 15.0,
+        "format": "USD billions, one decimal",
+        "fact_ids": [
+          "FACT-012"
+        ],
+        "calculation_ids": [],
+        "source_ids": [
+          "SRC-027"
+        ]
+      }
+    ],
+    "implications": [
+      "Accelerator demand remains the first-order transmission channel: all four buyers publicly committed to NVIDIA Blackwell adoption or deployment.",
+      "Memory and foundry profitability moved from cyclical recovery to AI-led expansion; the strongest 2026 quarterly margins are at SK hynix, Micron and TSMC, though periods and currencies differ.",
+      "Networking has the clearest audited customer concentration: Arista directly quantifies Microsoft and Meta exposure.",
+      "Power and cooling demand is visible in Eaton and Vertiv orders/backlog, but only Microsoft-Eaton and NVIDIA-Vertiv are included as named relationships; no unsupported hyperscaler-to-facility-supplier links are inferred."
+    ],
+    "change_conditions": [
+      "A material slowdown in hyperscaler actual capex or a shift from owned infrastructure to lower-capital deployment models.",
+      "Evidence that custom accelerators materially displace merchant GPUs faster than networking and memory content expands.",
+      "Supplier backlog cancellations, weaker book-to-bill, or margin compression caused by capacity, pricing or mix."
+    ],
+    "fact_ids": [
+      "FACT-001",
+      "FACT-002",
+      "FACT-003",
+      "FACT-004",
+      "FACT-005",
+      "FACT-010",
+      "FACT-012",
+      "FACT-018",
+      "FACT-019",
+      "FACT-027"
+    ],
+    "calculation_ids": [
+      "CALC-001",
+      "CALC-002",
+      "CALC-003",
+      "CALC-004"
+    ],
+    "source_ids": [
+      "SRC-001",
+      "SRC-003",
+      "SRC-006",
+      "SRC-010",
+      "SRC-012",
+      "SRC-023",
+      "SRC-027",
+      "SRC-030"
+    ]
+  },
+  "sections": [
+    {
+      "id": "capex",
+      "type": "chart",
+      "title": "Cash capex stepped up in each annual period",
+      "dek": "USD billions. Microsoft fiscal years end June; the other three use calendar years. Meta includes finance-lease principal; Amazon is net of asset-sale proceeds and incentives.",
+      "data": [
+        {
+          "company": "Microsoft",
+          "period": "2023",
+          "period_label": "FY2023",
+          "raw": 28.107,
+          "display": "$28.1bn",
+          "basis": "additions to property and equipment",
+          "fact_id": "FACT-001",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        {
+          "company": "Microsoft",
+          "period": "2024",
+          "period_label": "FY2024",
+          "raw": 44.477,
+          "display": "$44.5bn",
+          "basis": "additions to property and equipment",
+          "fact_id": "FACT-001",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        {
+          "company": "Microsoft",
+          "period": "2025",
+          "period_label": "FY2025",
+          "raw": 64.551,
+          "display": "$64.6bn",
+          "basis": "additions to property and equipment",
+          "fact_id": "FACT-001",
+          "source_ids": [
+            "SRC-001"
+          ]
+        },
+        {
+          "company": "Alphabet",
+          "period": "2023",
+          "period_label": "2023",
+          "raw": 32.251,
+          "display": "$32.3bn",
+          "basis": "purchases of property and equipment",
+          "fact_id": "FACT-002",
+          "source_ids": [
+            "SRC-003"
+          ]
+        },
+        {
+          "company": "Alphabet",
+          "period": "2024",
+          "period_label": "2024",
+          "raw": 52.535,
+          "display": "$52.5bn",
+          "basis": "purchases of property and equipment",
+          "fact_id": "FACT-002",
+          "source_ids": [
+            "SRC-003"
+          ]
+        },
+        {
+          "company": "Alphabet",
+          "period": "2025",
+          "period_label": "2025",
+          "raw": 91.447,
+          "display": "$91.4bn",
+          "basis": "purchases of property and equipment",
+          "fact_id": "FACT-002",
+          "source_ids": [
+            "SRC-003"
+          ]
+        },
+        {
+          "company": "Amazon",
+          "period": "2023",
+          "period_label": "2023",
+          "raw": 48.133,
+          "display": "$48.1bn",
+          "basis": "net purchases of property and equipment",
+          "fact_id": "FACT-003",
+          "source_ids": [
+            "SRC-005"
+          ]
+        },
+        {
+          "company": "Amazon",
+          "period": "2024",
+          "period_label": "2024",
+          "raw": 77.658,
+          "display": "$77.7bn",
+          "basis": "net purchases of property and equipment",
+          "fact_id": "FACT-003",
+          "source_ids": [
+            "SRC-005"
+          ]
+        },
+        {
+          "company": "Amazon",
+          "period": "2025",
+          "period_label": "2025",
+          "raw": 128.32,
+          "display": "$128.3bn",
+          "basis": "net purchases of property and equipment",
+          "fact_id": "FACT-003",
+          "source_ids": [
+            "SRC-006"
+          ]
+        },
+        {
+          "company": "Meta",
+          "period": "2023",
+          "period_label": "2023",
+          "raw": 28.103,
+          "display": "$28.1bn",
+          "basis": "purchases plus finance-lease principal",
+          "fact_id": "FACT-004",
+          "source_ids": [
+            "SRC-008"
+          ]
+        },
+        {
+          "company": "Meta",
+          "period": "2024",
+          "period_label": "2024",
+          "raw": 39.225,
+          "display": "$39.2bn",
+          "basis": "purchases plus finance-lease principal",
+          "fact_id": "FACT-004",
+          "source_ids": [
+            "SRC-009"
+          ]
+        },
+        {
+          "company": "Meta",
+          "period": "2025",
+          "period_label": "2025",
+          "raw": 72.215,
+          "display": "$72.2bn",
+          "basis": "purchases plus finance-lease principal",
+          "fact_id": "FACT-004",
+          "source_ids": [
+            "SRC-010"
+          ]
+        }
+      ],
+      "growth": [
+        {
+          "company": "Microsoft",
+          "display": "+129.7%",
+          "raw": 1.2966,
+          "calculation_id": "CALC-001"
+        },
+        {
+          "company": "Alphabet",
+          "display": "+183.5%",
+          "raw": 1.8355,
+          "calculation_id": "CALC-002"
+        },
+        {
+          "company": "Amazon",
+          "display": "+166.6%",
+          "raw": 1.6659,
+          "calculation_id": "CALC-003"
+        },
+        {
+          "company": "Meta",
+          "display": "+157.0%",
+          "raw": 1.5696,
+          "calculation_id": "CALC-004"
+        }
+      ],
+      "latest": [
+        {
+          "company": "Microsoft",
+          "period": "FY2026",
+          "actual": 115.948,
+          "display": "$115.9bn",
+          "basis": "full fiscal year actual",
+          "status": "actual",
+          "fact_id": "FACT-001",
+          "source_ids": [
+            "SRC-002"
+          ]
+        },
+        {
+          "company": "Alphabet",
+          "period": "H1 2026",
+          "actual": 80.598,
+          "display": "$80.6bn",
+          "basis": "six-month actual; TTM $132.4bn",
+          "status": "actual",
+          "fact_id": "FACT-002",
+          "source_ids": [
+            "SRC-004"
+          ]
+        },
+        {
+          "company": "Amazon",
+          "period": "TTM Q2 2026",
+          "actual": 169.007,
+          "display": "$169.0bn",
+          "basis": "trailing-twelve-month actual",
+          "status": "actual",
+          "fact_id": "FACT-003",
+          "source_ids": [
+            "SRC-007"
+          ]
+        },
+        {
+          "company": "Meta",
+          "period": "H1 / FY2026",
+          "actual": 50.918,
+          "display": "$50.9bn actual; $130-145bn guide",
+          "basis": "six-month actual plus full-year company guidance",
+          "status": "actual+guidance",
+          "fact_id": "FACT-004",
+          "source_ids": [
+            "SRC-011"
+          ]
+        }
+      ],
+      "fact_ids": [
+        "FACT-001",
+        "FACT-002",
+        "FACT-003",
+        "FACT-004"
+      ],
+      "calculation_ids": [
+        "CALC-001",
+        "CALC-002",
+        "CALC-003",
+        "CALC-004"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003",
+        "SRC-004",
+        "SRC-005",
+        "SRC-006",
+        "SRC-007",
+        "SRC-008",
+        "SRC-009",
+        "SRC-010",
+        "SRC-011"
+      ]
+    },
+    {
+      "id": "relationships",
+      "type": "bridge",
+      "title": "Evidence map: buyers, platform suppliers and upstream enablers",
+      "dek": "Each edge is included only when a company, filing or regulator names both parties. Direct customer links and upstream platform links are shown separately.",
+      "nodes": [
+        {
+          "name": "Microsoft",
+          "group": "buyer"
+        },
+        {
+          "name": "Alphabet",
+          "group": "buyer"
+        },
+        {
+          "name": "Amazon",
+          "group": "buyer"
+        },
+        {
+          "name": "Meta",
+          "group": "buyer"
+        },
+        {
+          "name": "NVIDIA",
+          "group": "platform"
+        },
+        {
+          "name": "Broadcom",
+          "group": "platform"
+        },
+        {
+          "name": "Arista Networks",
+          "group": "platform"
+        },
+        {
+          "name": "Eaton",
+          "group": "facility"
+        },
+        {
+          "name": "TSMC",
+          "group": "upstream"
+        },
+        {
+          "name": "SK hynix",
+          "group": "upstream"
+        },
+        {
+          "name": "Micron",
+          "group": "upstream"
+        },
+        {
+          "name": "Vertiv",
+          "group": "facility"
+        }
+      ],
+      "edges": [
+        {
+          "from": "Microsoft",
+          "to": "NVIDIA",
+          "layer": "GPU",
+          "directness": "adoption",
+          "strength": "strong",
+          "fact_id": "FACT-014",
+          "evidence_id": "EVD-029",
+          "source_ids": [
+            "SRC-029"
+          ]
+        },
+        {
+          "from": "Alphabet",
+          "to": "NVIDIA",
+          "layer": "GPU",
+          "directness": "adoption",
+          "strength": "strong",
+          "fact_id": "FACT-015",
+          "evidence_id": "EVD-029",
+          "source_ids": [
+            "SRC-029"
+          ]
+        },
+        {
+          "from": "Amazon",
+          "to": "NVIDIA",
+          "layer": "GPU",
+          "directness": "co-development and adoption",
+          "strength": "strong",
+          "fact_id": "FACT-016",
+          "evidence_id": "EVD-029",
+          "source_ids": [
+            "SRC-029"
+          ]
+        },
+        {
+          "from": "Meta",
+          "to": "NVIDIA",
+          "layer": "GPU",
+          "directness": "adoption",
+          "strength": "strong",
+          "fact_id": "FACT-017",
+          "evidence_id": "EVD-029",
+          "source_ids": [
+            "SRC-029"
+          ]
+        },
+        {
+          "from": "Microsoft",
+          "to": "Arista Networks",
+          "layer": "networking",
+          "directness": "named end customer",
+          "strength": "very strong",
+          "fact_id": "FACT-018",
+          "evidence_id": "EVD-030",
+          "source_ids": [
+            "SRC-030"
+          ]
+        },
+        {
+          "from": "Meta",
+          "to": "Arista Networks",
+          "layer": "networking",
+          "directness": "named end customer",
+          "strength": "very strong",
+          "fact_id": "FACT-019",
+          "evidence_id": "EVD-030",
+          "source_ids": [
+            "SRC-030"
+          ]
+        },
+        {
+          "from": "Alphabet",
+          "to": "Broadcom",
+          "layer": "custom accelerators",
+          "directness": "regulator documented",
+          "strength": "strong",
+          "fact_id": "FACT-020",
+          "evidence_id": "EVD-031",
+          "source_ids": [
+            "SRC-031"
+          ]
+        },
+        {
+          "from": "Meta",
+          "to": "Broadcom",
+          "layer": "custom silicon + networking",
+          "directness": "direct partnership",
+          "strength": "very strong",
+          "fact_id": "FACT-021",
+          "evidence_id": "EVD-032",
+          "source_ids": [
+            "SRC-032"
+          ]
+        },
+        {
+          "from": "Microsoft",
+          "to": "Eaton",
+          "layer": "power / UPS",
+          "directness": "direct partnership",
+          "strength": "strong",
+          "fact_id": "FACT-022",
+          "evidence_id": "EVD-033",
+          "source_ids": [
+            "SRC-033"
+          ]
+        },
+        {
+          "from": "NVIDIA",
+          "to": "TSMC",
+          "layer": "foundry",
+          "directness": "upstream manufacturing",
+          "strength": "very strong",
+          "fact_id": "FACT-023",
+          "evidence_id": "EVD-034",
+          "source_ids": [
+            "SRC-034"
+          ]
+        },
+        {
+          "from": "NVIDIA",
+          "to": "SK hynix",
+          "layer": "HBM",
+          "directness": "upstream component",
+          "strength": "very strong",
+          "fact_id": "FACT-024",
+          "evidence_id": "EVD-035",
+          "source_ids": [
+            "SRC-035"
+          ]
+        },
+        {
+          "from": "NVIDIA",
+          "to": "Micron",
+          "layer": "HBM",
+          "directness": "upstream component",
+          "strength": "very strong",
+          "fact_id": "FACT-025",
+          "evidence_id": "EVD-036",
+          "source_ids": [
+            "SRC-036"
+          ]
+        },
+        {
+          "from": "NVIDIA",
+          "to": "Vertiv",
+          "layer": "power + cooling",
+          "directness": "reference-design ecosystem",
+          "strength": "strong",
+          "fact_id": "FACT-026",
+          "evidence_id": "EVD-037",
+          "source_ids": [
+            "SRC-037"
+          ]
+        }
+      ],
+      "fact_ids": [
+        "FACT-014",
+        "FACT-015",
+        "FACT-016",
+        "FACT-017",
+        "FACT-018",
+        "FACT-019",
+        "FACT-020",
+        "FACT-021",
+        "FACT-022",
+        "FACT-023",
+        "FACT-024",
+        "FACT-025",
+        "FACT-026"
+      ],
+      "calculation_ids": [],
+      "source_ids": [
+        "SRC-029",
+        "SRC-030",
+        "SRC-031",
+        "SRC-032",
+        "SRC-033",
+        "SRC-034",
+        "SRC-035",
+        "SRC-036",
+        "SRC-037"
+      ]
+    },
+    {
+      "id": "suppliers",
+      "type": "table",
+      "title": "Eight-supplier operating comparison",
+      "dek": "Annual reported revenue, operating income and margin. Currency and fiscal calendars are preserved; Eaton uses Electrical Americas because it is the most relevant disclosed power segment.",
+      "rows": [
+        {
+          "supplier": "NVIDIA",
+          "layers": [
+            "GPU",
+            "networking"
+          ],
+          "currency": "USD bn",
+          "periods": [
+            {
+              "period": "FY2024",
+              "revenue": 60.922,
+              "operating_income": 32.972,
+              "operating_margin": 54.1
+            },
+            {
+              "period": "FY2025",
+              "revenue": 130.497,
+              "operating_income": 81.453,
+              "operating_margin": 62.4
+            },
+            {
+              "period": "FY2026",
+              "revenue": 215.938,
+              "operating_income": 130.387,
+              "operating_margin": 60.4
+            }
+          ],
+          "kpi": "FY2026 Data Center revenue $193.7bn",
+          "fact_id": "FACT-005",
+          "source_ids": [
+            "SRC-012"
+          ]
+        },
+        {
+          "supplier": "TSMC",
+          "layers": [
+            "semiconductor manufacturing"
+          ],
+          "currency": "TWD tn",
+          "periods": [
+            {
+              "period": "2023",
+              "revenue": 2.161736,
+              "operating_income": 0.921466,
+              "operating_margin": 42.6
+            },
+            {
+              "period": "2024",
+              "revenue": 2.894308,
+              "operating_income": 1.322053,
+              "operating_margin": 45.7
+            },
+            {
+              "period": "2025",
+              "revenue": 3.809054,
+              "operating_income": 1.936092,
+              "operating_margin": 50.8
+            }
+          ],
+          "kpi": "2025 HPC revenue NT$2.193tn (+48%)",
+          "fact_id": "FACT-006",
+          "source_ids": [
+            "SRC-014"
+          ]
+        },
+        {
+          "supplier": "SK hynix",
+          "layers": [
+            "memory"
+          ],
+          "currency": "KRW tn",
+          "periods": [
+            {
+              "period": "2023",
+              "revenue": 32.7657,
+              "operating_income": -7.7303,
+              "operating_margin": -24.0
+            },
+            {
+              "period": "2024",
+              "revenue": 66.193,
+              "operating_income": 23.4673,
+              "operating_margin": 35.0
+            },
+            {
+              "period": "2025",
+              "revenue": 97.1467,
+              "operating_income": 47.2063,
+              "operating_margin": 49.0
+            }
+          ],
+          "kpi": "2025 HBM revenue more than doubled",
+          "fact_id": "FACT-007",
+          "source_ids": [
+            "SRC-016",
+            "SRC-017"
+          ]
+        },
+        {
+          "supplier": "Micron",
+          "layers": [
+            "memory"
+          ],
+          "currency": "USD bn",
+          "periods": [
+            {
+              "period": "FY2023",
+              "revenue": 15.54,
+              "operating_income": -5.745,
+              "operating_margin": -37.0
+            },
+            {
+              "period": "FY2024",
+              "revenue": 25.111,
+              "operating_income": 1.304,
+              "operating_margin": 5.2
+            },
+            {
+              "period": "FY2025",
+              "revenue": 37.378,
+              "operating_income": 9.77,
+              "operating_margin": 26.1
+            }
+          ],
+          "kpi": "Cloud memory + core data center Q3 FY26 revenue $25.3bn",
+          "fact_id": "FACT-008",
+          "source_ids": [
+            "SRC-019",
+            "SRC-020"
+          ]
+        },
+        {
+          "supplier": "Broadcom",
+          "layers": [
+            "custom silicon",
+            "networking"
+          ],
+          "currency": "USD bn",
+          "periods": [
+            {
+              "period": "FY2023",
+              "revenue": 35.819,
+              "operating_income": 16.207,
+              "operating_margin": 45.2
+            },
+            {
+              "period": "FY2024",
+              "revenue": 51.574,
+              "operating_income": 13.463,
+              "operating_margin": 26.1
+            },
+            {
+              "period": "FY2025",
+              "revenue": 63.887,
+              "operating_income": 25.484,
+              "operating_margin": 39.9
+            }
+          ],
+          "kpi": "Q3 FY26 AI semiconductor revenue $16.7bn (+221%)",
+          "fact_id": "FACT-009",
+          "source_ids": [
+            "SRC-021",
+            "SRC-022"
+          ]
+        },
+        {
+          "supplier": "Arista Networks",
+          "layers": [
+            "networking"
+          ],
+          "currency": "USD bn",
+          "periods": [
+            {
+              "period": "2023",
+              "revenue": 5.8602,
+              "operating_income": 2.2573,
+              "operating_margin": 38.5
+            },
+            {
+              "period": "2024",
+              "revenue": 7.0031,
+              "operating_income": 2.9446,
+              "operating_margin": 42.0
+            },
+            {
+              "period": "2025",
+              "revenue": 9.0057,
+              "operating_income": 3.8561,
+              "operating_margin": 42.8
+            }
+          ],
+          "kpi": "Microsoft + Meta were 35% of 2024 revenue",
+          "fact_id": "FACT-010",
+          "source_ids": [
+            "SRC-023",
+            "SRC-030"
+          ]
+        },
+        {
+          "supplier": "Eaton",
+          "layers": [
+            "power",
+            "UPS"
+          ],
+          "currency": "USD bn",
+          "basis": "Electrical Americas segment",
+          "periods": [
+            {
+              "period": "2023",
+              "revenue": 10.098,
+              "operating_income": 2.675,
+              "operating_margin": 26.5
+            },
+            {
+              "period": "2024",
+              "revenue": 11.436,
+              "operating_income": 3.455,
+              "operating_margin": 30.2
+            },
+            {
+              "period": "2025",
+              "revenue": 13.276,
+              "operating_income": 3.972,
+              "operating_margin": 29.9
+            }
+          ],
+          "kpi": "2025 backlog $13.246bn; Q2 2026 orders +41%",
+          "fact_id": "FACT-011",
+          "source_ids": [
+            "SRC-025",
+            "SRC-026"
+          ]
+        },
+        {
+          "supplier": "Vertiv",
+          "layers": [
+            "power",
+            "cooling"
+          ],
+          "currency": "USD bn",
+          "periods": [
+            {
+              "period": "2023",
+              "revenue": 6.8632,
+              "operating_income": 0.8722,
+              "operating_margin": 12.7
+            },
+            {
+              "period": "2024",
+              "revenue": 8.0118,
+              "operating_income": 1.3674,
+              "operating_margin": 17.1
+            },
+            {
+              "period": "2025",
+              "revenue": 10.2299,
+              "operating_income": 1.8297,
+              "operating_margin": 17.9
+            }
+          ],
+          "kpi": "2025 backlog $15.0bn (+109%)",
+          "fact_id": "FACT-012",
+          "source_ids": [
+            "SRC-027",
+            "SRC-028"
+          ]
+        }
+      ],
+      "fact_ids": [
+        "FACT-005",
+        "FACT-006",
+        "FACT-007",
+        "FACT-008",
+        "FACT-009",
+        "FACT-010",
+        "FACT-011",
+        "FACT-012"
+      ],
+      "calculation_ids": [],
+      "source_ids": [
+        "SRC-012",
+        "SRC-014",
+        "SRC-016",
+        "SRC-017",
+        "SRC-019",
+        "SRC-020",
+        "SRC-021",
+        "SRC-022",
+        "SRC-023",
+        "SRC-025",
+        "SRC-026",
+        "SRC-027",
+        "SRC-028",
+        "SRC-030"
+      ]
+    },
+    {
+      "id": "latest",
+      "type": "ranking",
+      "title": "Latest reported momentum: strong, but not a common-period ranking",
+      "dek": "Revenue growth and profitability use each issuer's latest reported quarter available by the as-of date. Currency, fiscal quarter and profit basis differ.",
+      "rows": [
+        {
+          "supplier": "NVIDIA",
+          "period": "Q2 FY2027",
+          "revenue_display": "$96.2bn",
+          "growth_display": "+106%",
+          "profit_display": "75.0% GAAP gross margin",
+          "orders_display": "Data Center $89.0bn (+117%)",
+          "fact_id": "FACT-013",
+          "source_ids": [
+            "SRC-013"
+          ]
+        },
+        {
+          "supplier": "TSMC",
+          "period": "Q2 2026",
+          "revenue_display": "US$40.2bn",
+          "growth_display": "+33.7% in USD",
+          "profit_display": "60.3% operating margin",
+          "orders_display": "2nm 3% of wafer revenue",
+          "fact_id": "FACT-013",
+          "source_ids": [
+            "SRC-015"
+          ]
+        },
+        {
+          "supplier": "SK hynix",
+          "period": "Q2 2026 preliminary",
+          "revenue_display": "KRW79.3tn",
+          "growth_display": "+257%",
+          "profit_display": "76% operating margin",
+          "orders_display": "HBM4 mass shipments began",
+          "fact_id": "FACT-013",
+          "source_ids": [
+            "SRC-018"
+          ]
+        },
+        {
+          "supplier": "Micron",
+          "period": "Q3 FY2026",
+          "revenue_display": "$41.5bn",
+          "growth_display": "+346%",
+          "profit_display": "80.4% GAAP operating margin",
+          "orders_display": "Cloud + core data center $25.3bn",
+          "fact_id": "FACT-013",
+          "source_ids": [
+            "SRC-020"
+          ]
+        },
+        {
+          "supplier": "Broadcom",
+          "period": "Q3 FY2026",
+          "revenue_display": "$29.6bn",
+          "growth_display": "+86%",
+          "profit_display": "53.9% GAAP operating margin",
+          "orders_display": "AI semiconductors $16.7bn; Q4 guide $21.7bn",
+          "fact_id": "FACT-013",
+          "source_ids": [
+            "SRC-022"
+          ]
+        },
+        {
+          "supplier": "Arista Networks",
+          "period": "Q2 2026",
+          "revenue_display": "$3.0bn",
+          "growth_display": "+37.7%",
+          "profit_display": "45.4% GAAP operating margin",
+          "orders_display": "No backlog disclosed",
+          "fact_id": "FACT-013",
+          "source_ids": [
+            "SRC-024"
+          ]
+        },
+        {
+          "supplier": "Eaton",
+          "period": "Q2 2026",
+          "revenue_display": "$8.5bn company sales",
+          "growth_display": "+21%",
+          "profit_display": "23.1% segment margin",
+          "orders_display": "Electrical Americas orders +41%; Electrical backlog +43%",
+          "fact_id": "FACT-013",
+          "source_ids": [
+            "SRC-026"
+          ]
+        },
+        {
+          "supplier": "Vertiv",
+          "period": "Q2 2026",
+          "revenue_display": "$3.3bn",
+          "growth_display": "+24%",
+          "profit_display": "19.5% GAAP op margin; 22.6% adjusted",
+          "orders_display": "2025 year-end backlog $15.0bn",
+          "fact_id": "FACT-013",
+          "source_ids": [
+            "SRC-028"
+          ]
+        }
+      ],
+      "fact_ids": [
+        "FACT-013"
+      ],
+      "calculation_ids": [],
+      "source_ids": [
+        "SRC-013",
+        "SRC-015",
+        "SRC-018",
+        "SRC-020",
+        "SRC-022",
+        "SRC-024",
+        "SRC-026",
+        "SRC-028"
+      ]
+    },
+    {
+      "id": "value-flow",
+      "type": "analysis",
+      "title": "How to read the value flow without double counting",
+      "content": [
+        {
+          "label": "Buyer capex",
+          "text": "A cash-flow measure of assets acquired by the four hyperscalers. It includes buildings, servers, networking and other equipment, and is not identical across issuers."
+        },
+        {
+          "label": "Platform revenue",
+          "text": "NVIDIA, Broadcom and Arista may recognize revenue for accelerators, systems or networking that become components of the same hyperscaler deployment."
+        },
+        {
+          "label": "Upstream revenue",
+          "text": "TSMC, SK hynix and Micron recognize foundry or memory revenue embedded within accelerators and systems already reflected in downstream suppliers' revenue."
+        },
+        {
+          "label": "Facility revenue",
+          "text": "Eaton and Vertiv recognize power and cooling revenue around the same datacenter build. Timing can lead or lag IT-equipment recognition."
+        },
+        {
+          "label": "Prohibited total",
+          "text": "Do not sum the eight suppliers' revenue or AI-related KPIs and call the result end-market size. These are overlapping layer measures, in different currencies and fiscal periods."
+        }
+      ],
+      "fact_ids": [
+        "FACT-027"
+      ],
+      "calculation_ids": [],
+      "source_ids": [
+        "SRC-012",
+        "SRC-014",
+        "SRC-019",
+        "SRC-021",
+        "SRC-023",
+        "SRC-025",
+        "SRC-027"
+      ]
+    }
+  ],
+  "methodology": {
+    "metric_definitions": [
+      {
+        "metric": "Hyperscaler capex",
+        "definition": "Cash additions or purchases of property and equipment. Meta adds finance-lease principal; Amazon is net of proceeds and incentives."
+      },
+      {
+        "metric": "Revenue and operating income",
+        "definition": "Reported GAAP or local-GAAP consolidated figures unless a segment basis is labeled. Eaton uses Electrical Americas for annual relevance."
+      },
+      {
+        "metric": "Relationship evidence",
+        "definition": "Named counterparty evidence from issuer materials, filings or a regulator. A supplier's broad end-market exposure is not treated as a named customer relationship."
+      },
+      {
+        "metric": "Latest period",
+        "definition": "Most recent reported quarter or trailing period available by 2026-09-03; not a synchronized cross-company period."
+      }
+    ],
+    "normalization": "No currency conversion is used. Annual supplier trends are compared within company, not summed or ranked by absolute revenue across currencies. Period labels retain each issuer's fiscal calendar.",
+    "proxy_limitations": [
+      "Hyperscaler capex is broader than AI infrastructure and does not isolate GPU, network, building, power or cooling spend.",
+      "NVIDIA sells through direct and indirect channels; named adoption does not reveal customer revenue concentration.",
+      "The Broadcom-Alphabet link relies on a competition-authority report because issuer disclosures do not quantify the relationship.",
+      "SK hynix Q2 2026 results were preliminary and unaudited at publication.",
+      "Orders and backlog definitions differ materially between Eaton and Vertiv."
+    ],
+    "conflicts": [],
+    "non_additivity_warning": "Supplier revenues and KPIs represent overlapping supply-chain layers. They are intentionally not aggregated into an end-market-size estimate.",
+    "fact_ids": [
+      "FACT-027"
+    ],
+    "calculation_ids": [],
+    "source_ids": [
+      "SRC-012",
+      "SRC-014",
+      "SRC-019",
+      "SRC-021",
+      "SRC-023",
+      "SRC-025",
+      "SRC-027"
+    ]
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "title": "Microsoft 2025 Annual Report",
+      "publisher": "Microsoft",
+      "date": "2025-07-30",
+      "url": "https://www.microsoft.com/investor/reports/ar25/"
+    },
+    {
+      "id": "SRC-002",
+      "title": "Microsoft FY2026 Form 10-K",
+      "publisher": "SEC",
+      "date": "2026-07-29",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+    },
+    {
+      "id": "SRC-003",
+      "title": "Alphabet 2025 Form 10-K",
+      "publisher": "SEC",
+      "date": "2026-02-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+    },
+    {
+      "id": "SRC-004",
+      "title": "Alphabet Q2 2026 results",
+      "publisher": "Alphabet",
+      "date": "2026-07-23",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm"
+    },
+    {
+      "id": "SRC-005",
+      "title": "Amazon 2024 Form 10-K",
+      "publisher": "SEC",
+      "date": "2025-02-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/amzn-20241231.htm"
+    },
+    {
+      "id": "SRC-006",
+      "title": "Amazon 2025 Form 10-K",
+      "publisher": "SEC",
+      "date": "2026-02-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+    },
+    {
+      "id": "SRC-007",
+      "title": "Amazon Q2 2026 results",
+      "publisher": "Amazon",
+      "date": "2026-07-30",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+    },
+    {
+      "id": "SRC-008",
+      "title": "Meta 2023 Form 10-K",
+      "publisher": "SEC",
+      "date": "2024-02-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm"
+    },
+    {
+      "id": "SRC-009",
+      "title": "Meta 2024 Form 10-K",
+      "publisher": "SEC",
+      "date": "2025-01-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000043/meta-12312024x10kars.htm"
+    },
+    {
+      "id": "SRC-010",
+      "title": "Meta full-year 2025 results",
+      "publisher": "Meta",
+      "date": "2026-01-28",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/"
+    },
+    {
+      "id": "SRC-011",
+      "title": "Meta Q2 2026 results",
+      "publisher": "Meta",
+      "date": "2026-07-29",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "id": "SRC-012",
+      "title": "NVIDIA fiscal 2026 Form 10-K",
+      "publisher": "SEC",
+      "date": "2026-02-25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+    },
+    {
+      "id": "SRC-013",
+      "title": "NVIDIA Q2 fiscal 2027 results",
+      "publisher": "NVIDIA",
+      "date": "2026-08-26",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+    },
+    {
+      "id": "SRC-014",
+      "title": "TSMC 2025 Form 20-F",
+      "publisher": "TSMC",
+      "date": "2026-04-16",
+      "url": "https://investor.tsmc.com/sites/ir/sec-filings/2025_20F%20Report.pdf"
+    },
+    {
+      "id": "SRC-015",
+      "title": "TSMC Q2 2026 results",
+      "publisher": "TSMC",
+      "date": "2026-07-16",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf"
+    },
+    {
+      "id": "SRC-016",
+      "title": "SK hynix 2024 results",
+      "publisher": "SK hynix",
+      "date": "2025-01-23",
+      "url": "https://news.skhynix.com/en/sk-hynix-announces-4q24-financial-results/"
+    },
+    {
+      "id": "SRC-017",
+      "title": "SK hynix 2025 results",
+      "publisher": "SK hynix",
+      "date": "2026-01-28",
+      "url": "https://news.skhynix.com/en/sk-hynix-announces-fy25-financial-results/"
+    },
+    {
+      "id": "SRC-018",
+      "title": "SK hynix Q2 2026 results",
+      "publisher": "SK hynix",
+      "date": "2026-07-29",
+      "url": "https://news.skhynix.com/en/q2-2026-business-results/"
+    },
+    {
+      "id": "SRC-019",
+      "title": "Micron 2025 Form 10-K",
+      "publisher": "SEC",
+      "date": "2025-10-03",
+      "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+    },
+    {
+      "id": "SRC-020",
+      "title": "Micron Q3 fiscal 2026 results",
+      "publisher": "Micron",
+      "date": "2026-06-24",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Results-for-the-Third-Quarter-of-Fiscal-2026/default.aspx"
+    },
+    {
+      "id": "SRC-021",
+      "title": "Broadcom 2025 Form 10-K",
+      "publisher": "SEC",
+      "date": "2025-12-18",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm"
+    },
+    {
+      "id": "SRC-022",
+      "title": "Broadcom Q3 fiscal 2026 results",
+      "publisher": "SEC",
+      "date": "2026-09-03",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm"
+    },
+    {
+      "id": "SRC-023",
+      "title": "Arista 2025 Form 10-K",
+      "publisher": "SEC",
+      "date": "2026-02-13",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm"
+    },
+    {
+      "id": "SRC-024",
+      "title": "Arista Q2 2026 results",
+      "publisher": "Arista",
+      "date": "2026-08-04",
+      "url": "https://www.arista.com/company/news/press-release/24401-pr-20260804"
+    },
+    {
+      "id": "SRC-025",
+      "title": "Eaton 2025 Form 10-K",
+      "publisher": "SEC",
+      "date": "2026-02-26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm"
+    },
+    {
+      "id": "SRC-026",
+      "title": "Eaton Q2 2026 results",
+      "publisher": "Eaton",
+      "date": "2026-07-31",
+      "url": "https://www.eaton.com/de/en-gb/company/news-insights/news-releases/2026/eaton-reports-record-second-quarter-2026-results.html"
+    },
+    {
+      "id": "SRC-027",
+      "title": "Vertiv 2025 Form 10-K",
+      "publisher": "SEC",
+      "date": "2026-02-13",
+      "url": "https://www.sec.gov/Archives/edgar/data/1674101/000167410126000008/vrt-20251231.htm"
+    },
+    {
+      "id": "SRC-028",
+      "title": "Vertiv Q2 2026 results",
+      "publisher": "SEC",
+      "date": "2026-07-29",
+      "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026050323/q22026exhibit991vrt07292026.htm"
+    },
+    {
+      "id": "SRC-029",
+      "title": "NVIDIA Blackwell platform arrives",
+      "publisher": "NVIDIA",
+      "date": "2024-03-18",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing"
+    },
+    {
+      "id": "SRC-030",
+      "title": "Arista 2024 Form 10-K",
+      "publisher": "SEC",
+      "date": "2025-02-18",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653225000028/anet-20241231.htm"
+    },
+    {
+      "id": "SRC-031",
+      "title": "Opinion 24-A-05 on competition in generative AI",
+      "publisher": "French Competition Authority",
+      "date": "2024-06-28",
+      "url": "https://www.autoritedelaconcurrence.fr/sites/default/files/commitments/2024-09/24a05_eng.pdf"
+    },
+    {
+      "id": "SRC-032",
+      "title": "Meta-Broadcom custom AI silicon partnership",
+      "publisher": "Meta",
+      "date": "2026-04-14",
+      "url": "https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/amp/"
+    },
+    {
+      "id": "SRC-033",
+      "title": "Microsoft-Eaton grid-interactive UPS",
+      "publisher": "Microsoft",
+      "date": "2022-07-07",
+      "url": "https://news.microsoft.com/source/features/sustainability/ireland-wind-farm-datacenter-ups/"
+    },
+    {
+      "id": "SRC-034",
+      "title": "NVIDIA Blackwell architecture",
+      "publisher": "NVIDIA",
+      "date": "Current",
+      "url": "https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/"
+    },
+    {
+      "id": "SRC-035",
+      "title": "SK hynix-NVIDIA memory partnership",
+      "publisher": "SK hynix",
+      "date": "2026-06-08",
+      "url": "https://news.skhynix.com/en/multi-year-tech-partnership-with-nvidia/"
+    },
+    {
+      "id": "SRC-036",
+      "title": "Micron HBM3E volume production for NVIDIA H200",
+      "publisher": "Micron",
+      "date": "2024-02-26",
+      "url": "https://investors.micron.com/news/press-release/2024/Micron-Commences-Volume-Production-of-Industry-Leading-HBM3E-Solution-to-Accelerate-the-Growth-of-AI-02-26-2024/default.aspx"
+    },
+    {
+      "id": "SRC-037",
+      "title": "Vertiv-NVIDIA GB300 reference-design partnership",
+      "publisher": "Vertiv",
+      "date": "2025-06-13",
+      "url": "https://www.vertiv.com/pl-emea/about/news-and-events/articles/educational-articles/vertivs-partnership-with-nvidia-on-gb300-nvl72-for-ai-infrastructure-acceleration/"
+    }
+  ],
+  "validation": {
+    "status": "PASS",
+    "validated_at": "2026-09-04T02:56:45Z",
+    "errors": 0,
+    "warnings": 0
+  }
+}

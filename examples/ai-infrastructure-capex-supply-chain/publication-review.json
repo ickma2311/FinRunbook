@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-09-04T03:58:43.079Z",
+  "source_run_id": "20260903-ai-infrastructure-capex-supply-chain",
+  "scope": "Static-example packaging and browser interaction checks; not a new financial or independent source audit.",
+  "original_validation_preserved": true,
+  "source_archives_included": false,
+  "language": "en",
+  "changes": [
+    "Added gallery, prompt, ledger and validation navigation.",
+    "Connected existing evidence buttons to the original research ledger; financial data and conclusions unchanged."
+  ],
+  "browser_checks": [
+    "Four buyer filters and three annual periods",
+    "Actual evidence, source links and calculation details",
+    "Supply-chain layer filter and source search",
+    "390px mobile layout without document overflow",
+    "No JavaScript errors"
+  ],
+  "errors": [],
+  "limitations": [
+    "Research cutoff is 2026-09-03; not live data.",
+    "Original source-file paths in evidence locators refer to local archives not included in this package; consult publisher URLs.",
+    "Original validation receipts retain their original timestamps and scope. Same-agent review does not imply independent assurance."
+  ]
+}

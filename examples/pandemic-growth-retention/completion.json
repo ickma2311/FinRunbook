@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "completed_at": "2026-09-04T03:58:27.667674+00:00",
+  "artifact_sha256": {
+    "index.html": "eea1cc8a847d438076c10294f01ca0e2e3fcde60ce14466022e0aa4e7d0e291f",
+    "app.js": "1e52f4c094a6fdaca86cfff2ee29f5c1e585586cdc0509cfaac8baa488dd09ee",
+    "style.css": "b3edadd5b8caba9d4090b922d6fc607cde6b098ed2d76f3fb53a6b699c448689",
+    "report-data.json": "9b3d2f0b082cebb847307a1728602213236469f0160c9b1b4f1620f702aac7cc"
+  },
+  "checks": [
+    "Model arithmetic and source-cell reconciliation",
+    "English editorial review",
+    "FinRunbook source/reference validation",
+    "Desktop and mobile visual review",
+    "Browser controls, chart geometry, local links and CSV export"
+  ]
+}

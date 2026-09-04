@@ -1,0 +1,30 @@
+{
+  "result": "edited",
+  "completed_at": "2026-09-04T03:52:18.477824+00:00",
+  "reviewer": "Report-author English editorial pass; not independent",
+  "languages": [
+    "en"
+  ],
+  "changes": [
+    {
+      "field": "panels.docusign.title",
+      "before": "Growth retained; cash profit exceeds accounting profit",
+      "after": "Revenue growth retained; cash and GAAP profit differ",
+      "reason": "Avoid calling free cash flow cash profit; the measures have different definitions."
+    },
+    {
+      "field": "panels.peloton.title",
+      "before": "Cash repair without revenue recovery",
+      "after": "Cash-flow improvement without revenue recovery",
+      "reason": "Replace the financial metaphor cash repair with a precise observable measure."
+    }
+  ],
+  "protected_items_preserved": true,
+  "checks": [
+    "Neutral, finance-specific English; no promotional labels or causal pandemic attribution",
+    "GAAP operating profit, free cash flow and SBC clearly distinguished",
+    "Dates, units, signs, source locators and formulas preserved",
+    "Sparse headcount collection not mislabeled as issuer non-disclosure",
+    "Acquisitions, impairment and cash-flow classification limitations disclosed"
+  ]
+}

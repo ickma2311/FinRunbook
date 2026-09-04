@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "count": 20,
+  "checks": [
+    "Chinese document and Chinese report metadata",
+    "30 annual data points, six companies",
+    "Amazon excluded from R&D comparison",
+    "Apple missing M&A not plotted as zero",
+    "Metric units switch",
+    "Company toggle updates chart",
+    "Evidence data point reveals exact annual period and locator",
+    "Missing five-year totals remain missing",
+    "First-year window with actual fiscal dates",
+    "Apple latest cash shareholder return renders accurately",
+    "NVIDIA license separately disclosed",
+    "Amazon broad technology expense is separate",
+    "Meta business expense distribution caveat visible",
+    "Calculation input provenance and Escape dismissal",
+    "Searchable primary source registry",
+    "Mobile layout without document overflow",
+    "Company timeline scrolls inside panel on mobile",
+    "Print chrome hidden",
+    "No browser JavaScript errors",
+    "Ledger accessible"
+  ],
+  "errors": []
+}

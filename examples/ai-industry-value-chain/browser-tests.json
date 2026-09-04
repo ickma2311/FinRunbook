@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Chinese report, eight sections, thirteen financial objects render",
+    "Layer, company and fiscal-period controls update financial table, chart and provenance; AMD product KPI uses data-center 6.718bn",
+    "Metric drawer exposes formula, inputs, source links; numerical sorting puts highest growth first",
+    "Three bridge tabs show correct totals and interpretation boundaries",
+    "Scenario: default 140 - 60 = 80; higher task token consumption changes contribution to 20; reset works",
+    "Source search, external links, native Escape close",
+    "Missing prior-year comparison remains unavailable rather than fabricated zero",
+    "Desktop and 390px mobile layouts have no page-level horizontal overflow; wide financial table scrolls internally",
+    "Unique DOM IDs and no browser JavaScript errors"
+  ],
+  "errors": [],
+  "checked_at": "2026-09-03T23:47:51.450Z"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS_WITH_DISCLOSED_LIMITATIONS",
+  "reviewed_at": "2026-09-03T20:01:59.411141+00:00",
+  "reviewer": "Same agent; not independent reviewer",
+  "method": "Downloaded complete primary HTMLs; inspected income/cash-flow table rows, annual column headers and selected business passages. Reopened every row-based numerical evidence locator against retained snapshots and independently recomputed formula inputs in test_model.py.",
+  "verified": [
+    "Six companies, thirty full-year observations",
+    "Calendar vs NVIDIA January / Microsoft June / Apple September fiscal ends",
+    "Microsoft release last two columns are annual, not quarterly",
+    "Cash outflows made positive for comparison; cash-flow deficits retain negative sign",
+    "R&D never added to cash capex as total investment; Amazon technology expense excluded from pure R&D",
+    "Meta old gross purchases less proceeds tie to newer comparative net presentation",
+    "Amazon gross-to-net capex and disclosed FCF tie",
+    "Meta financing lease principal bridges to disclosed FCF",
+    "Groq license cash is not acquisition of Groq equity and not an additional equity investment",
+    "Unreported components remain missing, not zero; zero dividends/repurchases supported by policy or complete financing statements",
+    "Opinion strength reviewed against disclosed business scope"
+  ],
+  "disclosed_limitations": [
+    "Windows are issuer-specific, not a synchronized calendar five-year panel.",
+    "Latest Microsoft annual result source is an unaudited SEC-filed earnings release.",
+    "No 2026/2027 interim updates or management budgets mixed into annual series.",
+    "Strategic investment recipient breakdown and AI-only capex are incomplete in public disclosure.",
+    "Company-specific gross/net, intangibles and leases prevent a fully uniform economic investment measure.",
+    "Source and narrative review performed by the authoring agent; no accuracy percentage or independent assurance."
+  ],
+  "quality_receipts": [
+    "model-tests.json",
+    "browser-tests.json",
+    "editorial-review.json"
+  ]
+}

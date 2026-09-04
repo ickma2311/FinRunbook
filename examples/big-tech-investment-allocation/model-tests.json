@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Exactly five full-year observations for each of six companies",
+    "All periods, presentation values, cash bridges and four-interval CAGR checks",
+    "Recomputed all 198 calculations from recorded fact inputs",
+    "90 independently transcribed capex / CFO / R&D-or-tech numeric anchors",
+    "All 226 row-derived numeric facts match saved primary-source rows and annual columns",
+    "All 12 original HTML snapshot hashes unchanged",
+    "Missing data, R&D non-comparability, gross/net, Meta lease-FCF and Groq separation",
+    "Negative control: 10x revenue corruption rejected without changing original artifact"
+  ],
+  "count": 8,
+  "same_agent_review": true,
+  "not_independent_audit": true
+}

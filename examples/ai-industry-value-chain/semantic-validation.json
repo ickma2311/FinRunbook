@@ -1,0 +1,35 @@
+{
+  "status": "PASS_WITH_DISCLOSED_LIMITATIONS",
+  "reviewed_at": "2026-09-03T23:47:42.399578+00:00",
+  "reviewer": "Authoring research agent; not independent reviewer",
+  "method": "Read retained primary statement rows and column headers, all fact values and unique evidence texts; recomputed formulas and bridges; inspected first-party model-company disclosures and visual PDF tables. Browser interaction and desktop/mobile screenshots reviewed.",
+  "verified": [
+    "Thirteen financial comparison objects, fifty actual observations; annual and quarterly series never joined",
+    "Broadcom prior-year quarter is numeric column 2, not sequential quarter column 1",
+    "Microsoft earnings release contains two quarterly and two annual columns; annual release is unaudited",
+    "AMD total revenue and data-center segment distinguished from embedded/client rows",
+    "NVIDIA Data Center platform distinguished from Compute & Networking segment",
+    "Palantir thousands converted to millions; TSMC USD revenue and TIFRS operating margin explicitly separate",
+    "Google Cloud TPU system product revenue retained in comparability warning",
+    "ServiceNow subscription cost drivers preserve acquisition amortization and residual",
+    "Salesforce Informatica contribution separated; residual proxy not labeled organic growth; Agentforce ARR definition expansion disclosed",
+    "CoreWeave adjusted EBITDA-to-net-loss reconciles all six adjustments",
+    "Four April-June group cash panels aligned, Amazon capex net of proceeds; Meta financing-lease principal reconciled to company FCF",
+    "Private-company reports retain disclosure dates and lack of comparable audited financials",
+    "Direct hyperlinks and raw row/section locators are exposed in the report"
+  ],
+  "disclosed_limitations": [
+    "Representative sample, not global AI market census; Oracle, Alibaba Cloud, Korean memory makers and physical AI not fully modeled",
+    "Quarter ends differ between May and August 2026; figures are not a synchronized calendar-quarter peer panel",
+    "Company and segment revenue is not uniformly AI-only; value-chain revenue is not summed into market size",
+    "Group cash capex excludes noncash lease additions and is not AI-only investment",
+    "Private model revenue run rates are company disclosures at different dates, not annual audited results or a current relative market-share estimate",
+    "Scenario uses illustrative assumptions and omits fixed costs; not a company forecast",
+    "Same-agent validation with no independent accuracy rate or audit assurance"
+  ],
+  "quality_receipts": [
+    "model-tests.json",
+    "browser-tests.json",
+    "editorial-review.json"
+  ]
+}

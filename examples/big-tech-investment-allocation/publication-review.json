@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-09-04T03:58:42.792Z",
+  "source_run_id": "20260903-big-tech-investment-allocation",
+  "scope": "Static-example packaging and browser interaction checks; not a new financial or independent source audit.",
+  "original_validation_preserved": true,
+  "source_archives_included": false,
+  "language": "zh-CN",
+  "changes": [
+    "Added gallery, prompt, ledger and validation navigation."
+  ],
+  "browser_checks": [
+    "Chinese document and Chinese report metadata",
+    "30 annual data points, six companies",
+    "Amazon excluded from R&D comparison",
+    "Apple missing M&A not plotted as zero",
+    "Metric units switch",
+    "Company toggle updates chart",
+    "Evidence data point reveals exact annual period and locator",
+    "Missing five-year totals remain missing",
+    "First-year window with actual fiscal dates",
+    "Apple latest cash shareholder return renders accurately",
+    "NVIDIA license separately disclosed",
+    "Amazon broad technology expense is separate",
+    "Meta business expense distribution caveat visible",
+    "Calculation input provenance and Escape dismissal",
+    "Searchable primary source registry",
+    "Mobile layout without document overflow",
+    "Company timeline scrolls inside panel on mobile",
+    "Print chrome hidden",
+    "No browser JavaScript errors",
+    "Ledger accessible"
+  ],
+  "errors": [],
+  "limitations": [
+    "Research cutoff is 2026-09-03; not live data.",
+    "Original source-file paths in evidence locators refer to local archives not included in this package; consult publisher URLs.",
+    "Original validation receipts retain their original timestamps and scope. Same-agent review does not imply independent assurance."
+  ]
+}

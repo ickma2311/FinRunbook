@@ -1,0 +1,39 @@
+{
+  "result": "edited",
+  "changes": [
+    {
+      "field": "executive_view.summary",
+      "before": "硬件供应商与部分云、应用公司已形成可观经营利润。模型公司正向应用与基础设施两端扩张；云和应用的增长则需要同时检验资本开支、折旧、推理成本与并购影响。关键不是给整条产业链贴上赢家或输家标签，而是判断谁能把持续需求变成可回收现金。",
+      "after": "硬件供应商与部分云、应用公司已形成可观经营利润。模型公司正向应用与算力供给两端延伸；云和应用的增长则需要同时检验资本开支、折旧、推理成本与并购影响。本报告重点比较增长如何转化为利润，以及资本投入能否通过经营现金流收回。",
+      "reason": "Use a direct financial-research thesis; remove winner/loser framing and avoid implying all model firms build their own infrastructure."
+    },
+    {
+      "field": "sections.2.title",
+      "before": "模型公司同时向应用和自研基础设施延伸",
+      "after": "模型公司同时向应用和算力供给延伸",
+      "reason": "The evidence establishes compute partnerships, not uniform ownership of infrastructure."
+    },
+    {
+      "field": "facts.FACT-0398.statement",
+      "before": "Micron FY2026 Q3 DRAM销售额同比增长343%；主要驱动为平均售价增长约260%出头，bit出货增长约20%出头。",
+      "after": "Micron FY2026 Q3 DRAM销售额同比增长343%；主要驱动为平均售价增幅处于260%区间低端、bit出货增幅处于20%区间低端。",
+      "reason": "Use the issuer’s approximate low-range convention rather than colloquial Chinese, without inventing a precise percentage."
+    },
+    {
+      "field": "facts.FACT-0401.statement",
+      "before": "Meta Q2费用含24亿美元诉讼相关支出和11.8亿美元遣散费用，不能把利润率下降全部归因于AI投入。",
+      "after": "Meta Q2费用含24亿美元诉讼相关支出和11.8亿美元遣散费用。",
+      "reason": "Keep a company-reported record factual; the AI-attribution boundary remains separately in the analytical company note."
+    }
+  ],
+  "reviewer": "Same research agent, Chinese polish-only and finance tone review",
+  "completed_at": "2026-09-03T23:47:42.399578+00:00",
+  "protected_items_preserved": true,
+  "checks": [
+    "Every public-company metric names an actual period and entity/segment scope",
+    "Private run rates, ARR, ACV and paid seats never treated as comparable recognized revenue",
+    "Inferences separated from company disclosures; no stock return or market-share assertion",
+    "No promotional superlatives, unsupported causal certainty or buy/sell recommendation"
+  ],
+  "unresolved_issues": []
+}
