@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Three worked financial-data cleaning cases: inspect saved observations, explicit transformations, evidence and unresolved comparisons.">
+<title>Prepare comparable financial data | FinRunbook</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body><main>
+<nav aria-label="Breadcrumb"><a href="../#data-cleaning">← All examples</a><span>FINRUNBOOK / DATA PREPARATION</span></nav>
+<header><h1>Prepare comparable financial data.</h1><p class="intro">Follow three worked cases from saved observations to an explicit, reusable table. Inspect what changed, what stayed separate and what remains unknown.</p><p id="cutoff" class="muted">Saved research cutoffs: September 3–4, 2026.</p></header>
+<aside class="boundary"><p>Inputs come from the saved Cloud and Lululemon report ledgers. Each transformation retains the source value, period and business scope for review.</p></aside>
+<section aria-labelledby="cases-title"><h2 id="cases-title">Before → after</h2><p>Choose a case, then expand any row to inspect its source and transformation.</p><div id="case-filters" class="filters" role="group" aria-label="Select a cleaning case"></div><p id="load-status" role="status">Loading saved observations…</p><div id="cases"></div><noscript><p>JavaScript is needed for the interactive tables. Download the <a href="data.json">complete dataset</a> or <a href="README.md">read the walkthrough</a>.</p></noscript></section>
+<section class="downloads" aria-labelledby="download-title"><h2 id="download-title">Take the working files</h2><p>Reuse the tables and adapt the prompt to your own source package. Missing values, period boundaries and exclusions stay explicit.</p><div class="download-links"><a href="inputs.csv" download>Input observations · CSV</a><a href="cleaned-data.csv" download>Cleaned data · CSV</a><a href="metric-dictionary.csv" download>Metric dictionary · CSV</a><a href="exceptions.csv" download>Exceptions · CSV</a><a href="data.json" download>Complete dataset · JSON</a><a href="prompt.txt">Runnable prompt</a><a href="README.md">Method & limitations</a><a href="validation.json">Validation checks</a></div><details><summary>Field definitions</summary><dl id="dictionary"></dl></details></section>
+<footer><p>View the original reports: <a href="../lululemon-earnings-update/report/">Lululemon earnings review</a> · <a href="../cloud-computing/report/">Cloud company comparison</a>.</p><p id="dataset-limitation"></p><p>This is a data-preparation example using existing report evidence, not an additional financial report. Validation checks do not establish source truth or provide an independent audit.</p></footer>
+</main></body></html>

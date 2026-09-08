@@ -1,6 +1,36 @@
 # FinRunbook examples
 
-Seven completed interactive financial reports generated with FinRunbook: **four English and three Chinese**. Research cutoffs are September 3–4, 2026. Reporting periods vary by example; these are saved snapshots, not live dashboards.
+Eight completed interactive financial reports generated with FinRunbook: **five English and three Chinese**, plus a financial-data preparation demonstration. Three primary use cases lead the gallery; the retrospective thesis checkpoint is an additional walkthrough. Research cutoffs are September 3–4, 2026. Reporting periods vary by example; these are saved snapshots with no live data or background monitoring.
+
+## Start with a task
+
+| Use case | Worked example | Reusable prompt and output |
+| --- | --- | --- |
+| [Review earnings—what changed?](index.html#earnings-update) | Lululemon: FY2021–FY2025 and Q1/Q2/H1 FY2026, cutoff September 4, 2026 | [Adapted earnings prompt](lululemon-earnings-update/earnings-prompt.txt), [report](lululemon-earnings-update/report/), [earnings table CSV](lululemon-earnings-update/earnings-update.csv) |
+| [Prepare comparable financial data](index.html#data-cleaning) | Three worked cases using saved Cloud and Lululemon observations | [Demo](financial-data-cleaning/index.html), [prompt](financial-data-cleaning/prompt.txt), [inputs](financial-data-cleaning/inputs.csv), [cleaned data](financial-data-cleaning/cleaned-data.csv), [dictionary](financial-data-cleaning/metric-dictionary.csv), [exceptions](financial-data-cleaning/exceptions.csv) |
+| [Compare companies before deeper research](index.html#company-comparison) | AWS, Azure and Google Cloud over 2021–2025, cutoff September 3, 2026 | [Full comparison prompt](cloud-computing/prompt.txt), [report](cloud-computing/report/), [report data JSON](cloud-computing/report/report-data.json) |
+| [Check a thesis against new evidence](index.html#thesis-check) | Illustrative Lululemon checkpoint using the same September 4 evidence | [Adapted thesis prompt](lululemon-earnings-update/thesis-prompt.txt), [illustrative checkpoint](lululemon-earnings-update/thesis-check.html) |
+
+The gallery starts with questions and visible results: a year-over-year quarterly
+comparison, worked data transformations, and a peer comparison. Inspect a saved
+result, download its data, or adapt a prompt for your own companies. Cutoffs and
+material comparison limits stay alongside the results; detailed receipts are
+available on demand. Viewing the static gallery does not execute research.
+The adapted Lululemon prompts are not
+the exact instruction that produced the historical report; its original remains
+in `prompt.txt`.
+
+The data-cleaning demonstration starts from existing extracted observations. It
+does not claim a new PDF extraction or a generic cleaning engine. Exact input
+values, fiscal calendars, source scope and threshold operators are preserved;
+new arithmetic is reconciled against directly reported quarters. It is not a
+ninth financial report. Its separate transformation review covers this example.
+
+The thesis assumptions were written retrospectively from saved evidence. This
+is an instructional example, not a real customer's thesis, a historical
+prediction or a monitoring record. It reuses Lululemon's report and does not add
+a ninth report. No time savings, customer adoption or investment performance are
+established by these examples.
 
 ## View online
 
@@ -38,6 +68,7 @@ boundary, then curate it as a regular package and add it to the public catalog.
 
 | Example | Report | Main analytical feature |
 | --- | --- | --- |
+| Lululemon | [Open report](lululemon-earnings-update/report/) | Earnings deterioration, regional comparisons, financial bridges, peer disclosures and illustrative recovery scenarios |
 | Apple | [Open report](apple-business-quality/report/) | Product and geography mix, cash allocation and an EPS bridge separating income and share-count effects |
 | Cloud computing | [Open report](cloud-computing/report/) | AWS and Google Cloud comparison, separate Azure disclosures and explicitly scoped parent capex |
 | Pandemic growth retention — English | [Open report](pandemic-growth-retention/report/) | Five businesses across FY2019–FY2025; indexed revenue, profitability/cash matrix, margin bridges and acquisition limits |
@@ -63,6 +94,7 @@ are unchanged.
 
 - `prompt.txt`: the original instruction, in its original language.
 - `report/`: portable HTML, CSS, JavaScript and presentation JSON. No third-party browser library or financial API call is needed to view it.
+- `report/report-data.json`: downloadable presentation data, linked from every gallery report. Its structure varies by report; it is not a standardized spreadsheet model.
 - `research-record.json`: structured facts, precise evidence locators, source URLs and hashes, calculation inputs, and pinned skill revisions. The market-history package contains an explicitly labeled report-evidence excerpt, not the complete original run ledger.
 - `validation.json`: FinRunbook schema, reference-integrity and provenance checks.
 - `model-audit.json` or `model-tests.json`, where available: original numeric-recomputation receipts. The English supply-chain report has no separate model-audit receipt; none is implied.
@@ -82,6 +114,15 @@ Original raw-file names and hashes may remain in evidence locators for traceabil
 those source archives are not included. Use the publisher URLs to consult documents.
 
 ## Sources and limitations
+
+Lululemon uses thirteen SEC, issuer and investor sources. It covers FY2021–FY2025
+and matching Q1/Q2/H1 periods for FY2026 and the prior year. Peer disclosures keep
+their own reporting periods. Actuals, guidance and recovery assumptions remain
+separate; the refund exclusion is a narrow analyst adjustment, not a fully
+normalized earnings series. The CSV exports recorded facts and calculation
+results with evidence references; it does not include executable spreadsheet
+formulas. The accompanying thesis checkpoint is a retrospective illustration.
+See its [package notes](lululemon-earnings-update/README.md).
 
 The S&P 500 / SPY example covers 2006–2025, with a separate 1993–2026 rolling-window
 sample and a September 4, 2026 research cutoff. It uses Yahoo adjusted prices as a

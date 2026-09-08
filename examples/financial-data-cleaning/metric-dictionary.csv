@@ -1,0 +1,21 @@
+field,definition
+id,Stable row identifier within this cleaning example.
+company,Reporting parent or company; see scope for business boundary.
+metric,Explicit reported or transformed measure; capex positive outflow is separately named.
+value,"Unrounded numeric observation in stated units; blank/null means unavailable, never zero."
+units,Output money is USD millions; percent measures remain percentages. No FX conversion.
+period,Original fiscal/calendar label retained with exact date fields.
+start_date,Inclusive period start; fiscal starts reconstructed from the saved reporting calendar.
+end_date,Inclusive period end; duration must be considered along with this field.
+duration,"Reported/reconstructed observation duration: 12 months, 52 weeks, 13 weeks or 26 weeks."
+scope,"Segment, consolidated parent or qualitative coverage boundary."
+operator,= for exact recorded value; > for strict lower bound; not disclosed for gap.
+source_package,Original saved FinRunbook example; combine with fact_id to avoid collisions.
+fact_id,Original fact ID within source_package; no global uniqueness is implied.
+source_urls,"Original issuer/SEC evidence URLs, not a new retrieval."
+locators,Original source passages/table row locators from the saved ledger.
+status,"Normalization, retention, derivation, threshold or missingness status."
+input_ids,"Input rows underlying output, including direct reported reconciliation observations."
+transformation,"Explicit formula or handling rule; selected semantic mappings were authored, not inferred by a generic engine."
+comparison_group,Permitted comparison boundary; not an automatic guarantee of economic comparability.
+resolved,True means the named representation issue was handled; false means a substantive limitation remains.

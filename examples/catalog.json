@@ -1,5 +1,18 @@
 [
   {
+    "slug": "lululemon-earnings-update",
+    "language": "en",
+    "title": "Lululemon: review earnings",
+    "category": "Earnings update",
+    "description": "Prior-period KPIs, regional changes, tariff-refund adjustment and evidence-linked explanations; includes an editable table and a retrospective thesis-check illustration.",
+    "period": "FY2021–FY2025; Q1/Q2/H1 FY2026",
+    "sources": 13,
+    "profile": "ledger",
+    "model_receipt": "model-audit.json",
+    "research_cutoff": "2026-09-04",
+    "use_cases": ["earnings-update", "illustrative-thesis-check"]
+  },
+  {
     "slug": "apple-business-quality",
     "language": "en",
     "title": "Apple",

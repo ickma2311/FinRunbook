@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "completed_at": "2026-09-04T15:17:00.217738+00:00",
+  "reviewer": "Report author; separate checking code, not an independent analyst audit",
+  "checks": [
+    "22 retained raw captures match their registered SHA-256 hashes.",
+    "148 reported numeric table cells re-parsed from retained source lines.",
+    "All 89 recorded calculations recomputed from their ordered inputs without the upstream calculator.",
+    "Annual and interim panels match separately transcribed review vectors; Q1 + Q2 reconciles to H1 for six income-statement measures in both years.",
+    "Margin and cash-flow bridges reconcile; the tariff refund is not added twice to operating cash flow.",
+    "Scenarios retain explicit assumptions; peer annual, quarterly, half-year and balance-sheet periods remain distinct; FY2021 annual comps remain undisclosed."
+  ],
+  "limitations": [
+    "Mechanical re-parsing verifies capture-to-model consistency, not source authenticity.",
+    "Causal diagnoses are judgments, not identified causal effects.",
+    "Customer-switching data and a representative matched-category demand panel are unavailable.",
+    "No consistent standalone markdown series or Athleta brand cash-flow statement in the collected disclosures."
+  ]
+}

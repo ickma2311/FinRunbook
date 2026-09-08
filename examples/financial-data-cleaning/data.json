@@ -1,0 +1,891 @@
+{
+  "meta": {
+    "title": "Prepare comparable financial data",
+    "description": "Three worked cleaning cases using existing source-linked financial observations.",
+    "cutoff": "Cloud: September 3, 2026; Lululemon: September 4, 2026",
+    "limitation": "This demonstration starts from saved extracted observations. It does not demonstrate new PDF extraction, arbitrary spreadsheet repair, or measured time savings."
+  },
+  "cases": [
+    {
+      "id": "units-signs",
+      "title": "1. Standardize units and cash-flow signs",
+      "problem": "Valid source observations use USD millions, USD thousands and negative cash-flow signs.",
+      "rule": "Convert monetary units with explicit factors; give positive capex its own definition.",
+      "limitation": "These examples are not a financial peer ranking. Comparable units do not imply comparable businesses or periods.",
+      "input_ids": [
+        "IN-001",
+        "IN-002",
+        "IN-003",
+        "IN-004"
+      ],
+      "output_ids": [
+        "OUT-001",
+        "OUT-002",
+        "OUT-003",
+        "OUT-004"
+      ],
+      "exception_ids": [
+        "EX-001",
+        "EX-002",
+        "EX-003"
+      ]
+    },
+    {
+      "id": "quarter-ytd",
+      "title": "2. Separate quarter from year-to-date",
+      "problem": "A quarter and a half year share the same end date, but represent different durations.",
+      "rule": "For compatible cumulative measures, Q2 = H1 − Q1. Reconcile independently to the reported Q2.",
+      "limitation": "Only the three shown GAAP measures are derived. This rule does not apply to per-share values, ratios or point-in-time balances.",
+      "input_ids": [
+        "IN-005",
+        "IN-006",
+        "IN-007",
+        "IN-008",
+        "IN-009",
+        "IN-010",
+        "IN-011",
+        "IN-012",
+        "IN-013"
+      ],
+      "output_ids": [
+        "OUT-005",
+        "OUT-006",
+        "OUT-007"
+      ],
+      "exception_ids": [
+        "EX-004",
+        "EX-005",
+        "EX-006"
+      ]
+    },
+    {
+      "id": "cloud-comparability",
+      "title": "3. Keep cloud disclosures comparable where possible",
+      "problem": "AWS, Google Cloud and Azure differ in period, product scope, precision and available metrics.",
+      "rule": "Preserve scope, dates and threshold operators. Keep missing values blank and non-comparable observations separate.",
+      "limitation": "Cleaning cannot create an undisclosed margin or turn parent capex into cloud-only investment.",
+      "input_ids": [
+        "IN-004",
+        "IN-014",
+        "IN-015",
+        "IN-016",
+        "IN-017"
+      ],
+      "output_ids": [
+        "OUT-008",
+        "OUT-009",
+        "OUT-010",
+        "OUT-011",
+        "OUT-012"
+      ],
+      "exception_ids": [
+        "EX-007",
+        "EX-008",
+        "EX-009",
+        "EX-010"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "IN-001",
+      "company": "Amazon",
+      "metric": "Cash purchases of property/equipment (signed)",
+      "value": -131819.0,
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31",
+      "duration": "12 months",
+      "scope": "Consolidated parent; not AWS-only",
+      "operator": "=",
+      "source_package": "cloud-computing",
+      "fact_id": "FACT-061",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+      ],
+      "locators": [
+        "Consolidated cash flows, cash purchases of property and equipment; extracted HTML table row 200, numeric column 2; CY2025, ended 2025-12-31"
+      ]
+    },
+    {
+      "id": "IN-002",
+      "company": "Lululemon",
+      "metric": "Cash purchases of property/equipment (signed)",
+      "value": -680802.0,
+      "units": "USD thousands",
+      "period": "FY2025; ended 2026-02-01; 52 weeks",
+      "start_date": "2025-02-03",
+      "end_date": "2026-02-01",
+      "duration": "52 weeks",
+      "scope": "Consolidated parent",
+      "operator": "=",
+      "source_package": "lululemon-earnings-update",
+      "fact_id": "FACT-055",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm"
+      ],
+      "locators": [
+        "L1684"
+      ]
+    },
+    {
+      "id": "IN-003",
+      "company": "Lululemon",
+      "metric": "Revenue",
+      "value": 11102600.0,
+      "units": "USD thousands",
+      "period": "FY2025; ended 2026-02-01; 52 weeks",
+      "start_date": "2025-02-03",
+      "end_date": "2026-02-01",
+      "duration": "52 weeks",
+      "scope": "Consolidated parent",
+      "operator": "=",
+      "source_package": "lululemon-earnings-update",
+      "fact_id": "FACT-051",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm"
+      ],
+      "locators": [
+        "L1574"
+      ]
+    },
+    {
+      "id": "IN-004",
+      "company": "Amazon",
+      "metric": "AWS revenue",
+      "value": 128725.0,
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31",
+      "duration": "12 months",
+      "scope": "AWS segment",
+      "operator": "=",
+      "source_package": "cloud-computing",
+      "fact_id": "FACT-059",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+      ],
+      "locators": [
+        "Segment information, revenue and operating income; extracted HTML table row 603, numeric column 2; CY2025, ended 2025-12-31"
+      ]
+    },
+    {
+      "id": "IN-005",
+      "company": "Lululemon",
+      "metric": "Revenue",
+      "value": 2471603.0,
+      "units": "USD thousands",
+      "period": "Q1 FY2026; ended 2026-05-03",
+      "start_date": "2026-02-02",
+      "end_date": "2026-05-03",
+      "duration": "13 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "source_package": "lululemon-earnings-update",
+      "fact_id": "FACT-074",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm"
+      ],
+      "locators": [
+        "L134"
+      ]
+    },
+    {
+      "id": "IN-006",
+      "company": "Lululemon",
+      "metric": "Revenue",
+      "value": 4887234.0,
+      "units": "USD thousands",
+      "period": "H1 FY2026; ended 2026-08-02",
+      "start_date": "2026-02-02",
+      "end_date": "2026-08-02",
+      "duration": "26 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "source_package": "lululemon-earnings-update",
+      "fact_id": "FACT-120",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm"
+      ],
+      "locators": [
+        "L139"
+      ]
+    },
+    {
+      "id": "IN-007",
+      "company": "Lululemon",
+      "metric": "Revenue",
+      "value": 2415631.0,
+      "units": "USD thousands",
+      "period": "Q2 FY2026; ended 2026-08-02",
+      "start_date": "2026-05-04",
+      "end_date": "2026-08-02",
+      "duration": "13 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "source_package": "lululemon-earnings-update",
+      "fact_id": "FACT-094",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm"
+      ],
+      "locators": [
+        "L139"
+      ]
+    },
+    {
+      "id": "IN-008",
+      "company": "Lululemon",
+      "metric": "Gross profit",
+      "value": 1338818.0,
+      "units": "USD thousands",
+      "period": "Q1 FY2026; ended 2026-05-03",
+      "start_date": "2026-02-02",
+      "end_date": "2026-05-03",
+      "duration": "13 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "source_package": "lululemon-earnings-update",
+      "fact_id": "FACT-075",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm"
+      ],
+      "locators": [
+        "L136"
+      ]
+    },
+    {
+      "id": "IN-009",
+      "company": "Lululemon",
+      "metric": "Gross profit",
+      "value": 2800696.0,
+      "units": "USD thousands",
+      "period": "H1 FY2026; ended 2026-08-02",
+      "start_date": "2026-02-02",
+      "end_date": "2026-08-02",
+      "duration": "26 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "source_package": "lululemon-earnings-update",
+      "fact_id": "FACT-121",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm"
+      ],
+      "locators": [
+        "L141"
+      ]
+    },
+    {
+      "id": "IN-010",
+      "company": "Lululemon",
+      "metric": "Gross profit",
+      "value": 1461878.0,
+      "units": "USD thousands",
+      "period": "Q2 FY2026; ended 2026-08-02",
+      "start_date": "2026-05-04",
+      "end_date": "2026-08-02",
+      "duration": "13 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "source_package": "lululemon-earnings-update",
+      "fact_id": "FACT-095",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm"
+      ],
+      "locators": [
+        "L141"
+      ]
+    },
+    {
+      "id": "IN-011",
+      "company": "Lululemon",
+      "metric": "Operating income",
+      "value": 276946.0,
+      "units": "USD thousands",
+      "period": "Q1 FY2026; ended 2026-05-03",
+      "start_date": "2026-02-02",
+      "end_date": "2026-05-03",
+      "duration": "13 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "source_package": "lululemon-earnings-update",
+      "fact_id": "FACT-076",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm"
+      ],
+      "locators": [
+        "L142"
+      ]
+    },
+    {
+      "id": "IN-012",
+      "company": "Lululemon",
+      "metric": "Operating income",
+      "value": 730599.0,
+      "units": "USD thousands",
+      "period": "H1 FY2026; ended 2026-08-02",
+      "start_date": "2026-02-02",
+      "end_date": "2026-08-02",
+      "duration": "26 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "source_package": "lululemon-earnings-update",
+      "fact_id": "FACT-122",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm"
+      ],
+      "locators": [
+        "L147"
+      ]
+    },
+    {
+      "id": "IN-013",
+      "company": "Lululemon",
+      "metric": "Operating income",
+      "value": 453653.0,
+      "units": "USD thousands",
+      "period": "Q2 FY2026; ended 2026-08-02",
+      "start_date": "2026-05-04",
+      "end_date": "2026-08-02",
+      "duration": "13 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "source_package": "lululemon-earnings-update",
+      "fact_id": "FACT-096",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm"
+      ],
+      "locators": [
+        "L147"
+      ]
+    },
+    {
+      "id": "IN-014",
+      "company": "Alphabet",
+      "metric": "Google Cloud revenue",
+      "value": 58705.0,
+      "units": "USD millions",
+      "period": "CY2025, ended 2025-12-31",
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31",
+      "duration": "12 months",
+      "scope": "Google Cloud segment: GCP, Workspace and other services",
+      "operator": "=",
+      "source_package": "cloud-computing",
+      "fact_id": "FACT-065",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+      ],
+      "locators": [
+        "Segment information, revenue and operating income; extracted HTML table row 375, numeric column 2; CY2025, ended 2025-12-31"
+      ]
+    },
+    {
+      "id": "IN-015",
+      "company": "Microsoft",
+      "metric": "Azure revenue threshold",
+      "value": 75000,
+      "units": "USD millions, strictly greater than",
+      "period": "FY2025, ended 2025-06-30",
+      "start_date": "2024-07-01",
+      "end_date": "2025-06-30",
+      "duration": "12 months",
+      "scope": "Azure disclosure; not Intelligent Cloud",
+      "operator": ">",
+      "source_package": "cloud-computing",
+      "fact_id": "FACT-078",
+      "source_urls": [
+        "https://www.microsoft.com/investor/reports/ar25/index.html"
+      ],
+      "locators": [
+        "CEO letter, financial performance"
+      ]
+    },
+    {
+      "id": "IN-016",
+      "company": "Microsoft",
+      "metric": "Cash additions to property/equipment (signed)",
+      "value": -64551.0,
+      "units": "USD millions",
+      "period": "FY2025, ended 2025-06-30",
+      "start_date": "2024-07-01",
+      "end_date": "2025-06-30",
+      "duration": "12 months",
+      "scope": "Consolidated parent; not Azure-only",
+      "operator": "=",
+      "source_package": "cloud-computing",
+      "fact_id": "FACT-071",
+      "source_urls": [
+        "https://www.microsoft.com/investor/reports/ar25/index.html"
+      ],
+      "locators": [
+        "Consolidated statements of cash flows; extracted HTML table row 211, numeric column 0; FY2025, ended 2025-06-30"
+      ]
+    },
+    {
+      "id": "IN-017",
+      "company": "Microsoft",
+      "metric": "Azure operating margin (coverage gap)",
+      "value": null,
+      "units": "percent",
+      "period": "FY2025; ended 2025-06-30",
+      "start_date": "2024-07-01",
+      "end_date": "2025-06-30",
+      "duration": "12 months",
+      "scope": "Standalone Azure; unavailable in the saved report",
+      "operator": "not disclosed",
+      "source_package": "cloud-computing",
+      "fact_id": "FACT-081",
+      "source_urls": [
+        "https://www.microsoft.com/investor/reports/ar25/index.html"
+      ],
+      "locators": [
+        "Business, Intelligent Cloud and Productivity and Business Processes; Metrics"
+      ],
+      "record_type": "coverage annotation",
+      "note": "The cited qualitative scope fact is context; it is not a numerical margin disclosure. See original report methodology."
+    }
+  ],
+  "outputs": [
+    {
+      "company": "Amazon",
+      "period": "CY2025, ended 2025-12-31",
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31",
+      "duration": "12 months",
+      "scope": "Consolidated parent; not AWS-only",
+      "operator": "=",
+      "id": "OUT-001",
+      "metric": "Cash capex (positive outflow)",
+      "value": 131819.0,
+      "units": "USD millions",
+      "status": "normalized",
+      "input_ids": [
+        "IN-001"
+      ],
+      "transformation": "-131819.0 / 1 × -1 = 131819.0; present cash outflow as positive expenditure, retain signed input.",
+      "comparison_group": "separate observation"
+    },
+    {
+      "company": "Lululemon",
+      "period": "FY2025; ended 2026-02-01; 52 weeks",
+      "start_date": "2025-02-03",
+      "end_date": "2026-02-01",
+      "duration": "52 weeks",
+      "scope": "Consolidated parent",
+      "operator": "=",
+      "id": "OUT-002",
+      "metric": "Cash capex (positive outflow)",
+      "value": 680.802,
+      "units": "USD millions",
+      "status": "normalized",
+      "input_ids": [
+        "IN-002"
+      ],
+      "transformation": "-680802.0 / 1000 × -1 = 680.802; present cash outflow as positive expenditure, retain signed input.",
+      "comparison_group": "separate observation"
+    },
+    {
+      "company": "Lululemon",
+      "period": "FY2025; ended 2026-02-01; 52 weeks",
+      "start_date": "2025-02-03",
+      "end_date": "2026-02-01",
+      "duration": "52 weeks",
+      "scope": "Consolidated parent",
+      "operator": "=",
+      "id": "OUT-003",
+      "metric": "Revenue",
+      "value": 11102.6,
+      "units": "USD millions",
+      "status": "normalized",
+      "input_ids": [
+        "IN-003"
+      ],
+      "transformation": "11102600.0 / 1000 × 1 = 11102.6; convert or preserve monetary unit; do not change economic scope.",
+      "comparison_group": "separate observation"
+    },
+    {
+      "company": "Amazon",
+      "period": "CY2025, ended 2025-12-31",
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31",
+      "duration": "12 months",
+      "scope": "AWS segment",
+      "operator": "=",
+      "id": "OUT-004",
+      "metric": "AWS revenue",
+      "value": 128725.0,
+      "units": "USD millions",
+      "status": "normalized",
+      "input_ids": [
+        "IN-004"
+      ],
+      "transformation": "128725.0 / 1 × 1 = 128725.0; convert or preserve monetary unit; do not change economic scope.",
+      "comparison_group": "separate observation"
+    },
+    {
+      "company": "Lululemon",
+      "period": "Q2 FY2026; ended 2026-08-02",
+      "start_date": "2026-05-04",
+      "end_date": "2026-08-02",
+      "duration": "13 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "id": "OUT-005",
+      "metric": "Revenue",
+      "value": 2415.631,
+      "units": "USD millions",
+      "status": "derived; reconciled to reported Q2",
+      "input_ids": [
+        "IN-006",
+        "IN-005",
+        "IN-007"
+      ],
+      "transformation": "(IN-006 − IN-005) / 1,000 = 2415.631; check against IN-007 / 1,000.",
+      "comparison_group": "Lululemon Q2 FY2026 GAAP"
+    },
+    {
+      "company": "Lululemon",
+      "period": "Q2 FY2026; ended 2026-08-02",
+      "start_date": "2026-05-04",
+      "end_date": "2026-08-02",
+      "duration": "13 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "id": "OUT-006",
+      "metric": "Gross profit",
+      "value": 1461.878,
+      "units": "USD millions",
+      "status": "derived; reconciled to reported Q2",
+      "input_ids": [
+        "IN-009",
+        "IN-008",
+        "IN-010"
+      ],
+      "transformation": "(IN-009 − IN-008) / 1,000 = 1461.878; check against IN-010 / 1,000.",
+      "comparison_group": "Lululemon Q2 FY2026 GAAP"
+    },
+    {
+      "company": "Lululemon",
+      "period": "Q2 FY2026; ended 2026-08-02",
+      "start_date": "2026-05-04",
+      "end_date": "2026-08-02",
+      "duration": "13 weeks",
+      "scope": "Consolidated; GAAP",
+      "operator": "=",
+      "id": "OUT-007",
+      "metric": "Operating income",
+      "value": 453.653,
+      "units": "USD millions",
+      "status": "derived; reconciled to reported Q2",
+      "input_ids": [
+        "IN-012",
+        "IN-011",
+        "IN-013"
+      ],
+      "transformation": "(IN-012 − IN-011) / 1,000 = 453.653; check against IN-013 / 1,000.",
+      "comparison_group": "Lululemon Q2 FY2026 GAAP"
+    },
+    {
+      "company": "Amazon",
+      "period": "CY2025, ended 2025-12-31",
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31",
+      "duration": "12 months",
+      "scope": "AWS segment",
+      "operator": "=",
+      "id": "OUT-008",
+      "metric": "AWS revenue",
+      "value": 128725.0,
+      "units": "USD millions",
+      "status": "retained; scoped comparison",
+      "input_ids": [
+        "IN-004"
+      ],
+      "transformation": "Preserve segment revenue and CY end date.",
+      "comparison_group": "CY2025 segment revenue; product scope differs"
+    },
+    {
+      "company": "Alphabet",
+      "period": "CY2025, ended 2025-12-31",
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31",
+      "duration": "12 months",
+      "scope": "Google Cloud segment: GCP, Workspace and other services",
+      "operator": "=",
+      "id": "OUT-009",
+      "metric": "Google Cloud revenue",
+      "value": 58705.0,
+      "units": "USD millions",
+      "status": "retained; scoped comparison",
+      "input_ids": [
+        "IN-014"
+      ],
+      "transformation": "Preserve Google Cloud scope including Workspace.",
+      "comparison_group": "CY2025 segment revenue; product scope differs"
+    },
+    {
+      "company": "Microsoft",
+      "period": "FY2025, ended 2025-06-30",
+      "start_date": "2024-07-01",
+      "end_date": "2025-06-30",
+      "duration": "12 months",
+      "scope": "Azure disclosure; not Intelligent Cloud",
+      "operator": ">",
+      "id": "OUT-010",
+      "metric": "Azure revenue threshold",
+      "value": 75000,
+      "units": "USD millions",
+      "status": "threshold; excluded from exact ranking",
+      "input_ids": [
+        "IN-015"
+      ],
+      "transformation": "Retain > operator. Do not treat threshold as exact revenue or back-solve historical dollars.",
+      "comparison_group": "separate FY2025 Azure threshold"
+    },
+    {
+      "company": "Microsoft",
+      "period": "FY2025, ended 2025-06-30",
+      "start_date": "2024-07-01",
+      "end_date": "2025-06-30",
+      "duration": "12 months",
+      "scope": "Consolidated parent; not Azure-only",
+      "operator": "=",
+      "id": "OUT-011",
+      "metric": "Cash capex (positive outflow)",
+      "value": 64551.0,
+      "units": "USD millions",
+      "status": "normalized; parent scope retained",
+      "input_ids": [
+        "IN-016"
+      ],
+      "transformation": "Multiply signed cash addition by −1; retain parent scope and June year-end.",
+      "comparison_group": "separate parent cash capex"
+    },
+    {
+      "company": "Microsoft",
+      "period": "FY2025; ended 2025-06-30",
+      "start_date": "2024-07-01",
+      "end_date": "2025-06-30",
+      "duration": "12 months",
+      "scope": "Standalone Azure; unavailable in the saved report",
+      "operator": "not disclosed",
+      "id": "OUT-012",
+      "metric": "Azure operating margin (coverage gap)",
+      "value": null,
+      "units": "percent",
+      "status": "missing; no imputation",
+      "input_ids": [
+        "IN-017"
+      ],
+      "transformation": "Leave null. Do not substitute Intelligent Cloud margin.",
+      "comparison_group": "excluded: missing standalone measure"
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "EX-001",
+      "case_id": "units-signs",
+      "issue": "Thousands and millions are mixed.",
+      "action": "Convert USD thousands to USD millions by dividing by 1,000; retain original units.",
+      "affected_ids": [
+        "IN-002",
+        "IN-003"
+      ],
+      "resolved": true
+    },
+    {
+      "id": "EX-002",
+      "case_id": "units-signs",
+      "issue": "Cash-flow capex is signed negative.",
+      "action": "Display expenditure as positive only in the explicitly named output metric.",
+      "affected_ids": [
+        "IN-001",
+        "IN-002"
+      ],
+      "resolved": true
+    },
+    {
+      "id": "EX-003",
+      "case_id": "units-signs",
+      "issue": "Identical output units do not make different businesses or fiscal windows interchangeable.",
+      "action": "Keep segment/parent scope and exact dates; do not rank these four measures together.",
+      "affected_ids": [
+        "OUT-001",
+        "OUT-002",
+        "OUT-003",
+        "OUT-004"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "EX-004",
+      "case_id": "quarter-ytd",
+      "issue": "The same August 2 end date appears on a quarter and a half year.",
+      "action": "Use start date and duration. Derive Q2 from compatible H1 minus Q1, then reconcile to directly reported Q2.",
+      "affected_ids": [
+        "IN-005",
+        "IN-006",
+        "IN-007",
+        "IN-008",
+        "IN-009",
+        "IN-010",
+        "IN-011",
+        "IN-012",
+        "IN-013"
+      ],
+      "resolved": true
+    },
+    {
+      "id": "EX-005",
+      "case_id": "quarter-ytd",
+      "issue": "Ratios, EPS, balances and adjusted figures cannot use this subtraction rule indiscriminately.",
+      "action": "Apply this recipe only to the three cumulative GAAP income-statement measures shown. No EPS/margin subtraction.",
+      "affected_ids": [
+        "OUT-005",
+        "OUT-006",
+        "OUT-007"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "EX-006",
+      "case_id": "quarter-ytd",
+      "issue": "Q2 gross profit and operating income include the disclosed tariff refund.",
+      "action": "Keep these as GAAP quarter reconstruction; normalization for one-offs is a separate analytical decision.",
+      "affected_ids": [
+        "OUT-006",
+        "OUT-007"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "EX-007",
+      "case_id": "cloud-comparability",
+      "issue": "Microsoft FY2025 ends June 30; AWS and Google Cloud CY2025 end December 31.",
+      "action": "Preserve dates and separate Azure/Microsoft from an aligned CY comparison. No calendarization has been performed.",
+      "affected_ids": [
+        "IN-015",
+        "IN-016",
+        "IN-004",
+        "IN-014"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "EX-008",
+      "case_id": "cloud-comparability",
+      "issue": "Azure revenue is a lower bound, not an exact value.",
+      "action": "Preserve >75,000 USD million. Exclude it from exact-value rankings and historical back-solving.",
+      "affected_ids": [
+        "IN-015"
+      ],
+      "resolved": true
+    },
+    {
+      "id": "EX-009",
+      "case_id": "cloud-comparability",
+      "issue": "Cloud labels conceal different product and parent-company boundaries.",
+      "action": "Retain Workspace within Google Cloud; parent capex is not Azure-only or AI-only; AWS scope also differs.",
+      "affected_ids": [
+        "IN-004",
+        "IN-014",
+        "IN-016"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "EX-010",
+      "case_id": "cloud-comparability",
+      "issue": "Standalone Azure operating margin is absent from the selected report.",
+      "action": "Export a blank numeric value with explicit missing status; do not enter zero or use Intelligent Cloud.",
+      "affected_ids": [
+        "IN-017"
+      ],
+      "resolved": false
+    }
+  ],
+  "dictionary": [
+    {
+      "field": "id",
+      "definition": "Stable row identifier within this cleaning example."
+    },
+    {
+      "field": "company",
+      "definition": "Reporting parent or company; see scope for business boundary."
+    },
+    {
+      "field": "metric",
+      "definition": "Explicit reported or transformed measure; capex positive outflow is separately named."
+    },
+    {
+      "field": "value",
+      "definition": "Unrounded numeric observation in stated units; blank/null means unavailable, never zero."
+    },
+    {
+      "field": "units",
+      "definition": "Output money is USD millions; percent measures remain percentages. No FX conversion."
+    },
+    {
+      "field": "period",
+      "definition": "Original fiscal/calendar label retained with exact date fields."
+    },
+    {
+      "field": "start_date",
+      "definition": "Inclusive period start; fiscal starts reconstructed from the saved reporting calendar."
+    },
+    {
+      "field": "end_date",
+      "definition": "Inclusive period end; duration must be considered along with this field."
+    },
+    {
+      "field": "duration",
+      "definition": "Reported/reconstructed observation duration: 12 months, 52 weeks, 13 weeks or 26 weeks."
+    },
+    {
+      "field": "scope",
+      "definition": "Segment, consolidated parent or qualitative coverage boundary."
+    },
+    {
+      "field": "operator",
+      "definition": "= for exact recorded value; > for strict lower bound; not disclosed for gap."
+    },
+    {
+      "field": "source_package",
+      "definition": "Original saved FinRunbook example; combine with fact_id to avoid collisions."
+    },
+    {
+      "field": "fact_id",
+      "definition": "Original fact ID within source_package; no global uniqueness is implied."
+    },
+    {
+      "field": "source_urls",
+      "definition": "Original issuer/SEC evidence URLs, not a new retrieval."
+    },
+    {
+      "field": "locators",
+      "definition": "Original source passages/table row locators from the saved ledger."
+    },
+    {
+      "field": "status",
+      "definition": "Normalization, retention, derivation, threshold or missingness status."
+    },
+    {
+      "field": "input_ids",
+      "definition": "Input rows underlying output, including direct reported reconciliation observations."
+    },
+    {
+      "field": "transformation",
+      "definition": "Explicit formula or handling rule; selected semantic mappings were authored, not inferred by a generic engine."
+    },
+    {
+      "field": "comparison_group",
+      "definition": "Permitted comparison boundary; not an automatic guarantee of economic comparability."
+    },
+    {
+      "field": "resolved",
+      "definition": "True means the named representation issue was handled; false means a substantive limitation remains."
+    }
+  ]
+}

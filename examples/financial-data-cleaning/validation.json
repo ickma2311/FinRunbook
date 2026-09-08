@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "scope": "Transformation and packaging checks only; original source reviews remain in linked reports.",
+  "created_at": "2026-09-07T22:25:59.509625+00:00",
+  "input_count": 17,
+  "output_count": 12,
+  "exception_count": 10,
+  "quarter_reconciliations": [
+    [
+      "IN-006",
+      "IN-005",
+      "IN-007",
+      "OUT-005"
+    ],
+    [
+      "IN-009",
+      "IN-008",
+      "IN-010",
+      "OUT-006"
+    ],
+    [
+      "IN-012",
+      "IN-011",
+      "IN-013",
+      "OUT-007"
+    ]
+  ],
+  "source_hashes": {
+    "cloud-computing": "c56bc38cabb9f94f8c280ad94e4db879dba3b7ed59a1a31bccdfb97b34895163",
+    "lululemon-earnings-update": "dc28230adde1f85c21a33edcfc77d8770f6aef35c28576033bdd22c6b041bcd6"
+  },
+  "limitations": [
+    "Case-specific mappings and rules, not a generic automatic cleaning system.",
+    "No raw-source re-extraction or source-truth certification.",
+    "Historical cutoffs retained."
+  ],
+  "reviewed_at": "2026-09-07T22:29:11.552788+00:00",
+  "reviewer": "Coordinator source-ledger and transformation review; not independent source audit",
+  "checks": [
+    "17 input values retain original source-package facts; missing Azure margin remains a coverage annotation",
+    "Known unit/sign and Q2 expected values match output",
+    "H1 minus Q1 reconciles to direct Q2 revenue, gross profit and operating income",
+    "Strict Azure revenue bound, June fiscal date, missingness and scope retained",
+    "All exported numeric values and input references match JSON",
+    "Nine offline packaging tests passed",
+    "Browser case filters, keyboard, evidence, downloads and mobile checks passed",
+    "Screenshots inspected"
+  ]
+}

@@ -15,9 +15,19 @@ Code to those same instructions.
 
 ## Live examples
 
-Explore completed reports in English and Chinese. No agent, installation,
-or financial API key is needed to view them.
+Start with a question and see a worked answer: what changed in earnings, which
+numbers belong in your spreadsheet, or how companies compare. Read the report,
+download its data, or adapt the prompt for your own companies. No agent,
+installation or financial API key is needed to view the saved examples.
 
+- [Review earnings: what changed?](https://ickma2311.github.io/FinRunbook/#earnings-update) — Lululemon, with comparable financials, margin adjustments and an editable table.
+- [Prepare comparable financial data](https://ickma2311.github.io/FinRunbook/#data-cleaning) — three worked cases covering units/signs, quarter versus year-to-date, and cloud disclosure boundaries; download inputs, cleaned data, definitions and exceptions.
+- [Compare companies before deeper research](https://ickma2311.github.io/FinRunbook/#company-comparison) — AWS, Azure and Google Cloud, keeping disclosure differences visible.
+- Additional walkthrough: [check a thesis against new evidence](https://ickma2311.github.io/FinRunbook/#thesis-check) — a clearly labeled retrospective Lululemon illustration, not a tracked customer thesis.
+
+Browse the full reports in English and Chinese:
+
+- [Lululemon: earnings deterioration and recovery scenarios](https://ickma2311.github.io/FinRunbook/lululemon-earnings-update/report/)
 - [Apple: business quality, FY2021–FY2025](https://ickma2311.github.io/FinRunbook/apple-business-quality/report/)
 - [Cloud computing: AWS, Azure, and Google Cloud, 2021–2025](https://ickma2311.github.io/FinRunbook/cloud-computing/report/)
 - [AI infrastructure capex and supplier exposure — English](https://ickma2311.github.io/FinRunbook/ai-infrastructure-capex-supply-chain/report/)

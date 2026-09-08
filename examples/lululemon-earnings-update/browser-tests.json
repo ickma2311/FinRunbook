@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-04T15:17:21.367Z",
+  "checks": [
+    "Five historical metrics reference all five correct annual facts.",
+    "Seven timeline steps, both FX bases and three comparable-period tables update.",
+    "Peer sorting and all three scoped disclosure views work.",
+    "Three scenario presets and 12 boundary combinations reconcile to model formulas.",
+    "Keyboard chart activation, recursive calculation trails and searchable source library work.",
+    "English output, no missing values, 390px mobile without page overflow, print timeline visible.",
+    "No runtime errors, missing report assets or third-party runtime requests."
+  ],
+  "errors": [],
+  "failed_responses": []
+}

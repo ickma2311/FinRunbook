@@ -1,0 +1,135 @@
+company,metric,period,value,units,status,fact_id,calculation_id,source_urls
+Lululemon,revenue,FY2021; ended 2022-01-30; 52 weeks,6256617.0,USD thousands,company-reported,FACT-001,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,gross_profit,FY2021; ended 2022-01-30; 52 weeks,3608565.0,USD thousands,company-reported,FACT-002,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,gross_margin,FY2021; ended 2022-01-30; 52 weeks,57.675977289324244,percent,calculated,FACT-008,CALC-002,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,operating_income,FY2021; ended 2022-01-30; 52 weeks,1333355.0,USD thousands,company-reported,FACT-003,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,operating_margin,FY2021; ended 2022-01-30; 52 weeks,21.311117493687085,percent,calculated,FACT-009,CALC-003,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,cfo,FY2021; ended 2022-01-30; 52 weeks,1389108.0,USD thousands,company-reported,FACT-004,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,capex_signed,FY2021; ended 2022-01-30; 52 weeks,-394502.0,USD thousands,company-reported,FACT-005,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,fcf,FY2021; ended 2022-01-30; 52 weeks,994606.0,USD thousands,calculated,FACT-007,CALC-001,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,inventory,At 2022-01-30,966481.0,USD thousands,company-reported,FACT-006,,https://www.sec.gov/Archives/edgar/data/1397187/000139718722000013/lulu-20220130xex991.htm
+Lululemon,revenue,FY2022; ended 2023-01-29; 52 weeks,8110518.0,USD thousands,company-reported,FACT-012,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,gross_profit,FY2022; ended 2023-01-29; 52 weeks,4492340.0,USD thousands,company-reported,FACT-013,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,gross_margin,FY2022; ended 2023-01-29; 52 weeks,55.389063929085665,percent,calculated,FACT-019,CALC-006,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,operating_income,FY2022; ended 2023-01-29; 52 weeks,1328408.0,USD thousands,company-reported,FACT-014,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,operating_margin,FY2022; ended 2023-01-29; 52 weeks,16.378830550650402,percent,calculated,FACT-020,CALC-007,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,cfo,FY2022; ended 2023-01-29; 52 weeks,966463.0,USD thousands,company-reported,FACT-015,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,capex_signed,FY2022; ended 2023-01-29; 52 weeks,-638657.0,USD thousands,company-reported,FACT-016,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,fcf,FY2022; ended 2023-01-29; 52 weeks,327806.0,USD thousands,calculated,FACT-018,CALC-005,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,inventory,At 2023-01-29,1447367.0,USD thousands,company-reported,FACT-017,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,comp,FY2022; ended 2023-01-29; 52 weeks versus comparable prior-year period,25,percent,company-reported,FACT-024,,https://www.sec.gov/Archives/edgar/data/1397187/000139718723000012/lulu-20230129.htm
+Lululemon,revenue,FY2023; ended 2024-01-28; 52 weeks,9619278.0,USD thousands,company-reported,FACT-025,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,gross_profit,FY2023; ended 2024-01-28; 52 weeks,5609405.0,USD thousands,company-reported,FACT-026,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,gross_margin,FY2023; ended 2024-01-28; 52 weeks,58.314199880697906,percent,calculated,FACT-032,CALC-012,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,operating_income,FY2023; ended 2024-01-28; 52 weeks,2132676.0,USD thousands,company-reported,FACT-027,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,operating_margin,FY2023; ended 2024-01-28; 52 weeks,22.170853155507096,percent,calculated,FACT-033,CALC-013,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,cfo,FY2023; ended 2024-01-28; 52 weeks,2296164.0,USD thousands,company-reported,FACT-028,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,capex_signed,FY2023; ended 2024-01-28; 52 weeks,-651865.0,USD thousands,company-reported,FACT-029,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,fcf,FY2023; ended 2024-01-28; 52 weeks,1644299.0,USD thousands,calculated,FACT-031,CALC-011,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,inventory,At 2024-01-28,1323602.0,USD thousands,company-reported,FACT-030,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,comp,FY2023; ended 2024-01-28; 52 weeks versus comparable prior-year period,13,percent,company-reported,FACT-037,,https://www.sec.gov/Archives/edgar/data/1397187/000139718724000010/lulu-20240128.htm
+Lululemon,revenue,FY2024; ended 2025-02-02; 53 weeks,10588126.0,USD thousands,company-reported,FACT-038,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,gross_profit,FY2024; ended 2025-02-02; 53 weeks,6270811.0,USD thousands,company-reported,FACT-039,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,gross_margin,FY2024; ended 2025-02-02; 53 weeks,59.22493744407651,percent,calculated,FACT-045,CALC-018,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,operating_income,FY2024; ended 2025-02-02; 53 weeks,2505697.0,USD thousands,company-reported,FACT-040,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,operating_margin,FY2024; ended 2025-02-02; 53 weeks,23.665160388155563,percent,calculated,FACT-046,CALC-019,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,cfo,FY2024; ended 2025-02-02; 53 weeks,2272713.0,USD thousands,company-reported,FACT-041,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,capex_signed,FY2024; ended 2025-02-02; 53 weeks,-689232.0,USD thousands,company-reported,FACT-042,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,fcf,FY2024; ended 2025-02-02; 53 weeks,1583481.0,USD thousands,calculated,FACT-044,CALC-017,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,inventory,At 2025-02-02,1442081.0,USD thousands,company-reported,FACT-043,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,comp,FY2024; ended 2025-02-02; 53 weeks versus comparable prior-year period,4,percent,company-reported,FACT-050,,https://www.sec.gov/Archives/edgar/data/1397187/000139718725000012/lulu-20250202xex991.htm
+Lululemon,revenue,FY2025; ended 2026-02-01; 52 weeks,11102600.0,USD thousands,company-reported,FACT-051,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,gross_profit,FY2025; ended 2026-02-01; 52 weeks,6284132.0,USD thousands,company-reported,FACT-052,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,gross_margin,FY2025; ended 2026-02-01; 52 weeks,56.6005440167168,percent,calculated,FACT-058,CALC-024,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,operating_income,FY2025; ended 2026-02-01; 52 weeks,2210615.0,USD thousands,company-reported,FACT-053,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,operating_margin,FY2025; ended 2026-02-01; 52 weeks,19.910786662583536,percent,calculated,FACT-059,CALC-025,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,cfo,FY2025; ended 2026-02-01; 52 weeks,1602477.0,USD thousands,company-reported,FACT-054,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,capex_signed,FY2025; ended 2026-02-01; 52 weeks,-680802.0,USD thousands,company-reported,FACT-055,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,fcf,FY2025; ended 2026-02-01; 52 weeks,921675.0,USD thousands,calculated,FACT-057,CALC-023,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,inventory,At 2026-02-01,1700753.0,USD thousands,company-reported,FACT-056,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,comp,FY2025; ended 2026-02-01; 52 weeks versus comparable prior-year period,2,percent,company-reported,FACT-063,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm
+Lululemon,revenue,Q1 FY2025; ended 2025-05-04,2370660.0,USD thousands,company-reported,FACT-064,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,gross_profit,Q1 FY2025; ended 2025-05-04,1383126.0,USD thousands,company-reported,FACT-065,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,gross_margin,Q1 FY2025; ended 2025-05-04,58.34349927868189,percent,calculated,FACT-070,CALC-029,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,operating_income,Q1 FY2025; ended 2025-05-04,438625.0,USD thousands,company-reported,FACT-066,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,operating_margin,Q1 FY2025; ended 2025-05-04,18.50223144609518,percent,calculated,FACT-071,CALC-030,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,sga,Q1 FY2025; ended 2025-05-04,942871.0,USD thousands,company-reported,FACT-067,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,net_income,Q1 FY2025; ended 2025-05-04,314572.0,USD thousands,company-reported,FACT-069,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,revenue,Q1 FY2026; ended 2026-05-03,2471603.0,USD thousands,company-reported,FACT-074,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,gross_profit,Q1 FY2026; ended 2026-05-03,1338818.0,USD thousands,company-reported,FACT-075,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,gross_margin,Q1 FY2026; ended 2026-05-03,54.168003518364394,percent,calculated,FACT-080,CALC-033,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,operating_income,Q1 FY2026; ended 2026-05-03,276946.0,USD thousands,company-reported,FACT-076,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,operating_margin,Q1 FY2026; ended 2026-05-03,11.205116679337255,percent,calculated,FACT-081,CALC-034,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,sga,Q1 FY2026; ended 2026-05-03,1059988.0,USD thousands,company-reported,FACT-077,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,net_income,Q1 FY2026; ended 2026-05-03,195048.0,USD thousands,company-reported,FACT-079,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon,revenue,Q2 FY2025; ended 2025-08-03,2525219.0,USD thousands,company-reported,FACT-084,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,gross_profit,Q2 FY2025; ended 2025-08-03,1477202.0,USD thousands,company-reported,FACT-085,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,gross_margin,Q2 FY2025; ended 2025-08-03,58.49797581912698,percent,calculated,FACT-090,CALC-037,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,operating_income,Q2 FY2025; ended 2025-08-03,523814.0,USD thousands,company-reported,FACT-086,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,operating_margin,Q2 FY2025; ended 2025-08-03,20.743309788180746,percent,calculated,FACT-091,CALC-038,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,sga,Q2 FY2025; ended 2025-08-03,951658.0,USD thousands,company-reported,FACT-087,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,net_income,Q2 FY2025; ended 2025-08-03,370905.0,USD thousands,company-reported,FACT-089,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,revenue,Q2 FY2026; ended 2026-08-02,2415631.0,USD thousands,company-reported,FACT-094,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,gross_profit,Q2 FY2026; ended 2026-08-02,1461878.0,USD thousands,company-reported,FACT-095,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,gross_margin,Q2 FY2026; ended 2026-08-02,60.51743830080009,percent,calculated,FACT-100,CALC-041,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,operating_income,Q2 FY2026; ended 2026-08-02,453653.0,USD thousands,company-reported,FACT-096,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,operating_margin,Q2 FY2026; ended 2026-08-02,18.7798964328575,percent,calculated,FACT-101,CALC-042,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,sga,Q2 FY2026; ended 2026-08-02,1006332.0,USD thousands,company-reported,FACT-097,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,net_income,Q2 FY2026; ended 2026-08-02,329223.0,USD thousands,company-reported,FACT-099,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,inventory,2026-08-02,1711450.0,USD thousands,company-reported,FACT-151,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,ex_refund_gp,Q2 FY2026; ended 2026-08-02,1327378.0,USD thousands,calculated,FACT-146,CALC-064,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,ex_refund_gm,Q2 FY2026; ended 2026-08-02,54.949534924829166,percent,calculated,FACT-148,CALC-066,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,ex_refund_oi,Q2 FY2026; ended 2026-08-02,319153.0,USD thousands,calculated,FACT-147,CALC-065,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,ex_refund_om,Q2 FY2026; ended 2026-08-02,13.211993056886588,percent,calculated,FACT-149,CALC-067,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,revenue,H1 FY2025; ended 2025-08-03,4895879.0,USD thousands,company-reported,FACT-104,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,gross_profit,H1 FY2025; ended 2025-08-03,2860328.0,USD thousands,company-reported,FACT-105,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,gross_margin,H1 FY2025; ended 2025-08-03,58.42317589956778,percent,calculated,FACT-110,CALC-045,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,operating_income,H1 FY2025; ended 2025-08-03,962439.0,USD thousands,company-reported,FACT-106,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,operating_margin,H1 FY2025; ended 2025-08-03,19.65814514615251,percent,calculated,FACT-111,CALC-046,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,sga,H1 FY2025; ended 2025-08-03,1894529.0,USD thousands,company-reported,FACT-107,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,net_income,H1 FY2025; ended 2025-08-03,685477.0,USD thousands,company-reported,FACT-109,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,cfo,H1 FY2025; ended 2025-08-03,209722.0,USD thousands,company-reported,FACT-114,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm
+Lululemon,capex_signed,H1 FY2025; ended 2025-08-03,-330161.0,USD thousands,company-reported,FACT-115,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm
+Lululemon,fcf,H1 FY2025; ended 2025-08-03,-120439.0,USD thousands,calculated,FACT-119,CALC-049,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm
+Lululemon,revenue,H1 FY2026; ended 2026-08-02,4887234.0,USD thousands,company-reported,FACT-120,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,gross_profit,H1 FY2026; ended 2026-08-02,2800696.0,USD thousands,company-reported,FACT-121,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,gross_margin,H1 FY2026; ended 2026-08-02,57.30636183984642,percent,calculated,FACT-126,CALC-050,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,operating_income,H1 FY2026; ended 2026-08-02,730599.0,USD thousands,company-reported,FACT-122,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,operating_margin,H1 FY2026; ended 2026-08-02,14.949130735299354,percent,calculated,FACT-127,CALC-051,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,sga,H1 FY2026; ended 2026-08-02,2066320.0,USD thousands,company-reported,FACT-123,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,net_income,H1 FY2026; ended 2026-08-02,524271.0,USD thousands,company-reported,FACT-125,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon,cfo,H1 FY2026; ended 2026-08-02,589278.0,USD thousands,company-reported,FACT-130,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm
+Lululemon,capex_signed,H1 FY2026; ended 2026-08-02,-277056.0,USD thousands,company-reported,FACT-131,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm
+Lululemon,fcf,H1 FY2026; ended 2026-08-02,312222.0,USD thousands,calculated,FACT-135,CALC-054,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm
+Lululemon / Americas,growth,Q1 FY2026 versus corresponding FY2025 quarter,-3.0,percent,company-reported,FACT-165,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Americas,growth_cc,Q1 FY2026 versus corresponding FY2025 quarter,-4.0,percent,company-reported,FACT-166,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Americas,comp,Q1 FY2026 versus corresponding FY2025 quarter,-5.0,percent,company-reported,FACT-167,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Americas,comp_cc,Q1 FY2026 versus corresponding FY2025 quarter,-6.0,percent,company-reported,FACT-168,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / China Mainland,growth,Q1 FY2026 versus corresponding FY2025 quarter,30.0,percent,company-reported,FACT-169,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / China Mainland,growth_cc,Q1 FY2026 versus corresponding FY2025 quarter,23.0,percent,company-reported,FACT-170,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / China Mainland,comp,Q1 FY2026 versus corresponding FY2025 quarter,20.0,percent,company-reported,FACT-171,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / China Mainland,comp_cc,Q1 FY2026 versus corresponding FY2025 quarter,13.0,percent,company-reported,FACT-172,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Rest of World,growth,Q1 FY2026 versus corresponding FY2025 quarter,13.0,percent,company-reported,FACT-173,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Rest of World,growth_cc,Q1 FY2026 versus corresponding FY2025 quarter,9.0,percent,company-reported,FACT-174,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Rest of World,comp,Q1 FY2026 versus corresponding FY2025 quarter,5.0,percent,company-reported,FACT-175,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Rest of World,comp_cc,Q1 FY2026 versus corresponding FY2025 quarter,1.0,percent,company-reported,FACT-176,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Group,growth,Q1 FY2026 versus corresponding FY2025 quarter,4.0,percent,company-reported,FACT-177,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Group,growth_cc,Q1 FY2026 versus corresponding FY2025 quarter,2.0,percent,company-reported,FACT-178,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Group,comp,Q1 FY2026 versus corresponding FY2025 quarter,1.0,percent,company-reported,FACT-179,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Group,comp_cc,Q1 FY2026 versus corresponding FY2025 quarter,-2.0,percent,company-reported,FACT-180,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000077/lulu-20260503xex991.htm
+Lululemon / Americas,growth,Q2 FY2026 versus corresponding FY2025 quarter,-8.0,percent,company-reported,FACT-181,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / Americas,growth_cc,Q2 FY2026 versus corresponding FY2025 quarter,-8.0,percent,company-reported,FACT-182,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / Americas,comp,Q2 FY2026 versus corresponding FY2025 quarter,-12.0,percent,company-reported,FACT-183,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / Americas,comp_cc,Q2 FY2026 versus corresponding FY2025 quarter,-12.0,percent,company-reported,FACT-184,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / China Mainland,growth,Q2 FY2026 versus corresponding FY2025 quarter,4.0,percent,company-reported,FACT-185,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / China Mainland,growth_cc,Q2 FY2026 versus corresponding FY2025 quarter,-2.0,percent,company-reported,FACT-186,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / China Mainland,comp,Q2 FY2026 versus corresponding FY2025 quarter,-2.0,percent,company-reported,FACT-187,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / China Mainland,comp_cc,Q2 FY2026 versus corresponding FY2025 quarter,-8.0,percent,company-reported,FACT-188,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / Rest of World,growth,Q2 FY2026 versus corresponding FY2025 quarter,5.0,percent,company-reported,FACT-189,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / Rest of World,growth_cc,Q2 FY2026 versus corresponding FY2025 quarter,6.0,percent,company-reported,FACT-190,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / Rest of World,comp,Q2 FY2026 versus corresponding FY2025 quarter,-4.0,percent,company-reported,FACT-191,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / Rest of World,comp_cc,Q2 FY2026 versus corresponding FY2025 quarter,-3.0,percent,company-reported,FACT-192,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / Group,growth,Q2 FY2026 versus corresponding FY2025 quarter,-4.0,percent,company-reported,FACT-193,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / Group,growth_cc,Q2 FY2026 versus corresponding FY2025 quarter,-5.0,percent,company-reported,FACT-194,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / Group,comp,Q2 FY2026 versus corresponding FY2025 quarter,-9.0,percent,company-reported,FACT-195,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm
+Lululemon / Group,comp_cc,Q2 FY2026 versus corresponding FY2025 quarter,-10.0,percent,company-reported,FACT-196,,https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm

@@ -1,0 +1,29 @@
+{
+  "result": "edited",
+  "completed_at": "2026-09-04T15:17:00.217738+00:00",
+  "reviewer": "Report-author English editorial pass; not an independent reviewer",
+  "languages": [
+    "en"
+  ],
+  "changes": [
+    {
+      "field": "executive_view.headline",
+      "before": "Execution problems are visible. Customer switching is not yet measured.",
+      "after": "Evidence points to execution problems. Customer switching remains unmeasured.",
+      "reason": "Make the causal assessment explicitly inferential, not an observed causal fact."
+    },
+    {
+      "field": "timeline.Q1_FY2026.title",
+      "before": "Full-price progress did not last",
+      "after": "Sales growth coexists with margin pressure",
+      "reason": "Avoid implying a measured reversal in full-price selling that the cited Q2 disclosure does not separately quantify."
+    }
+  ],
+  "protected_items_preserved": true,
+  "checks": [
+    "English language throughout visible report.",
+    "Analyst inference, management guidance and illustrative scenarios remain separate.",
+    "No exact share-transfer attribution or unsupported causal percentages.",
+    "Evidence IDs, numbers, periods, units and formulas unchanged by tone editing."
+  ]
+}

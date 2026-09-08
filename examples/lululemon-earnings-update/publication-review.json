@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "packaged_at": "2026-09-07T22:10:56.179933+00:00",
+  "scope": "Static packaging of existing September 4 report; CSV extracts existing fact values; thesis page is a retrospective instructional view, not an ex-ante investment result.",
+  "original_receipts_preserved": true,
+  "financial_content_changed": false,
+  "report_data_sha256": "dc28230adde1f85c21a33edcfc77d8770f6aef35c28576033bdd22c6b041bcd6",
+  "csv_rows": 134,
+  "excluded": [
+    "raw source captures",
+    "working scripts",
+    "local delivery URL"
+  ],
+  "checks": [
+    "Original financial arrays unchanged",
+    "No local machine paths or local transport URLs in package",
+    "Eight packaging checks passed, including every CSV value/period/unit/source mapping to original fact",
+    "Desktop/mobile browser routes, prompts, downloads, thesis cards and original report controls passed",
+    "Coordinator inspected gallery and thesis screenshots"
+  ],
+  "limitations": [
+    "Original source and numerical reviews were performed by the report author.",
+    "Historical source references remain, but raw archives are not distributed.",
+    "No customer adoption, live monitoring or measured time savings implied."
+  ],
+  "reviewed_at": "2026-09-07T22:15:33.480344+00:00"
+}
