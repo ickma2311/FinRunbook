@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "currency": "USD",
+  "experts": [
+    {
+      "id": "quality",
+      "name": "Quality",
+      "description": "Checks cash conversion, reinvestment returns and business durability against the price paid.",
+      "cadence_description": "Weekly review target \u00b7 relevant events may trigger an earlier review",
+      "account": null,
+      "account_id": null
+    },
+    {
+      "id": "industry",
+      "name": "Industry",
+      "description": "Traces supply chains, inventory and capacity cycles into company cash flows and valuation.",
+      "cadence_description": "Every 3 days review target \u00b7 relevant events may trigger an earlier review",
+      "account": null,
+      "account_id": null
+    },
+    {
+      "id": "trend",
+      "name": "Trend",
+      "description": "Uses each asset\u2019s own 12-month price history, with signal, trading-cost and reversal checks.",
+      "cadence_description": "Daily review target \u00b7 relevant events may trigger an earlier review",
+      "account": null,
+      "account_id": null
+    },
+    {
+      "id": "macro",
+      "name": "Macro",
+      "description": "Connects dated growth, inflation and policy evidence to stock and bond scenarios.",
+      "cadence_description": "Daily review target \u00b7 relevant events may trigger an earlier review",
+      "account": null,
+      "account_id": null
+    },
+    {
+      "id": "value",
+      "name": "Value",
+      "description": "Tests the expectations embedded in a price against cash flows, reinvestment and financing needs.",
+      "cadence_description": "Weekly review target \u00b7 relevant events may trigger an earlier review",
+      "account": null,
+      "account_id": null
+    },
+    {
+      "id": "defensive",
+      "name": "Defensive",
+      "description": "Tests shared exposures and joint losses, weighing protection against its cost and missed upside.",
+      "cadence_description": "Daily review target \u00b7 relevant events may trigger an earlier review",
+      "account": null,
+      "account_id": null
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "description": "Asks whether research spending and expansion can create value after reinvestment and dilution.",
+      "cadence_description": "Every 3 days review target \u00b7 relevant events may trigger an earlier review",
+      "account": null,
+      "account_id": null
+    },
+    {
+      "id": "capital",
+      "name": "Capital allocation",
+      "description": "Compares reinvestment, acquisitions, buybacks and debt repayment for their effect on per-share value.",
+      "cadence_description": "Weekly review target \u00b7 relevant events may trigger an earlier review",
+      "account": null,
+      "account_id": null
+    },
+    {
+      "id": "balance",
+      "name": "Balance sheet",
+      "description": "Maps available cash, credit and obligations to identify funding gaps under stress.",
+      "cadence_description": "Weekly review target \u00b7 relevant events may trigger an earlier review",
+      "account": null,
+      "account_id": null
+    },
+    {
+      "id": "disclosure",
+      "name": "Disclosure",
+      "description": "Compares filings over time to separate material financial changes from repeated or revised wording.",
+      "cadence_description": "Weekly review target \u00b7 relevant events may trigger an earlier review",
+      "account": null,
+      "account_id": null
+    }
+  ]
+}

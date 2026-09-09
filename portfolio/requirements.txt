@@ -1,0 +1,4 @@
+yfinance==1.2.0
+exchange_calendars==4.11.3
+# exchange_calendars 4.11.3 expects pandas 2.x nanosecond date handling.
+pandas==2.3.3
