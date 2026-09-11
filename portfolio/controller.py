@@ -391,6 +391,8 @@ class Controller:
         state = self.load()
         jobs = []
         for raw in state['jobs'].values():
+            if raw['status'] in ('complete','blocked','cancelled'):
+                continue
             job = copy.deepcopy(raw)
             for stage in ('research', 'review'):
                 s = job['stages'][stage]
@@ -404,12 +406,23 @@ class Controller:
         if health:
             health={k:health.get(k) for k in ('status','error_count','notification_required','collected_at','receipt_path','error')} | {
                 'sources':[{k:r.get(k) for k in ('source_id','status','http_status','next_retry_at','notification_required')} for r in state['source_health'].get('sources',[])]}
+        recent=sorted(state['jobs'].values(),key=lambda j:j['created_at'],reverse=True)[:10]
+        maintenance=state.get('service',{})
+        service_summary={'finished_at':maintenance.get('finished_at'),'error':maintenance.get('error'),
+                         'valuation_status':maintenance.get('valuation',{}).get('status'),
+                         'execution_status':maintenance.get('execution',{}).get('status'),
+                         'execution_outcomes':[{'expert_id':x.get('expert_id'),'status':x.get('status'),'reason':x.get('reason')}
+                                               for x in maintenance.get('execution',{}).get('outcomes',[])]}
         return {'schema_version': 1, 'revision': state['revision'], 'checked_at': check.get('checked_at'),
                 'rollout': 'verified_first_expert' if any(j['status']=='complete' for j in state['jobs'].values()) else 'first_expert_only',
                 'due_experts': check.get('due_experts', []), 'jobs': jobs,
+                'job_count':len(state['jobs']),
+                'recent_results':[{'job_id':j['id'],'expert_id':j['expert_id'],'status':j['status'],
+                                   'decision_id':j['stages']['approval'].get('decision_id'),
+                                   'execution':j['stages']['execution']['status']} for j in recent],
                 'experts': [{k: r.get(k) for k in ('expert_id', 'due', 'reasons', 'next_eligible_at')} for r in check.get('experts', [])],
                 'source_health': health, 'trigger_coverage': check.get('trigger_coverage'),
-                'service': state.get('service', {})}
+                'service': service_summary}
 
     def service_tick(self, offline=False):
         import execution_queue
