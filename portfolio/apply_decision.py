@@ -21,7 +21,7 @@ def check(ok,message):
 def key(account,decision_id):
     return 'reference-ledger-'+records.digest([account['account_id'],decision_id])[:24]
 
-def approved(account,decision_id):
+def approved(account,decision_id,now=None,root=None):
     record=next((x for x in account['decisions'] if x['decision_id']==decision_id),None)
     check(record is not None,'Decision not found')
     for field in ('candidate','validation','review'):
@@ -29,13 +29,20 @@ def approved(account,decision_id):
     c=record['candidate']
     check(c['expert_id']==account['expert_id'] and c['account_id']==account['account_id'],'Identity mismatch')
     check(c['action']=='rebalance','Only an approved rebalance can change cash or holdings')
-    records.review_status(record['review'],c,prices.utcnow().isoformat())
+    checked_at=now or prices.utcnow()
+    records.review_status(record['review'],c,checked_at.isoformat())
+    check(prices.stamp(record['sealed_at'])<=checked_at,'Decision seal is in the future')
     check(record['validation']['status']=='PASS','Deterministic validation missing')
     check(c['skill_hash']==account['skill_hash']==records.file_hash(account['skill_path']),'Method changed')
     for kind in ('report','evidence'):
-        check(records.file_hash(prices.source_path(c[kind+'_path']))==c[kind+'_hash'],kind+' binding changed')
+        path=prices.source_path(c[kind+'_path']) if root is None else (Path(root)/c[kind+'_path']).resolve()
+        if root is not None:check(Path(root).resolve() in path.parents,'Artifact outside repository')
+        check(records.file_hash(path)==c[kind+'_hash'],kind+' binding changed')
     check(account['pending_intent_id']==record['intent_id'],'Decision is not the active unapplied intent')
-    check(account['decisions'][-1]['decision_id']==decision_id,'A later decision exists; inspect it first')
+    intent=next((i for i in account['intents'] if i['intent_id']==record['intent_id']),None)
+    check(intent is not None and intent['status']=='pending','Intent is no longer pending')
+    # A later no_change retains this intent. Replacement changes pending_intent_id.
+    check(c['execution_policy'] in ('next_regular_session_open','fresh_reference_price_ledger'),'Unsupported execution policy')
     rules=record['execution_rules']
     check(rules['paper_only'] and rules['long_only'] and rules['whole_shares'] and not rules['leverage'],'Unsupported account rules')
     check(D(rules['fees'])==0 and rules['basket_atomic'],'Unsupported fees or basket policy')
@@ -96,7 +103,8 @@ def apply_observed(account,record,quotes,market,now,started,authorization):
     result.update(cash=str(cash),positions=holdings,marks={s:str(raw[s]) for s in holdings},
                   observed_at=min((q['price_as_of'] for q in quotes.values()),default=stamp),pending_intent_id=None)
     next(i for i in result['intents'] if i['intent_id']==record['intent_id'])['status']='filled'
-    result['ledger'].extend([change,{'type':'settlement',**copy.deepcopy(receipt)}]);result['revision']+=2
+    changes=[] if c['execution_policy']=='fresh_reference_price_ledger' else [change]
+    result['ledger'].extend(changes+[{'type':'settlement',**copy.deepcopy(receipt)}]);result['revision']+=len(changes)+1
     result['settlements'][event_id]={'observation_hash':records.digest(quotes),'receipt':receipt}
     return result,receipt
 

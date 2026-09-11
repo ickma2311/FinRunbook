@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "user_agent": "FinRunbook/1.0 (https://github.com/ickma2311/FinRunbook)",
+  "timeout_seconds": 8,
+  "max_response_bytes": 4000000,
+  "companies": {
+    "AAPL": 320193, "MSFT": 789019, "AMD": 2488, "AVGO": 1730168,
+    "MU": 723125, "NVDA": 1045810, "AMZN": 1018724, "CAT": 18230,
+    "GOOGL": 1652044, "JNJ": 200406, "JPM": 19617, "WMT": 104169,
+    "XOM": 34088
+  },
+  "excluded_funds": ["GLD", "IEF", "QQQ", "SPY", "TLT"],
+  "feeds": [
+    {"id": "fed-monetary", "url": "https://www.federalreserve.gov/feeds/press_monetary.xml", "type": "policy_change", "expert_ids": ["macro"]},
+    {"id": "bls-cpi", "url": "https://www.bls.gov/feed/cpi.rss", "type": "macro_release", "expert_ids": ["macro"]},
+    {"id": "bls-employment", "url": "https://www.bls.gov/feed/empsit.rss", "type": "macro_release", "expert_ids": ["macro"]},
+    {"id": "bls-ppi", "url": "https://www.bls.gov/feed/ppi.rss", "type": "macro_release", "expert_ids": ["macro"]}
+  ]
+}

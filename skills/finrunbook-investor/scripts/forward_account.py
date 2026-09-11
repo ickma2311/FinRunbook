@@ -127,7 +127,8 @@ def validate(account, candidate):
         require(not any(key in candidate for key in ("target_weights", "replaces_intent_id")),
                 "no_change cannot alter targets or cancel pending intent")
     else:
-        require(candidate.get("execution_policy") == "next_regular_session_open", "unsupported execution policy")
+        require(candidate.get("execution_policy") in ("next_regular_session_open", "fresh_reference_price_ledger"),
+                "unsupported execution policy")
         weights = candidate.get("target_weights")
         require(isinstance(weights, dict), "target_weights map required (empty = liquidation)")
         for ticker, value in weights.items():
@@ -300,6 +301,8 @@ def _settle_observed(account, observations, now=None):
         return pending("no_active_intent")
     intent = next(i for i in account["intents"] if i["intent_id"] == intent_id)
     decision = next(d for d in account["decisions"] if d["decision_id"] == intent["decision_id"])
+    require(decision["candidate"]["execution_policy"] == "next_regular_session_open",
+            "fresh-reference decisions require the execution queue")
     require(observations.get("decision_id") == decision["decision_id"], "observation decision mismatch")
     session = observations.get("session")
     if not session or not observations.get("observed_at"):

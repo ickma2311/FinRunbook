@@ -77,7 +77,8 @@ def acquisition_history(account):
     try:
         for event in account['ledger']:
             if event.get('type') not in {'funding','sealed_decision','execution_policy_amendment',
-                                         'settlement','deposit','withdrawal','external_cash_flow'}:
+                                         'settlement','deposit','withdrawal','external_cash_flow',
+                                         'replace_intent','execution_status'}:
                 raise ValueError('Unsupported ledger event; acquisition basis requires reconciliation')
             if event.get('type')!='settlement': continue
             for fill in event.get('fills',[]):
@@ -335,10 +336,7 @@ def fetch_one(symbol, since, market):
     eligible=frame[(frame.index>=stamp(market['open_at'])) &
                    (frame.index+timedelta(minutes=1)<=min(now,stamp(market['close_at'])))]
     if eligible.empty: raise ValueError('No completed regular-session bar')
-    bar=eligible.iloc[-1]; start=eligible.index[-1].to_pydatetime(); end=start+timedelta(minutes=1)
-    values={k:float(bar[k]) for k in ('Open','High','Low','Close','Volume')}
-    if not all(math.isfinite(v) for v in values.values()) or values['Volume']<=0 or not 0<values['Low']<=min(values['Open'],values['Close'])<=max(values['Open'],values['Close'])<=values['High']:
-        raise ValueError('Invalid or inactive price bar')
+    start, end, values = newest_valid_bar(eligible, market)
     action_start=(stamp(since)-timedelta(days=7)).date().isoformat()
     daily=t.history(start=action_start,end=(now+timedelta(days=1)).date().isoformat(),interval='1d',**args)
     if daily.empty or any(k not in daily for k in ('Dividends','Stock Splits')) or daily[['Dividends','Stock Splits']].isna().any().any():
@@ -351,6 +349,76 @@ def fetch_one(symbol, since, market):
             'provider':'Yahoo Finance','client':'yfinance '+yf.__version__,'source_url':'https://finance.yahoo.com/quote/'+quote(symbol,safe='')+'/history/',
             'bar':values,'parameters':{'minute':{'period':'5d','interval':'1m',**args},'actions':{'start':action_start,'interval':'1d',**args}},
             'action_coverage_since':since,'actions':events,'exchange':meta.get('exchangeName')}
+
+
+def newest_valid_bar(eligible, market):
+    """Inactive final bars must not hide an earlier fresh, completed observation."""
+    for idx, bar in eligible.iloc[::-1].iterrows():
+        start=idx.to_pydatetime(); end=start+timedelta(minutes=1)
+        if end < stamp(market['minimum_price_as_of']):
+            break
+        try:
+            values={k:float(bar[k]) for k in ('Open','High','Low','Close','Volume')}
+            if all(math.isfinite(v) for v in values.values()) and values['Volume']>0 and 0<values['Low']<=min(values['Open'],values['Close'])<=max(values['Open'],values['Close'])<=values['High']:
+                return start, end, values
+        except (TypeError, ValueError):
+            continue
+    raise ValueError('No valid active completed price bar within freshness limit')
+
+
+def project_operations(rows, output, now):
+    """Read durable operations, never infer agent liveness or approval from prose."""
+    folder = REPO / 'runs/arena-controller'
+    receipts = sorted((folder/'receipts').glob('*.json'))
+    state = {}
+    error = None
+    if receipts:
+        try:
+            receipt=read(receipts[-1]); state=receipt['state']
+            encoded=json.dumps(state,sort_keys=True,separators=(',',':'),allow_nan=False).encode()
+            if hashlib.sha256(encoded).hexdigest()!=receipt['state_sha256']:
+                raise ValueError('Controller receipt hash mismatch')
+        except (OSError,ValueError,KeyError) as exc:
+            state={}; error=str(exc)
+    queue_path=folder/'execution-queue.json'
+    try:
+        queue=read(queue_path) if queue_path.exists() else {}
+    except (OSError,ValueError):
+        queue={}; error='Execution queue unavailable'
+    checks={r['expert_id']:r for r in (state.get('last_check') or {}).get('experts',[])}
+    for row in rows:
+        jobs=[j for j in state.get('jobs',{}).values() if j['expert_id']==row['expert_id']]
+        own=max(jobs,key=lambda j:j['created_at']) if jobs else None
+        check=checks.get(row['expert_id'],{})
+        ops={'last_check_at':(state.get('last_check') or {}).get('checked_at'),
+             'eligibility':'due' if check.get('due') else 'not_due' if check else 'unknown',
+             'eligibility_reasons':check.get('reasons',[]), 'next_eligible_at':check.get('next_eligible_at'),
+             'presentation':{'status':'unverified'}, 'job_id':None,
+             'receipt_url':os.path.relpath(receipts[-1],output) if receipts else None,
+             'error':error}
+        if own:
+            ops.update(job_id=own['id'],status=own['status'],stages=own['stages'],presentation=own.get('presentation',{'status':'unverified'}))
+            research=own['stages']['research']
+            observed_stage=own['stages']['review'] if research['status']=='completed' else research
+            observation=observed_stage.get('native_observation')
+            ops['worker_liveness']=(observation['status'] if observation and 0<=(now-stamp(observation['observed_at'])).total_seconds()<=300 else 'unknown')
+            artifact=research['artifacts'].get('html')
+            if artifact:
+                try:
+                    if hashlib.sha256(Path(artifact['path']).read_bytes()).hexdigest()!=artifact['sha256']:
+                        raise ValueError('Report changed after research completion')
+                    row['report_path']=str(Path(artifact['path']).relative_to(REPO))
+                except (OSError,ValueError) as exc:
+                    ops['presentation']={'status':'unavailable','error':str(exc)}
+            # Legacy registry notes cannot override a durable active job.
+            row.pop('research_note',None)
+            row['research_status']='completed' if own['stages']['approval']['status']=='completed' else 'reviewing' if research['status']=='completed' else {'pending':'queued','retryable':'queued','running':'researching','blocked':'blocked','cancelled':'blocked'}.get(research['status'],'queued')
+        items=[i for i in queue.get('items',{}).values() if i['expert_id']==row['expert_id']]
+        if items:
+            ops['execution_queue']=items
+        row['operations']=ops
+    return {'last_check_at':(state.get('last_check') or {}).get('checked_at'),
+            'source_health':state.get('source_health'), 'service':state.get('service',{}), 'error':error}
 
 
 def worker():
@@ -497,6 +565,7 @@ def run(registry_path,output,offline=False,deadline=35):
                                   'Yahoo minute-close observations are not guaranteed real-time quotes.',
                                   'Provider-reported actions only; dividends/splits require ledger reconciliation.',
                                   'Refresh does not research, trade, fund accounts or start a schedule.']}
+        snapshot['operations']=project_operations(rows,output,now)
         for row in rows:
             schedule_path=row.get('runtime',{}).pop('_schedule_path',None)
             if schedule_path:row['runtime']['schedule_url']=os.path.relpath(schedule_path,output)

@@ -1,5 +1,61 @@
 # Programmatic portfolio refresh
 
+## Durable Arena service (active workflow)
+
+Use the controller for new expert cycles, not the older manual apply sequence:
+
+```sh
+.venv-portfolio/bin/python portfolio/controller.py check --collect-events
+.venv-portfolio/bin/python portfolio/controller.py status
+.venv-portfolio/bin/python portfolio/service.py start
+.venv-portfolio/bin/python portfolio/service.py status
+# Stop only the identity-verified managed service:
+.venv-portfolio/bin/python portfolio/service.py stop
+```
+
+Open `http://127.0.0.1:8798/live-portfolio/`; `/health` reports tick freshness and
+valuation health. The process has file-backed logs and detached standard streams;
+closing a terminal does not close the server. It is not cloud hosting or a login/
+reboot service. The computer must remain available. Logs and service identity live
+in `runs/arena-controller/`. `start` enables the five-minute maintenance loop; it
+does not dispatch research. The separate hourly native-agent automation does that.
+
+The maintenance tick retries only explicitly enqueued approved paper orders and
+updates valuations. Limits remain whole-share, long-only, no leverage, 30% maximum
+security weight, 10 bps adverse slippage, fresh completed post-seal minute bars.
+An execution batch permits at most four attempts/120 seconds of provider work;
+saturated queues can retry later than five minutes. Expiry is the current regular
+session close if approved while trading, otherwise the next session close.
+`no_change` preserves an existing order and its expiry; explicit replacement or
+cancellation ends it. Missing prices retry; risk failures stop. No broker calls.
+
+The controller owns claims, stage hashes, independent native-review bindings,
+sealing, scheduler completion and publication. Read the
+[native handoff and recovery contract](../skills/finrunbook-hourly/references/controller-operation.md)
+before dispatching. Python never calls an LLM. Recorded attempts are not proof of
+worker liveness. A missing confirmation becomes unknown; it does not clear a task.
+
+`runs/arena-controller/receipts/` is an immutable write-ahead journal;
+`state.json` is recoverable current state. The execution queue and attempt receipts
+live alongside it. Accounts retain authoritative cash, holdings, seals and fills.
+On a crash, repeat finalization or service tick: committed decisions/trades are
+not duplicated. Do not rewrite registry progress notes or old financial artifacts.
+
+Calendar defaults: Macro/Trend/Defensive daily sessions, Industry/Growth fixed
+three-session windows anchored September 8, 2026, others first session each week,
+all eligible at 08:45 ET. Hourly pickup may be later. Events/review commitments can
+trigger earlier work; intervals/caps/cooldowns and stops still apply.
+
+SEC/BLS access failures remain visible; repeated identical 403s back off up to
+24 hours. Supply actual contact identification with `SEC_USER_AGENT` if appropriate;
+never invent contact details or bypass denials. A blocked feed cannot suppress
+independently due experts. The controller reports trigger coverage; numerical
+checks use existing sealed rules only, with fresh matching account snapshots.
+
+The sections below document standalone valuation/account utilities and legacy
+manual application. They do not replace the managed controller's retry policy.
+Run `refresh.py` directly for a valuation-only update; it never trades.
+
 ## Arena on a clean checkout
 
 The default registry is local `portfolio/experts.json` when present; otherwise

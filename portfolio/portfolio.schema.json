@@ -11,6 +11,7 @@
     "mode":{"const":"valuation_only"},
     "market":{"type":"object"},
     "refresh":{"type":"object"},
+    "operations":{"type":"object","properties":{"last_check_at":{"type":["string","null"],"format":"date-time"},"source_health":{"type":["object","null"]},"service":{"type":"object"}}},
     "limitations":{"type":"array","items":{"type":"string"}},
     "experts":{"type":"array","items":{"$ref":"#/$defs/expert"}}
   },
@@ -24,6 +25,7 @@
         "status":{"enum":["not_started","account_error","account_changed","cash_only","fresh","market_closed","stale","unavailable"]},
         "research_status":{"enum":["queued","researching","reviewing","blocked","completed"]},
         "research_note":{"type":"string"},
+        "operations":{"type":"object","properties":{"job_id":{"type":["string","null"]},"eligibility":{"enum":["due","not_due","unknown"]},"stages":{"type":"object"},"presentation":{"type":"object"},"execution_queue":{"type":"array"},"receipt_url":{"type":["string","null"]}}},
         "description":{"type":"string"},
         "cadence_description":{"type":"string"},
         "decision_summary":{"type":"string"},
