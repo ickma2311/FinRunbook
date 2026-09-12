@@ -18,3 +18,7 @@ runs/**/artifacts/market-data/
 
 # Local example previews pending source-data redistribution review.
 /examples/local/
+
+# Internal portfolio and scheduled-run tooling stays local.
+/portfolio/
+/skills/finrunbook-hourly/
