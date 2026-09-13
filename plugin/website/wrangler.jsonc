@@ -1,0 +1,12 @@
+{
+  "name": "finrun",
+  "account_id": "83ce95968ef46879932a2367ccbcf379",
+  "compatibility_date": "2026-09-10",
+  "workers_dev": true,
+  "assets": {
+    "directory": "../../run/.build/website-0.5/dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "observability": {"enabled": false}
+}

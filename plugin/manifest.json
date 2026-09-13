@@ -1,15 +1,17 @@
 {
   "name": "finrun",
-  "version": "0.5.0-preview.1",
+  "version": "0.5.0-preview.2",
   "description": "Financial research with local Python, a pinned method catalog and evidence-linked reports.",
-  "author": {"name": "CHAO MA"},
-  "homepage": "https://github.com/ickma2311/FinRunbook",
+  "author": {
+    "name": "CHAO MA"
+  },
+  "homepage": "https://finrun.ickma2311.workers.dev/",
   "repository": "https://github.com/ickma2311/FinRunbook",
   "skills": "./skills/",
   "interface": {
     "displayName": "Finrun",
-    "shortDescription": "Financial research with local Python",
-    "longDescription": "One Codex skill for sourced company, earnings, industry and market analysis, financial datasheets and Radar discovery. Fetches versioned financial methods from GitHub and uses local Python for repeatable processing, validation and portable reports. Requires Python 3.10+, a writable workspace and source access; Yahoo support has an optional local dependency. No account linking, MCP service, trading or automatic scheduling.",
+    "shortDescription": "Create sourced finance reports",
+    "longDescription": "Research companies, earnings, industries and financial data. Produce sourced answers, interactive reports or CSV datasheets, and discover topics with Radar. One skill selects versioned financial methods from a public GitHub catalog and uses local Python for evidence records, calculations and checks. Requires a compatible local agent, Python 3.10+, a writable workspace and access to the requested sources. Yahoo market data has an optional dependency. No Finrun account or MCP server is required. Outputs can contain errors and require review; they are not investment advice.",
     "developerName": "CHAO MA",
     "category": "Productivity",
     "composerIcon": "./assets/finrun-icon.png",
@@ -20,6 +22,6 @@
       "Compare the latest earnings of Microsoft and Alphabet.",
       "Find three financial developments worth researching."
     ],
-    "websiteURL": "https://github.com/ickma2311/FinRunbook"
+    "websiteURL": "https://finrun.ickma2311.workers.dev/"
   }
 }

@@ -3,7 +3,7 @@
 Last updated September 13, 2026. Maintained by Chao Ma.
 
 These usage terms cover the Finrun 0.5 local-execution plugin, including
-0.5.0-preview.1. They adapt the existing Finrun website terms to this release.
+0.5.0-preview.1 and 0.5.0-preview.2. They adapt the existing Finrun website terms to this release.
 
 ## Purpose and limitations
 

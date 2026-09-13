@@ -1,6 +1,8 @@
 # Finrun plugin packaging
 
-Version `0.5.0-preview.1` contains one public skill and local Python helpers.
+Version `0.5.0-preview.2` contains one public skill and local Python helpers.
+The preview.2 update changes directory metadata and the website URL; runtime
+files match preview.1. The public website is maintained in `website/`.
 Maintained runtime sources live in `skills/finrun/`; the package copies only
 `runtime-files.json` entries. It excludes the method catalog/library, historical
 skills, MCP/app connections, generated reports, tests and private workflows.

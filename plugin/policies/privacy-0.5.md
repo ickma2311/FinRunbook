@@ -3,7 +3,7 @@
 Last updated September 13, 2026. Maintained by Chao Ma.
 
 This notice covers the Finrun 0.5 local-execution plugin, including
-0.5.0-preview.1. It supplements the older website notice for this release.
+0.5.0-preview.1 and 0.5.0-preview.2. It supplements the older website notice for this release.
 Finrun provides instructions and local Python helpers; this release does not
 operate a hosted research or MCP service.
 
