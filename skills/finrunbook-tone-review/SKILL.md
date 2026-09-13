@@ -20,14 +20,14 @@ before reviewing it. For multilingual reports, review each version in its own
 language.
 
 - **English:** read the complete
-  `vendor/agent-toolkit/skills/writing-clearly-and-concisely/SKILL.md` and its
-  `elements-of-style/03-elementary-principles-of-composition.md`. Use its
+  [English writing instructions](https://github.com/softaworks/agent-toolkit/blob/3027f20f3181758385a1bb8c022d4041dfb4de84/skills/writing-clearly-and-concisely/SKILL.md) and its
+  [composition reference](https://github.com/softaworks/agent-toolkit/blob/3027f20f3181758385a1bb8c022d4041dfb4de84/skills/writing-clearly-and-concisely/elements-of-style/03-elementary-principles-of-composition.md). Use its
   clarity, concision, and anti-puffery guidance subject to the financial rules
   below. Preserve necessary negation, attribution, uncertainty, and the tense
   distinctions between historical results, current conditions, and guidance.
   Do not remove a valid financial term such as “leverage” as an AI-style word.
 - **Chinese, whether explicitly requested or inferred:** read the complete
-  `vendor/readable-human-writing/SKILL.md` and its required references. Use
+  [Chinese writing instructions](https://github.com/KG3KAI/readable-human-writing/blob/cc669c7427ed921ffe15fae6fd91d8d4b9280676/SKILL.md) and its required references. Use
   `polish-only` mode; do not run the Chinese editor on English copy.
 - **Other resolved languages:** apply the financial rules below in that
   language. Record the local-only review; do not claim an upstream editor ran.
@@ -42,7 +42,7 @@ Apply these constraints to either editor:
 - Output: edits to those same text fields, not a Markdown report or a new
   research outline.
 
-Record each editor actually used and its submodule commit in
+Record each editor actually used and the immutable commit from its instruction URL in
 `plan.selected_skills`. This pass does not translate reports or change their
 language. If a required dependency is missing, surface the issue; do not claim
 it ran. FinRunbook's financial constraints take precedence over stylistic
@@ -98,7 +98,7 @@ the attribution, forecast status, range, period, units, and citation.
    `reviewed_artifacts`, `change_log_path`,
    `protected_items_preserved`, and `unresolved_issues`. Use `status: completed`
    only after comparing the edits; otherwise use `blocked`.
-   Each `upstream_skills` entry records `name`, repository-relative `path`,
+   Each `upstream_skills` entry records `name`, instruction URL in `path`,
    `commit`, and `languages` actually reviewed. The change log contains a
    `result` of `edited` or `no-change` and a `changes` array (empty for
    `no-change`). Include every reviewed artifact path, including regenerated

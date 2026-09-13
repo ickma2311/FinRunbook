@@ -2,23 +2,25 @@
 .env
 .env.*
 !.env.example
-.venv/
-.venv-portfolio/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.venv/
+.venv-portfolio/
 
-# Generated research runs stay local; retain the directory documentation.
-/runs/*
-!/runs/README.md
-
-# Private provider responses/caches; do not publish without reviewing data rights.
-runs/**/artifacts/market-data/
+# All generated outputs, caches, environments and builds stay local.
+/run/*
+!/run/README.md
 **/.market-data.lock
 
-# Local example previews pending source-data redistribution review.
-/examples/local/
-
-# Internal portfolio and scheduled-run tooling stays local.
+# Preserve ignore boundaries if older local material is copied back.
+/runs/
 /portfolio/
 /skills/finrunbook-hourly/
+/skills/finrunbook-investor/
+/services/
+/startup/
+/vendor/
+
+# Public examples are curated separately after source-rights review.
+/examples/local/

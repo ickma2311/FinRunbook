@@ -32,12 +32,13 @@ particular agent runtime or MCP server.
 
 Read [the data contract](references/data-contract.md) when interpreting results
 or adding another adapter. From the FinRunbook repository root, use an existing
-Python environment with the pinned optional dependency:
+workspace-local Python environment with the pinned optional dependency:
 
 ```bash
-python3 -m pip install -r skills/finrunbook-market-data/requirements.txt
-python3 skills/finrunbook-market-data/scripts/market_data.py \
-  runs/<run-id> --symbols NVDA MSFT --benchmark SPY \
+python3 -m venv run/.venv
+run/.venv/bin/python -m pip install -r skills/finrun/requirements-market-data.txt
+run/.venv/bin/python skills/finrun/scripts/market_data.py \
+  run/<run-id> --symbols NVDA MSFT --benchmark SPY \
   --start 2025-01-01 --end 2026-01-01 --interval 1d \
   --price-basis adj-close
 ```

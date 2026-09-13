@@ -44,7 +44,7 @@ the presentation contract and must carry fact, calculation, and source IDs for
 every material block. Markdown is reserved for an explicitly selected
 `research-memo`; PDF, XLSX, and PPTX are optional finance-report exports.
 
-Start from `assets/research-record.template.json` or use `scripts/new_run.py`.
+Start from `skills/finrun/assets/research-record.template.json` or use `skills/finrun/scripts/new_run.py`.
 
 ## Report language
 

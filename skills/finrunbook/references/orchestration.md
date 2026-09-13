@@ -22,30 +22,17 @@
    preserve the analytical structure and protected facts, then regenerate
    affected outputs. Use the router's resolved report language, not an English
    default applied again at editing time. English uses the pinned
-   `vendor/agent-toolkit/skills/writing-clearly-and-concisely/SKILL.md`;
-   Chinese uses `vendor/readable-human-writing/SKILL.md` in `polish-only` mode,
+   [English writing instructions](https://github.com/softaworks/agent-toolkit/blob/3027f20f3181758385a1bb8c022d4041dfb4de84/skills/writing-clearly-and-concisely/SKILL.md);
+   Chinese uses [Chinese writing instructions](https://github.com/KG3KAI/readable-human-writing/blob/cc669c7427ed921ffe15fae6fd91d8d4b9280676/SKILL.md) in `polish-only` mode,
    including when inferred from the current request. Explicit output-language
    requests override the main request language; English is the final fallback.
 9. End with `finrunbook-validator` on the post-edit artifacts.
 
-## Useful starting points
+## Skill dictionary
 
-| Need | Candidate skill locations |
-| --- | --- |
-| Company initiation or thesis | `vendor/anthropic-financial-services/plugins/vertical-plugins/equity-research/skills/initiating-coverage/` |
-| Earnings analysis | `vendor/anthropic-financial-services/plugins/agent-plugins/earnings-reviewer/skills/earnings-analysis/`, `vendor/finance-skills/plugins/market-analysis/skills/earnings-recap/` |
-| Sector overview or competition | `vendor/anthropic-financial-services/plugins/agent-plugins/market-researcher/skills/sector-overview/`, `competitive-analysis/` |
-| SEC filings | `vendor/octagon-skills/skills/sec-10k-analysis/`, `sec-10q-analysis/`, `sec-8k-analysis/`, `sec-proxy-analysis/` |
-| Statements and segments | `vendor/octagon-skills/skills/income-statement/`, `cash-flow-statement/`, `balance-sheet/`, `sec-segment-reporting/` |
-| Valuation and models | `vendor/anthropic-financial-services/plugins/agent-plugins/model-builder/skills/`, `vendor/finance-skills/plugins/market-analysis/skills/company-valuation/` |
-| Accounting or audit | `vendor/finance-accounting-skills/skills/financial-analysis/`, `audit-checklist/`, `revenue-recognition/`, `three-statement-modeling/` |
-| Prices, volume, returns and benchmark comparisons | `skills/finrunbook-market-data/` (Yahoo adapter first; optional dependency, explicit data-use limits) |
-| Other market or estimate data | `vendor/finance-skills/plugins/data-providers/skills/`, `vendor/octagon-skills/skills/analyst-estimates/`; verify actual tool/credential availability |
-| Slides or interactive output | Anthropic `pptx-author` skills for slides; `references/interactive-report-profile.md` for the portable web report. The current `generative-ui` skill is limited to an in-chat widget. |
-| Final tone and editorial review | `skills/finrunbook-tone-review/`; English uses `vendor/agent-toolkit/skills/writing-clearly-and-concisely/`; Chinese uses `vendor/readable-human-writing/` |
-
-Paths are hints, not a fixed menu. Search all `SKILL.md` files because
-submodule contents change when deliberately upgraded.
+Use [the central dictionary](../../index.md) for first-party instructions and
+pinned upstream references. Check an entry's dependencies before selecting it;
+an upstream instruction link does not install a provider or make it locally usable.
 
 ## Selection rules
 
@@ -61,7 +48,7 @@ submodule contents change when deliberately upgraded.
   depends on Claude's `show_widget` runtime. It can inform a one-off in-chat
   view, but the final report must be a portable static application driven by
   `report-data.json`.
-- Record the selected submodule commit from `git submodule status`.
+- Record the selected instruction URL and the immutable commit in that URL.
 - Avoid duplicate skills that produce the same intermediate result.
 - For price-based work, use the local market-data collector to keep timestamp,
   adjustment, source and calculation conventions consistent. Preserve failed
