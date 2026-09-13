@@ -9,8 +9,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-NEW_RUN = ROOT / "skills" / "finrunbook" / "scripts" / "new_run.py"
-VALIDATE = ROOT / "skills" / "finrunbook-validator" / "scripts" / "validate_run.py"
+NEW_RUN = ROOT / "skills" / "finrun" / "scripts" / "new_run.py"
+VALIDATE = ROOT / "skills" / "finrun" / "scripts" / "validate_run.py"
 
 
 class WorkflowTest(unittest.TestCase):
@@ -20,11 +20,11 @@ class WorkflowTest(unittest.TestCase):
         record = json.loads(record_path.read_text(encoding="utf-8"))
         language = record["request"]["language"]
         editor = (
-            {"name": "readable-human-writing", "path": "vendor/readable-human-writing/SKILL.md",
+            {"name": "readable-human-writing", "path": "https://github.com/KG3KAI/readable-human-writing/blob/cc669c7427ed921ffe15fae6fd91d8d4b9280676/SKILL.md",
              "commit": "cc669c7427ed921ffe15fae6fd91d8d4b9280676"}
             if language.startswith("zh") else
             {"name": "writing-clearly-and-concisely",
-             "path": "vendor/agent-toolkit/skills/writing-clearly-and-concisely/SKILL.md",
+             "path": "https://github.com/softaworks/agent-toolkit/blob/3027f20f3181758385a1bb8c022d4041dfb4de84/skills/writing-clearly-and-concisely/SKILL.md",
              "commit": "3027f20f3181758385a1bb8c022d4041dfb4de84"}
         )
         record["editorial_review"].update({

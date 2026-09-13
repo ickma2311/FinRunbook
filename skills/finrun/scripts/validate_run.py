@@ -207,7 +207,7 @@ def check_market_data(record: dict[str, Any], run_dir: Path) -> list[dict[str, s
     )
     if not has_receipts:
         return []
-    helper = Path(__file__).resolve().parents[2] / "finrunbook-market-data/scripts/market_data.py"
+    helper = Path(__file__).resolve().with_name("market_data.py")
     try:
         spec = importlib.util.spec_from_file_location("finrunbook_market_data_checks", helper)
         module = importlib.util.module_from_spec(spec)
@@ -402,6 +402,7 @@ def validate(run_dir: Path) -> tuple[dict[str, Any], int]:
             for field in ("name", "path", "purpose"):
                 if not nonempty_string(skill.get(field)):
                     issues.append(issue("warning", "plan.skill_metadata", f"selected skill lacks {field}", f"plan.selected_skills[{position}].{field}"))
+            # Legacy records retain their original provenance paths.
             if str(skill.get("path", "")).startswith("vendor/") and not nonempty_string(skill.get("commit")):
                 issues.append(issue("warning", "plan.skill_revision", "vendor skill lacks pinned commit", f"plan.selected_skills[{position}].commit"))
 

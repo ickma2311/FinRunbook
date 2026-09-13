@@ -1,0 +1,4 @@
+interface:
+  display_name: "FinRunbook Radar"
+  short_description: "Turn public signals into validated finance reports"
+  default_prompt: "Use $finrunbook-radar to find 3–5 financial research topics from Hacker News, GDELT and Google Trends RSS, check primary evidence, then generate a FinRunbook report for each."

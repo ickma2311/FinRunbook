@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.1.0",
+  "kind": "finrunbook-radar-batch",
+  "batch": {
+    "id": null,
+    "local_date": null,
+    "timezone": null,
+    "started_at": null,
+    "updated_at": null,
+    "window_start": null,
+    "window_end": null,
+    "repository_revision": null,
+    "status": "discovering"
+  },
+  "request": {
+    "raw": null,
+    "language": null,
+    "mode": "research",
+    "lookback_hours": 24,
+    "target_min_reports": 3,
+    "max_reports": 5,
+    "context_days": 7,
+    "dedup_days": 7,
+    "requested_platforms": ["hacker-news", "gdelt", "google-trends-rss"],
+    "evidence_sources": ["sec-edgar", "company-ir"],
+    "disabled_platforms": ["x"],
+    "schedule_enabled": false,
+    "publish": false,
+    "assumptions": []
+  },
+  "coverage": [],
+  "discussions": [],
+  "signals": [],
+  "topics": [],
+  "selection": {
+    "ranked_topic_ids": [],
+    "method": "Timeliness, financial mechanism, primary-evidence and novelty gates; balance source-relative community/news/search attention with financial consequence and evidence readiness. Label material-event selections separately; no cross-source audience sum or global popularity claim.",
+    "frozen_at": null,
+    "shortfall_reason": null,
+    "diversity_tradeoffs": []
+  },
+  "delivery": {
+    "index_path": "index.html",
+    "completed_reports": 0,
+    "selected_topics": 0,
+    "limitations": [],
+    "published": false
+  }
+}

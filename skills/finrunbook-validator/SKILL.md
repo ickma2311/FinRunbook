@@ -12,7 +12,7 @@ report is not evidence.
 
 1. Locate the run directory and read `research-record.json` completely.
 2. Read `references/validation-rules.md`.
-3. Run `scripts/validate_run.py <run-directory>`.
+3. Run `python3 skills/finrun/scripts/validate_run.py <run-directory>` from the repository root.
 4. Read `validation.json` and inspect every error and warning.
 
 The script validates structure and provenance links, refreshes generated

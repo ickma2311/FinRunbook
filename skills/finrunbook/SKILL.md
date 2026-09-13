@@ -9,6 +9,9 @@ Turn a financial question into a reproducible, decision-useful financial
 analysis, not a one-off answer. Treat specialist skills as methods; treat the
 run record as the source of truth.
 
+For topic discovery, read `skills/finrunbook-radar/SKILL.md`. Its selected
+questions return here as individual research runs.
+
 ## Choose the report archetype first
 
 Classify both the subject and the required artifact before choosing specialist
@@ -30,7 +33,7 @@ use in the run. Do not let the evidence ledger dictate the narrative structure.
 
 ## Start the run
 
-1. Find the repository root containing this skill and `vendor/`.
+1. Find the repository root containing `AGENTS.md` and `skills/index.md`.
 2. Parse the request into subject, task type, report archetype, decision use,
    as-of date, time span, audience, language, output formats, depth, and source
    constraints.
@@ -47,14 +50,17 @@ use in the run. Do not let the evidence ledger dictate the narrative structure.
    requests, use the main instruction language; clarify only if the choice is
    genuinely ambiguous and consequential. Do not carry the product's English
    audience preference over a clear Chinese request.
+   Resolve language separately from market geography: Chinese prose does not
+   imply Chinese securities or benchmarks. Preserve the user's declared market.
    Other defaults are an interactive static web report backed by structured JSON,
    `finance-report`, a finance-professional audience, information available as
    of today, primary sources first, and five fiscal years plus the latest
    interim period for public-company analysis. Infer the decision use from the
    request; use investment research for company and sector work when no
    operator, lender, transaction, or academic lens is evident.
-5. Initialize `runs/<run-id>/research-record.json` with
-   `scripts/new_run.py`. Pass an explicit user output-language choice through
+5. Initialize `run/<run-id>/research-record.json` with
+   `skills/finrun/scripts/new_run.py` from the repository root.
+   Pass an explicit user output-language choice through
    `--language`; otherwise pass the inferred main request language through
    `--request-language`. Do not pass `--language en` as a routine default.
    The CLI's unflagged Chinese-prose heuristic is only a convenience fallback,
@@ -71,8 +77,10 @@ Read `references/orchestration.md` when selecting skills. Read
 
 ## Select the smallest useful skill set
 
-Search `skills/*/SKILL.md` and `vendor/**/SKILL.md`, then read the complete file for each candidate
-selected. Choose skills because their required inputs and outputs fit the
+Read `skills/index.md`, then read the complete instructions for selected entries.
+Third-party links are pinned references, not installed tools. Use only methods
+whose dependencies are available; no MCP connection or submodule is required.
+Choose skills because their required inputs and outputs fit the
 request, not because they exist. Prefer one lead analytical skill plus only the
 data, document, model, and presentation skills it actually needs. Include
 `finrunbook-tone-review` as the final language pass before validation.

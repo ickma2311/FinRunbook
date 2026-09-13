@@ -1,22 +1,30 @@
 # FinRunbook agent entry point
 
-For independent forward paper investing, expert research cadence, decisions or
-account tracking, read `skills/finrunbook-investor/SKILL.md` first. For hourly
-Arena operation use `skills/finrunbook-hourly/SKILL.md` and its durable controller.
-Research and reports use English and US markets unless explicitly changed.
-Use fresh isolated native authors and independent reviewers; this explicitly
-authorizes bounded native delegation for approved investor research. Python owns
-scheduling, validation, paper accounting and publication, never model calls.
-No historical backtests, nested model launchers, shared expert opinions, new
-funding or real broker trades are authorized by a due check. Preserve existing
-accounts, pinned methods, sealed records and explicit stops. Resume only the
-first incomplete stage of an authorized active job. Source failures remain
-coverage gaps; they do not suppress independently due research.
+This repository contains the public financial-research code. Keep five top-level
+product folders: `skills/`, `plugin/`, `run/`, `tests/`, and `examples/`.
+Root documentation and `.github/` are repository infrastructure.
 
-For a financial-research request, read and follow `skills/finrunbook/SKILL.md`.
-Before declaring a run complete, read and follow
-`skills/finrunbook-validator/SKILL.md`.
+For financial research, read `skills/finrunbook/SKILL.md`; for topic discovery,
+read `skills/finrunbook-radar/SKILL.md`. Select relevant instructions from
+`skills/index.md`. Third-party methods are immutable upstream links, not installed
+dependencies. Do not initialize submodules or assume a linked tool is available.
+Use local Python and the shared helpers in `skills/finrun/scripts/`.
 
-Treat `vendor/` as read-only third-party code. Store every generated run under
-`runs/<run-id>/`; keep its `research-record.json` current while researching.
+Store generated outputs under `run/<run-id>/` in the working directory. Keep each
+research run's `research-record.json` current. Caches, environments and build
+outputs also belong under ignored `run/`. Do not write into an installed skill.
+Use US markets unless the user specifies otherwise; resolve output language from
+the user's instructions independently of geography.
 
+Before delivering financial research, follow `skills/finrunbook-validator/SKILL.md`.
+Review source meaning separately from mechanical checks, and browser behavior
+separately from financial validation. For code changes, run relevant regression
+tests; do not fabricate research validation records for implementation work.
+
+The code-layout phase retains existing research/review instructions. Consolidating
+them into the small user-facing skill and building the plugin are phase two.
+Do not add MCP dependencies, nested model launchers or automatic scheduling.
+Internal investing, portfolio and hourly workflows are outside this product.
+Preserve original checkouts, historical runs, pinned evidence and explicit stops.
+Do not rewrite frozen examples to update old provenance paths. Never blanket-stage
+generated runs or copy private reports into examples.

@@ -212,7 +212,7 @@ class ExamplesSiteTest(unittest.TestCase):
 
     def test_no_private_files_or_machine_paths(self):
         allowed_suffixes = {".html", ".css", ".js", ".json", ".txt", ".md", ".csv"}
-        forbidden_parts = {"runs", "raw", "artifacts", ".git", "node_modules"}
+        forbidden_parts = {"run", "runs", "raw", "artifacts", ".git", "node_modules"}
         for path in SITE.rglob("*"):
             self.assertFalse(path.is_symlink(), f"Do not publish symlinks: {path}")
             self.assertFalse(forbidden_parts.intersection(path.relative_to(SITE).parts))

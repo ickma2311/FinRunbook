@@ -89,7 +89,7 @@ def parser() -> argparse.ArgumentParser:
     result.add_argument("--depth", choices=["brief", "standard", "deep"], default="standard")
     result.add_argument("--assumption", action="append", default=[])
     result.add_argument("--source-constraint", action="append", default=[])
-    result.add_argument("--runs-dir", type=Path, help="Override the repository's runs directory")
+    result.add_argument("--runs-dir", type=Path, help="Override the working directory's run/ directory")
     result.add_argument("--run-id", help="Override the generated run ID")
     return result
 
@@ -98,7 +98,7 @@ def main() -> int:
     args = parser().parse_args()
     script_path = Path(__file__).resolve()
     repo_root = script_path.parents[3]
-    runs_dir = args.runs_dir.resolve() if args.runs_dir else repo_root / "runs"
+    runs_dir = args.runs_dir.resolve() if args.runs_dir else Path.cwd() / "run"
     now = utc_now()
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     run_id = args.run_id or f"{stamp}-{slugify(args.subject)}"

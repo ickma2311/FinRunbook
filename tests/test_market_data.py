@@ -16,8 +16,8 @@ from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "skills/finrunbook-market-data/scripts/market_data.py"
-VALIDATE = ROOT / "skills/finrunbook-validator/scripts/validate_run.py"
+SCRIPT = ROOT / "skills/finrun/scripts/market_data.py"
+VALIDATE = ROOT / "skills/finrun/scripts/validate_run.py"
 SPEC = importlib.util.spec_from_file_location("market_data", SCRIPT)
 market = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(market)
