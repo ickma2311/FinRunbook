@@ -368,6 +368,9 @@ def attach_snapshot(record, snapshot, relative, digest, batch_id):
 def collect(run_dir, request, fetcher=None):
     validate_request(request)
     run_dir = run_dir.resolve()
+    install = Path(__file__).resolve().parents[3]
+    if (install / '.codex-plugin/plugin.json').exists() and run_dir.is_relative_to(install):
+        raise ValueError('choose a workspace outside the installed plugin')
     record_path = local_path(run_dir, "research-record.json")
     if not record_path.is_file():
         raise ValueError("initialize a FinRunbook run before collecting market data")
@@ -403,6 +406,8 @@ def collect(run_dir, request, fetcher=None):
             artifact["status"] = "draft"
         if record.get("editorial_review", {}).get("required"):
             record["editorial_review"].update(status="pending", completed_at=None)
+        if record.get('workflow') == 'finrun-0.5':
+            record['review'] = {'status': 'pending', 'notes': [], 'reviewer': None}
         atomic_json(record_path, record)
         atomic_json(local_path(run_dir, "validation.json"), record["validation"])
         presentation_path = local_path(run_dir, "report/report-data.json")

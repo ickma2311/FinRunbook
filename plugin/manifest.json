@@ -1,0 +1,25 @@
+{
+  "name": "finrun",
+  "version": "0.5.0-preview.1",
+  "description": "Financial research with local Python, a pinned method catalog and evidence-linked reports.",
+  "author": {"name": "CHAO MA"},
+  "homepage": "https://github.com/ickma2311/FinRunbook",
+  "repository": "https://github.com/ickma2311/FinRunbook",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Finrun",
+    "shortDescription": "Financial research with local Python",
+    "longDescription": "One Codex skill for sourced company, earnings, industry and market analysis, financial datasheets and Radar discovery. Fetches versioned financial methods from GitHub and uses local Python for repeatable processing, validation and portable reports. Requires Python 3.10+, a writable workspace and source access; Yahoo support has an optional local dependency. No account linking, MCP service, trading or automatic scheduling.",
+    "developerName": "CHAO MA",
+    "category": "Productivity",
+    "composerIcon": "./assets/finrun-icon.png",
+    "logo": "./assets/finrun-icon.png",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Analyze NVIDIA's main business and financial risks.",
+      "Compare the latest earnings of Microsoft and Alphabet.",
+      "Find three financial developments worth researching."
+    ],
+    "websiteURL": "https://github.com/ickma2311/FinRunbook"
+  }
+}

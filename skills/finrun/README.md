@@ -1,21 +1,24 @@
-# Shared Python helpers
+# Finrun skill and shared helpers
 
-This is the single maintained location for public research helper code and
-templates. Run commands from the workspace with Python 3.10 or newer.
+[SKILL.md](SKILL.md) is the single research and Radar entry point. It selects
+pinned online methods and keeps one accountable agent responsible for the answer.
+Run Python 3.10+ commands from the caller workspace; outputs default to `run/`.
 
-| Helper | Purpose | Instructions |
-| --- | --- | --- |
-| `scripts/new_run.py` | Initialize a draft research record and artifacts | [Research](../finrunbook/SKILL.md) |
-| `scripts/new_batch.py` | Initialize or resume a Radar batch | [Radar](../finrunbook-radar/SKILL.md) |
-| `scripts/market_data.py` | Collect and validate market observations | [Market data](../finrunbook-market-data/SKILL.md) |
-| `scripts/validate_run.py` | Validate evidence, calculations and artifacts | [Validation](../finrunbook-validator/SKILL.md) |
+| Helper | Purpose |
+| --- | --- |
+| `scripts/catalog.py` | Resolve and cache a pinned method catalog and selected text |
+| `scripts/new_run.py --compact` | Initialize the compact evidence and review contract |
+| `scripts/new_batch.py` | Initialize or resume a bounded Radar batch |
+| `scripts/market_data.py` | Collect market observations and recompute supported metrics |
+| `scripts/render_report.py` | Render portable HTML/JSON or CSV with evidence links |
+| `scripts/validate_run.py` | Validate evidence, calculations, receipts and artifacts |
 
-The initializers default to the caller's `run/` directory and retain `--runs-dir`
-as an override. `new_batch.py` loads its template relative to its own location;
-the validator loads the sibling market-data helper. Neither depends on a vendor
-checkout, internal investing code or an MCP service.
+Read [helper commands](references/helpers.md) and the
+[evidence/presentation contract](references/record.md). The standard-library core
+has no MCP or vendor runtime dependency. Only Yahoo collection needs the optional
+pinned dependency in `requirements-market-data.txt`; install it when needed into
+the caller workspace's `run/.venv/`.
 
-Only Yahoo collection needs an optional dependency, declared in
-`requirements-market-data.txt`; use a workspace-local `run/.venv/` environment.
-The existing data contracts and validation behavior are retained for this phase.
-The single-skill entry point and packaging are implemented in phase two.
+Legacy initializers and records keep their original validation behavior when
+`--compact` is absent. Historical skill documents are retained in the repository,
+but only this skill and the declared runtime files enter the plugin archive.

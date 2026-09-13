@@ -55,6 +55,8 @@ def revision(root: Path) -> str | None:
 def initialize(args: argparse.Namespace) -> Path:
     root = Path(__file__).resolve().parents[3]
     runs = (args.runs_dir or Path.cwd() / "run").resolve()
+    if (root / '.codex-plugin/plugin.json').exists() and runs.is_relative_to(root):
+        raise ValueError('choose a workspace outside the installed plugin')
     if args.resume and not args.batch_id:
         raise ValueError("--resume requires the existing --batch-id")
     if args.language is not None and not re.fullmatch(r"[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*", args.language):

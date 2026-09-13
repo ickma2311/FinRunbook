@@ -12,8 +12,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+# Dynamic sibling imports must not create files inside an installed plugin.
+sys.dont_write_bytecode = True
 
-VALIDATOR_VERSION = "0.4.0"
+
+VALIDATOR_VERSION = "0.5.0"
 REQUIRED_TOP_LEVEL = (
     "schema_version",
     "run",
@@ -296,6 +299,10 @@ def render_validation(status: str, checked_at: str, errors: int, warnings: int) 
 
 
 def validate(run_dir: Path) -> tuple[dict[str, Any], int]:
+    run_dir = run_dir.resolve()
+    install = Path(__file__).resolve().parents[3]
+    if (install / '.codex-plugin/plugin.json').exists() and run_dir.is_relative_to(install):
+        raise ValueError('choose a workspace outside the installed plugin')
     record_path = run_dir / "research-record.json"
     if not record_path.is_file():
         result = {
@@ -353,8 +360,8 @@ def validate(run_dir: Path) -> tuple[dict[str, Any], int]:
         issues.append(issue("error", "request.missing_subject", "research subject is required", "request.subject"))
 
     report_archetype = request.get("report_archetype")
-    if report_archetype is not None and report_archetype not in {"finance-report", "research-memo"}:
-        issues.append(issue("error", "request.invalid_report_archetype", "report_archetype must be finance-report or research-memo", "request.report_archetype"))
+    if report_archetype is not None and report_archetype not in {"finance-report", "research-memo", "datasheet"}:
+        issues.append(issue("error", "request.invalid_report_archetype", "report_archetype must be finance-report, research-memo or datasheet", "request.report_archetype"))
 
     if report_archetype == "finance-report":
         output_formats = request.get("output_formats")
@@ -389,7 +396,16 @@ def validate(run_dir: Path) -> tuple[dict[str, Any], int]:
                 issues.append(issue("error", "plan.incomplete_finance_output_contract", "finance-report must explicitly set valuation_required to true or false", "plan.output_contract.valuation_required"))
 
     issues.extend(check_editorial_review(record, run_dir))
-    issues.extend(check_market_data(record, run_dir))
+    market_issues = check_market_data(record, run_dir)
+    issues.extend(market_issues)
+    if record.get('workflow') == 'finrun-0.5':
+        spec = importlib.util.spec_from_file_location('finrun_compact_checks', Path(__file__).with_name('compact_checks.py'))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        verified_market = set()
+        if record.get('market_data') and not any(i['severity'] == 'error' for i in market_issues):
+            verified_market = {m['calculation_id'] for b in record['market_data']['batches'] for m in b['analysis_mappings']}
+        issues.extend(module.check(record, run_dir, verified_market))
 
     selected_skills = plan.get("selected_skills", [])
     if not isinstance(selected_skills, list):
@@ -701,7 +717,10 @@ def main() -> int:
     run_dir = args.run_directory.resolve()
     if not run_dir.is_dir():
         parser.error(f"run directory does not exist: {run_dir}")
-    result, exit_code = validate(run_dir)
+    try:
+        result, exit_code = validate(run_dir)
+    except ValueError as error:
+        parser.error(str(error))
     print(json.dumps({"status": result["status"], **result["summary"]}, ensure_ascii=False))
     return exit_code
 

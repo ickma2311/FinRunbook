@@ -1,0 +1,20 @@
+{
+  ".codex-plugin/plugin.json": "plugin/manifest.json",
+  "README.md": "plugin/INSTALL.md",
+  "THIRD_PARTY_NOTICES.md": "THIRD_PARTY_NOTICES.md",
+  "assets/finrun-icon.png": "plugin/assets/finrun-icon.png",
+  "skills/finrun/SKILL.md": "skills/finrun/SKILL.md",
+  "skills/finrun/agents/openai.yaml": "skills/finrun/agents/openai.yaml",
+  "skills/finrun/references/helpers.md": "skills/finrun/references/helpers.md",
+  "skills/finrun/references/record.md": "skills/finrun/references/record.md",
+  "skills/finrun/requirements-market-data.txt": "skills/finrun/requirements-market-data.txt",
+  "skills/finrun/assets/report.html": "skills/finrun/assets/report.html",
+  "skills/finrun/assets/radar.template.json": "skills/finrun/assets/radar.template.json",
+  "skills/finrun/scripts/catalog.py": "skills/finrun/scripts/catalog.py",
+  "skills/finrun/scripts/compact_checks.py": "skills/finrun/scripts/compact_checks.py",
+  "skills/finrun/scripts/new_run.py": "skills/finrun/scripts/new_run.py",
+  "skills/finrun/scripts/new_batch.py": "skills/finrun/scripts/new_batch.py",
+  "skills/finrun/scripts/market_data.py": "skills/finrun/scripts/market_data.py",
+  "skills/finrun/scripts/render_report.py": "skills/finrun/scripts/render_report.py",
+  "skills/finrun/scripts/validate_run.py": "skills/finrun/scripts/validate_run.py"
+}

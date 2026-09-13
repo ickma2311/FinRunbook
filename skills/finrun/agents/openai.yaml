@@ -1,0 +1,4 @@
+interface:
+  display_name: "Finrun"
+  short_description: "Financial research with sources and usable reports"
+  default_prompt: "Use $finrun to analyze a company's main risks."

@@ -75,7 +75,7 @@ def parser() -> argparse.ArgumentParser:
     result.add_argument("--task-type", default="unspecified")
     result.add_argument(
         "--report-archetype",
-        choices=["finance-report", "research-memo"],
+        choices=["finance-report", "research-memo", "datasheet"],
         default="finance-report",
     )
     result.add_argument("--decision-use", default="investment research")
@@ -91,6 +91,7 @@ def parser() -> argparse.ArgumentParser:
     result.add_argument("--source-constraint", action="append", default=[])
     result.add_argument("--runs-dir", type=Path, help="Override the working directory's run/ directory")
     result.add_argument("--run-id", help="Override the generated run ID")
+    result.add_argument("--compact", action="store_true", help="Finrun 0.5: one inline review, reproducible arithmetic, no separate editorial receipt")
     return result
 
 
@@ -99,6 +100,8 @@ def main() -> int:
     script_path = Path(__file__).resolve()
     repo_root = script_path.parents[3]
     runs_dir = args.runs_dir.resolve() if args.runs_dir else Path.cwd() / "run"
+    if (repo_root / '.codex-plugin/plugin.json').exists() and runs_dir.resolve().is_relative_to(repo_root):
+        raise SystemExit('choose a workspace outside the installed plugin')
     now = utc_now()
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     run_id = args.run_id or f"{stamp}-{slugify(args.subject)}"
@@ -108,7 +111,7 @@ def main() -> int:
     formats = list(dict.fromkeys(args.formats or (
         ["interactive-html", "json"]
         if args.report_archetype == "finance-report"
-        else ["markdown"]
+        else (["csv", "json"] if args.report_archetype == "datasheet" else ["markdown"])
     )))
     if args.report_archetype == "finance-report" and "markdown" in formats:
         raise SystemExit("finance-report cannot use Markdown as a final output; use interactive-html, PDF, PPTX, or select research-memo")
@@ -122,6 +125,7 @@ def main() -> int:
         "pdf": "report/report.pdf",
         "xlsx": "report/model.xlsx",
         "pptx": "report/report.pptx",
+        "csv": "report/datasheet.csv",
     }
     unknown_formats = [item for item in formats if item not in artifact_paths]
     if unknown_formats:
@@ -216,6 +220,10 @@ def main() -> int:
         },
     }
 
+    if args.compact:
+        record['workflow'] = 'finrun-0.5'
+        record.pop('editorial_review')
+        record['review'] = {'status': 'pending', 'reviewer': None, 'notes': []}
     record_path = run_dir / "research-record.json"
     record_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if "markdown" in formats:
