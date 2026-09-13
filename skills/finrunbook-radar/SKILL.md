@@ -150,12 +150,12 @@ the question (not an assumed conclusion), why now, entities/security identity,
 as-of date, appropriate historical comparison window, financial metrics or
 bridge to build, alternative explanations, falsification criteria, primary-source
 starting points, known access limits, report language, and interactive HTML/JSON
-output. Explicitly instruct the agent to use `skills/finrunbook/SKILL.md`.
+output. Explicitly instruct the agent to use `skills/finrun/SKILL.md`.
 
-## 4. Run FinRunbook for every selected topic
+## 4. Run Finrun for every selected topic
 
-Read and follow [FinRunbook](../finrunbook/SKILL.md), including its required
-profiles and chosen specialist skills. Create one ordinary child run for each
+Read and follow [Finrun](../finrun/SKILL.md), including its evidence/presentation
+contract and selected methods. Create one ordinary child run for each
 selected topic using `skills/finrun/scripts/new_run.py`; do not substitute a social-news
 summary for the financial report or skip initialization/validation.
 

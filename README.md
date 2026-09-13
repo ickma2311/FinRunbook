@@ -1,114 +1,64 @@
-# FinRunbook
+# Finrun for Codex
 
-Financial research in Codex, using local Python for evidence records, market-data
-processing and validation. Research covers companies, earnings, industries,
-financial statements, valuation and market prices. Radar helps discover topics
-and organize follow-up reports.
+Turn financial questions into sourced answers, interactive reports and usable
+data sheets. **Finrun is one plugin for research and topic discovery in local
+Codex.** Analyze companies, earnings and industries, or ask it to find financial
+developments worth investigating.
 
-This branch builds the `0.5.0-preview.1` candidate: one Finrun skill, a pinned
-GitHub method catalog, local evidence checks, and portable HTML/CSV rendering.
-The candidate is built locally; installation and public release are separate.
-See [plugin packaging](plugin/README.md) for first-run catalog requirements.
+**[Install Finrun](https://chatgpt.com/plugins/plugins_6aa37a5c5a3c8191b0724563dc0166bd)**
+· [Website](https://finrun.ickma2311.workers.dev/)
+· [Setup guide](https://finrun.ickma2311.workers.dev/setup/)
+· [See examples](https://finrun.ickma2311.workers.dev/#examples)
 
-## Repository layout
+Version **0.5.0-preview.2** is published in the OpenAI Plugins Directory.
 
-```text
-skills/     Central index, research instructions and shared Python helpers
-plugin/     Manifest, runtime allowlist and deterministic packaging
-run/        Ignored outputs, downloads, caches, environments and builds
-tests/      Public research and repository regression checks
-examples/   Curated published reports and prompts
-```
+## Get started
 
-[skills/index.md](skills/index.md) describes the selectable methods. They are
-retrieved as Markdown at immutable commits and cached with content hashes.
-Methods are kept outside the plugin so instruction updates do not ship executable
-code. Historical upstream attribution remains in [third-party notices](THIRD_PARTY_NOTICES.md).
+1. Open the [Finrun plugin listing](https://chatgpt.com/plugins/plugins_6aa37a5c5a3c8191b0724563dc0166bd)
+   and install it for Codex.
+2. Start a new local Codex task in a writable workspace and select **@Finrun**
+   from the plugin picker.
+3. Ask your question. Add a period, language or output format when it matters.
+4. Review the answer, sources and any generated report or data sheet.
 
-All maintained Python helpers and their templates live in
-[skills/finrun/](skills/finrun/README.md). Existing skill documents link to those
-helpers; there is no second editable copy for packaging.
+You do not need to clone this repository to use the plugin.
+Requires local Codex, Python 3.10+, a writable workspace and access to the
+requested sources. This edition is not supported in ChatGPT web. Your agent
+usage and any data-provider charges still apply; no separate Finrun account is
+needed. See the [setup guide](https://finrun.ickma2311.workers.dev/setup/) for
+requirements and troubleshooting.
 
-## Use from the repository
+## Try a question
 
-Clone normally, with no submodule initialization:
+After selecting **@Finrun**, ask:
 
-```bash
-git clone https://github.com/ickma2311/FinRunbook.git
-cd FinRunbook
-```
+- **Company risks:** “Analyze NVIDIA’s main business and financial risks.”
+- **Earnings:** “Compare the latest earnings of Microsoft and Alphabet.”
+- **Industry research:** “Compare AWS, Azure and Google Cloud.”
+- **Data sheets:** “Build an Excel workbook of Apple’s financial statements for
+  the last five fiscal years.”
+- **Topic discovery:** “Find three financial developments worth researching.”
 
-Open this directory in Codex and ask a financial question. The research entry
-point is `skills/finrun/SKILL.md`, including Radar topic discovery. Codex collects and reviews evidence. Python
-does not invoke a model, run another agent CLI, schedule research or execute trades.
-Use local Python 3.10 or newer. Core helpers use the standard library.
+You always use the same Finrun skill. **Radar is its topic-discovery method**:
+ask for a shortlist, or choose topics for further research.
 
-For direct helper use, from the project directory:
+## What you get
 
-```bash
-python3 skills/finrun/scripts/new_run.py \
-  --compact --subject "Example company" --request "Analyze the latest earnings" \
-  --request-language en
-python3 skills/finrun/scripts/new_batch.py \
-  --request "Find recent financial research topics" --language en \
-  --timezone America/Los_Angeles
-python3 skills/finrun/scripts/validate_run.py run/<run-id>
-```
+| Your request | Output |
+| --- | --- |
+| A focused question | A concise sourced answer |
+| Substantial company, earnings or industry analysis | An interactive HTML report and structured JSON |
+| A financial data sheet | CSV by default; request an Excel workbook explicitly for XLSX |
+| Topics worth investigating | A shortlist, with follow-up research when requested |
 
-Initializers write to `run/` in the current working directory. The existing
-`--runs-dir` flag remains available for explicit destinations and older scripts.
-Creating a run produces a draft, not a completed financial report.
+Substantial research keeps sources, evidence, calculations and limitations with
+its outputs under `run/` in your task’s workspace. Reports preserve fiscal
+periods, units and the distinction between reported results, guidance and
+estimates. Local checks support the work, but do not guarantee accuracy.
+Review important claims against the original sources. Outputs are research
+materials, not personalized investment advice.
 
-The optional Yahoo adapter requires the pinned dependency. Install it only when
-needed in a workspace-local environment:
-
-```bash
-python3 -m venv run/.venv
-run/.venv/bin/python -m pip install -r skills/finrun/requirements-market-data.txt
-```
-
-Follow the [market-data instructions](skills/finrunbook-market-data/SKILL.md)
-for identity, dates, adjustments, provider failures and data-use limits.
-
-## Evidence and completion
-
-Keep sources, evidence locators, facts, calculations, assumptions and limitations
-in `research-record.json`. Preserve fiscal periods, units, currency, comparable
-definitions and the distinction between actual results and guidance. Follow the
-user's output language independently of market geography.
-
-The compact workflow records its method receipt and a short review with reviewer
-identity and actual checks performed. The validator checks structure, provenance
-and supported arithmetic;
-a pass does not establish that a source or narrative claim is true. Review material
-claims against source passages and verify HTML behavior separately.
-
-Generated records, caches and builds stay under ignored `run/`. Curate intentionally
-public outputs into `examples/` only after reviewing source rights. Historical
-examples retain their original records and URLs.
-
-## Tests
-
-```bash
-python3 -B -m unittest discover -s tests -p 'test_*.py' -v
-```
-
-Tests use synthetic data and local fixtures. They do not require Yahoo access,
-an MCP server, vendor checkouts or internal investing code. Offline tests do not
-prove current provider availability or live remote-catalog retrieval.
-
-## Migration boundaries
-
-Internal investing, portfolio accounting, hourly operation and their tests are
-excluded from the active product. Original sources and historical runs remain
-in the original checkout; a verified source archive supports this worktree refactor.
-Original-folder cleanup and historical-run migration are deferred until the new
-version is verified. External packaging sources and deployed services are untouched.
-Plugin installation, catalog publication and deployment remain separate work.
-Legacy `finrunbook-*` documents remain available for older records and are not
-part of the new plugin bundle.
-
-## Live examples
+## Explore saved examples
 
 Start with a question and see a worked answer: what changed in earnings, which
 numbers belong in your spreadsheet, or how companies compare. Read the report,
@@ -136,3 +86,47 @@ snapshots with September 3–4, 2026 research cutoffs. Each report labels its ow
 reporting periods; these are not live market dashboards. The S&P 500 / SPY
 example retains three market-data validation warnings and excludes raw provider
 snapshots. Publishing the analysis does not grant a third-party data license.
+
+## For contributors
+
+Clone the repository when you want to develop Finrun, edit its methods or run
+the helpers directly:
+
+```bash
+git clone https://github.com/ickma2311/FinRunbook.git
+cd FinRunbook
+python3 -B -m unittest discover -s tests -p 'test_*.py' -v
+```
+
+No submodule initialization is needed. Core helpers use Python 3.10+ and the
+standard library. Yahoo market-data support has an optional dependency; see
+[helper documentation](skills/finrun/README.md).
+
+```text
+skills/     Finrun entry skill, method catalog and shared Python helpers
+plugin/     Package manifest, build tooling and public website source
+run/        Ignored research outputs, caches, environments and builds
+tests/      Research and repository regression checks
+examples/   Curated published reports and prompts
+```
+
+- [Entry skill](skills/finrun/SKILL.md): the shared research and discovery workflow.
+- [Method catalog](skills/index.md): methods retrieved at immutable commits and
+  cached with hashes. Method text cannot authorize executable code or expand
+  the user's permissions.
+- [Plugin packaging](plugin/README.md): build the allowlisted bundle and verify
+  it before installation or publication.
+- [Website maintenance](plugin/website/README.md): build and deploy the public site.
+- [Third-party notices](THIRD_PARTY_NOTICES.md): attribution and applicable notices.
+
+Generated runs and build artifacts stay under ignored `run/`. Preserve historical
+examples and their original provenance; publish new examples only after reviewing
+source rights. Legacy compatibility documents are excluded from the plugin.
+Internal investing, portfolio and scheduled workflows are outside this product.
+
+## Support
+
+[Get support](https://finrun.ickma2311.workers.dev/support/)
+· [Report a bug](https://github.com/ickma2311/FinRunbook/issues)
+· [Privacy](https://finrun.ickma2311.workers.dev/privacy/)
+· [Terms](https://finrun.ickma2311.workers.dev/terms/)

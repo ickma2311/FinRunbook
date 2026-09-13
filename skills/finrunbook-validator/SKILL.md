@@ -45,7 +45,7 @@ compare material edits against the evidence during semantic validation.
 ## Check rendered HTML before delivery
 
 For interactive reports, follow the
-[color and readability checks](../finrunbook/references/interactive-report-profile.md#color-and-readability-checks).
+[color and readability checks](references/interactive-report-profile.md#color-and-readability-checks).
 Use the actual browser render and inspect the recorded measurements, including
 non-hover controls and applicable focus/selected states. Fix failed contrast
 checks and rerun affected states after the final style changes.
